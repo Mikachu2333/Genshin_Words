@@ -20,7 +20,30 @@ def json_data_output(raw_data: list, need_list: list, text_writer: io.TextIOWrap
                         text_writer.write(k + "\n")
                 else:
                     text_writer.write(i[j] + "\n")
+"""
+角色的输出
+    for i in raw_data:
+        if isinstance(i, list) or isinstance(i, dict):  # i是否为list或dict
+            for j in i["Costumes"]:  # 衣装
+                text_writer.write(j["Name"] + "\n")
+            j = i["FetterInfo"]
+            try:  # 命座名称
+                k = j["ConstellationAfter"]
+                text_writer.write(j["ConstellationAfter"] + "\n")
+            except:
+                text_writer.write(j["ConstellationBefore"] + "\n")
+            text_writer.write(j["Native"] + "\n")  # 归属
+            text_writer.write(j["Title"] + "\n")  # 卡池名
+            j = i["SkillDepot"]
+            text_writer.write(j["EnergySkill"]["Name"] + "\n")  # q
+            for k in j["Inherents"]:
+                text_writer.write(k["Name"] + "\n")  # 附加天赋
+            for k in j["Skills"]:
+                text_writer.write(k["Name"] + "\n")  # ae...
+            for k in j["Talents"]:
+                text_writer.write(k["Name"] + "\n")  # 命座
 
+"""
 
 def data_read(file_name: str, file_data: list, text: io.TextIOWrapper):
     """根据不同文件分别读取不同内容并调用json_data_output输出到文件"""
@@ -62,10 +85,13 @@ def data_read(file_name: str, file_data: list, text: io.TextIOWrapper):
             return json_data_output(file_data, ["BuffName", "Descriptions"], text)
         case "Weapon":  # 武器
             return json_data_output(file_data, ["Name", "Description"], text)
+        case _:
+            return None
 
 
 # 主文件
 p = Path.cwd().resolve()
+print(p)
 raw_data_path = p.joinpath("raw")
 text_path = p.joinpath("test.txt")
 
@@ -85,6 +111,7 @@ dont_read = {
     "TowerLevel",
     "WeaponCurve",
     "WeaponPromote",
+    "ReadMe"
 }
 for i in result:
     if i.stem not in dont_read:
