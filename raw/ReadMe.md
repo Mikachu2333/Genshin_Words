@@ -1,1 +1,0 @@
-Download all files from [Genshin/CHS](https://github.com/DGP-Studio/Snap.Metadata/tree/main/Genshin/CHS).
