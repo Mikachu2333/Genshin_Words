@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "2025.05.14v3 Ver5.6"
+version: "2025.05.30v7 Ver5.6"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -576,8 +576,9 @@ use_preset_vocabulary: false
 冰晶蝶
 冰晶炮手
 冰冷的身躯
+冰龙蜥
 冰牛奶
-冰飘浮灵
+冰漂浮灵
 冰枪
 冰丘丘萨满
 兵刃锻造站
@@ -791,7 +792,7 @@ use_preset_vocabulary: false
 草萌奇卡卡
 草蜢
 草木繁茂的记忆
-草飘浮灵
+草漂浮灵
 草枪
 草丘丘萨满
 草伤
@@ -870,6 +871,7 @@ use_preset_vocabulary: false
 常夜灵庙
 常夜荧枝
 尝有所思
+场地边缘
 场中医者视野
 唱罢
 超导
@@ -899,6 +901,8 @@ use_preset_vocabulary: false
 朝向炎崖之路
 潮信之月
 潮涌之章
+朝右跑
+朝左跑
 车笠远来
 砗磲
 掣电树
@@ -1147,7 +1151,6 @@ use_preset_vocabulary: false
 垂裳端凝之夜
 垂霞
 垂香木
-铺冰
 垂香木厨房货架
 垂香木传统地板
 垂香木窗格房门
@@ -1389,6 +1392,7 @@ use_preset_vocabulary: false
 当那突角龙杀到
 当他们谈起今夜
 荡风斥候
+刀镡
 刀剑抱业
 刀舞者
 刀冢
@@ -1533,6 +1537,7 @@ use_preset_vocabulary: false
 调律师的笔记
 调停的真意
 调停人
+调香师
 蝶飞鱼跃
 叠架远光灯
 迭卡拉庇安
@@ -1551,6 +1556,7 @@ use_preset_vocabulary: false
 定格全方位确证
 定蒙
 定神
+丢箭
 咚咚单元
 咚咚嘭嘭
 咚咚锵锵
@@ -1766,19 +1772,7 @@ use_preset_vocabulary: false
 饭店地毯
 饭店护栏
 贩龙者
-漂浮灵
-风漂浮灵
-草漂浮灵
-雷漂浮灵
-水漂浮灵
-火漂浮灵
-冰漂浮灵
-岩漂浮灵
 梵米尔
-丘丘
-丘丘游侠
-风丘丘游侠
-水丘丘游侠
 范木堂
 泛用型烹饪装置
 芳草馥奇
@@ -1977,6 +1971,7 @@ use_preset_vocabulary: false
 风枪
 风清之扉
 风丘丘萨满
+风丘丘游侠
 风拳前锋军
 丰饶之地的奔行
 丰稔之赐
@@ -2076,6 +2071,7 @@ use_preset_vocabulary: false
 浮槃歌卷
 浮峭
 伏青石
+福瑞
 浮生石片
 浮生孰来
 浮世
@@ -2212,6 +2208,7 @@ use_preset_vocabulary: false
 格洛德克
 格茜妮
 革新烹饪理论
+给谁刷的
 给虾枪用猫粮
 根源之轮
 亘古的苍星
@@ -3300,6 +3297,7 @@ use_preset_vocabulary: false
 箭盾座
 剑风
 箭风之月
+剑鬼
 谏果般森丽之纹
 剑击
 健康的方法
@@ -3559,6 +3557,7 @@ use_preset_vocabulary: false
 惊险演出
 惊霰之月
 晶岩旋摆
+经验花
 晶焰之祝
 经营家的开阔视野
 精致的留影机
@@ -3683,6 +3682,7 @@ use_preset_vocabulary: false
 拒风
 聚风蹴
 飓风之种
+聚怪
 聚会与痛饮之时
 聚火祭验所
 聚焦效应
@@ -3803,6 +3803,7 @@ use_preset_vocabulary: false
 开顶杉木货架
 开放式烘炉工坊
 开放式松木橱柜
+开怪
 开练
 开山炮
 开天呈祥
@@ -4010,6 +4011,7 @@ use_preset_vocabulary: false
 扩散
 拉比娜
 拉菲克
+拉怪
 拉坎阿
 拉勒
 拉练
@@ -4136,6 +4138,7 @@ use_preset_vocabulary: false
 勒拉
 勒鲁瓦
 雷杯
+雷蝙蝠
 雷草水
 雷驰电掣
 雷锤前锋军
@@ -4168,6 +4171,7 @@ use_preset_vocabulary: false
 雷狼之爪
 雷厉
 雷雳寰宇
+雷龙蜥
 雷蒙多
 雷鸣仙
 雷穆利亚
@@ -4880,7 +4884,7 @@ use_preset_vocabulary: false
 梅兹特利
 梅兹特利的古老传说
 美好相遇
-美露莘	mei lu xin
+美露莘
 美梦
 美梦如是
 美妙旅程
@@ -4933,6 +4937,7 @@ use_preset_vocabulary: false
 梦见木灾祛御签挂
 梦见木长桌
 梦见木重念路灯
+梦见月
 梦见月瑞希
 梦境边际
 梦里花
@@ -5147,6 +5152,7 @@ use_preset_vocabulary: false
 摩拉
 摩拉丛丛生长的梦
 摩拉分割
+摩拉花
 摩拉急速来
 摩拉肉
 魔鳞病
@@ -5348,36 +5354,11 @@ use_preset_vocabulary: false
 鸟蛋寿司
 鸟首
 啮合齿轮
-凝冰渡海
-凝冰
-无相风
-无相草
-无相雷
-无相水
-无相火
-无相冰
-无相岩
-无相铁
-原魔
-丘丘王
 涅兰
-无相
-铁三角
-剑鬼
-草鸡
-雷蝙蝠
-福瑞
-石像人
-龙蜥
-冰龙蜥
-水龙蜥
-雷龙蜥
-圣骸兽
-圣骸
-
-
 涅提
+凝冰
 凝冰成砂
+凝冰渡海
 凝成泥土
 凝光
 凝恒的脂蜡
@@ -5468,13 +5449,13 @@ use_preset_vocabulary: false
 炮鲀
 泡影断灭
 裴伦埃里
+配队
 佩尔西科夫
 佩蕾
 佩蕾努伊
 佩链座
 佩洛
 佩奇
-配队
 配扇
 佩索妲
 佩特莉可镇
@@ -5512,6 +5493,7 @@ use_preset_vocabulary: false
 骗骗花
 骗骗花蜜
 片叶苏芳缀银朱
+漂浮灵
 缥锦
 缥锦机关留云
 飘飘爆弹
@@ -5605,6 +5587,7 @@ use_preset_vocabulary: false
 普通兑换券
 普通攻击
 普通急流鱼类
+铺冰
 七彩琉璃大煎饼
 七彩之战的真相
 栖地蝠的灵笼
@@ -6009,6 +5992,7 @@ use_preset_vocabulary: false
 秋橘
 秋暮之火
 秋纽奥
+丘丘
 鳅鳅宝玉
 丘丘暴徒
 丘丘暴徒冰盾
@@ -6035,6 +6019,7 @@ use_preset_vocabulary: false
 丘丘图腾围栏
 丘丘王
 丘丘岩盔王
+丘丘游侠
 丘丘语桂冠诗人
 丘丘语速查手册
 秋沙歌枕巡礼
@@ -6462,6 +6447,7 @@ use_preset_vocabulary: false
 商铺的罗纹
 商铺的珍玩
 上佳选择
+上契
 上取红霞
 上下风蚀赤土
 上行
@@ -6630,6 +6616,7 @@ use_preset_vocabulary: false
 生灵之华
 生论派
 生论派学者
+生命之契
 生命值
 笙磬同音
 生肉塔塔
@@ -6664,10 +6651,12 @@ use_preset_vocabulary: false
 盛放之光
 盛放之月
 圣古的库藏
+圣骸
 圣骸赤鹫
 圣骸毒蝎
 圣骸飞蛇
 圣骸角鳄
+圣骸兽
 圣骸牙兽
 圣鹮
 圣火竞技场
@@ -6760,6 +6749,7 @@ use_preset_vocabulary: false
 石素人
 蚀土者
 时鲜
+石像人
 石心
 石心镜座
 拾星之旅
@@ -6846,6 +6836,7 @@ use_preset_vocabulary: false
 试作斩岩
 收获时节的小镇摊位
 收集器
+收契
 守护徽印
 守护束带
 守护岩柱
@@ -6926,6 +6917,7 @@ use_preset_vocabulary: false
 树王圣体菇
 庶务长
 树脂
+刷本
 摔角
 摔角的真意
 摔角冠军
@@ -6991,12 +6983,14 @@ use_preset_vocabulary: false
 水晶虾
 水晶宴
 水镜的使者
+水龙蜥
 水陆自在
 水畔的富饶
 水畔的宁静时光
 水飘浮灵
 水枪
 水丘丘萨满
+水丘丘游侠
 水润奇卡卡
 水色脑袋
 水色躯干
@@ -7445,6 +7439,7 @@ use_preset_vocabulary: false
 铁尖枪
 铁块
 铁穆窟
+铁三角
 铁头卫士
 铁须
 铁翼
@@ -7811,7 +7806,7 @@ use_preset_vocabulary: false
 稳像机关
 稳足
 问事
-问题美露莘与答案机器人	wen ti mei lu xin yu da an ji qi ren
+问题美露莘与答案机器人
 涡旋之月
 我爱摩拉
 我必偿还
@@ -7924,6 +7919,15 @@ use_preset_vocabulary: false
 无畏的山岩
 无味火
 无限的电回路
+无相
+无相冰
+无相草
+无相风
+无相火
+无相雷
+无相水
+无相铁
+无相岩
 无相之冰
 无相之草
 无相之风
@@ -9556,6 +9560,7 @@ use_preset_vocabulary: false
 源流
 源流的哲学
 源流的指引
+原魔
 原木刀
 原木灯杆
 元能构装体
@@ -9574,6 +9579,7 @@ use_preset_vocabulary: false
 元素沙
 元素伤害
 元素伤害沙
+元素视野
 元素微粒
 元素盈满
 元素圆舞
@@ -10184,6 +10190,7 @@ use_preset_vocabulary: false
 祝言霞幕倾松风
 筑云
 驻扎日记
+专武
 专于一心
 专注之事的证人
 转圜腾挪
