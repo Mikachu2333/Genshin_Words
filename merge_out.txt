@@ -1,10 +1,3 @@
----
-name: yuanshen
-version: "2025.06.18v1 Ver5.7"
-sort: origin
-use_preset_vocabulary: false
-...
-
 阿邦迪
 阿贝多
 阿笨
@@ -11026,6 +11019,7 @@ use_preset_vocabulary: false
 焰角
 酽冽的白光
 焰灵的契约
+宴宁
 焰色天河
 验收与维修记录
 燕衔泥
