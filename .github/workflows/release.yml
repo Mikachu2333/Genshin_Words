@@ -17,33 +17,23 @@ jobs:
             - name: Get tag name
               id: get_tag
               run: |
-                  if [ "${{ github.event_name }}" == "push" ]; then
-                      # 自动触发时使用推送的 tag
-                      TAG_NAME="${{ github.ref_name }}"
-                      echo "Auto trigger: using pushed tag $TAG_NAME"
-                  else
-                      # 手动触发时使用最新的 tag
-                      TAG_NAME=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
-                      if [ -z "$TAG_NAME" ]; then
-                          echo "Error: No tags found in repository"
-                          exit 1
-                      fi
-                      echo "Manual trigger: using latest tag $TAG_NAME"
+                  TAG_NAME=$(git describe --tags --abbrev=0 2>/dev/null || echo "default-tag")
+                  if [ "$TAG_NAME" == "default-tag" ]; then
+                      echo "Warning: No tags found, using default tag 'default-tag'"
                   fi
-                  
                   echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
 
             - name: Get release message
               id: release_info
               run: |
                   TAG_NAME="${{ steps.get_tag.outputs.tag_name }}"
-                  
+
                   # 尝试获取 tag 的注释信息
                   TAG_MESSAGE=""
                   if git tag -l -n99 "$TAG_NAME" | grep -q "."; then
                       TAG_MESSAGE=$(git tag -l -n99 "$TAG_NAME" | sed "1s/^[^[:space:]]*[[:space:]]*//" | head -n -1)
                   fi
-                  
+
                   # 如果 tag 有注释信息，优先使用
                   if [ -n "$TAG_MESSAGE" ] && [ "$TAG_MESSAGE" != "$TAG_NAME" ]; then
                       RELEASE_TITLE="$TAG_NAME"
@@ -69,15 +59,15 @@ jobs:
                           echo "Using tag name only"
                       fi
                   fi
-                  
+
                   # 如果是手动触发，在描述中添加标识
                   if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
                       RELEASE_BODY="$RELEASE_BODY"$'\n\n'"---"$'\n'"*此版本通过手动触发重新发布*"
                   fi
-                  
+
                   # 处理换行符
                   RELEASE_BODY="${RELEASE_BODY//$'\n'/'%0A'}"
-                  
+
                   echo "release_title=$RELEASE_TITLE" >> $GITHUB_OUTPUT
                   echo "release_body=$RELEASE_BODY" >> $GITHUB_OUTPUT
 
@@ -103,7 +93,7 @@ jobs:
 
             - name: Create Release
               id: create_release
-              uses: softprops/action-gh-release@v1
+              uses: softprops/action-gh-release@latest
               with:
                   tag_name: ${{ steps.get_tag.outputs.tag_name }}
                   name: ${{ steps.release_info.outputs.release_title }}
@@ -113,4 +103,4 @@ jobs:
                   files: |
                       yuanshen.dict.yaml
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }
