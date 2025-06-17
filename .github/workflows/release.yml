@@ -3,20 +3,40 @@ on:
     push:
         tags:
             - "*" # 匹配所有 tag
+    workflow_dispatch: # 添加手动触发
 
 jobs:
     release:
-        runs-on: ubuntu-latest  # 修复：没有 debian-latest，应该用 ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
               with:
-                  fetch-depth: 0  # 修复：改为 0 获取完整历史
+                  fetch-depth: 0
+
+            - name: Get tag name
+              id: get_tag
+              run: |
+                  if [ "${{ github.event_name }}" == "push" ]; then
+                      # 自动触发时使用推送的 tag
+                      TAG_NAME="${{ github.ref_name }}"
+                      echo "Auto trigger: using pushed tag $TAG_NAME"
+                  else
+                      # 手动触发时使用最新的 tag
+                      TAG_NAME=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+                      if [ -z "$TAG_NAME" ]; then
+                          echo "Error: No tags found in repository"
+                          exit 1
+                      fi
+                      echo "Manual trigger: using latest tag $TAG_NAME"
+                  fi
+                  
+                  echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
 
             - name: Get release message
               id: release_info
               run: |
-                  TAG_NAME="${{ github.ref_name }}"
+                  TAG_NAME="${{ steps.get_tag.outputs.tag_name }}"
                   
                   # 尝试获取 tag 的注释信息
                   TAG_MESSAGE=""
@@ -50,6 +70,11 @@ jobs:
                       fi
                   fi
                   
+                  # 如果是手动触发，在描述中添加标识
+                  if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+                      RELEASE_BODY="$RELEASE_BODY"$'\n\n'"---"$'\n'"*此版本通过手动触发重新发布*"
+                  fi
+                  
                   # 处理换行符
                   RELEASE_BODY="${RELEASE_BODY//$'\n'/'%0A'}"
                   
@@ -67,11 +92,20 @@ jobs:
                       echo "Warning: yuanshen.dict.yaml not found in root directory"
                   fi
 
+            - name: Delete existing release if exists
+              if: github.event_name == 'workflow_dispatch'
+              run: |
+                  TAG_NAME="${{ steps.get_tag.outputs.tag_name }}"
+                  # 尝试删除已存在的 release（如果有的话）
+                  gh release delete "$TAG_NAME" --yes || echo "No existing release found for $TAG_NAME"
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
             - name: Create Release
               id: create_release
-              uses: softprops/action-gh-release@v1  # 修复：使用更现代的 action
+              uses: softprops/action-gh-release@v1
               with:
-                  tag_name: ${{ github.ref_name }}
+                  tag_name: ${{ steps.get_tag.outputs.tag_name }}
                   name: ${{ steps.release_info.outputs.release_title }}
                   body: ${{ steps.release_info.outputs.release_body }}
                   draft: false
