@@ -6,59 +6,77 @@ on:
 
 jobs:
     release:
-        runs-on: debian-latest
+        runs-on: ubuntu-latest  # 修复：没有 debian-latest，应该用 ubuntu-latest
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
               with:
-                  fetch-depth: 5
+                  fetch-depth: 0  # 修复：改为 0 获取完整历史
 
-            - name: Get tag commit message
-              id: tag_info
+            - name: Get release message
+              id: release_info
               run: |
-                  # 获取当前 tag 指向的 commit 信息
-                  COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s" ${{ github.ref_name }})
-                  COMMIT_BODY=$(git log -1 --pretty=format:"%b" ${{ github.ref_name }})
+                  TAG_NAME="${{ github.ref_name }}"
+                  
+                  # 尝试获取 tag 的注释信息
+                  TAG_MESSAGE=""
+                  if git tag -l -n99 "$TAG_NAME" | grep -q "."; then
+                      TAG_MESSAGE=$(git tag -l -n99 "$TAG_NAME" | sed "1s/^[^[:space:]]*[[:space:]]*//" | head -n -1)
+                  fi
+                  
+                  # 如果 tag 有注释信息，优先使用
+                  if [ -n "$TAG_MESSAGE" ] && [ "$TAG_MESSAGE" != "$TAG_NAME" ]; then
+                      RELEASE_TITLE="$TAG_NAME"
+                      RELEASE_BODY="$TAG_MESSAGE"
+                      echo "Using tag annotation message"
+                  else
+                      # 否则尝试获取 commit 信息
+                      COMMIT_SUBJECT=$(git log -1 --pretty=format:"%s" "$TAG_NAME" 2>/dev/null || echo "")
+                      COMMIT_BODY=$(git log -1 --pretty=format:"%b" "$TAG_NAME" 2>/dev/null || echo "")
+                      
+                      if [ -n "$COMMIT_SUBJECT" ]; then
+                          RELEASE_TITLE="$TAG_NAME"
+                          if [ -n "$COMMIT_BODY" ]; then
+                              RELEASE_BODY="$COMMIT_SUBJECT"$'\n\n'"$COMMIT_BODY"
+                          else
+                              RELEASE_BODY="$COMMIT_SUBJECT"
+                          fi
+                          echo "Using commit message"
+                      else
+                          # 都没有就只用 tag 名称
+                          RELEASE_TITLE="$TAG_NAME"
+                          RELEASE_BODY="Release $TAG_NAME"
+                          echo "Using tag name only"
+                      fi
+                  fi
+                  
+                  # 处理换行符
+                  RELEASE_BODY="${RELEASE_BODY//$'\n'/'%0A'}"
+                  
+                  echo "release_title=$RELEASE_TITLE" >> $GITHUB_OUTPUT
+                  echo "release_body=$RELEASE_BODY" >> $GITHUB_OUTPUT
 
-                  # 将换行符转换为 \n 以便在 GitHub Actions 中正确处理
-                  COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\n'/'%0A'}"
-                  COMMIT_BODY="${COMMIT_BODY//$'\n'/'%0A'}"
-
-                  echo "commit_message=$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
-                  echo "commit_body=$COMMIT_BODY" >> $GITHUB_OUTPUT
-
-            - name: Check if `yuanshen.dict.yaml` exists
+            - name: Check if yuanshen.dict.yaml exists
               id: check_file
               run: |
                   if [ -f "yuanshen.dict.yaml" ]; then
-                    echo "file_exists=true" >> $GITHUB_OUTPUT
+                      echo "file_exists=true" >> $GITHUB_OUTPUT
+                      echo "Found yuanshen.dict.yaml"
                   else
-                    echo "file_exists=false" >> $GITHUB_OUTPUT
-                    echo "Warning: yuanshen.dict.yaml not found in root directory"
+                      echo "file_exists=false" >> $GITHUB_OUTPUT
+                      echo "Warning: yuanshen.dict.yaml not found in root directory"
                   fi
 
             - name: Create Release
               id: create_release
-              uses: actions/create-release@v1
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              uses: softprops/action-gh-release@v1  # 修复：使用更现代的 action
               with:
                   tag_name: ${{ github.ref_name }}
-                  release_name: ${{ github.ref_name }}
-                  body: |
-                      ${{ steps.tag_info.outputs.commit_message }}
-
-                      ${{ steps.tag_info.outputs.commit_body }}
+                  name: ${{ steps.release_info.outputs.release_title }}
+                  body: ${{ steps.release_info.outputs.release_body }}
                   draft: false
                   prerelease: false
-
-            - name: Upload yuanshen.dict.yaml
-              if: steps.check_file.outputs.file_exists == 'true'
-              uses: actions/upload-release-asset@v1
+                  files: |
+                      yuanshen.dict.yaml
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./yuanshen.dict.yaml
-                  asset_name: yuanshen.dict.yaml
-                  asset_content_type: text/yaml
