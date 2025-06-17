@@ -1,0 +1,64 @@
+name: Release on Tag
+on:
+    push:
+        tags:
+            - "*" # 匹配所有 tag
+
+jobs:
+    release:
+        runs-on: debian-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 5
+
+            - name: Get tag commit message
+              id: tag_info
+              run: |
+                  # 获取当前 tag 指向的 commit 信息
+                  COMMIT_MESSAGE=$(git log -1 --pretty=format:"%s" ${{ github.ref_name }})
+                  COMMIT_BODY=$(git log -1 --pretty=format:"%b" ${{ github.ref_name }})
+
+                  # 将换行符转换为 \n 以便在 GitHub Actions 中正确处理
+                  COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\n'/'%0A'}"
+                  COMMIT_BODY="${COMMIT_BODY//$'\n'/'%0A'}"
+
+                  echo "commit_message=$COMMIT_MESSAGE" >> $GITHUB_OUTPUT
+                  echo "commit_body=$COMMIT_BODY" >> $GITHUB_OUTPUT
+
+            - name: Check if `yuanshen.dict.yaml` exists
+              id: check_file
+              run: |
+                  if [ -f "yuanshen.dict.yaml" ]; then
+                    echo "file_exists=true" >> $GITHUB_OUTPUT
+                  else
+                    echo "file_exists=false" >> $GITHUB_OUTPUT
+                    echo "Warning: yuanshen.dict.yaml not found in root directory"
+                  fi
+
+            - name: Create Release
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tag_name: ${{ github.ref_name }}
+                  release_name: ${{ github.ref_name }}
+                  body: |
+                      ${{ steps.tag_info.outputs.commit_message }}
+
+                      ${{ steps.tag_info.outputs.commit_body }}
+                  draft: false
+                  prerelease: false
+
+            - name: Upload yuanshen.dict.yaml
+              if: steps.check_file.outputs.file_exists == 'true'
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./yuanshen.dict.yaml
+                  asset_name: yuanshen.dict.yaml
+                  asset_content_type: text/yaml
