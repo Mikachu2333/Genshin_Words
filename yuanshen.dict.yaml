@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "2025.06.18v2 Ver5.7"
+version: "2025.06.25v4 Ver5.7"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -1236,6 +1236,7 @@ use_preset_vocabulary: false
 乘浪的回旋
 澄流正裁
 澄凝的星光
+乘区
 乘胜追击
 澄水泛波
 橙酸
@@ -1281,6 +1282,7 @@ use_preset_vocabulary: false
 炽烈的还魂诗
 炽烈的炎之魔女
 炽烈的养分
+炽烈流焰
 炽烈声援
 炽烈之月
 赤糜饵
@@ -2691,6 +2693,7 @@ use_preset_vocabulary: false
 腐殖之剑
 腐殖之牙
 辅助线
+赋光之人
 复合结构猎弓
 复合木材港内转运货车
 复合木材长途货车
@@ -3773,6 +3776,7 @@ use_preset_vocabulary: false
 回响长天的诗歌
 回转的怒风
 毁坏三界
+毁灭武装
 毁灭预兆与最后的通牒
 悔罪的记号
 晦暗刻像
@@ -4014,6 +4018,7 @@ use_preset_vocabulary: false
 疾行的使令
 疾行节奏
 急性剂量
+极旋湍流
 疾迅勇士
 疾叶
 极夜二重奏
@@ -10628,7 +10633,6 @@ use_preset_vocabulary: false
 虚境裂隙
 虚空鼓动
 虚空华开敷变
-虚星临渡
 须罗蕈
 须弥
 须弥城
@@ -10644,14 +10648,15 @@ use_preset_vocabulary: false
 墟散人离之处
 虚实工笔
 虚实流动
+虚星临渡
 虚言假说百物语
 需要我调停吗
 虚影
-虚渊暗星
 须臾百梦
 须臾泡影
 须臾树脂
 须臾一瞬的烈风
+虚渊暗星
 徐如旷林
 许伯利翁哀歌
 旭东
@@ -11591,6 +11596,7 @@ use_preset_vocabulary: false
 幽光星星
 幽光星星庭
 幽缄
+幽境危战
 悠可琴
 幽客之章
 幽客座
