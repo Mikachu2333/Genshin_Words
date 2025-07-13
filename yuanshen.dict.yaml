@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "2025.06.29v5 Ver5.7"
+version: "2025.07.09v7 Ver5.7"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -97,6 +97,7 @@ use_preset_vocabulary: false
 阿斯法德
 阿斯基娅
 阿斯麦隆
+阿斯莫代
 阿斯托洛吉斯
 阿索斯物质
 阿塔
@@ -1738,6 +1739,7 @@ use_preset_vocabulary: false
 达达利亚
 达达乌帕谷
 达尔戈
+达尔维什
 达马山
 达马山记事
 达莫维百货
@@ -2387,6 +2389,7 @@ use_preset_vocabulary: false
 伐护末那之旗
 伐难
 法德兰
+法德瓦
 法厄同
 法厄同们全跳舞
 法尔伽
@@ -2396,6 +2399,7 @@ use_preset_vocabulary: false
 法留纳
 法留纳法宝
 法留纳神机
+法逻斯灯塔
 法涅斯
 法器
 法沙利亚狂想曲
@@ -3420,6 +3424,7 @@ use_preset_vocabulary: false
 过门见山
 过熟的火榴果
 过载
+哈登
 哈蒂丝
 哈多
 哈恩薇
@@ -4159,6 +4164,7 @@ use_preset_vocabulary: false
 昏黄海景
 昏识塔
 魂聚火渊
+魂梦残影
 魂香之花
 魂烛
 浑浊棱晶
@@ -5308,6 +5314,7 @@ use_preset_vocabulary: false
 坎内克
 坎瑞亚
 坎瑞亚英雄王
+坎塔鲁
 看不见我
 看得见的风
 康波雷
@@ -7578,6 +7585,7 @@ use_preset_vocabulary: false
 披沙沥金
 劈水刺
 噼咻噼咻
+皮埃罗
 毗波耶
 皮尔钦
 皮萨克
@@ -7885,6 +7893,7 @@ use_preset_vocabulary: false
 启明之眼
 绮命
 起泡白葡萄酒
+启圣之尘
 启示之花
 绮思晚星
 起死回骸
@@ -9719,6 +9728,7 @@ use_preset_vocabulary: false
 斯嘉莉
 斯卡拉姆齐
 丝柯克
+斯克弗努格
 斯库拉
 斯露莎
 斯内库的灌木丛
@@ -9828,6 +9838,7 @@ use_preset_vocabulary: false
 苏生之辔
 苏生之月
 酥酥羊角包
+苏图拉
 苏醒之月
 苏娅
 素鲍鱼
@@ -10759,6 +10770,7 @@ use_preset_vocabulary: false
 乌茨勒
 乌冬面
 乌尔
+乌尔丽克
 乌尔曼
 乌合的虚像
 呜呼流
@@ -12273,6 +12285,7 @@ use_preset_vocabulary: false
 伊莫莎
 伊娜姆
 伊妮
+伊涅芙
 一捧绿野
 依奇卡胡伊皮利的庇护
 一起来玩
