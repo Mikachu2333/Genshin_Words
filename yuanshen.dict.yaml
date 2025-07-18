@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "2025.07.16v8 Ver5.7"
+version: "2025.07.18v9 Ver5.7"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -176,6 +176,7 @@ use_preset_vocabulary: false
 爱洛依丝
 爱梅拉
 艾梅莉埃
+爱诺
 爱茜蘑
 爱是难驯鸟
 艾威尔森
@@ -316,7 +317,6 @@ use_preset_vocabulary: false
 巴尔
 芭尔瓦涅
 巴尔泽布
-巴窟纳瓦
 八方灯笼
 八方灯笼时运亨通
 八方飘香
@@ -327,6 +327,7 @@ use_preset_vocabulary: false
 巴加约
 八尖裹术
 巴克
+巴窟纳瓦
 巴拉诺夫
 巴拉奇科
 巴莱卡
@@ -429,6 +430,7 @@ use_preset_vocabulary: false
 白燧蝶的星衣
 白棠珍奇屋
 白铁大剑
+白铁锻身
 白铁块
 白铁矿
 白铁小堇瓜
@@ -1387,6 +1389,7 @@ use_preset_vocabulary: false
 赤红燃素蜜珠
 赤红一杵
 斥候
+炽绘奇旅
 赤喙鸭
 炽火崩破
 炽火大铠
@@ -1450,6 +1453,7 @@ use_preset_vocabulary: false
 赤尾蜥
 赤胁鸽
 炽心一往直前
+赤心铸魂
 炽岩斗士急流鱼
 赤炎圣骸赤鹫
 赤炎狮子
@@ -1659,6 +1663,7 @@ use_preset_vocabulary: false
 赐福林中
 赐福森林
 刺葵木
+刺梨镇
 刺玫
 刺玫的铭誓
 刺玫会
@@ -3712,6 +3717,7 @@ use_preset_vocabulary: false
 轰轰增益
 轰击之星
 轰雷之音
+轰隆雷鸣波
 轰隆隆的大危机
 轰震之月
 轰转磐岩
@@ -4157,6 +4163,7 @@ use_preset_vocabulary: false
 绘染浮光
 晦朔之月
 诲韬诤言
+绘夏
 绘想游迹
 慧心
 会须百杯饮
@@ -5007,6 +5014,7 @@ use_preset_vocabulary: false
 净水之心
 净天水环
 净土幻灭
+静暇雅宴
 镜像魂梦
 净绪之龛
 镜烟翾风
@@ -5433,6 +5441,7 @@ use_preset_vocabulary: false
 空峋
 空月
 空月女神
+空月之歌
 空月祝福
 空之杯
 空之执政
@@ -5574,6 +5583,7 @@ use_preset_vocabulary: false
 拉沙鲁
 拉斯塔恩
 拉瓦特
+菈乌玛
 辣肉窝窝头
 辣味时蔬烩肉
 来复知时
@@ -5887,6 +5897,7 @@ use_preset_vocabulary: false
 黎翡区
 离垢者肃心旅宴
 璃冠鸽
+梨果之夜
 狸猫抱抱合影板
 狸猫玩偶
 黎明神剑
@@ -7193,6 +7204,7 @@ use_preset_vocabulary: false
 魔战士的羽面
 魔装
 抹金折戟
+沫彩花海
 莫从恒蹊
 莫德斯特
 莫尔泰区
@@ -9256,6 +9268,7 @@ use_preset_vocabulary: false
 识果种雷
 石化
 石化的骨片
+拾慧铸熔
 石火坠陨处
 十祸消聚
 石间绽放之歌
@@ -9564,6 +9577,7 @@ use_preset_vocabulary: false
 双水
 霜袭
 双岩
+霜夜
 霜役人
 霜月
 霜月之子
@@ -10045,6 +10059,7 @@ use_preset_vocabulary: false
 特马乔
 特纳
 特纳华
+特诺奇兹托克
 特诺切
 特帕尔
 特帕尔的残缺手记
@@ -11650,6 +11665,7 @@ use_preset_vocabulary: false
 蓄能容器
 蓄水阶池
 蓄水喷口
+续奏
 喧哗屋传说
 轩景徐至
 喧腾
@@ -11743,6 +11759,7 @@ use_preset_vocabulary: false
 雪霁银妆素
 雪解甚三红
 雪酪蜜派
+雪幕前事
 雪奈茨夫娜
 雪奈茨芙娜
 雪奈茨维奇
@@ -11965,6 +11982,7 @@ use_preset_vocabulary: false
 岩烤
 岩盔王
 岩牢
+颜料炸弹
 岩龙蜥
 岩龙之王
 岩箓
@@ -12395,6 +12413,7 @@ use_preset_vocabulary: false
 异海凝珠
 异海源水
 异海之块
+忆画
 熠辉轨度剑
 异界的救世主
 异界生命核
@@ -13602,6 +13621,7 @@ use_preset_vocabulary: false
 织金红绸
 之锦绘
 织卷
+支离轮光
 支离武备所
 祗力松茶
 知论派
