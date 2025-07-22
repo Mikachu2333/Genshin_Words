@@ -12,3 +12,12 @@
 4. 手动断句
 5. 运行 `merge.py`
 6. 上传 `yuanshen.dict.yaml`
+
+## 致谢
+
+感谢**以下项目**提供的数据：
+
+- [Yap](https://github.com/Alex-Beng/Yap) - @Alex-Beng
+- [BetterGI](https://github.com/babalae/better-genshin-impact/) - @babalae
+- [Snap.Metadata](https://github.com/DGP-Studio/Snap.Metadata) - @DGP-Studio
+- 我自己的经验
