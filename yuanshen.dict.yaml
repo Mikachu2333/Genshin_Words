@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "2025.07.18v9 Ver5.7"
+version: "2025.07.22v10 Ver5.7"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -1538,6 +1538,7 @@ use_preset_vocabulary: false
 厨艺机关即兴烹饪模式
 储藏柜
 楚此渚田
+楚德米洛维奇
 储粮推车
 储晒良方
 础石之功
@@ -1880,6 +1881,7 @@ use_preset_vocabulary: false
 丹楹刻桷
 蛋包饭
 蛋包饭圆舞曲
+蛋卷工坊
 弹弹嘟嘟
 弹弹菇
 弹弹圆圆
@@ -2525,6 +2527,7 @@ use_preset_vocabulary: false
 飞雷之弦振
 菲莉吉丝
 菲利斯
+菲林斯
 飞帽匠戏法
 菲米尼
 绯木村
@@ -5403,6 +5406,7 @@ use_preset_vocabulary: false
 克劳雅利亚
 氪佬
 克雷薇
+克里洛
 克里托夫
 克利普斯
 克林索尔
@@ -5586,6 +5590,7 @@ use_preset_vocabulary: false
 菈乌玛
 辣肉窝窝头
 辣味时蔬烩肉
+莱恩
 来复知时
 莱艮芬德
 来来菜
@@ -7347,6 +7352,7 @@ use_preset_vocabulary: false
 奶油
 奶油炖鸡
 奶油蘑菇汤
+奈芙尔
 耐寒药剂
 奈何蝶飞去
 奈赫西
@@ -7390,6 +7396,7 @@ use_preset_vocabulary: false
 尼古拉
 尼古拉线圈
 霓裾翩跹
+尼可
 尼姆
 尼姆芙
 尼南
@@ -11895,6 +11902,7 @@ use_preset_vocabulary: false
 芽绿
 芽绿锦簇
 雅各布
+雅珂达
 雅库普
 雅乐诗词
 雅蕾希
@@ -13217,9 +13225,11 @@ use_preset_vocabulary: false
 越石村
 越石丸
 月卧檐上
+月夜的叙事诗
 月浴渊之钥
 月浴之渊
 月章星句
+月之少女
 月之意志
 月中王国
 晕倒的匿叶龙
