@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "Ver5.7.12 | 2025.07.22"
+version: "Ver5.7.13 | 2025.07.25"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -698,7 +698,7 @@ use_preset_vocabulary: false
 宝石闪闪
 宝石商人
 宝石之月
-宝物鉴定大师！
+宝物鉴定大师
 饱饮之陵
 饱饮之丘
 保重头发
@@ -3338,7 +3338,6 @@ use_preset_vocabulary: false
 富商
 复苏水团
 复苏之风
-富翁（自称）
 赋闲风纪官
 覆雪之国
 覆雪之路
@@ -15022,7 +15021,6 @@ use_preset_vocabulary: false
 蒸汽
 蒸汽鸟
 蒸汽鸟报
-《蒸汽鸟报》记者
 蒸汽鸟报社
 征涛
 征讨领域
