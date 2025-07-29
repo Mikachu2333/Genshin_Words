@@ -45,7 +45,7 @@ def process_text(text):
     text = re.sub(r"\{LINK", "", text)
 
     # 10. 替换标点
-    text = re.sub(r"[~#。：？『』，—；…「」、！（）\\n]", "\n", text)
+    text = re.sub(r"[~#。：？，—；…、！（）\\n]", "\n", text)
 
     # 11. 删除含数字的部分
     text = re.sub(
@@ -77,6 +77,14 @@ def process_text(text):
 
     # 17. 查漏补缺
     text = re.sub(r"-$", "", text, flags=re.MULTILINE)
+
+    # 18. 删除文字
+    text = re.sub(
+        r"^.*?(使用后可进入制作界面查看|记载着「.*?」的制作方法)$",
+        "",
+        text,
+        flags=re.MULTILINE,
+    )
 
     # 18. 空行替换
     text = re.sub(r"\n\n", "\n", text)

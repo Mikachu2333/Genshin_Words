@@ -17,7 +17,7 @@ try:
         # 从第7行开始读取（索引6）
         dict_content = "".join(lines[6:]) if len(lines) > 6 else ""
 
-    # 读取 after.txt 文件内容（假设是文本文件）
+    # 读取 after.txt 文件内容
     with open("after.txt", "r", encoding="utf-8") as f:
         after_content = f.read()
 
