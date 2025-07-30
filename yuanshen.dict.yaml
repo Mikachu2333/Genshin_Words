@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "Ver5.8.1 | 2025.07.30"
+version: "Ver5.8.2 | 2025.07.30"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -2609,6 +2609,7 @@ use_preset_vocabulary: false
 椴木危坐靠背椅
 断片
 段钱方
+煅石之火
 煅石之轮
 断霜的弦歌
 锻压工坊
@@ -7102,6 +7103,7 @@ use_preset_vocabulary: false
 流火的实验地
 流火焦灼
 流火鸣空
+流火陨坠之野
 鎏金殿堂
 琉金火光
 琉金火花
@@ -9489,6 +9491,7 @@ use_preset_vocabulary: false
 燃烧
 燃烧的太阳
 燃烧队
+燃蚀风洞
 燃素
 燃素爆桶
 燃素地灯
@@ -10078,6 +10081,7 @@ use_preset_vocabulary: false
 设计人
 设计师
 涉浪石
+赦免宣告
 设施完备的书房
 射手
 射手丘丘人
@@ -11661,6 +11665,7 @@ use_preset_vocabulary: false
 图书馆双层书架
 图书馆长桌
 图腾围栏
+图腾柱
 图形对抗
 图形对抗实验录
 图形样本留影机
@@ -12227,6 +12232,7 @@ use_preset_vocabulary: false
 无名遗迹
 无明增长
 无明砦
+无念恒梦
 无念无想
 无人听的自白
 无人知我名
@@ -13449,6 +13455,7 @@ use_preset_vocabulary: false
 盐花
 炎花献礼
 言欢聚
+岩灰与刺梨的夏日
 岩脊
 阎迦由玛
 岩间的哲学
@@ -13618,6 +13625,7 @@ use_preset_vocabulary: false
 要地牙门
 药蝶谷
 曜光灵炬
+曜火焚晦
 药剂通识
 药剂应对法
 要诀是保持笑容
@@ -14802,6 +14810,7 @@ use_preset_vocabulary: false
 月亮的
 月亮还没有出来
 月亮派
+跃律琴
 钺矛
 月女城
 月女的华彩
