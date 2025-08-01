@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "Ver5.8.2 | 2025.07.30"
+version: "Ver5.8.2 | 2025.08.01"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -37,6 +37,7 @@ use_preset_vocabulary: false
 阿尔尼姆
 阿尔帕
 阿尔瓦
+阿尔沃
 阿法纳西
 阿凡
 阿飞
@@ -66,6 +67,7 @@ use_preset_vocabulary: false
 阿卡坦加
 阿卡特
 阿凯蒂
+阿凯马伊
 阿坎蒂
 阿科米蒂
 阿克拉姆
@@ -91,6 +93,7 @@ use_preset_vocabulary: false
 阿隆
 阿鲁埃
 阿鲁吉
+阿洛妮
 阿绿
 阿玛鲁
 阿玛兹亚
@@ -177,6 +180,7 @@ use_preset_vocabulary: false
 阿义
 阿尤
 阿佑
+阿圆
 阿芸
 阿扎尔
 阿扎莱
@@ -211,6 +215,7 @@ use_preset_vocabulary: false
 哀叙冰玉块
 哀叙冰玉碎屑
 埃泽
+埃兹莉
 皑尘与雪影
 蔼然入梦
 爱贝尔
@@ -247,7 +252,6 @@ use_preset_vocabulary: false
 艾莲娜
 艾列尔
 艾琳
-爱龙人的平凡生活
 艾伦
 艾伦德林
 爱洛芙
@@ -290,11 +294,11 @@ use_preset_vocabulary: false
 安洁莉可
 安杰洛斯探案集
 安节谦洽
+安洁娅
 安卡
 安可
 安乐秘汤疗法
 安里
-安眠
 安眠处
 安眠奢想
 安眠帷幕
@@ -303,14 +307,11 @@ use_preset_vocabulary: false
 安帕奥
 安普叔
 安切塔
-安寝吧
 安全技术员
 安全运输法则
 安全运输护盾
 安全展览项目主任
-安饶之陆的边绳
-安饶之陆的角逐
-安饶之陆的哨卫
+安饶之陆
 安饶之野
 安萨鲁
 安神秘法
@@ -327,17 +328,14 @@ use_preset_vocabulary: false
 安行明光
 安与玛丽安
 安贞
-暗藏
 暗藏的游蛇
 暗藏柔顺
-暗藏柔顺的叶纹
 黯淡棱镜
 暗淡御辔
 黯毒
 暗光
 黯光方菌
 暗含坚韧
-暗含坚韧的肌理
 黯火炉心
 暗结
 黯雷精灵
@@ -350,7 +348,7 @@ use_preset_vocabulary: false
 案上田园
 黯声回响
 暗铁剑
-暗纹方格天花板
+暗纹方格
 暗文隐语谜题册
 暗巷的酒与诗
 暗巷猎手
@@ -391,7 +389,6 @@ use_preset_vocabulary: false
 奥利弗
 奥列格
 奥罗巴斯
-奥罗巴斯之心
 奥罗卢柯
 奥妙烹黍珠
 奥摩斯港
@@ -401,21 +398,17 @@ use_preset_vocabulary: false
 奥赛尔
 奥特
 奥特华
-奥特华的渔网
 奥乌兹
 奥西
 奥希娜
-奥西兹小姐事件簿
+奥西兹
 奥娅
 奥义
 奥义梦想真说
 奥兹
-奥兹发射器
-巴巴
 巴巴尔
 巴巴克
 芭芭拉
-芭芭拉冲呀
 巴巴托斯
 八宝福禄鸭
 芭比洛斯
@@ -430,7 +423,6 @@ use_preset_vocabulary: false
 芭尔瓦涅
 巴尔泽布
 八方灯笼
-八方灯笼时运亨通
 八方飘香
 八方之岩
 巴哈蒂
@@ -888,6 +880,7 @@ use_preset_vocabulary: false
 壁中炉火
 边际之墙
 边境堡垒
+边绳
 编织
 编织暖意
 扁舟
@@ -1361,6 +1354,7 @@ use_preset_vocabulary: false
 茶馆一隅
 茶好月圆
 茶诃落谷
+查丘
 茶扇
 茶商
 茶室
@@ -1411,6 +1405,7 @@ use_preset_vocabulary: false
 常暗圆环
 常九爷
 常亮烛火
+尝露
 常磐高罗
 常燃不熄
 常燃火种
@@ -1767,11 +1762,13 @@ use_preset_vocabulary: false
 楚德米洛维奇
 储粮推车
 楚婆婆
+楚普卡塔津
 储晒良方
 础石之功
 楚汶市集
 储物
 储物袋
+楚伊博卢
 楚仪
 楚瑜商行
 储之千日
@@ -2663,6 +2660,7 @@ use_preset_vocabulary: false
 噩地
 噩地的代价
 鳄鳄炮炮
+厄尔齐丽之舞
 厄歌莉娅
 厄卡特尔
 遏浪
@@ -4127,6 +4125,7 @@ use_preset_vocabulary: false
 鹤径折旋之所
 赫卡
 赫卡的笔记
+赫拉莉
 赫浪连涛
 鹤立
 鹤唳远人间
@@ -4285,6 +4284,7 @@ use_preset_vocabulary: false
 弘毅
 红鱼
 宏宇
+虹雨的祭祀庭
 红羽团扇
 红鸢问寝觉
 虹月
@@ -4319,6 +4319,7 @@ use_preset_vocabulary: false
 呼呼飞车
 呼呼飞车的闲憩回廊
 呼呼噜噜休憩车厢
+呼呼丘
 呼噜克
 呼噜噜宝座
 呼玛伊
@@ -5035,7 +5036,6 @@ use_preset_vocabulary: false
 祭礼大剑
 祭礼弓
 祭礼剑
-记录用秘源哨机
 寂秘纸草经
 技能冷却
 技能循环
@@ -5813,6 +5813,7 @@ use_preset_vocabulary: false
 聚香海岸
 俱象残火
 巨像之影
+聚星源动
 巨型不死冲撞
 巨型帽子水母
 聚于湖畔的外乡之客
@@ -5955,6 +5956,7 @@ use_preset_vocabulary: false
 卡瓦贾
 卡维
 卡乌胡
+卡乌卡乌
 卡乌鲁
 卡乌帕
 卡乌斯
@@ -6186,7 +6188,9 @@ use_preset_vocabulary: false
 苦与幸的钟摆
 苦种
 库阿勒
+库阿露卡
 库尔苏姆
+库胡勒
 库胡勒阿乔
 库基亚
 库嘉维娜
@@ -6199,6 +6203,7 @@ use_preset_vocabulary: false
 库马
 库玛莉
 库马约
+库莫尼
 库穆库尔
 库纳克
 库珀
@@ -6286,6 +6291,7 @@ use_preset_vocabulary: false
 拉赫曼
 拉贾维
 拉坎阿
+拉克
 拉勒
 拉练
 拉玛
@@ -6310,6 +6316,7 @@ use_preset_vocabulary: false
 莱艮芬德
 莱克图尔
 莱拉
+莱拉普赫
 来来菜
 莱莲
 莱弥娅
@@ -6380,6 +6387,7 @@ use_preset_vocabulary: false
 兰纳真
 兰难世
 兰帕卡提
+蓝珀湖
 兰耆都
 蓝鳍鲈鱼
 兰齐塔
@@ -6551,6 +6559,7 @@ use_preset_vocabulary: false
 雷厉
 雷利尔
 雷雳寰宇
+雷灵
 雷龙蜥
 雷蒙德
 雷蒙多
@@ -7318,6 +7327,7 @@ use_preset_vocabulary: false
 乱岚拨枝
 乱神之怪力
 乱舞之月
+伦波岛
 轮唱的艺术
 伦图
 轮旋的冰凌
@@ -7454,6 +7464,7 @@ use_preset_vocabulary: false
 玛赫菲
 玛卡德尔
 马凯莫
+马坎尼
 马科修斯
 马克利
 马克西姆
@@ -7880,6 +7891,7 @@ use_preset_vocabulary: false
 秘密菜单
 秘密藏心间
 蜜酿
+秘酿蜜露
 觅取月晖
 秘书
 秘书官
@@ -8058,6 +8070,7 @@ use_preset_vocabulary: false
 命运使徒
 命运试金石
 命运示数器
+命运之轮
 命昭昏暝
 命之座
 命之座激活
@@ -8288,6 +8301,7 @@ use_preset_vocabulary: false
 娜斯米儿
 纳苏勒阿
 纳塔
+娜塔芭
 纳塔博学者
 纳塔部族
 纳塔端居
@@ -8503,6 +8517,7 @@ use_preset_vocabulary: false
 帕班
 帕蒂沙兰
 帕蒂沙兰布丁
+帕哈岛
 帕华娅
 帕加尔
 帕贾丹
@@ -8576,6 +8591,8 @@ use_preset_vocabulary: false
 泡影
 泡影断灭
 泡影状态
+醅蜜
+醅幽花
 裴伦埃里
 配队
 佩尔曼雅
@@ -8761,7 +8778,6 @@ use_preset_vocabulary: false
 蒲公英籽
 蒲烧鳗肉
 璞石
-璞鸢
 普尔比鲁尼
 普尔比鲁尼之诫
 普尔希纳
@@ -10061,6 +10077,7 @@ use_preset_vocabulary: false
 少女套
 少女薇拉的忧郁
 少女易逝的芳颜
+哨卫
 蛇肠之道
 蛇肠之路
 蛇骨矿洞
@@ -10554,6 +10571,7 @@ use_preset_vocabulary: false
 市集的珠玉巧饰
 市集地毯
 市集木桌
+事件簿
 世界任务
 世界式
 世界树
@@ -11150,6 +11168,7 @@ use_preset_vocabulary: false
 祟神
 碎石
 碎石隙境原体
+燧石之锋
 岁时之晷
 祟祟猫步
 祟炎
@@ -11597,6 +11616,7 @@ use_preset_vocabulary: false
 通明庇佑
 通皮斯
 通赛识
+通行机仆
 通用货币
 通用型便签架
 通用型液货输运单元
@@ -12914,6 +12934,7 @@ use_preset_vocabulary: false
 心羽鲈
 心与月蓝色的思念
 心猿大将
+新月神像
 新月升起之刻
 新月轩
 心斋
@@ -13204,6 +13225,7 @@ use_preset_vocabulary: false
 炫彩陶罐
 眩惑光戏法
 绚丽型
+炫音爆光
 削羽人
 削月筑阳真君
 靴子鼬
@@ -13832,6 +13854,7 @@ use_preset_vocabulary: false
 依奇卡胡伊皮利的庇护
 一起来玩
 一起来玩吧
+伊恰库纳
 一切代价的回旋
 一曲瑶琴与谁听
 一然
@@ -15400,6 +15423,8 @@ use_preset_vocabulary: false
 致自由之风
 制作摆设
 制作雪人
+终北的遗胤
+终北之嗣
 中岛纯
 终点光环
 中度冰寒
