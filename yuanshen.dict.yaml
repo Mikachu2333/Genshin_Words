@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "Ver5.8.2 | 2025.08.01"
+version: "Ver5.8.6 | 2025.08.22"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -310,7 +310,6 @@ use_preset_vocabulary: false
 安全技术员
 安全运输法则
 安全运输护盾
-安全展览项目主任
 安饶之陆
 安饶之野
 安萨鲁
@@ -1337,6 +1336,7 @@ use_preset_vocabulary: false
 恻隐本义
 层叠木匣
 层见叠出的谜象
+层侵
 层岩
 层岩巨渊
 层岩巨渊矿工
@@ -1440,6 +1440,7 @@ use_preset_vocabulary: false
 超频过载
 超燃灯
 超音灵眼
+超越镜影之梦
 超越之盏
 超载
 超载队
@@ -1684,6 +1685,7 @@ use_preset_vocabulary: false
 赤夜将熄
 赤羽团扇
 赤玉琉金
+敕谕未至之路
 赤月
 赤月之形
 赤璋
@@ -2302,6 +2304,7 @@ use_preset_vocabulary: false
 迪弗诸魔
 荻花洲
 笛剑
+涤净模式
 涤净青金
 涤净青金断片
 涤净青金块
@@ -2378,6 +2381,7 @@ use_preset_vocabulary: false
 地中之盐
 蒂兹洛
 颠倒梦想的丛林
+颠倒之天
 颠扑连环枪
 点按
 踮脚蹑影轻踪
@@ -2973,6 +2977,7 @@ use_preset_vocabulary: false
 分布式前进补给站
 分道誓约之地
 芬德
+芬德尼尔
 芬德尼尔之顶
 分段溃灭
 分进之月
@@ -3344,6 +3349,7 @@ use_preset_vocabulary: false
 腐殖龙髓
 腐殖之剑
 腐殖之牙
+辅助清理模块
 辅助线
 富尔蒙
 赋光之人
@@ -3464,6 +3470,7 @@ use_preset_vocabulary: false
 高哈尔
 高级研究员
 高阶技术官僚
+高阶情感固件
 高警惕
 高梨
 高美
@@ -3717,6 +3724,7 @@ use_preset_vocabulary: false
 古雷试炼场
 古龙科技
 古龙遗迹
+古洛哈莉
 古绿洲记事
 古名
 古名解放
@@ -3858,6 +3866,7 @@ use_preset_vocabulary: false
 归终机
 鬼伯伯
 轨道组合
+诡灯随影
 鬼兜虫
 诡风之祸
 鬼话与甜酒
@@ -4916,6 +4925,7 @@ use_preset_vocabulary: false
 积思若霜
 基维拉
 基翁
+机械梦
 机械体
 积蓄净水
 积蓄净水的艺术
@@ -5498,6 +5508,7 @@ use_preset_vocabulary: false
 烬城勇者绘卷
 烬城之王
 烬城最后的勇者
+烬海
 烬火炽燃所
 烬火重燃
 晋级与调查
@@ -5908,6 +5919,7 @@ use_preset_vocabulary: false
 卡嘉妮
 卡卡妈妈
 卡卡塔
+卡科茨
 卡克斯
 卡拉穆鲁
 卡兰萨
@@ -6198,6 +6210,7 @@ use_preset_vocabulary: false
 库库娅
 库拉霍
 库拉什
+库雷尔
 库蕾玛娜
 库洛什
 库马
@@ -6782,6 +6795,7 @@ use_preset_vocabulary: false
 利魔世王
 雳木
 莉娜夏
+莉奈娅
 利涅尔
 莉诺尔
 莉诺蕾娅
@@ -7705,6 +7719,7 @@ use_preset_vocabulary: false
 美食美酒的华丽外衣
 美食胜过良药
 美味的
+美味合成单元
 美学灵感
 美羽
 寐领围垣
@@ -8226,6 +8241,8 @@ use_preset_vocabulary: false
 木棉之环
 木木
 穆纳切洛
+穆纳塔
+穆纳塔人
 穆纳伊
 木奈
 木南料亭
@@ -8491,6 +8508,7 @@ use_preset_vocabulary: false
 诺拉勇者座
 诺莱特
 诺玛
+诺奇特
 诺奇特梨
 诺思托伊区
 女仆
@@ -8533,6 +8551,7 @@ use_preset_vocabulary: false
 帕莉西娅
 帕纳
 帕尼娅
+帕帕
 帕琪
 帕恰
 帕森
@@ -8671,6 +8690,7 @@ use_preset_vocabulary: false
 飘飘爆弹
 飘悠之光
 缥雨一滴
+频率超限回路
 频闪诱饵
 品鉴师
 品梦一刻
@@ -9461,6 +9481,7 @@ use_preset_vocabulary: false
 泉轻流花暖
 全是宝藏
 拳术家
+全相重构协议
 泉有重喷日
 全域扫灭
 权杖厅
@@ -11348,7 +11369,9 @@ use_preset_vocabulary: false
 特纳华
 特诺奇兹托克
 特诺奇兹托克人
+特诺奇兹托克之心
 特诺切
+特诺约洛钦
 特帕尔
 特帕尔的残缺手记
 特帕切
@@ -12100,6 +12123,8 @@ use_preset_vocabulary: false
 稳定作息的重要因素
 稳固的桦木梳妆台
 稳固阵线的魄力
+紊乱爆发期
+紊乱地脉
 稳如钟
 稳态载频
 稳稳当当
@@ -12662,6 +12687,7 @@ use_preset_vocabulary: false
 线圈
 现人神巫女
 线香烟火
+献予你的明晨
 献予日炎的巡行式
 献予午后的花之梦
 献予夕暮的转格调
@@ -13068,6 +13094,7 @@ use_preset_vocabulary: false
 雄三
 修旧利废
 修库特尔
+修洛维兹
 修茂弥亘树
 休眠仓
 休眠菌核
@@ -13311,6 +13338,7 @@ use_preset_vocabulary: false
 巡轨船
 巡航的白浪
 巡护深林
+循环整流引擎
 巡戒使
 寻景觅画
 巡林常途的百千趣事
@@ -13713,6 +13741,7 @@ use_preset_vocabulary: false
 夜魂值
 叶间泪
 叶卡捷琳娜
+夜客致访
 夜馈寻迹
 叶莱菲
 夜兰
@@ -13722,6 +13751,7 @@ use_preset_vocabulary: false
 叶轮舞者
 叶落风随
 叶落天涯
+叶洛亚
 叶绿扇尾鸽
 夜猫子
 叶名山薰
@@ -13744,6 +13774,7 @@ use_preset_vocabulary: false
 夜枭座
 夜行
 夜行暗火
+夜行灯座
 夜巡影翼
 夜巡之获
 夜鸦
@@ -13852,6 +13883,7 @@ use_preset_vocabulary: false
 一捧绿野
 依栖目那须
 依奇卡胡伊皮利的庇护
+伊齐玛瓦夏
 一起来玩
 一起来玩吧
 伊恰库纳
@@ -13862,6 +13894,7 @@ use_preset_vocabulary: false
 伊萨米
 伊桑
 伊莎朵
+伊莎佳
 医生
 医师
 一室珊瑚
@@ -14085,6 +14118,7 @@ use_preset_vocabulary: false
 饮露
 引路人
 饮露伞叶
+隐匿之灵
 引燃
 隐山猊兽
 引示的铃箭
@@ -14113,6 +14147,7 @@ use_preset_vocabulary: false
 英戈德
 应公
 应急食品
+英杰之遗
 鹰猎
 英烈伟迹
 鹰翎
@@ -14850,6 +14885,7 @@ use_preset_vocabulary: false
 月浴渊之钥
 月浴之渊
 月章星句
+月兆祝赐
 月之轮
 月之少女
 月之意志
@@ -15312,6 +15348,8 @@ use_preset_vocabulary: false
 直到长出青苔
 执灯人
 执灯人的誓词
+执灯士
+执灯长
 摭分的指法
 直江久政
 直率的辞绝
