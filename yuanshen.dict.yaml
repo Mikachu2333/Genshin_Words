@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "Ver5.8.6 | 2025.08.22"
+version: "Ver5.8(7) | 2025.08.27 15:06"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -677,6 +677,7 @@ use_preset_vocabulary: false
 薄香逸放
 薄馨
 薄雪伴流花
+薄樱初绽时
 薄缘满光天目
 保本
 保镖
@@ -1575,6 +1576,7 @@ use_preset_vocabulary: false
 澄凝的星光
 乘区
 乘胜追击
+呈示
 澄水泛波
 橙酸
 澄透门扉
@@ -3077,6 +3079,7 @@ use_preset_vocabulary: false
 风琥珀
 风花的呼吸
 风花的馈礼
+风花的邀约
 风花节
 风花节纪念气球
 风花球
@@ -4564,6 +4567,7 @@ use_preset_vocabulary: false
 幻形蟹
 幻形游禽
 幻鸦座
+幻夜
 幻影心流
 焕影之灵
 唤雨的叶丛
@@ -4585,6 +4589,7 @@ use_preset_vocabulary: false
 荒泷盛世豪鼓
 荒泷一斗
 荒落之城的记述人
+荒梦藏虞渊
 荒山孤剑录
 荒神烈沙录
 荒石苍漠
@@ -7097,6 +7102,7 @@ use_preset_vocabulary: false
 灵药
 灵囿
 绫羽二重
+灵与火的织卷
 灵渊
 灵沼云池
 领唱
@@ -7118,6 +7124,7 @@ use_preset_vocabulary: false
 流放者之杯
 流放者之花
 流放者之羽
+流风眷堇庭
 流风秋野
 留给你的画
 留光
@@ -7212,6 +7219,7 @@ use_preset_vocabulary: false
 六角灯笼
 六情通
 六荣冠与夜的传说
+六入尽明
 六用
 六指乔瑟
 龙城
@@ -8059,6 +8067,7 @@ use_preset_vocabulary: false
 鸣霞浮生石
 茗乡田舍
 明霄灯
+明霄升海平
 明星聚画
 明星斋
 明煦天光
@@ -8955,6 +8964,7 @@ use_preset_vocabulary: false
 奇闻轶事
 奇物
 琪希可
+奇想曲
 奇想天开捕物帐
 奇械发条备件
 奇械公
@@ -13281,6 +13291,7 @@ use_preset_vocabulary: false
 雪霁梅香
 雪霁银妆素
 雪解甚三红
+雪浪与苍林之舞
 雪酪蜜派
 雪幕前事
 雪奈茨夫娜
@@ -14567,6 +14578,7 @@ use_preset_vocabulary: false
 御敌的执定
 御殿灯笼
 玉遁
+玉扉绕尘歌
 驭风圣骸飞蛇
 郁馥臻萃
 御伽大王御伽话
@@ -14888,6 +14900,7 @@ use_preset_vocabulary: false
 月兆祝赐
 月之轮
 月之少女
+月之一
 月之意志
 月中王国
 悦子
@@ -15588,6 +15601,7 @@ use_preset_vocabulary: false
 朱特
 诸武精通
 诸武相授
+诸相皆无
 诸相随念净行
 诸曜饬令
 诸叶辨通
