@@ -318,7 +318,9 @@ def replace_to_newline(text: str) -> str:
     text = replace_pair("（）", text)
     text = replace_pair("《》", text)
     text = replace_pair("()", text)
-    text = regex.re.sub(r"[·—\-。：？，；、！…]", r"\n", text, flags=re.MULTILINE)
+    text = regex.re.sub(
+        r"[·—\-。：？，；、！…『』「」《》（）]", r"\n", text, flags=re.MULTILINE
+    )
 
     return text
 
@@ -337,7 +339,10 @@ def replace_percent(text: str) -> str:
     text = regex.re.sub(r"^每[\d\.]+秒至多.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^施放.*?后的[\d\.]+秒内.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*队伍后台.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*元素抗性.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*降低[\d\.]+%.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*攻击力提升.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*通过这种.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*角色周围.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*反应造成的.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*上述效果.*$", r"", text, flags=re.MULTILINE)
@@ -352,6 +357,7 @@ def replace_percent(text: str) -> str:
     text = regex.re.sub(r"^.*此效果.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*角色触发.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*元素伤害.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*段伤害.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*队伍中的.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*充能效率.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*将在敌人.*$", r"", text, flags=re.MULTILINE)
@@ -364,7 +370,16 @@ def replace_percent(text: str) -> str:
     text = regex.re.sub(r"^.*暴击.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*暴击伤害.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*消耗一层.*$", r"", text, flags=re.MULTILINE)
-    text = regex.re.sub(r"^.*将在敌人.*$", r"", text, flags=re.MULTILINE)
-    text = regex.re.sub(r"^.*将在敌人.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*效果与.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*同时存在时.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*秒内.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*特殊元素战技.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*冷却时间.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*点攻击力.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*提升值.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*元素范围伤害.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^的位置$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^此外$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^队伍的$", r"", text, flags=re.MULTILINE)
 
     return text

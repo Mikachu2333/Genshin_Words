@@ -24,7 +24,7 @@ def process_text(text):
 
     text = delete_num(text)
 
-    #text = replace_to_newline(text)
+    text = replace_to_newline(text)
 
     text = replace_percent(text)
 
