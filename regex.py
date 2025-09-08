@@ -1,96 +1,200 @@
 import re
 import os
-import datetime
+
+import regex
 
 
 def process_text(text):
     """
     根据注释中的规则处理文本
     """
-    # 1. 不以加号开头的行，全部删除
-    text = re.sub(r"^(?!\+\s).+", "", text, flags=re.MULTILINE)
+    # 删除不以加号开头的行
+    text = regex.re.sub(r"^(?!\+).*$", "", text, flags=re.MULTILINE)
+    # 删除三个加号
+    text = regex.re.sub(r"^\+{3}.*$", "", text, flags=re.MULTILINE)
+    # 删除加号
+    text = regex.re.sub(r"^\+(.*)$", r"\1", text, flags=re.MULTILINE)
 
-    # 2. Cv替换
-    text = re.sub(
+    # Cv替换
+    text = regex.re.sub(
         r"^.*?(CvChinese|CvJapanese|CvEnglish|CvKorean).*?$",
         "",
         text,
         flags=re.MULTILINE,
     )
 
-    # 3. 仅保留文字部分
-    text = re.sub(
-        r'^\+\s+[\}\],[\w\d"/\.:\s,\{\[\+-]*(.*?)[",]*$',
+    # 如果一行内容不含中文，删除该行
+    text = regex.re.sub(
+        r"^[\+A-Za-z0-9_',\"\[\]\{\};:\d\./\\\s-]+$", "", text, flags=re.MULTILINE
+    )
+
+    # 删除{LINK#S11155}.*{/LINK}
+    text = regex.re.sub(
+        r"\{LINK#.*?\}(.*?)\{/LINK\}", r"『\1』", text, flags=re.MULTILINE
+    )
+
+    # 删除<color=#FFD780FF>.*</color>
+    text = regex.re.sub(
+        r"<color=#[0-9a-fA-F]{4,8}>(.*?)</color>", r"『\1』", text, flags=re.MULTILINE
+    )
+
+    # 上面两个会导致重复的『，』，替换为一个
+    text = regex.re.sub(r"『『", r"『", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"』』", r"』", text, flags=re.MULTILINE)
+
+    # {PARAM#P1192101|3S100}
+    text = regex.re.sub(r"\{PARAM#.*?\|.*?\}", r"X", text, flags=re.MULTILINE)
+    # |{param7:F1}秒
+    text = regex.re.sub(r"\|\{param.*?[:]{0,1}.*?\}秒", r"", text, flags=re.MULTILINE)
+
+    # 伤害具体数值
+    text = re.sub(r"^\s+\".*?伤害\|.*", r"", text, flags=re.MULTILINE)
+    text = re.sub(r"^\s+\".*?体力消耗\|.*", r"", text, flags=re.MULTILINE)
+    text = re.sub(r"^\s+\".*?持续时间\|.*", r"", text, flags=re.MULTILINE)
+
+    # 提取正文
+    text = regex.re.sub(
+        r"^\s*\".*?\":\s*\"(.*)\"[,\]\}]*$", r"\1", text, flags=re.MULTILINE
+    )
+    text = regex.re.sub(r"^\s+\"(.*)\"[,]{0,1}$", r"\1", text, flags=re.MULTILINE)
+
+    # 删除角色介绍等
+    text = regex.re.sub(r"^下落攻击·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^元素战技·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^元素爆发·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^打开宝箱·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^生命值低·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^同伴生命值低·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^倒下·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^普通受击·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^重受击·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^加入队伍·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^角色详细$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^角色故事.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^初次见面.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^闲聊·$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^下雨的时候.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^打雷的时候.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^下雪的时候.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^刮大风了.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^在沙漠的时候.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^早上好.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^中午好.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^晚上好.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^晚安.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^关于.*?自己·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^关于我们·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^有什么想要分享.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^感兴趣的见闻·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^关于(.*?)…$", r"\1", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^关于我们·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^想要了解.*?·其.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*?的爱好….*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*?的烦恼….*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^喜欢的食物…$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^讨厌的食物…$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^收到赠礼·.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^生日…$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^突破的感受·*$", r"", text, flags=re.MULTILINE)
+
+    # 购买
+    text = regex.re.sub(r"^洞天百宝·摆设图纸购买习得$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^捕捉获得$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*奇馈宝箱奖励$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^世界任务获取$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^限时活动获取$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^购买纪行·珍珠之歌获取$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*区域特产$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^素材$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^锻造用矿石$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*区域特产$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^角色天赋素材$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^食物$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^食谱：(.*)$", r"\1", text, flags=re.MULTILINE)
+    text = regex.re.sub(
+        r"^步骤详实的食谱,记载着.*的制作方法。$",
+        r"",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(r"^食材$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^鱼饵$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^角色与武器培养素材$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^角色培养素材$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^武器突破素材$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^任务道具$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^消耗品$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^「(.*)」的种子$", r"\1", text, flags=re.MULTILINE)
+    text = regex.re.sub(
+        r"^通过「化种匣」获取的种子，富有活力，品质上佳，种植于.*?后，可在一段时间后生长为「.*?」。$",
+        r"",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(r"^鱼$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^冒险道具$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^旋曜玉帛·其.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^鱼竿$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^小道具$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^图谱：(.*)$", r"\1", text, flags=re.MULTILINE)
+    text = regex.re.sub(
+        r"^.*掌握后，能复刻出(.*)。$",
+        r"\1",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(
+        r"^步骤详实的图纸，记载着(.*)的制作方法。\n使用后可进入制作界面查看。$",
+        r"\1",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(r"^摆设图纸$", r"", text, flags=re.MULTILINE)
+
+    # 换行
+    text = regex.re.sub(r"\\n", r"\n", text, flags=re.MULTILINE)
+
+    # 数字
+    text = regex.re.sub(r"^在(.*)开启\d+个宝箱。$", r"\1", text, flags=re.MULTILINE)
+    text = regex.re.sub(
+        r"^在(.*)完成\d+个大世界限时挑战。$", r"\1", text, flags=re.MULTILINE
+    )
+    text = regex.re.sub(
+        r"^点亮.*?区域中，(.*)的地图。$",
+        r"\1",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(
+        r"^解锁.*?区域中，(.*)所有传送锚点。$",
+        r"\1",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(
+        r"^解除.*?区域中，(.*)所有.*的封印。$",
+        r"\1",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(
+        r"^将.*?的.*?神像供奉至满级。$",
+        r"",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(
+        r"^将(.*?)共建至满级。$",
         r"\1",
         text,
         flags=re.MULTILINE,
     )
 
-    # 4. 空行替换
-    text = re.sub(r"\n\n", "\n", text)
-
-    # 5. 颜色标签等转为文字
-    text = re.sub(r"<[\w\d=#]+>(.*?)</[\w]+>", r"\1", text)
-
-    # 6. 替换时间说明
-    text = re.sub(r"\|[\{\w\d:\}秒]+", "", text)
-
-    # 7. 替换参数
-    text = re.sub(r"[\|\+/]\{param\d+:\w*\d*\w{0,1}\}[点攻击力秒]*", "", text)
-
-    # 8. 替换link
-    text = re.sub(r"(\{LINK){0,1}#\w*\d*\}(.*?)\{/LINK\}", r"\2", text)
-
-    # 9. 查缺补漏
-    text = re.sub(r"\{LINK", "", text)
-
-    # 10. 替换标点
-    text = re.sub(r"[~#。：？，—；…、！（）\\n]", "\n", text)
-
-    # 11. 删除含数字的部分
-    text = re.sub(
-        r".*?(提高|触发|迸发|夜魂加持|恢复生命值|额外回复|夜魂值|队伍后台|装备者|此效果|该效果|命中|冷却时间).*?\d{0,1}.*",
-        "",
-        text,
-        flags=re.MULTILINE,
-    )
-
-    # 12. 删除部分
-    text = re.sub(r".*元素伤害.*", "", text, flags=re.MULTILINE)
-
-    # 13. 查缺补漏
-    text = re.sub(r".*\d+%{0,1}.*", "", text, flags=re.MULTILINE)
-
-    # 14. 删除道具说明
-    text = re.sub(
-        r".*(范围伤害|步骤详实|元素精通|段伤害|人游戏|生效|任务道具|进行治疗|的效果|真实伤害).*",
-        "",
-        text,
-        flags=re.MULTILINE,
-    )
-
-    # 15. 删除单字
-    text = re.sub(r"^.$", "", text, flags=re.MULTILINE)
-
-    # 16. 查漏补缺
-    text = re.sub(r"^·", "", text, flags=re.MULTILINE)
-
-    # 17. 查漏补缺
-    text = re.sub(r"-$", "", text, flags=re.MULTILINE)
-
-    # 18. 删除文字
-    text = re.sub(
-        r"^.*?(使用后可进入制作界面查看|记载着「.*?」的制作方法)$",
-        "",
-        text,
-        flags=re.MULTILINE,
-    )
-
-    # 18. 空行替换
-    text = re.sub(r"\n\n", "\n", text)
-    text = re.sub(r"\n\n", "\n", text)
-    text = re.sub(r"\n\n", "\n", text)
-    text = re.sub(r"\n\n", "\n", text)
+    # 空行替换
+    text = regex.re.sub(r"\n\n", "\n", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"\n\n", "\n", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"\n\n", "\n", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"\n\n", "\n", text, flags=re.MULTILINE)
 
     return text
 
