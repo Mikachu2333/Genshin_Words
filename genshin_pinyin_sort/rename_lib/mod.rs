@@ -87,20 +87,20 @@ pub fn exchange(path1: String, path2: String) -> i32 {
 
     //1 -> parent1, 2 -> parent2
     let mode = packed_path.if_root();
-/*
-    dbg!(
-        //test
-        all_infos.f1.packed_info.parent_dir.display(),
-        &all_infos.f1.packed_info.name,
-        &all_infos.f1.packed_info.ext
-    );
-    dbg!(
-        all_infos.f2.packed_info.parent_dir.display(),
-        &all_infos.f2.packed_info.name,
-        &all_infos.f2.packed_info.ext
-    );
-    dbg!(mode);
- */
+    /*
+       dbg!(
+           //test
+           all_infos.f1.packed_info.parent_dir.display(),
+           &all_infos.f1.packed_info.name,
+           &all_infos.f1.packed_info.ext
+       );
+       dbg!(
+           all_infos.f2.packed_info.parent_dir.display(),
+           &all_infos.f2.packed_info.name,
+           &all_infos.f2.packed_info.ext
+       );
+       dbg!(mode);
+    */
     match (all_infos.f1.is_file, all_infos.f2.is_file) {
         (true, true) => NameExchange::rename_each(&all_infos, false, true),
         (false, false) => {
@@ -149,4 +149,35 @@ mod tests {
 
         super::exchange(test_path1, test_path2);
     }
+}
+
+fn get_current_dir_str() -> String {
+    std::env::current_exe()
+        .unwrap()
+        .parent()
+        .unwrap()
+        .to_str()
+        .unwrap()
+        .to_string()
+}
+
+pub fn path_check(s: impl AsRef<str>) -> PathBuf {
+    let current_dir = get_current_dir_str();
+    let temp = s
+        .as_ref()
+        .replace("\r\n", "\n")
+        .trim_matches(&['"', '\'', '\\', '/', '\t', '\n', '\r', '`'])
+        .replace("\\\\", "\\")
+        .replace("\\", "/");
+
+    let path_checked_str = if temp.starts_with("./") {
+        let temp = temp.trim_start_matches("./").to_string();
+        current_dir + "/" + &temp
+    } else {
+        temp
+    };
+
+    PathBuf::from(&path_checked_str)
+        .canonicalize()
+        .unwrap_or_else(|_| PathBuf::from(path_checked_str))
 }
