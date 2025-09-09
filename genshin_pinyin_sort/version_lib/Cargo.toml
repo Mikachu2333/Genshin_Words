@@ -1,0 +1,8 @@
+[package]
+name = "version_lib"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "version_lib"
+path = "mod.rs"
