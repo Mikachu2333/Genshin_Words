@@ -1,6 +1,7 @@
 import os
 
 from replace_self import *
+from delete_repeat import delete_duplicates
 
 
 def process_text(text):
@@ -69,6 +70,10 @@ def main():
 
     except Exception as e:
         print(f"处理文件时发生错误: {str(e)}")
+
+    delete_duplicates("./after.txt", "./after_del.txt")
+
+    print("请手动对 ./after_del.txt 去重排版")
 
 
 if __name__ == "__main__":

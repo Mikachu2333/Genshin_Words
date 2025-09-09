@@ -1,8 +1,8 @@
-use pinyin::ToPinyin;
-use std::{io::Write, path::PathBuf};
+use std::{env, io::Write, path::PathBuf};
 
+use exchange_lib::{exchange, path_check};
+use sort_lib::sort_chinese_text;
 use version_lib::VersionInfo;
-use exchange_lib::exchange;
 
 fn main() {
     let arg = std::env::args().collect::<Vec<String>>();
@@ -31,11 +31,7 @@ fn main() {
 
 fn calc(exe_path: String, file_path: String) -> (PathBuf, PathBuf) {
     let checked_path = {
-        let temp = PathBuf::from(
-            file_path
-                .replace("\r\n", "\n")
-                .trim_matches(&['"', '\'', '\\', '/', '\t', '\n', '\r', '`']),
-        );
+        let temp = path_check(file_path);
 
         let unchecked_path = if !temp.is_file() || !temp.exists() {
             panic!()
@@ -63,31 +59,9 @@ fn calc(exe_path: String, file_path: String) -> (PathBuf, PathBuf) {
     let file = std::fs::read_to_string(&checked_path).unwrap();
     let content = file.lines().collect::<Vec<&str>>();
 
-    let mut collection: std::collections::HashMap<String, String> =
-        std::collections::HashMap::new();
-
     let if_skip: usize = if content[0] == "---" { 6 } else { 0 };
 
-    for line in content.iter().skip(if_skip) {
-        if line.is_empty() {
-            continue;
-        }
-        let sentence_py = line
-            .to_pinyin()
-            .map(|f| match f {
-                Some(f) => f.with_tone_num_end(),
-                None => {
-                    //println!("{}", line);
-                    ""
-                }
-            })
-            .collect::<Vec<&str>>()
-            .join("");
-        collection.insert(sentence_py, line.to_string());
-    }
-
-    let mut vec_collection = collection.into_iter().collect::<Vec<(String, String)>>();
-    vec_collection.sort_unstable_by(|(a, _), (b, _)| a.cmp(b));
+    let vec_collection = sort_chinese_text(&content, if_skip);
 
     let date = format!(
         "---\nname: yuanshen\nversion: \"{}\"\nsort: origin\nuse_preset_vocabulary: false\n...\n\n",
