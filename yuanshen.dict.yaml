@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.0(0) | 2025.09.10 23:58"
+version: "6.0(3) | 2025.09.19 16:03"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -143,6 +143,7 @@ use_preset_vocabulary: false
 阿顺
 阿斯法德
 阿斯基娅
+阿斯科
 阿斯麦隆
 阿斯莫代
 阿斯托洛吉斯
@@ -302,6 +303,7 @@ use_preset_vocabulary: false
 安东
 安东罗杰飞行器
 安东尼
+安东什卡
 安杜
 安弗塔斯
 安复之道
@@ -396,6 +398,8 @@ use_preset_vocabulary: false
 奥蒂涅
 奥杜力
 奥尔科
+奥尔洛夫
+奥尔洛娃
 奥菲利亚
 奥格劳
 奥贡
@@ -1389,6 +1393,7 @@ use_preset_vocabulary: false
 苍林的守护
 苍林灵使
 苍林月祷
+苍林之穗
 苍翎的颂愿
 苍灵鲤
 苍翎镇邪敕符
@@ -1960,6 +1965,7 @@ use_preset_vocabulary: false
 初雪之月
 出巡
 初有陋室
+初谕之庭
 除尘模拟
 厨房货架
 厨房中的圆舞
@@ -2520,14 +2526,17 @@ use_preset_vocabulary: false
 得偿所愿的寻宝之旅
 德贵
 德拉萝诗
+德肋庇革劳诺之箭
 德吕阿的夜曲
 德米安
+德米特里耶维奇
 德尼谢尔
 德皮耶里
 德赛
 德瑟布尔
 德斯诺斯
 德斯特雷
+德文特
 德沃沙克
 德乌特
 得闲饮茶
@@ -3177,6 +3186,7 @@ use_preset_vocabulary: false
 泛用型万用机
 芳草馥奇
 方寸安常
+方达
 方凳
 坊店部件
 坊店挂饰
@@ -3959,6 +3969,7 @@ use_preset_vocabulary: false
 格茜妮
 葛瑞丝
 格式塔
+格乌登提
 革新的旋风
 革新烹饪理论
 给您添蘑菇了
@@ -4443,6 +4454,7 @@ use_preset_vocabulary: false
 海尔希
 海风之梦
 海港雾中
+海沟帮
 海皇香脂
 海精之章
 海精座
@@ -5438,6 +5450,7 @@ use_preset_vocabulary: false
 火中取梦的故事
 火主
 货比两价
+霍德望
 霍夫曼
 惑光的阔叶
 惑光幻戏
@@ -5446,6 +5459,7 @@ use_preset_vocabulary: false
 霍莱
 货郎
 获麟
+霍洛多夫
 货盘
 霍普金斯
 或其意义
@@ -6207,6 +6221,7 @@ use_preset_vocabulary: false
 禁限之堡的钻研
 烬芯花
 进行比赛
+近月的隙间
 近战斥候型
 近战攻坚型
 近战旋刃
@@ -6625,6 +6640,7 @@ use_preset_vocabulary: false
 卡布林
 卡蒂佳
 卡尔
+卡尔那茨基
 卡格姆尼
 卡赫伊娅
 卡胡鲁
@@ -6690,6 +6706,7 @@ use_preset_vocabulary: false
 卡乌斯
 卡乌娅
 卡西奥多
+卡夏
 卡伊洛斯的时时刻刻
 卡兹加
 开呗
@@ -6830,8 +6847,10 @@ use_preset_vocabulary: false
 客从远方来
 恪尽其责的企盼
 客聚如潮
+刻拉蒂之眼
 克拉莉希娅
 克拉佩
+克莱卡
 克莱门汀线
 克兰茨
 克劳雅利亚
@@ -7080,6 +7099,7 @@ use_preset_vocabulary: false
 莱恩
 来复知时
 莱艮芬德
+莱赫妲尔
 莱克图尔
 莱拉
 莱拉普赫
@@ -7151,6 +7171,7 @@ use_preset_vocabulary: false
 蓝翎鹭
 兰罗摩
 兰罗希陀
+褴褛之刃
 兰玛尼
 兰弥那离
 兰穆护昆达
@@ -7398,6 +7419,7 @@ use_preset_vocabulary: false
 雷霆数珠
 雷霆探针
 雷霆引爆计划
+雷图礁
 雷温
 雷夏香班
 雷霰近卫军
@@ -7731,6 +7753,7 @@ use_preset_vocabulary: false
 猎鹿人
 猎鹿人餐馆
 猎品的斗篷
+列普奥布拉任斯基
 猎人
 猎人变成了猎物
 猎人从不追丢他的猎物
@@ -8125,6 +8148,7 @@ use_preset_vocabulary: false
 龙祖
 楼阁套
 楼上的区域
+娄维娅
 蝼蚁之众
 炉边烬影
 卢茨
@@ -8216,6 +8240,7 @@ use_preset_vocabulary: false
 萝卜时蔬汤
 螺钿
 罗尔德
+罗尔夫
 罗浮洞
 罗基
 罗杰
@@ -8348,6 +8373,7 @@ use_preset_vocabulary: false
 玛德琳
 玛蒂哈
 马蒂亚斯
+玛尔塔
 马范
 玛格丽特
 马古汉
@@ -9188,6 +9214,7 @@ use_preset_vocabulary: false
 穆甘纳
 牧歌与风车
 牧歌之镇
+沐光之台
 穆胡鲁宝石铺
 木户
 木簧笛
@@ -9549,6 +9576,8 @@ use_preset_vocabulary: false
 帕克
 帕克斯神庙
 帕克斯神庙中
+帕菈什卡
+帕菈斯科维娅
 帕兰
 帕朗
 帕丽莎
@@ -9630,6 +9659,8 @@ use_preset_vocabulary: false
 佩尔曼雅
 佩尔索内
 佩尔西科夫
+佩卡尼
+佩科
 佩蕾
 佩蕾努伊
 佩链座
@@ -9834,6 +9865,7 @@ use_preset_vocabulary: false
 普里亚
 普利赛拉
 朴练长座
+普列奥布拉任斯基
 普隆尼亚
 普洛霍尔
 普吕尼埃
@@ -10951,6 +10983,7 @@ use_preset_vocabulary: false
 萨勒
 萨雷
 萨雷奥杰卡的天空
+萨林
 萨满
 萨曼尼耶
 萨梅尔
@@ -10985,6 +11018,7 @@ use_preset_vocabulary: false
 赛诺
 赛钱箱
 赛索斯
+三宝磨
 三彩团子
 三餐尽欢
 三乘种子
@@ -11024,6 +11058,7 @@ use_preset_vocabulary: false
 三咫通明
 三重
 三重雪关扉
+三重月的锻造主
 三纵面
 三纵面广告牌
 伞盖的荫蔽
@@ -11690,6 +11725,7 @@ use_preset_vocabulary: false
 失冕的宝冠
 诗人
 施芮娅
+失色哀恸
 诗文
 诗文的
 诗文的教导
@@ -11937,6 +11973,7 @@ use_preset_vocabulary: false
 守秘人
 守诺者
 守势
+守誓者的圣所
 守誓之人
 守戍的誓命
 守塔人
@@ -12322,6 +12359,7 @@ use_preset_vocabulary: false
 斯克弗努格
 斯库拉
 斯露莎
+斯米尔诺娃
 斯内库的灌木丛
 斯佩兰扎
 司彭西安号
@@ -12553,6 +12591,7 @@ use_preset_vocabulary: false
 索莉马娜
 索林
 索林蒂丝
+索洛维
 锁面板
 索鸟娜
 索瑞
@@ -12583,6 +12622,7 @@ use_preset_vocabulary: false
 塔尔科
 塔尔瓦
 塔杰
+塔科贾
 塔拉内
 塔拉塔海谷
 塔勒特
@@ -12625,6 +12665,7 @@ use_preset_vocabulary: false
 踏雪剑
 踏雪引路人
 胎海之针
+苔骨荒原
 台上台下
 台桌组合
 太刀术皆传
@@ -13080,6 +13121,7 @@ use_preset_vocabulary: false
 突角龙武士
 突角龙武士追缉灵光
 秃秃豆
+图奥内塔尔
 图比昂装置
 图达玛
 图蒂坦
@@ -13425,15 +13467,19 @@ use_preset_vocabulary: false
 维克多
 维克拉姆
 唯苦痛可偿还
+维拉莫之泉
 维莱妲
 围栏
 维兰德
+维里
 唯力量可守护
 围炉夜谈
 韦吕
 维摩庄
 维摩庄村长
 维缪尔
+维娜
+维娜琴卡
 维纳亚克
 韦尼埃米诺夫
 韦尼尔
@@ -13628,6 +13674,7 @@ use_preset_vocabulary: false
 我自渊底刺向你
 我作为冒险家的一生
 沃杜奈
+沃尔科夫
 沃尔特
 沃贡贡之血
 沃灰的冒险家
@@ -13950,6 +13997,7 @@ use_preset_vocabulary: false
 晞吹卷梦
 西达
 西蒂娜
+希丁芭
 西杜阿
 希顿
 西尔弗
@@ -15062,6 +15110,7 @@ use_preset_vocabulary: false
 雅练上邸
 哑铃壶
 雅娜
+雅尼奎宁
 雅努斯之门
 雅诺斯基
 雅丝敏
@@ -15079,6 +15128,7 @@ use_preset_vocabulary: false
 娅特兰
 亚瓦尔
 亚因
+亚原子质能衍构核心
 腌笃鲜
 嫣朵拉
 胭儿
@@ -15384,6 +15434,7 @@ use_preset_vocabulary: false
 叶德
 夜访陌客之沼
 夜风舒畅
+叶芙罗西妮娅
 夜蝠座
 叶戈尔
 夜观七宿
@@ -15496,6 +15547,7 @@ use_preset_vocabulary: false
 一段蓄力
 伊恩
 伊尔佳
+伊尔玛
 伊尔梅
 伊尔明
 伊法
@@ -15546,6 +15598,7 @@ use_preset_vocabulary: false
 伊丽丝
 伊利亚斯
 伊莲
+伊莲娜
 伊露妮
 伊洛克
 伊洛丝
@@ -16903,6 +16956,7 @@ use_preset_vocabulary: false
 扎安娅
 扎德拉
 扎蒂斯
+扎尔那科维奇
 査霍尔
 扎卡里亚
 扎凯
