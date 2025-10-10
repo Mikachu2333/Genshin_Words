@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.0(4) | 2025.10.04 22:48"
+version: "6.1(5) | 2025.10.10 21:17"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -904,6 +904,7 @@ use_preset_vocabulary: false
 迸火冲击
 迸浪之月
 迸裂之月
+彼岸的永恒
 彼岸蝶舞
 笔锋墨影
 比夫茏
@@ -1342,6 +1343,7 @@ use_preset_vocabulary: false
 蔡书瑾
 蔡寻
 菜肴模型
+参究故墟
 参量质变仪
 餐品订单
 餐前甜点
@@ -1599,6 +1601,7 @@ use_preset_vocabulary: false
 常夜荧枝
 尝有所思
 常驻祈愿
+常驻颂愿
 场地边缘
 场力发生装置
 场中医者视野
@@ -3789,8 +3792,10 @@ use_preset_vocabulary: false
 复苏岩柱
 复苏之风
 赋闲风纪官
+复醒纪游
 覆雪之国
 覆雪之路
+复演
 附有记忆的面具
 馥郁
 负愿前行
@@ -5126,6 +5131,7 @@ use_preset_vocabulary: false
 幻形游禽
 幻鸦座
 幻夜
+幻夜游烛
 幻影心流
 焕影之灵
 唤雨的叶丛
@@ -5294,6 +5300,7 @@ use_preset_vocabulary: false
 回声之
 回声之林夜话
 回声之子
+回望湮灭的月光
 回响的轰雷
 回响弦音
 回响渊底的安魂曲
@@ -5307,6 +5314,7 @@ use_preset_vocabulary: false
 毁损机轴
 悔罪的记号
 晦暗刻像
+绘幻师
 卉卉
 会计
 汇聚如浪潮一般
@@ -5696,6 +5704,7 @@ use_preset_vocabulary: false
 纪行
 纪行宝匣
 纪行经验
+纪行同惠
 纪行武器
 寂修石
 济烟岛
@@ -5703,6 +5712,9 @@ use_preset_vocabulary: false
 继夜
 祭仪
 记忆之象限
+纪游
+纪游等级
+纪游经验
 祭月
 记载着传说的织卷
 寂照万物
@@ -6322,6 +6334,7 @@ use_preset_vocabulary: false
 静度岁晏
 静发
 净光翎
+静海水手
 靓号
 静候恩泽
 静候已久之人
@@ -7876,6 +7889,7 @@ use_preset_vocabulary: false
 灵风状态
 灵感的纯白
 灵感发条
+灵感激励计划
 灵感浸入调味
 灵感喷激
 灵谷木
@@ -8115,6 +8129,7 @@ use_preset_vocabulary: false
 龙龙饼干鳍游
 龙龙饼干绒翼
 龙龙饼干突角
+龙龙同游
 龙龙寻宝
 龙铭刻
 龙女妙变
@@ -8870,6 +8885,7 @@ use_preset_vocabulary: false
 秘术研究所
 秘闻馆
 秘文机关
+秘闻求解
 秘香肉团
 秘药
 秘药弹
@@ -8982,9 +8998,11 @@ use_preset_vocabulary: false
 铭记泪生命与仁爱
 铭记之谷
 明净的花瓶形壁灯
+明净乐游
 明澜
 鸣雷城墟
 鸣雷的裁锦师
+明丽珍材
 明论派
 明律决罚
 冥冥缘分的神秘壶灯
@@ -9555,6 +9573,7 @@ use_preset_vocabulary: false
 欧菲妮
 欧芙
 欧皇
+欧科塔维亚
 欧拉
 欧洛伦
 欧诺莉
@@ -9975,6 +9994,9 @@ use_preset_vocabulary: false
 奇迹之沙
 奇迹之羽
 旗舰
+奇匠
+奇匠论坛
+奇匠学院
 奇景铜像
 奇景之旅
 奇境谜丘探幽行
@@ -9998,6 +10020,8 @@ use_preset_vocabulary: false
 奇妙助益
 其名为
 琪娜特
+奇偶
+奇偶装扮
 奇皮茨
 奇普
 奇巧秘器的残件
@@ -10058,6 +10082,10 @@ use_preset_vocabulary: false
 鳍游龙箱鼓
 鳍游龙尤克里里
 鳍游龙长老
+奇域大厅
+奇遇回声
+奇域人偶
+奇域收藏
 祈愿
 祈愿道具
 祈月之夜
@@ -10089,6 +10117,7 @@ use_preset_vocabulary: false
 起死回骸
 启途誓使
 启夏石
+启星之约
 绮筵之鼓
 绮夜圣礼
 起源绿洲的守望者
@@ -10166,9 +10195,11 @@ use_preset_vocabulary: false
 千万要注意安全
 签文簿纸
 千武士
+千星
 千星的倒影
 牵星觅乡岸
 千星奇域
+千星商城
 千岩古剑
 千岩诀同心
 千岩军
@@ -10309,6 +10340,7 @@ use_preset_vocabulary: false
 巧思的教导
 巧思的哲学
 巧思的指引
+巧思丰裕计划
 巧戏一幕
 巧下
 巧像摹刻
@@ -10472,6 +10504,7 @@ use_preset_vocabulary: false
 晴空的许诺
 晴空蓝
 晴空蓝的午后
+晴空乐园
 晴空荫蔽
 晴空缯彩游鱼旗
 晴霓今晨劝云销
@@ -10754,6 +10787,7 @@ use_preset_vocabulary: false
 人类灭绝之后
 人马
 仁美
+人气奇域
 人情练达即文章
 人人都是食神
 仁三
@@ -11631,6 +11665,7 @@ use_preset_vocabulary: false
 生之执政
 生之烛
 绳箍带环多用桶
+盛材移涌
 圣裁影羽
 圣裁之雷
 盛典与慧业
@@ -11931,6 +11966,7 @@ use_preset_vocabulary: false
 试问
 式小将
 噬星魔鸦
+试行斗篷
 嗜岩
 誓言岬
 嗜岩兽境猎犬
@@ -12474,6 +12510,7 @@ use_preset_vocabulary: false
 颂福纳
 颂花盈皎宴
 送仙典仪
+颂愿
 送葬的风暴
 搜索者
 薮猫座
@@ -12587,6 +12624,7 @@ use_preset_vocabulary: false
 索赫蕾
 所患在少
 索魂弹
+索见诸心
 索柯洛夫
 索拉雅
 索莉马娜
@@ -13618,6 +13656,7 @@ use_preset_vocabulary: false
 稳定作息的重要因素
 稳固的桦木梳妆台
 稳固阵线的魄力
+稳健知行
 紊乱爆发期
 紊乱地脉
 稳如钟
@@ -13932,6 +13971,7 @@ use_preset_vocabulary: false
 舞兽玩偶
 舞兽戏
 舞兽戏服
+舞术交流
 武田
 五味俱全
 武心
@@ -14271,6 +14311,7 @@ use_preset_vocabulary: false
 线列枪刺改
 线圈
 现人神巫女
+限时颂愿
 线香烟火
 现象定位图
 献予你的明晨
@@ -14747,6 +14788,7 @@ use_preset_vocabulary: false
 修身砥行
 休歇
 修修补补
+修筑匠
 朽木与磐石的对谈
 朽石荧伞
 秀逗炼金术士
@@ -15722,6 +15764,7 @@ use_preset_vocabulary: false
 遗嗣
 遗祀玉珑
 遗忘的容器
+宜享星章
 移宵导天真君
 咦咦咦
 遗胤
@@ -16794,6 +16837,7 @@ use_preset_vocabulary: false
 月谕之匣
 月谕之像
 月浴之渊
+跃跃律动舞力聚会
 月绽放
 月章星句
 月兆
@@ -16935,6 +16979,7 @@ use_preset_vocabulary: false
 造笼师
 燥热旋律
 造生缠藤箭
+造物学徒
 泽娜
 泽维尔
 泽西切
@@ -16951,6 +16996,7 @@ use_preset_vocabulary: false
 增效
 增殖生命体
 赠彩
+赠礼
 赠礼套装
 赠予她回忆
 赠予她惊喜
@@ -17035,6 +17081,7 @@ use_preset_vocabulary: false
 战羊的幻影
 战意
 战欲涌现
+战域重划
 张力稳定锚
 张顺
 章鱼脚
@@ -17339,6 +17386,7 @@ use_preset_vocabulary: false
 祗力松茶
 知论派
 织梦
+织梦家
 之名
 知名导演
 枝梢
@@ -17589,6 +17637,7 @@ use_preset_vocabulary: false
 重塑仪
 众王之都的开端
 仲夏庭园
+重现晶簇
 众香
 众心为月
 重型餐馆专用炉灶
@@ -17629,6 +17678,8 @@ use_preset_vocabulary: false
 珠玑宝矿
 铢积寸累
 珠玑岛
+诸界纪游
+诸界史诗
 诸景巡礼
 诸君听我颂
 诸苦灭尽
