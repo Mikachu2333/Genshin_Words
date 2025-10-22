@@ -14,10 +14,11 @@ def delete_duplicates(input_file_path: str, output_file_path: str):
             lines = file.readlines()
 
         # 使用OrderedDict.fromkeys()去重，这是最高效的方法之一
-        unique_lines = list(OrderedDict.fromkeys(line.rstrip("\n\r") for line in lines))
+        unique_lines = list(OrderedDict.fromkeys(
+            line.rstrip("\n\r") for line in lines))
 
         # 确定输出文件路径
-        if output_file_path is None:
+        if output_file_path == "":
             output_file_path = input_file_path
 
         # 写入文件
