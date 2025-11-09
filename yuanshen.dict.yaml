@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.2(7) | 2025.11.10 00:23"
+version: "6.2(8) | 2025.11.10 00:40"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -1886,6 +1886,7 @@ use_preset_vocabulary: false
 赤王的水晶杯
 赤王后裔
 赤王陵
+赤王七柱
 赤王神殿
 赤王时代的沙漠
 赤王御座
