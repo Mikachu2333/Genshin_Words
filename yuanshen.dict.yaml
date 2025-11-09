@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.2(6) | 2025.10.22 11:40"
+version: "6.2(7) | 2025.11.10 00:23"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -247,6 +247,7 @@ use_preset_vocabulary: false
 艾菲
 爱菲拉
 爱芙
+艾弗提尔维特
 艾葛
 艾古伊
 艾嘉莉亚
@@ -346,6 +347,7 @@ use_preset_vocabulary: false
 安恬林中之梦
 安托哈
 安托万
+安瓦蒂尼尔湖
 安闲的紫梦
 安心之所
 安行明光
@@ -803,6 +805,7 @@ use_preset_vocabulary: false
 杯中遥吟之歌
 杯中遥吟之诗
 杯装之诗
+北大陆情报网
 北地猫
 北地苹果焖肉
 北地犬
@@ -3019,6 +3022,7 @@ use_preset_vocabulary: false
 夺宝小行动
 踱山葵
 额外条款
+厄布拉神像
 噩喰
 厄达尔夫
 厄代尔
@@ -3061,6 +3065,7 @@ use_preset_vocabulary: false
 厄月将升
 厄运的修辞
 噩运绕行
+鳄之王
 恩波索
 恩德盖
 恩返之盏
@@ -3365,6 +3370,7 @@ use_preset_vocabulary: false
 费尔比
 肺棘鱼
 费雷斯特
+费卢妮娅
 费罗兹
 废弃生产区
 费索勒
@@ -4679,6 +4685,8 @@ use_preset_vocabulary: false
 赫卡的笔记
 赫拉莉
 赫浪连涛
+赫雷贝里
+赫里沙夫
 鹤立
 鹤唳远人间
 赫烈
@@ -5373,6 +5381,7 @@ use_preset_vocabulary: false
 慧眼识妖
 晦夜星章
 会议室
+晦隐
 会泽纱弥
 绘真
 昏黄海景
@@ -6048,6 +6057,7 @@ use_preset_vocabulary: false
 叫什么名字
 叫我以实玛利
 教习的战棒
+教养院
 皆大欢喜
 接待员
 接笏
@@ -9512,6 +9522,7 @@ use_preset_vocabulary: false
 尼扎姆
 薿此芝田
 你存在的时空
+拟定势态
 拟构基石
 你家风晶蝶还蛮大的
 你们去了哪里
@@ -12300,6 +12311,7 @@ use_preset_vocabulary: false
 霜影月华
 霜月
 霜月的残照
+霜月灵嗣
 霜月女神
 霜月如故
 霜月之坊
@@ -12726,6 +12738,7 @@ use_preset_vocabulary: false
 孙桡
 孙宇
 梭巡
+索贝克
 索达古瑟
 索敌
 索尔顿
@@ -13887,6 +13900,7 @@ use_preset_vocabulary: false
 乌姆
 乌娜亚塔
 乌纳因
+乌努
 巫女
 巫女服
 巫女曚云小传
@@ -14229,6 +14243,7 @@ use_preset_vocabulary: false
 西帕克
 希皮利
 希泊巴
+希珀
 溪泉
 昔日绯月
 昔日宗室之仪
@@ -14457,6 +14472,7 @@ use_preset_vocabulary: false
 香柏木
 香班行
 镶边红绸
+香草茶
 乡愁的另一头
 香川
 香氛瓶之章
@@ -15532,6 +15548,7 @@ use_preset_vocabulary: false
 阳炎之门
 羊杂哈吉斯
 阳之镜
+羊之王
 仰观千秋
 仰灵威召将役咒
 养育
@@ -15698,6 +15715,7 @@ use_preset_vocabulary: false
 夜之头脑
 夜之玉
 夜主的授记
+伊阿布
 伊安珊
 一把钥匙开一把锁
 一瓣荫凉
@@ -15738,6 +15756,7 @@ use_preset_vocabulary: false
 伊尔玛
 伊尔梅
 伊尔明
+伊尔明苏尔
 伊法
 一帆风顺的美愿
 伊凡诺维奇
@@ -16787,6 +16806,7 @@ use_preset_vocabulary: false
 元气迸发
 原神
 原石
+原始贡品
 原始松脂
 原始胎海
 原始胎海之水
