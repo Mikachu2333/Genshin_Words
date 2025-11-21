@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.2(8) | 2025.11.10 00:40"
+version: "6.2(10) | 2025.11.21 21:51"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -450,6 +450,7 @@ use_preset_vocabulary: false
 巴比斯
 芭别尔
 巴茨
+巴达那
 巴蒂斯特
 巴杜卢
 巴顿
@@ -535,6 +536,8 @@ use_preset_vocabulary: false
 白果
 白狐玩偶
 白狐之野
+白化法
+白化之是
 白芨
 白金典藏型
 白井
@@ -593,6 +596,7 @@ use_preset_vocabulary: false
 白尾猫座
 白星黑曜
 白星之裙
+白焰之龙
 白曜护盾
 白曜星魔
 白曜星魔茜特菈琳
@@ -607,6 +611,7 @@ use_preset_vocabulary: false
 白缨枪
 白影剑
 白雨心弦
+白礜赤成
 白玉莲盏
 白玉萝卜
 白玉汤
@@ -1284,6 +1289,7 @@ use_preset_vocabulary: false
 不熄炽心
 不息的争流
 布希柯
+不熄灭的火
 不祥的面具
 不幸的总集
 不休的天象
@@ -1644,6 +1650,7 @@ use_preset_vocabulary: false
 超绽放
 超绽放队
 超绽放马戏
+超重型陆巡舰
 潮奔蓦引电
 朝仓
 嘲讽
@@ -1827,6 +1834,8 @@ use_preset_vocabulary: false
 斥候
 炽绘奇旅
 赤喙鸭
+炽魂斗士的雪界之旅
+炽魂斗士战记
 炽火崩破
 炽火大铠
 赤角
@@ -1846,6 +1855,7 @@ use_preset_vocabulary: false
 炽烈流焰
 炽烈声援
 炽烈之月
+赤龙之章
 赤糜饵
 赤冕祝祷
 赤魔王
@@ -3101,6 +3111,7 @@ use_preset_vocabulary: false
 二相恒光元件
 二相噬光元件
 贰壹伍陆型
+二元式
 二重身
 发光髓
 发酵果实汁
@@ -3412,6 +3423,7 @@ use_preset_vocabulary: false
 焚尽的炽炎魔女
 焚尽之环
 焚落踢
+焚灭
 焚灭不净
 焚灭恶夜
 焚燃
@@ -3943,6 +3955,7 @@ use_preset_vocabulary: false
 高台
 高天的协奏
 高天的渊薮后
+高天为歌
 高天之歌
 高跳蹦床
 高筒长靴
@@ -4164,6 +4177,7 @@ use_preset_vocabulary: false
 古茶树
 古茶树坡
 古城垣
+古达尔兹
 古代试炼所
 古代种山鼬
 古道茶香
@@ -4362,6 +4376,7 @@ use_preset_vocabulary: false
 归乡之羽
 规研整序
 皈依熔炉
+瑰银
 归于尘土
 归于黄沙
 归于烈火
@@ -4719,6 +4734,8 @@ use_preset_vocabulary: false
 黑斑猫座
 黑背猎犬
 黑背鲈鱼
+黑度法
+黑度之否
 嘿哈唔
 嘿哈唔史莱姆三姆组
 黑貉篇
@@ -4735,7 +4752,9 @@ use_preset_vocabulary: false
 黑日
 黑蛇剑术
 黑蛇骑士
+黑蚀
 黑石湮落白石下
+黑蚀之龙
 黑水晶号
 黑檀弓
 黑炭炭菇
@@ -4861,6 +4880,7 @@ use_preset_vocabulary: false
 虹色坠击
 虹闪石
 红烧肉圆
+虹蛇的雨弦
 红毹婵娟
 弘嗣
 红檀四弦座
@@ -4917,6 +4937,7 @@ use_preset_vocabulary: false
 呼呼丘
 呼噜克
 呼噜噜宝座
+呼噜噜秘藏瓶
 呼玛伊
 忽然一夜梅香起
 呼咻咻
@@ -5544,6 +5565,7 @@ use_preset_vocabulary: false
 基础再牢
 基调
 机动猎手
+机动战垒
 机动自律型枫达专卖机
 鸡豆花
 饥饿的联想
@@ -5878,6 +5900,7 @@ use_preset_vocabulary: false
 坚岩之谷的围护
 坚岩之谷的珠翠
 坚岩之重
+间奏
 简本路灯
 检地
 简居
@@ -6573,8 +6596,10 @@ use_preset_vocabulary: false
 剧场消防演练
 巨大的贝壳
 巨大火山
+聚分熔炼
 拒风
 聚风蹴
+飓风箭
 飓风领域
 聚风真眼
 飓风之种
@@ -6697,6 +6722,7 @@ use_preset_vocabulary: false
 军团的怒角
 君王之殿
 君王之殁
+军械宫
 君子白日闯
 骏麟
 骏猊頕首
@@ -7603,6 +7629,7 @@ use_preset_vocabulary: false
 离可琉
 狸猫抱抱合影板
 狸猫玩偶
+黎明破晓之史
 黎明神剑
 璃沙郊
 璃沙郊的兔毫
@@ -7782,6 +7809,7 @@ use_preset_vocabulary: false
 炼金与经营
 炼金装置
 炼武秘境
+练心
 凉拌薄荷
 良材分享包
 粮食用高压单轴膨化炉
@@ -7843,6 +7871,7 @@ use_preset_vocabulary: false
 猎人变成了猎物
 猎人从不追丢他的猎物
 猎人的暗哨
+猎人的七道具
 猎人的仁慈
 猎人的胸花
 猎人青翠的箭羽
@@ -8193,6 +8222,7 @@ use_preset_vocabulary: false
 龙冠武士的金哨
 泷廻鉴花
 龙脊雪山
+龙脊雪山国际越野赛
 龙脊长枪
 龙卷的魔神
 隆崛坡
@@ -8302,6 +8332,7 @@ use_preset_vocabulary: false
 勠心拳
 陆行水本真蕈
 陆行岩本真蕈
+陆巡舰
 路爷
 鹿野奈奈
 鹿野院
@@ -8467,6 +8498,7 @@ use_preset_vocabulary: false
 马范
 玛格丽特
 马古汉
+玛海菈
 玛海菈的水色
 玛赫菲
 玛卡德尔
@@ -8633,6 +8665,7 @@ use_preset_vocabulary: false
 猫尾隐藏菜单
 猫箱
 猫箱急件
+猫型家用互助协调器
 猫又
 猫与随机数
 猫与特调酒
@@ -8953,6 +8986,7 @@ use_preset_vocabulary: false
 秘密的奇迹
 蜜酿
 秘酿蜜露
+秘器
 觅取月晖
 秘书
 秘书官
@@ -9203,6 +9237,7 @@ use_preset_vocabulary: false
 魔鸟
 魔女常燃之羽
 魔女的茶会
+魔女的课业
 魔女的心之火
 魔女的炎之花
 魔女的重唱
@@ -11017,6 +11052,7 @@ use_preset_vocabulary: false
 蠕虫假饵
 如簇拥的晚霞
 如逢露水
+如光流变
 如光似电
 如光骤现
 如孩童的躁动般
@@ -11048,6 +11084,7 @@ use_preset_vocabulary: false
 茹斯托
 如我是我非我相
 如霰澄天的鸣礼
+如星阴燃
 如星在水
 如絮云缠抱
 如悬空的白星
@@ -11214,6 +11251,7 @@ use_preset_vocabulary: false
 散失的月神瞳
 散霰之舞
 散序节拍
+散于晨雾的月芒
 散作乾坤万里春
 桑迪诺
 桑顿
@@ -11333,6 +11371,7 @@ use_preset_vocabulary: false
 砂之祭场
 沙之眼
 沙脂蛹
+砂之主
 沙中孤城
 沙中故里
 沙中花
@@ -11929,6 +11968,7 @@ use_preset_vocabulary: false
 食莲者
 石榴
 石榴开怀
+时律为眷
 石门
 食梦貘
 食梦者的忧郁
@@ -12298,6 +12338,7 @@ use_preset_vocabulary: false
 双手剑
 双双岛
 双水
+霜庭雪翎
 双屋的呼唤
 霜袭
 霜雪鸮
@@ -14291,6 +14332,7 @@ use_preset_vocabulary: false
 洗刷耻辱的一战
 喜提鱼缸
 洗濯诸类之形
+系风攘影
 隙间之核
 隙境原体
 细沙与海风
@@ -14618,6 +14660,7 @@ use_preset_vocabulary: false
 小蒙
 小猛
 小冥
+小魔女辞典
 小魔女与不熄灭的火
 小貘
 小匿叶龙
@@ -16749,6 +16792,7 @@ use_preset_vocabulary: false
 渊下宫
 渊星
 渊星斗士
+渊影
 鸢噰雀啭
 渊月祝福
 渊中霞彩
@@ -17027,6 +17071,7 @@ use_preset_vocabulary: false
 月兆祝赐
 月之八
 月之宝库
+月之城
 月之东
 月之二
 月之九
@@ -17736,6 +17781,7 @@ use_preset_vocabulary: false
 终北祷歌
 终北的告诫与述说
 终北的圣歌
+终北的夜行诗
 终北的遗胤
 终北圣言
 终北遗嗣的哀荣
