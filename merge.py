@@ -2,7 +2,6 @@ import subprocess
 
 
 def merge(input_file: str):
-    # 读取 after.txt 文件内容
     with open(input_file, "r", encoding="utf-8") as f:
         after_content = f.read()
 

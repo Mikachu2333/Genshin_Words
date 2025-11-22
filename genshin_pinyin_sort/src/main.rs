@@ -16,7 +16,7 @@ fn main() {
         return;
     }
 
-    let (path, out_path) = calc(arg[0].clone(), arg[1].clone());
+    let (path, out_path) = calc(arg[1].clone());
 
     let result = exchange_rs(&path, &out_path);
     if result.is_err() {
@@ -27,12 +27,12 @@ fn main() {
     }
 }
 
-fn calc(exe_path: String, file_path: String) -> (PathBuf, PathBuf) {
-    let binding = PathBuf::from(exe_path);
+fn calc(file_path: String) -> (PathBuf, PathBuf) {
+    let binding = std::env::current_exe().unwrap();
     let current_dir = binding.parent().unwrap();
 
     let (is_exist, checked_path) = resolve_path(PathBuf::from(file_path).as_ref(), current_dir);
-    if is_exist {
+    if !is_exist {
         panic!("Not Exist.")
     };
 

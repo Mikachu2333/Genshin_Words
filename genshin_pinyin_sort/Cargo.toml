@@ -1,6 +1,6 @@
 [package]
 name    = "genshin_pinyin_sort"
-version = "1.1.4"
+version = "1.1.5"
 edition = "2021"
 
 [profile.release]

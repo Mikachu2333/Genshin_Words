@@ -130,7 +130,7 @@ fn resolve_base_dir() -> Result<PathBuf, RenameError> {
 /// ### Return Value
 /// Returns tuple `(whether path exists, normalized path)`
 pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
-    if path.as_os_str().is_empty() {
+    if *path == *"" {
         return (false, path.to_path_buf());
     }
 
@@ -198,7 +198,7 @@ pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
         }
 
         if DEBUG_MODE {
-            dbg!(format!("Path Final: {}", &path.display()));
+            dbg!("Path Final: {}", &path.display());
         }
     }
 

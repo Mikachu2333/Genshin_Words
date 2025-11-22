@@ -66,7 +66,7 @@ checksum = "e178e4fba8a2726903f6ba98a6d221e76f9c12c650d5dc0e6afdc50677b49650"
 
 [[package]]
 name = "genshin_pinyin_sort"
-version = "1.1.4"
+version = "1.1.5"
 dependencies = [
  "chrono",
  "name_exchanger_rs",
