@@ -182,7 +182,7 @@ pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
                     if let Some(rem) = remaining {
                         new_path.push(rem);
                         path = new_path;
-                    } else if path.to_string_lossy() == "~" {
+                    } else if *path == *"~" {
                         path = new_path;
                     } else {
                         // "~something"
@@ -195,10 +195,6 @@ pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
             } else {
                 path = base_dir.join(path);
             }
-        }
-
-        if DEBUG_MODE {
-            dbg!("Path Final: {}", &path.display());
         }
     }
 
@@ -215,7 +211,7 @@ pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
                     let mut new_path = PathBuf::from(home_dir);
                     if let Some(remaining) = path.strip_prefix("~/") {
                         new_path.push(remaining);
-                    } else if path.to_string_lossy() == "~" {
+                    } else if *path== *"~" {
                         // Just "~", so it's the home directory
                     }
                     path = new_path;
@@ -227,7 +223,9 @@ pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
                 path = base_dir.join(path);
             }
         }
-        dbg!(format!("Path Final: {}", &path.display()));
+    }
+    if DEBUG_MODE {
+        dbg!("Path Final: {}", &path.display());
     }
 
     let canonical = path.canonicalize();

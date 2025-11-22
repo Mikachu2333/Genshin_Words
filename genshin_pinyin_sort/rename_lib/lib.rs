@@ -1,12 +1,12 @@
 use std::ffi::{c_char, CStr};
 use std::path::{Path, PathBuf};
 
-pub mod exchange;
+mod exchange;
 mod file_rename;
 mod path_checkout;
 mod types;
 
-use crate::exchange::exchange_paths;
+use crate::exchange::{exchange_paths, resolve_path};
 use crate::types::RenameError;
 
 #[no_mangle]
@@ -56,6 +56,18 @@ pub fn exchange_rs(path1: &Path, path2: &Path) -> Result<(), types::RenameError>
             Err(err)
         }
     }
+}
+
+/// Resolve and normalize path
+///
+/// ### Parameters
+/// * `path` - Original path
+/// * `base_dir` - Base directory path
+///
+/// ### Return Value
+/// Returns tuple `(is_path_exists, normalized_path)`
+pub fn resolve_path_rs(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
+    resolve_path(path, base_dir)
 }
 
 unsafe fn convert_inputs(

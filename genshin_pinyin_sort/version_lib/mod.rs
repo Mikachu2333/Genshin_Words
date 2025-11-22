@@ -1,3 +1,5 @@
+pub const DEBUG_MODE: bool = cfg!(debug_assertions);
+
 pub struct VersionInfo {
     pub a: String,
     pub b: String,
@@ -23,7 +25,9 @@ impl VersionInfo {
             .splitn(4, &['.', '-', ' ', '(', ')', '[', ']', '~', '_'])
             .collect::<Vec<&str>>();
 
-        dbg!(&parsed);
+        if DEBUG_MODE {
+            dbg!("Version {}", &parsed);
+        }
 
         let patch_version = parsed[2].parse::<usize>();
         let patch_result = if patch_version.is_err() {
