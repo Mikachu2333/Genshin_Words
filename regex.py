@@ -93,7 +93,7 @@ def main():
         print(f"处理文件时发生错误: {str(e)}")
 
     delete_duplicates(temp_path, final_path)
-
+    os.remove(temp_path)
     print("请手动对 ./after_del.txt 去重排版")
 
 
