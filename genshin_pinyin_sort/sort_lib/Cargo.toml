@@ -8,4 +8,4 @@ name = "sort_lib"
 path = "mod.rs"
 
 [dependencies]
-pinyin = "0.10"
+pinyin = "0.10.0"

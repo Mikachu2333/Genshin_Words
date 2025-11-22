@@ -1,6 +1,6 @@
 use std::{env, io::Write, path::PathBuf};
 
-use exchange_lib::{exchange, path_check};
+use exchange_lib::{exchange::resolve_path, exchange_rs};
 use sort_lib::sort_chinese_text;
 use version_lib::VersionInfo;
 
@@ -11,36 +11,29 @@ fn main() {
         println!("Version: {}", env!("CARGO_PKG_VERSION"),);
         println!("Usage:");
         println!(".\"{}\" <FullFilePath>", arg[0]);
+        let mut input = String::new();
+        std::io::stdin().read_line(&mut input).unwrap();
         return;
     }
 
     let (path, out_path) = calc(arg[0].clone(), arg[1].clone());
 
-    let result = exchange(
-        path.to_str().unwrap().to_string(),
-        out_path.to_str().unwrap().to_string(),
-    );
-    if result != 0 {
-        eprintln!("Error Code: {}", result);
+    let result = exchange_rs(&path, &out_path);
+    if result.is_err() {
+        eprintln!("Error Info: {}", result.err().unwrap());
     } else {
         std::fs::remove_file(out_path).unwrap();
         println!("---------------------\nAll Done.\n");
-        return;
     }
 }
 
 fn calc(exe_path: String, file_path: String) -> (PathBuf, PathBuf) {
-    let checked_path = {
-        let temp = path_check(file_path);
+    let binding = PathBuf::from(exe_path);
+    let current_dir = binding.parent().unwrap();
 
-        let unchecked_path = if !temp.is_file() || !temp.exists() {
-            panic!()
-        } else if temp.is_relative() {
-            PathBuf::from(exe_path).join(temp)
-        } else {
-            temp
-        };
-        unchecked_path.canonicalize().unwrap()
+    let (is_exist, checked_path) = resolve_path(PathBuf::from(file_path).as_ref(), current_dir);
+    if is_exist {
+        panic!("Not Exist.")
     };
 
     //dbg!("{}", checked_path.display());
@@ -67,10 +60,10 @@ fn calc(exe_path: String, file_path: String) -> (PathBuf, PathBuf) {
         "---\nname: yuanshen\nversion: \"{}\"\nsort: origin\nuse_preset_vocabulary: false\n...\n\n",
         parse_date(content[2])
     );
-    out_file.write(date.as_bytes()).unwrap();
+    out_file.write_all(date.as_bytes()).unwrap();
 
     for (_, i) in vec_collection {
-        out_file.write(format!("{}\n", i).as_bytes()).unwrap();
+        out_file.write_all(format!("{}\n", i).as_bytes()).unwrap();
     }
     out_file.flush().unwrap();
 

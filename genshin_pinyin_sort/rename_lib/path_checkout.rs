@@ -3,164 +3,118 @@ use std::{
     path::{Path, PathBuf},
 };
 
-/// 存储文件或目录的元数据信息
-///
-/// 包含文件或目录的名称、扩展名和父目录路径
-#[derive(Debug)]
-pub struct MetadataCollection {
-    /// 文件名或目录名（不包含扩展名）
-    pub name: String,
-    /// 文件扩展名（包含前导点"."），目录为空字符串
-    pub ext: String,
-    /// 父目录的路径
-    pub parent_dir: PathBuf,
-}
+use crate::types::*;
 
-impl Default for MetadataCollection {
-    /// 创建默认的元数据集合，所有字段为空
-    fn default() -> Self {
-        Self {
-            name: "".to_owned(),
-            ext: "".to_owned(),
-            parent_dir: PathBuf::new(),
-        }
-    }
-}
-
-/// 处理两个路径的结构体，用于路径检查和操作
-#[derive(Debug)]
-pub struct GetPathInfo {
-    /// 第一个文件或目录路径
-    pub path1: PathBuf,
-    /// 第二个文件或目录路径
-    pub path2: PathBuf,
-}
-
-/// 所有路径相关的操作
+/// All path-related operations
 impl GetPathInfo {
-    /// 校验路径是否存在，并处理相对路径
+    /// Check if paths are files or directories
     ///
-    /// 如果路径是相对路径，会尝试将其转换为相对于给定目录的绝对路径
-    ///
-    /// ### 参数
-    /// * `dir` - 基准目录，用于将相对路径转换为绝对路径
-    ///
-    /// ### 返回值
-    /// 返回包含两个布尔值的元组 `(path1存在, path2存在)`
-    pub fn if_exist(&mut self, dir: &Path) -> (bool, bool) {
-        let make_absolute = |path: &mut PathBuf| {
-            if path.is_relative() {
-                *path = dir.join(path.file_name().unwrap_or(OsStr::new("")));
-            }
-        };
-
-        make_absolute(&mut self.path1);
-        make_absolute(&mut self.path2);
-
-        (self.path1.exists(), self.path2.exists())
-    }
-
-    /// 判断路径是文件还是目录
-    ///
-    /// ### 返回值
-    /// 返回包含两个布尔值的元组 `(path1是文件, path2是文件)`
-    /// * `true` - 路径指向文件
-    /// * `false` - 路径指向目录
+    /// ### Return Value
+    /// Returns a tuple of two booleans `(path1 is file, path2 is file)`
+    /// * `true` - Path points to a file
+    /// * `false` - Path points to a directory
     pub fn if_file(&self) -> (bool, bool) {
         (self.path1.is_file(), self.path2.is_file())
     }
 
-    /// 检查两个路径是否位于同一个父目录
+    /// Check if two paths are in the same parent directory
     ///
-    /// 这个方法用于判断两个路径是否在同一个文件夹中，这对于确定重命名操作的安全性很重要。
-    /// 如果两个路径在同一目录，某些重命名操作可能不需要临时文件。
+    /// This method is used to determine if two paths are in the same folder, which is important 
+    /// for determining the safety of rename operations. If two paths are in the same directory, 
+    /// certain rename operations may not need temporary files.
     ///
-    /// ### 返回值
-    /// * `true` - 两个路径在同一个父目录
-    /// * `false` - 两个路径在不同的父目录
+    /// ### Return Value
+    /// * `true` - Both paths are in the same parent directory
+    /// * `false` - Paths are in different parent directories
     pub fn if_same_dir(&self) -> bool {
-        self.path1.parent().unwrap() == self.path2.parent().unwrap()
+        match (self.path1.parent(), self.path2.parent()) {
+            (Some(parent1), Some(parent2)) => parent1 == parent2,
+            _ => false,
+        }
     }
 
-    /// 检测两个路径之间是否存在包含关系（父子目录问题）
+    /// Detect if there is an inclusion relationship between two paths (parent-child directory issue)
     ///
-    /// 这个方法用于判断两个路径之间是否有包含关系，这对于确定重命名顺序至关重要。
-    /// 当两个目录有父子关系时，重命名顺序会直接影响操作的成功与否。
+    /// This method is used to determine if there is an inclusion relationship between two paths, 
+    /// which is crucial for determining the rename order. When two directories have a parent-child 
+    /// relationship, the rename order will directly affect the success of the operation.
     ///
-    /// ### 返回值
-    /// * `1` - path1 包含 path2（path1 是 path2 的父目录或祖先目录）
-    /// * `2` - path2 包含 path1（path2 是 path1 的父目录或祖先目录）
-    /// * `0` - 不存在包含关系
+    /// ### Return Value
+    /// * `1` - path1 contains path2 (path1 is the parent or ancestor directory of path2)
+    /// * `2` - path2 contains path1 (path2 is the parent or ancestor directory of path1)
+    /// * `0` - No inclusion relationship
     pub fn if_root(&self) -> u8 {
         if Self::path_is_parent(&self.path1, &self.path2) {
-            1 // path1 包含 path2
+            1 // path1 contains path2
         } else if Self::path_is_parent(&self.path2, &self.path1) {
-            2 // path2 包含 path1
+            2 // path2 contains path1
         } else {
-            0 // 不存在包含关系
+            0 // No inclusion relationship
         }
     }
 
-    /// 辅助函数：检查是否是父子目录关系
+    /// Helper function: Check if there is a parent-child directory relationship
     ///
-    /// 判断 potential_parent 是否是 potential_child 的父目录或祖先目录
+    /// Determine if potential_parent is the parent or ancestor directory of potential_child
     ///
-    /// ### 参数
-    /// * `potential_parent` - 可能的父目录路径
-    /// * `potential_child` - 可能的子目录路径
+    /// ### Parameters
+    /// * `potential_parent` - Potential parent directory path
+    /// * `potential_child` - Potential child directory path
     ///
-    /// ### 返回值
-    /// * `true` - 确实存在父子关系
-    /// * `false` - 不存在父子关系
+    /// ### Return Value
+    /// * `true` - There is indeed a parent-child relationship
+    /// * `false` - No parent-child relationship
     fn path_is_parent(potential_parent: &Path, potential_child: &Path) -> bool {
-        // 尝试确定 child 相对于 parent 的路径
-        match potential_child.strip_prefix(potential_parent) {
-            Ok(_) => true,   // 如果成功，说明是父子关系
-            Err(_) => false, // 如果失败，说明不是父子关系
+        // Try to determine the path of child relative to parent
+        if let Ok(relative) = potential_child.strip_prefix(potential_parent) {
+            !relative.as_os_str().is_empty()
+        } else {
+            false
         }
     }
 
-    /// 获取文件或目录的元数据信息
+    /// Get metadata information of file or directory
     ///
-    /// 提取路径的文件名（无后缀）、扩展名和父目录路径
+    /// Extract the file name (without suffix), extension, and parent directory path
     ///
-    /// ### 参数
-    /// * `file_path` - 要处理的文件或目录路径
-    /// * `is_file` - 指示路径是文件还是目录
+    /// ### Parameters
+    /// * `file_path` - File or directory path to process
+    /// * `is_file` - Indicates if path is a file or directory
     ///
-    /// ### 返回值
-    /// 返回包含元数据的 `MetadataCollection` 结构体
+    /// ### Return Value
+    /// Returns `MetadataCollection` structure containing metadata
     fn get_info(file_path: &Path, is_file: bool) -> MetadataCollection {
-        // 提取字符串的闭包函数，处理文件名和扩展名
-        // 如果处理扩展名，会添加前导点"."
+        // Closure function to extract strings, processing file names and extensions
+        // If processing extension, add leading dot "."
         let get_string_closure = |original_result: &Option<&OsStr>, is_ext: bool| {
             match original_result {
                 Some(i) => {
                     if is_ext {
-                        // 是否在计算后缀，如果是，添加前导点"."
+                        // Whether calculating suffix, if so, add leading dot "."
                         ".".to_owned() + i.to_str().unwrap()
                     } else {
                         i.to_str().unwrap().to_string()
                     }
                 }
                 /*
-                取不到就无视
-                因前面已经核验完毕，所以此处如果出现Err则是特殊文件命名所致，不影响后面所有操作。
-                e.g. "C:\\.cargo\\.config"，该文件取不到后缀，该文件夹也取不到后缀
+                If not available, ignore
+                Since verification has been completed earlier, if Err occurs here, 
+                it is due to special file naming and does not affect subsequent operations.
+                e.g. "C:\\.cargo\\.config", this file cannot get suffix, this folder also cannot get suffix
                 */
                 None => String::new(),
             }
         };
 
         if !is_file {
-            // 处理目录路径
+            // Process directory path
             MetadataCollection {
                 name: {
-                    // 对于目录，名称包括主干和扩展名（如果有）
+                    // For directories, name includes stem and extension (if any)
                     get_string_closure(&file_path.file_stem(), false)
                         + get_string_closure(&file_path.extension(), true).as_ref()
                 },
-                ext: String::new(), // 目录没有扩展名
+                ext: String::new(), // Directories have no extension
                 parent_dir: {
                     match &file_path.parent() {
                         Some(i) => i.to_path_buf(),
@@ -169,7 +123,7 @@ impl GetPathInfo {
                 },
             }
         } else {
-            // 处理文件路径
+            // Process file path
             MetadataCollection {
                 name: get_string_closure(&file_path.file_stem(), false),
                 ext: get_string_closure(&file_path.extension(), true),
@@ -183,14 +137,14 @@ impl GetPathInfo {
         }
     }
 
-    /// 收集两个路径的元数据信息
+    /// Collect metadata information of two paths
     ///
-    /// ### 参数
-    /// * `is_file1` - 指示 path1 是文件还是目录
-    /// * `is_file2` - 指示 path2 是文件还是目录
+    /// ### Parameters
+    /// * `is_file1` - Indicates if path1 is a file or directory
+    /// * `is_file2` - Indicates if path2 is a file or directory
     ///
-    /// ### 返回值
-    /// 返回包含两个元数据集合的元组 `(path1元数据, path2元数据)`
+    /// ### Return Value
+    /// Returns tuple containing two metadata collections `(path1 metadata, path2 metadata)`
     pub fn metadata_collect(
         &self,
         is_file1: bool,
@@ -199,15 +153,5 @@ impl GetPathInfo {
         let metadata1 = GetPathInfo::get_info(&self.path1, is_file1);
         let metadata2 = GetPathInfo::get_info(&self.path2, is_file2);
         (metadata1, metadata2)
-    }
-}
-
-impl Default for GetPathInfo {
-    /// 创建包含空路径的默认实例
-    fn default() -> Self {
-        Self {
-            path1: PathBuf::new(),
-            path2: PathBuf::new(),
-        }
     }
 }

@@ -1,8 +1,8 @@
 [package]
-name = "exchange_lib"
-version = "0.1.0"
+name = "name_exchanger_rs"
+version = "2.1.3"
 edition = "2021"
 
 [lib]
 name = "exchange_lib"
-path = "mod.rs"
+path = "lib.rs"
