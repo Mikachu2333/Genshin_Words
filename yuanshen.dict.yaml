@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.2(11) | 2025.11.22 17:34"
+version: "6.2(11) | 2025.11.27 10:13"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -4172,6 +4172,7 @@ use_preset_vocabulary: false
 孤云凌霄之处
 孤舟斩蛟
 菇兹亚
+古币
 鼓钹人
 古茶杯
 古茶树
@@ -4829,6 +4830,7 @@ use_preset_vocabulary: false
 轰轰轰
 轰轰火花
 烘烘心羽鲈
+轰轰勋章
 轰轰增益
 轰击之星
 轰雷电光斩
@@ -16060,6 +16062,7 @@ use_preset_vocabulary: false
 绎思振笔集
 意外订单
 易弯不折
+轶闻纪事
 忆昔诸途巡历
 异乡异客
 异想街区
