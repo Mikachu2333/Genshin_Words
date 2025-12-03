@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.3(0) | 2025.12.03 00:28"
+version: "6.3(1) | 2025.12.03 17:21"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -24,6 +24,7 @@ use_preset_vocabulary: false
 阿达玛
 阿黛尔
 阿德菲
+阿徳禄拉雅
 阿德纳
 阿迪尔
 阿蒂克
@@ -579,6 +580,7 @@ use_preset_vocabulary: false
 白石与黄铜的造像
 白手套
 白术
+白树的枝条
 白淞街镇
 白淞街镇的简居
 白淞街镇的门架
@@ -660,6 +662,7 @@ use_preset_vocabulary: false
 百岁珊
 百味醇韵
 百味交响
+百味祈月糖
 百味四宫釜
 百味一缕
 百闻
@@ -1430,6 +1433,7 @@ use_preset_vocabulary: false
 苍流踏花
 苍漠囿土
 苍暮之辉
+苍绒狼
 苍色祷歌
 苍色的海砂
 苍色郁野
@@ -2222,6 +2226,7 @@ use_preset_vocabulary: false
 簇火赞歌
 摧冰而行的执望
 摧枯拉朽
+崔斯梅姬斯图斯
 摧碎
 摧岩之钺
 璀璨原钻
@@ -2285,6 +2290,7 @@ use_preset_vocabulary: false
 达尔戈
 达尔维什
 妲卡玛忒
+达利米日
 达丽娜
 达莉亚
 达马山
@@ -2673,6 +2679,7 @@ use_preset_vocabulary: false
 迪特玛尔
 迪希雅
 迪亚法饭店
+底镜湖
 抵力松茶
 砥砺之证
 抵天雷罚
@@ -2971,6 +2978,7 @@ use_preset_vocabulary: false
 渡来禽肉
 杜兰
 杜林
+杜马沃捷
 杜麦尼
 杜麦尼的诗篇
 度尼娅
@@ -3963,6 +3971,7 @@ use_preset_vocabulary: false
 高阶技术官僚
 高阶情感固件
 高警惕
+高拉默
 高梨
 高美
 高门大屋
@@ -5888,6 +5897,7 @@ use_preset_vocabulary: false
 假龙
 贾米
 甲片
+贾契克
 假日果酿
 假如她不再梦到你
 假若她们能知幽玄
@@ -6885,6 +6895,7 @@ use_preset_vocabulary: false
 凯瑟琳
 凯叔
 凯塔
+凯图
 凯万
 凯亚
 凯亚铺冰
@@ -6902,6 +6913,7 @@ use_preset_vocabulary: false
 坎瑞亚
 坎瑞亚英雄王
 坎塔鲁
+坎托尔
 看不见的手
 看不见我
 看得见的风
@@ -6935,6 +6947,7 @@ use_preset_vocabulary: false
 烤肉排
 烤肉香香香卷
 考什克
+考斯奇
 考特里亚
 考威尔
 靠背椅
@@ -6995,6 +7008,7 @@ use_preset_vocabulary: false
 可视风味
 渴水的废都
 渴泽石
+渴真
 渴真之花
 刻草
 客从远方来
@@ -7243,6 +7257,7 @@ use_preset_vocabulary: false
 拉面屋台
 拉姆齐
 拉娜
+拉撒抹培
 拉瑟兰
 拉沙鲁
 拉斯科尔尼科夫
@@ -7479,7 +7494,9 @@ use_preset_vocabulary: false
 勒鲁瓦
 勒马克
 勒芒德
+勒梅蒂
 勒莫迪埃
+勒亚革欧瑟
 雷
 雷暴云
 雷杯
@@ -7770,6 +7787,7 @@ use_preset_vocabulary: false
 呖呖雀语
 莉利丝
 莉莉乌
+莉莉希
 栗栗羊
 莉莉尤
 历练的猎弓
@@ -7963,6 +7981,7 @@ use_preset_vocabulary: false
 烈绽放
 烈绽放队
 列柱沙原
+林布
 林藏
 临池学书
 林风之颂
@@ -8586,6 +8605,7 @@ use_preset_vocabulary: false
 马尼菲科
 马尼特
 马努阿
+玛诺薛西斯
 马齐尔
 玛乔丽
 马萨拉芝士球
@@ -8778,6 +8798,7 @@ use_preset_vocabulary: false
 茂知之壳
 帽子匠
 帽子水母
+梅妲
 梅蒂
 梅尔梅
 玫瑰花蕾
@@ -9000,6 +9021,7 @@ use_preset_vocabulary: false
 迷羽流击
 迷踪币
 迷醉长梦的守护
+米埃里蒂
 米尔斯
 米饭布丁
 米哈伊尔
@@ -10163,6 +10185,7 @@ use_preset_vocabulary: false
 欺诈师的红绸
 欺诈师列那
 栖枝
+琪埃洛
 奇奥
 旗本武将
 旗本重铠
@@ -11230,6 +11253,7 @@ use_preset_vocabulary: false
 若知是梦何须醒
 若竹煮
 若紫
+撒亚赞铎
 洒下甘露三千担
 萨巴桑炸角
 萨博兰
@@ -11261,6 +11285,7 @@ use_preset_vocabulary: false
 萨宁
 萨齐因
 萨莎
+萨塔蒂耶图
 萨维利
 萨维尼恩
 萨维特
@@ -11281,6 +11306,7 @@ use_preset_vocabulary: false
 塞西莉亚花
 塞西莉亚苗圃
 赛芭
+赛巴斯
 赛达菲
 赛金砖
 赛诺
@@ -11388,6 +11414,7 @@ use_preset_vocabulary: false
 莎迪蕾
 沙蒂尔
 沙蒂永
+沙尔
 沙尔梅
 莎凡娜
 莎菲
@@ -12665,6 +12692,7 @@ use_preset_vocabulary: false
 斯露莎
 斯米尔诺娃
 斯内库的灌木丛
+丝帕佳娜
 斯佩兰扎
 司彭西安号
 斯普赫
@@ -13826,6 +13854,7 @@ use_preset_vocabulary: false
 维耶尔默
 惟耶之实
 唯一的真相
+维伊科
 唯遗余烬
 伟大的脂肪
 伟大发条
@@ -14395,6 +14424,7 @@ use_preset_vocabulary: false
 希皮利
 希泊巴
 希珀
+希珀塞莱尼娅
 溪泉
 昔日绯月
 昔日宗室之仪
@@ -17108,6 +17138,7 @@ use_preset_vocabulary: false
 愿之翎
 约等于天下无敌
 约顿
+约法娜
 约哈南
 约亨
 约己之壁
@@ -17283,6 +17314,7 @@ use_preset_vocabulary: false
 蕴思的霜草
 运行原理
 蕴种印
+匝黎尼亚
 杂工
 杂菇荟萃
 杂货店老板
