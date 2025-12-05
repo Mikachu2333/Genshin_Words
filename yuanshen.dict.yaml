@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.3(1) | 2025.12.03 17:21"
+version: "6.3(2) | 2025.12.05 11:28"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -5661,6 +5661,7 @@ use_preset_vocabulary: false
 基维拉
 基翁
 机械坟场
+机械工学派
 机械梦
 机械体
 机械小人
@@ -16287,6 +16288,7 @@ use_preset_vocabulary: false
 银钥解封
 银夜点注满天星
 夤夜刻像
+夤夜之祝祷
 银影翩然韵盈眸
 吟游诗人
 吟游者之壶
