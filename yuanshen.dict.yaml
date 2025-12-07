@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.3(2) | 2025.12.05 11:28"
+version: "6.3(3) | 2025.12.07 17:27"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -443,6 +443,7 @@ use_preset_vocabulary: false
 奥义
 奥义梦想真说
 奥兹
+奥兹华尔多
 巴巴尔
 巴巴克
 芭芭拉
@@ -564,6 +565,7 @@ use_preset_vocabulary: false
 白鹭之庭
 白萝卜
 白马仙人
+白芒之书
 白猫神探
 白盘
 白刃流转
@@ -1418,6 +1420,7 @@ use_preset_vocabulary: false
 沧浪的寻宝者
 沧浪覆遗珠
 苍雷
+苍雷奔涌
 苍雷圣骸毒蝎
 苍雷紫电的记忆
 苍鲤灵珠
@@ -4739,6 +4742,7 @@ use_preset_vocabulary: false
 赫布里穆
 赫尔洛克
 赫尔曼
+赫芙那梵茵斯
 鹤观
 赫赫雷来
 赫赫雷涌起
@@ -5510,6 +5514,7 @@ use_preset_vocabulary: false
 火弓
 火锅龙
 火红的骑士
+火花魔法
 火花骑士
 火花无限
 火花叶之题
@@ -9334,6 +9339,7 @@ use_preset_vocabulary: false
 魔女常燃之羽
 魔女的茶会
 魔女的课业
+魔女的前夜礼
 魔女的心之火
 魔女的炎之花
 魔女的重唱
@@ -9922,6 +9928,7 @@ use_preset_vocabulary: false
 砰砰爆发箱
 砰砰大魔王
 砰砰盒座
+嘭嘭轰击
 砰砰礼物
 砰砰魔球总动员
 膨膨冰淇淋
@@ -10178,6 +10185,7 @@ use_preset_vocabulary: false
 七相一闪
 攲斜弥亘树
 七星璨璨凝流光
+七循之理
 七叶寂照秘密主
 七夜由美
 七叶之下
@@ -11877,6 +11885,7 @@ use_preset_vocabulary: false
 生产用货架
 生存专家
 笙歌鼎沸
+升华赞歌
 升华之后
 升降机
 升降柱
@@ -12613,6 +12622,7 @@ use_preset_vocabulary: false
 水仙之梦
 水乡冻肉
 水乡肉冻
+水星天的辉光
 水形幻灵
 水形幻人
 水形剑
@@ -12805,6 +12815,7 @@ use_preset_vocabulary: false
 送出些许光明
 颂福纳
 颂花盈皎宴
+颂时风若
 送仙典仪
 颂愿
 送葬的风暴
@@ -13197,6 +13208,7 @@ use_preset_vocabulary: false
 替代冲刺
 薙刀
 天臂池
+天步真原
 天才的发现
 天才之为构造之责任
 天地的刚风
@@ -14745,6 +14757,7 @@ use_preset_vocabulary: false
 霄雷的指引
 翛然旋舞的姿影
 宵色夜咏
+宵世幻奏
 宵宵夕月梦相逢
 枭总管
 小艾咪
@@ -16572,6 +16585,7 @@ use_preset_vocabulary: false
 幽夜华尔兹
 幽夜净土
 幽夜默示录
+幽夜七重奏
 幽仪逝往星芒
 悠奕画彩
 悠悠
