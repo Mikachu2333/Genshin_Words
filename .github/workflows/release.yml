@@ -1,106 +1,110 @@
 name: Release on Tag
 on:
-    push:
-        tags:
-            - "*" # 匹配所有 tag
-    workflow_dispatch: # 添加手动触发
+  push:
+    tags:
+      - "*" # 匹配所有 tag
+  workflow_dispatch: # 添加手动触发
 
 jobs:
-    release:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v4
-              with:
-                  fetch-depth: 0
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-            - name: Get tag name
-              id: get_tag
-              run: |
-                  TAG_NAME=$(git describe --tags --abbrev=0 2>/dev/null || echo "default-tag")
-                  if [ "$TAG_NAME" == "default-tag" ]; then
-                      echo "Warning: No tags found, using default tag 'default-tag'"
-                  fi
-                  echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
+      - name: Get tag name
+        id: get_tag
+        run: |
+          if ! TAG_NAME=$(git describe --tags --exact-match 2>/dev/null); then
+              echo "Error: Current commit is not tagged. Please tag the commit before releasing."
+              exit 1
+          fi
+          echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
 
-            - name: Get release message
-              id: release_info
-              run: |
-                  TAG_NAME="${{ steps.get_tag.outputs.tag_name }}"
+      - name: Get release message
+        id: release_info
+        run: |
+          TAG_NAME="${{ steps.get_tag.outputs.tag_name }}"
 
-                  # 尝试获取 tag 的注释信息
-                  TAG_MESSAGE=""
-                  if git tag -l -n99 "$TAG_NAME" | grep -q "."; then
-                      TAG_MESSAGE=$(git tag -l -n99 "$TAG_NAME" | sed "1s/^[^[:space:]]*[[:space:]]*//" | head -n -1)
-                  fi
+          # 尝试获取 tag 的注释信息
+          TAG_MESSAGE=""
+          if git tag -l -n99 "$TAG_NAME" | grep -q "."; then
+              TAG_MESSAGE=$(git tag -l -n99 "$TAG_NAME" | sed "1s/^[^[:space:]]*[[:space:]]*//")
+          fi
 
-                  # 如果 tag 有注释信息，优先使用
-                  if [ -n "$TAG_MESSAGE" ] && [ "$TAG_MESSAGE" != "$TAG_NAME" ]; then
-                      RELEASE_TITLE="$TAG_NAME"
-                      RELEASE_BODY="$TAG_MESSAGE"
-                      echo "Using tag annotation message"
+          # 如果 tag 有注释信息，优先使用
+          if [ -n "$TAG_MESSAGE" ] && [ "$TAG_MESSAGE" != "$TAG_NAME" ]; then
+              RELEASE_TITLE="$TAG_NAME"
+              RELEASE_BODY="$TAG_MESSAGE"
+              echo "Using tag annotation message"
+          else
+              # 否则尝试获取 commit 信息
+              COMMIT_SUBJECT=$(git log -1 --pretty=format:"%s" "$TAG_NAME" 2>/dev/null || echo "")
+              COMMIT_BODY=$(git log -1 --pretty=format:"%b" "$TAG_NAME" 2>/dev/null || echo "")
+              
+              if [ -n "$COMMIT_SUBJECT" ]; then
+                  RELEASE_TITLE="$TAG_NAME"
+                  if [ -n "$COMMIT_BODY" ]; then
+                      RELEASE_BODY="$COMMIT_SUBJECT"$'\n\n'"$COMMIT_BODY"
                   else
-                      # 否则尝试获取 commit 信息
-                      COMMIT_SUBJECT=$(git log -1 --pretty=format:"%s" "$TAG_NAME" 2>/dev/null || echo "")
-                      COMMIT_BODY=$(git log -1 --pretty=format:"%b" "$TAG_NAME" 2>/dev/null || echo "")
-                      
-                      if [ -n "$COMMIT_SUBJECT" ]; then
-                          RELEASE_TITLE="$TAG_NAME"
-                          if [ -n "$COMMIT_BODY" ]; then
-                              RELEASE_BODY="$COMMIT_SUBJECT"$'\n\n'"$COMMIT_BODY"
-                          else
-                              RELEASE_BODY="$COMMIT_SUBJECT"
-                          fi
-                          echo "Using commit message"
-                      else
-                          # 都没有就只用 tag 名称
-                          RELEASE_TITLE="$TAG_NAME"
-                          RELEASE_BODY="Release $TAG_NAME"
-                          echo "Using tag name only"
-                      fi
+                      RELEASE_BODY="$COMMIT_SUBJECT"
                   fi
+                  echo "Using commit message"
+              else
+                  # 都没有就只用 tag 名称
+                  RELEASE_TITLE="$TAG_NAME"
+                  RELEASE_BODY="Release $TAG_NAME"
+                  echo "Using tag name only"
+              fi
+          fi
 
-                  # 如果是手动触发，在描述中添加标识
-                  if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-                      RELEASE_BODY="$RELEASE_BODY"$'\n\n'"---"$'\n'"*此版本通过手动触发重新发布*"
-                  fi
+          # 如果是手动触发，在描述中添加标识
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+              RELEASE_BODY="$RELEASE_BODY"$'\n\n'"---"$'\n'"*此版本通过手动触发重新发布*"
+          fi
 
-                  # 处理换行符
-                  RELEASE_BODY="${RELEASE_BODY//$'\n'/'%0A'}"
+          # 处理换行符
+          RELEASE_BODY="${RELEASE_BODY//$'\n'/'%0A'}"
 
-                  echo "release_title=$RELEASE_TITLE" >> $GITHUB_OUTPUT
-                  echo "release_body=$RELEASE_BODY" >> $GITHUB_OUTPUT
+          echo "release_title=$RELEASE_TITLE" >> $GITHUB_OUTPUT
+          echo "release_body=$RELEASE_BODY" >> $GITHUB_OUTPUT
 
-            - name: Check if yuanshen.dict.yaml exists
-              id: check_file
-              run: |
-                  if [ -f "yuanshen.dict.yaml" ]; then
-                      echo "file_exists=true" >> $GITHUB_OUTPUT
-                      echo "Found yuanshen.dict.yaml"
-                  else
-                      echo "file_exists=false" >> $GITHUB_OUTPUT
-                      echo "Warning: yuanshen.dict.yaml not found in root directory"
-                  fi
+      - name: Check if release files exist
+        id: check_file
+        run: |
+          if [ -f "yuanshen.dict.yaml" ] && [ -f "yuanshen_fcitx5.txt" ]; then
+              echo "file_exists=true" >> $GITHUB_OUTPUT
+              echo "Found yuanshen.dict.yaml and yuanshen_fcitx5.txt"
+          else
+              echo "Error: One or more release files not found in root directory"
+              ls -la
+              exit 1
+          fi
 
-            - name: Delete existing release if exists
-              if: github.event_name == 'workflow_dispatch'
-              run: |
-                  TAG_NAME="${{ steps.get_tag.outputs.tag_name }}"
-                  # 尝试删除已存在的 release（如果有的话）
-                  gh release delete "$TAG_NAME" --yes || echo "No existing release found for $TAG_NAME"
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Delete existing release if exists
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          TAG_NAME="${{ steps.get_tag.outputs.tag_name }}"
+          # 尝试删除已存在的 release（如果有的话）
+          gh release delete "$TAG_NAME" --yes || echo "No existing release found for $TAG_NAME"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-            - name: Create Release
-              id: create_release
-              uses: softprops/action-gh-release@v2
-              with:
-                  tag_name: ${{ steps.get_tag.outputs.tag_name }}
-                  name: ${{ steps.release_info.outputs.release_title }}
-                  body: ${{ steps.release_info.outputs.release_body }}
-                  draft: false
-                  prerelease: false
-                  files: |
-                      yuanshen.dict.yaml
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.get_tag.outputs.tag_name }}
+          name: ${{ steps.release_info.outputs.release_title }}
+          body: ${{ steps.release_info.outputs.release_body }}
+          draft: false
+          prerelease: false
+          files: |
+            yuanshen.dict.yaml
+            yuanshen_fcitx5.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
