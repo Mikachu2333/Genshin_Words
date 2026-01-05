@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.3(10) | 2026.01.02 16:48"
+version: "6.3(11) | 2026.01.05 10:41"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -4549,6 +4549,7 @@ use_preset_vocabulary: false
 哈蒂丝
 哈多
 哈恩薇
+哈尔克
 哈尔乔
 哈尔塔甫
 哈尔瓦
@@ -8311,6 +8312,7 @@ use_preset_vocabulary: false
 流浪乐章
 流浪者
 流浪者的经验
+流浪之环
 琉璃
 琉璃百合
 琉璃袋
@@ -11705,6 +11707,7 @@ use_preset_vocabulary: false
 山珍凉卤面
 山珍热卤面
 山之血
+山中疗养院
 山中雾凇
 山中之物
 山主
@@ -18339,6 +18342,7 @@ use_preset_vocabulary: false
 诸相随念净行
 诸邪退散
 珠心熔毁
+朱亚尼
 诸曜饬令
 诸叶辨通
 朱殷石

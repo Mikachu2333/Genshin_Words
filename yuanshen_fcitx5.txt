@@ -24872,6 +24872,10 @@
 哈恩薇	he'en'wei	0
 哈恩薇	sha'en'wei	0
 哈恩薇	ta'en'wei	0
+哈尔克	ha'er'ke	0
+哈尔克	he'er'ke	0
+哈尔克	sha'er'ke	0
+哈尔克	ta'er'ke	0
 哈尔乔	ha'er'qiao	0
 哈尔乔	he'er'qiao	0
 哈尔乔	sha'er'qiao	0
@@ -46020,6 +46024,8 @@
 流浪者	liu'lang'zhe	0
 流浪者的经验	liu'lang'zhe'de'jing'yan	0
 流浪者的经验	liu'lang'zhe'di'jing'yan	0
+流浪之环	liu'lang'zhi'huan	0
+流浪之环	liu'lang'zhu'huan	0
 琉璃	liu'li	0
 琉璃百合	liu'li'bai'ge	0
 琉璃百合	liu'li'bai'he	0
@@ -64718,6 +64724,7 @@
 山之血	shan'zhi'xue	0
 山之血	shan'zhu'xie	0
 山之血	shan'zhu'xue	0
+山中疗养院	shan'zhong'liao'yang'yuan	0
 山中雾凇	shan'zhong'wu'song	0
 山中之物	shan'zhong'zhi'wu	0
 山中之物	shan'zhong'zhu'wu	0
@@ -99290,6 +99297,8 @@
 诸邪退散	zhu'ya'tui'san	0
 诸邪退散	zhu'ye'tui'san	0
 珠心熔毁	zhu'xin'rong'hui	0
+朱亚尼	shu'ya'ni	0
+朱亚尼	zhu'ya'ni	0
 诸曜饬令	zhu'yao'chi'lian	0
 诸曜饬令	zhu'yao'chi'ling	0
 诸叶辨通	zhu'xie'ban'tong	0
