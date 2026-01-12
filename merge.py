@@ -14,6 +14,7 @@ def merge(input_file: str):
 
     # 运行 genshin_py_sort.exe
     subprocess.run(["./genshin_pinyin_sort.exe", './yuanshen.dict.yaml'])
+    subprocess.run(["./genshin_pinyin_add.exe", './yuanshen.dict.yaml'])
 
 
 merge("./after_del.txt")

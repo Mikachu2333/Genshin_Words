@@ -7,13 +7,11 @@
 1. 将 [Snap.Metadata](https://github.com/DGP-Studio/Snap.Metadata) 克隆到本地
    - 示例：`git clone https://github.com/DGP-Studio/Snap.Metadata --depth=5`
 2. 根据上版本的更新，选择性 diff 增量内容并输出到指定文件
-   - 示例：`git diff 9bff4e79a80b main -- "*CHS*" > new.diff`
+   - 示例：`git diff 7e6fc5d01093 main -- "*CHS*" > new.diff`
 3. 正则筛选，运行 `regex.py` 文件，打开生成的 `./after_del.txt`
 4. 手动断句
 5. 运行 `merge.py`
-6. 运行 `./genshin_pinyin_sort ./yuanshen.dict.yaml`
-7. 运行 `./genshin_pinyin_add ./yuanshen.dict.yaml`
-8. 上传 `yuanshen.dict.yaml`、`yuanshen_fcitx5.txt`
+6. 上传 `yuanshen.dict.yaml`、`yuanshen_fcitx5.txt`
 
 ## 致谢
 
