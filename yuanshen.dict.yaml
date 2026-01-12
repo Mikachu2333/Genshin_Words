@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.3(11) | 2026.01.05 10:41"
+version: "6.3(12) | 2026.01.12 15:09"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -217,6 +217,7 @@ use_preset_vocabulary: false
 埃兰
 埃里卡特
 埃洛伊
+哀慕的恋歌
 哀乞亦无用
 埃斯蒙德
 埃斯诺尔
@@ -927,6 +928,7 @@ use_preset_vocabulary: false
 奔雷手秦师傅
 奔流不息的记忆
 奔袭战术
+奔霄
 奔霄颂玉轮
 奔行世间
 奔行原野
@@ -961,6 +963,7 @@ use_preset_vocabulary: false
 比赛公告板
 比赛选手
 比塔
+笔腾墨跃
 笔头之格
 比于什
 笔直航道
@@ -1735,6 +1738,7 @@ use_preset_vocabulary: false
 晨风拭惬气
 晨风之诗
 尘歌壶
+晨光的明誓
 尘辉兑换
 晨昏破晓之束
 陈娇花
@@ -2003,6 +2007,7 @@ use_preset_vocabulary: false
 冲天转转
 冲鸭机关
 冲压模具
+充盈
 充盈之月
 冲撞手
 崇诚之真
@@ -2155,6 +2160,7 @@ use_preset_vocabulary: false
 春景花房
 春来早知
 春露
+春律的片刻
 春庭景如旧
 春曦画桃符
 春曦屏风
@@ -2853,6 +2859,7 @@ use_preset_vocabulary: false
 叠加层数
 叠架远光灯
 迭卡拉庇安
+昳丽
 蝶去蝶来
 蝶引来生
 蝶引玉子穿白波
@@ -3569,6 +3576,7 @@ use_preset_vocabulary: false
 风的护佑
 风队
 风盾
+锋萼花
 风法
 风法器
 风方碑
@@ -3586,6 +3594,7 @@ use_preset_vocabulary: false
 风花的呼吸
 风花的馈礼
 风花的邀约
+风花的箴铭
 风花节
 风花节纪念气球
 风花球
@@ -4614,6 +4623,8 @@ use_preset_vocabulary: false
 海港雾中
 海钩帮
 海皇香脂
+海捷德
+海精灵们的礼物
 海精之章
 海精座
 海蓝
@@ -4862,6 +4873,7 @@ use_preset_vocabulary: false
 黑猫
 黑泥流中的光辉
 黑钱领主
+黑枪太婆
 黑犬
 黑日
 黑蛇剑术
@@ -5201,6 +5213,7 @@ use_preset_vocabulary: false
 华丽的宝箱
 华清归藏密宫
 华饰之兜
+华黍由仪
 滑头鬼
 华庄严果
 华紫樱绯
@@ -7203,6 +7216,7 @@ use_preset_vocabulary: false
 枯焦状态
 哭哭球球
 枯木方向标
+枯萎
 枯萎的苦舍桓
 窟岩
 枯叶紫英
@@ -8771,6 +8785,7 @@ use_preset_vocabulary: false
 脉冲波
 脉冲的魔女
 麦尔斯
+麦酒大厅
 麦克
 麦克唐纳
 迈勒斯
@@ -9462,6 +9477,7 @@ use_preset_vocabulary: false
 魔鸟
 魔女常燃之羽
 魔女的茶会
+魔女的花园
 魔女的课业
 魔女的前夜礼
 魔女的心之火
@@ -11359,6 +11375,7 @@ use_preset_vocabulary: false
 如夜风的谜烟
 如烨烁的远星
 如饴的蜜草
+如意斗彩
 如意祝柬
 如影流露的冷刃
 如雨的电浆
@@ -11808,6 +11825,7 @@ use_preset_vocabulary: false
 摄影师
 赦罪
 深黯的谜烟
+深黯钓客
 深黯魇语之主
 深藏
 深藏甘香的蜜酿
@@ -11885,10 +11903,12 @@ use_preset_vocabulary: false
 深渊教团
 深渊界门
 深渊来袭了
+深渊蚀能
 深渊使徒
 深渊使徒激流
 深渊使徒霜落
 深渊司铎
+深渊隙线
 深渊咏者
 深渊咏者渊火
 深渊咏者紫电
@@ -12182,6 +12202,7 @@ use_preset_vocabulary: false
 施工过半的围栏
 失光块骨
 诗汇之章
+失活
 失活菌核
 施季里茨
 诗酒之城
@@ -12250,6 +12271,7 @@ use_preset_vocabulary: false
 食莲者
 石榴
 石榴开怀
+十六倍曼陀草
 时律为眷
 石门
 食梦貘
@@ -13937,8 +13959,10 @@ use_preset_vocabulary: false
 望泷村长老
 忘却之峡
 望舒客栈
+望乡的孤狼
 忘形炼智
 忘玄
+望崖营壁
 望月
 望月吼哕声
 妄执如雾
@@ -14114,6 +14138,7 @@ use_preset_vocabulary: false
 未熄的剑柄
 魏小保
 为心魂的献礼
+未言的宴话
 未兆的封印咒缚
 未知的圣所
 未知之星
@@ -14571,6 +14596,7 @@ use_preset_vocabulary: false
 西风骑士团
 西风枪术
 西风枪术镝传
+西风戍垒
 西风佑我
 西风长枪
 西风之眷
@@ -14841,6 +14867,11 @@ use_preset_vocabulary: false
 献予慵眠的休假日
 献与永恒的宁静
 献予永夜的狂欢舞
+献与月的华梦
+献与月的离光
+献与月的银冕
+献与月的终时
+献与月的酻祭
 献予灼原的五重奏
 现在是我的了
 现制名肴
@@ -15349,6 +15380,7 @@ use_preset_vocabulary: false
 嗅嗅鼹鼠
 袖珍松木小屋
 虚构的凯旋式
+虚海望
 虚耗
 虚极花蕊
 虚假的天幕
@@ -15722,12 +15754,14 @@ use_preset_vocabulary: false
 胭儿
 烟绯
 烟绯律法咨询事务所
+烟硌山峰
 烟海梭巡
 烟红垂露树
 烟红悬针树
 烟花匠
 烟花试玩计划
 烟花筒
+湮晦的魔眼
 烟火打扬
 烟火之邀
 烟景迷宫
@@ -17392,6 +17426,7 @@ use_preset_vocabulary: false
 月结晶
 月矩力
 月矩力波
+月矩力光刃
 月矩力机关
 月矩力试验设计局
 月矩力适应性缺陷
@@ -17424,6 +17459,7 @@ use_preset_vocabulary: false
 越石丸
 月疏
 月髓
+月童的库藏
 玥文
 月卧檐上
 月汐的扰动
@@ -17434,9 +17470,11 @@ use_preset_vocabulary: false
 月曜反应
 月夜的叙事诗
 月引归途
+月引明霄
 月引周巡之述演
 月影徒伴身
 月影行者
+月映仙踪
 月咏
 月与浪迹的乐园
 月谕的半步舞
@@ -18362,6 +18400,7 @@ use_preset_vocabulary: false
 竹节
 竹框酒坛
 逐浪心得
+逐浪野
 竹篱茅舍
 竹林月夜
 烛伞蘑菇
