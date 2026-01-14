@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.3(14) | 2026.01.13 02:37"
+version: "6.4(3) | 2026.01.14 21:28"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -207,6 +207,7 @@ use_preset_vocabulary: false
 啊哈
 埃德
 埃蒂安
+埃蒂娅
 埃尔庇艾
 埃尔顿
 埃尔顿海沟
@@ -218,6 +219,7 @@ use_preset_vocabulary: false
 埃兰
 埃里卡特
 埃洛伊
+埃马纽艾尔
 哀慕的恋歌
 哀乞亦无用
 埃斯蒙德
@@ -264,6 +266,7 @@ use_preset_vocabulary: false
 艾珂
 爱可
 爱可菲
+艾克贝特
 艾库瓦
 艾拉
 艾拉姆
@@ -294,6 +297,7 @@ use_preset_vocabulary: false
 爱是难驯鸟
 爱丝蒂
 艾斯特尔
+爱薇艾
 艾威尔森
 爱维莉
 爱维琳
@@ -334,6 +338,7 @@ use_preset_vocabulary: false
 安洁娅
 安卡
 安可
+安莱夫
 安乐秘汤疗法
 安里
 安洛丝
@@ -354,6 +359,7 @@ use_preset_vocabulary: false
 安饶之陆
 安饶之野
 安萨鲁
+安塞姆
 安神秘法
 安宿
 安特曼
@@ -740,6 +746,7 @@ use_preset_vocabulary: false
 伴行的旅路
 半永恒统辖矩阵
 伴月纪闻
+伴月同眠
 伴爪同行
 半自动锤锻
 邦邦滚石
@@ -1543,6 +1550,7 @@ use_preset_vocabulary: false
 草弓
 草国
 草国队
+草惠
 草火
 草鸡
 草晶蝶
@@ -3070,6 +3078,7 @@ use_preset_vocabulary: false
 杜马沃捷
 杜麦尼
 杜麦尼的诗篇
+杜纳塔斯
 度尼娅
 杜尼亚莎
 杜若丸
@@ -3172,6 +3181,8 @@ use_preset_vocabulary: false
 厄歌莉娅
 厄卡特尔
 遏浪
+厄雷沃
+厄蕾
 厄里那斯
 厄里那斯内部
 厄灵
@@ -3505,6 +3516,7 @@ use_preset_vocabulary: false
 斐林
 朏魄含光
 匪石
+朏耀果
 翡玉
 翡玉法球
 翡玉法珠
@@ -3841,6 +3853,7 @@ use_preset_vocabulary: false
 浮空平台
 浮空石
 弗拉德
+弗莱库
 弗莱琪
 弗莱谢
 弗朗孔斯汀
@@ -4160,6 +4173,7 @@ use_preset_vocabulary: false
 歌与亡者之舞
 歌之铃兰花
 格奥尔格
+格迪米纳什
 格斗龙龙
 格尔恰科娃
 格莱普尼尔
@@ -4181,6 +4195,7 @@ use_preset_vocabulary: false
 格茜妮
 葛瑞丝
 格式塔
+格维妲
 格乌登提
 革新的旋风
 革新烹饪理论
@@ -4422,6 +4437,7 @@ use_preset_vocabulary: false
 古星命定之地
 古寻梦祭司的记录
 古岩龙蜥
+古岩之刃
 古遗迹步道
 古仪鸣砂掣雷
 古月遗骸
@@ -5148,6 +5164,7 @@ use_preset_vocabulary: false
 狐耳玉子
 湖光顶调
 湖光铃兰
+槲寄生
 胡里约
 壶灵
 狐灵食罪式
@@ -5883,6 +5900,7 @@ use_preset_vocabulary: false
 鹡鸰
 集录祈愿
 笈名海滨
+吉娜
 集念急救
 极品飞龙
 集齐
@@ -6353,6 +6371,7 @@ use_preset_vocabulary: false
 截断
 劫火高扬
 结界
+结界晶核
 结晶
 结晶反应
 结晶赋能
@@ -6375,6 +6394,7 @@ use_preset_vocabulary: false
 结社集会所
 结实的骨片
 结实的木桶
+捷塔纳什
 结题时刻
 杰万
 捷悟
@@ -6445,6 +6465,7 @@ use_preset_vocabulary: false
 今日便要
 今日便要算清一切宿怨
 今日收获
+金色剧团
 金色三重烛台
 金色弦丝
 金色旋律的断章
@@ -7052,6 +7073,7 @@ use_preset_vocabulary: false
 卡帕可
 卡帕奇莉
 卡佩
+卡皮利托姆
 卡琵莉亚
 卡皮塔诺
 卡皮托林山
@@ -7170,6 +7192,7 @@ use_preset_vocabulary: false
 苛捐
 科科庞
 磕磕碰碰之谊
+科克伦
 柯莱
 柯莱莱
 柯蕾特莉
@@ -7199,6 +7222,7 @@ use_preset_vocabulary: false
 科斯特利茨基
 柯塔娜
 柯泰尼科夫
+科特斯
 柯梯米
 科西霍
 柯夏尼娜
@@ -7241,6 +7265,7 @@ use_preset_vocabulary: false
 克劳雅利亚
 氪佬
 克雷薇
+克里克
 克里洛
 克里托夫
 克利普斯
@@ -7257,6 +7282,7 @@ use_preset_vocabulary: false
 刻晴
 刻晴激化
 克柔
+克什尼克之炬
 刻师傅
 恪守时间候车站牌
 克瓦斯尼科夫
@@ -7497,9 +7523,11 @@ use_preset_vocabulary: false
 辣椒英雄
 辣肉窝窝头
 辣味时蔬烩肉
+莱昂
 来补
 来点颜色瞧瞧
 莱恩
+莱夫赫姆
 来复知时
 莱艮芬德
 莱赫妲尔
@@ -7548,6 +7576,7 @@ use_preset_vocabulary: false
 蓝宝石
 蓝宝石之城
 兰卑浮
+兰草之刃
 兰茶荼
 兰阐荼
 蓝川丞
@@ -7590,6 +7619,7 @@ use_preset_vocabulary: false
 兰那罗的世界
 兰纳真
 兰难世
+兰涅
 兰帕卡提
 蓝珀湖
 兰耆都
@@ -7733,6 +7763,7 @@ use_preset_vocabulary: false
 勒梅蒂
 勒莫迪埃
 勒塞克
+勒维洛
 勒亚革欧瑟
 雷
 雷暴云
@@ -7789,6 +7820,7 @@ use_preset_vocabulary: false
 雷九万班
 雷抗
 雷科
+雷岚
 雷狼
 雷狼之爪
 雷厉
@@ -8396,6 +8428,7 @@ use_preset_vocabulary: false
 绫羽二重
 灵与火的织卷
 聆雨听竹
+灵域花
 灵渊
 灵沼云池
 灵织
@@ -8731,7 +8764,9 @@ use_preset_vocabulary: false
 洛伽
 洛格瑟姆
 落虹之愿
+洛杰尔
 洛柯娅
+洛朗
 洛伦佐
 落落磊磊
 落落莓
@@ -8872,11 +8907,13 @@ use_preset_vocabulary: false
 马努阿
 玛诺薛西斯
 马齐尔
+马其莫斯
 玛茜拉
 玛乔丽
 马萨拉芝士球
 马塞拉
 玛塞勒
+马塞洛
 玛莎
 马斯克
 马斯克礁
@@ -8903,6 +8940,7 @@ use_preset_vocabulary: false
 马西娜努伊
 玛亚姆
 玛亚薇
+玛伊佳
 玛伊蕾
 马伊塔
 玛因
@@ -8944,6 +8982,7 @@ use_preset_vocabulary: false
 满溢之壶
 满足的重量
 满足沙拉
+蔓草莲台
 蔓草收藏家
 曼达娜
 漫古的思虑
@@ -9277,6 +9316,8 @@ use_preset_vocabulary: false
 迷你烛台
 弥怒
 弥诺
+靡穷
+靡穷之孽
 谜身影盗
 弥生漆器
 弥生七月
@@ -9330,6 +9371,7 @@ use_preset_vocabulary: false
 秘法惊喜特派
 秘法之基
 密固的横脊
+密合之约印
 谧晖白枝
 秘诲揭示之书
 秘火
@@ -9827,11 +9869,13 @@ use_preset_vocabulary: false
 纳库尔
 那菈
 纳里曼
+娜莉
 娜玛卡
 纳纳卡
 娜娜丝梨
 娜娜丝梨饼
 娜娜丝梨人
+纳尼娜
 那诺曼辛
 娜帕
 纳齐森科鲁兹
@@ -9912,6 +9956,7 @@ use_preset_vocabulary: false
 内嘉
 内燃奔进
 内森
+内文
 能跨越的边界线
 能量洪流
 能量界域
@@ -10007,6 +10052,7 @@ use_preset_vocabulary: false
 啮合齿轮
 涅兰
 涅米宁
+涅诺宁
 涅提
 蹑影轻踪
 您好
@@ -10094,6 +10140,7 @@ use_preset_vocabulary: false
 欧科塔维亚
 欧拉
 欧洛伦
+欧密涅
 欧诺莉
 欧欧
 欧仁妮
@@ -10136,6 +10183,7 @@ use_preset_vocabulary: false
 帕维兹拉万
 帕沃核心
 帕西法尔
+帕伊沃
 帕兹
 牌出
 牌圣之手
@@ -11117,6 +11165,7 @@ use_preset_vocabulary: false
 穹庭
 琼玉果汤
 秋的礼物
+秋分布道听记
 秋分山
 秋分山西侧
 秋分之地的陈酿
@@ -11434,6 +11483,7 @@ use_preset_vocabulary: false
 熔毁之翼
 熔火双角
 熔金铸躯
+荣井知伊
 熔裂的罅隙
 熔裂突刺
 熔流岩池
@@ -12014,6 +12064,7 @@ use_preset_vocabulary: false
 深黯的裂眼
 深黯的谜烟
 深黯钓客
+深黯护盾
 深黯魇语之主
 深藏
 深藏甘香的蜜酿
@@ -12346,6 +12397,7 @@ use_preset_vocabulary: false
 圣名环座
 圣牌挑战
 盛气
+圣日耳曼努斯
 圣山残辉
 圣山引路人
 圣山之心
@@ -12630,6 +12682,7 @@ use_preset_vocabulary: false
 逝往星芒
 试问
 事象凝核
+事象数式
 式小将
 噬星魔鸦
 试行斗篷
@@ -12799,6 +12852,7 @@ use_preset_vocabulary: false
 树梢信步
 树王圣体菇
 庶务长
+树形
 漱玉
 漱玉工奇斗虫大玄境
 恕筠
@@ -12835,6 +12889,7 @@ use_preset_vocabulary: false
 霜见雪关扉
 双角的花冠
 霜劫精油
+霜精
 霜镌的执凭
 霜铠王
 双雷
@@ -13024,6 +13079,7 @@ use_preset_vocabulary: false
 水与失踪者
 水与土的洞窟
 水与土之眼
+水狱
 水域清理者
 水域维护鱼
 水元素
@@ -14107,6 +14163,7 @@ use_preset_vocabulary: false
 万奎洛
 万籁俱寂
 万雷归葬
+万雷之刃
 万里城垣建造时
 万里春
 万里飞虹
@@ -14377,6 +14434,7 @@ use_preset_vocabulary: false
 为最美者
 温迪
 温敷战术包扎
+温弗里徳
 温火饵
 温妮莎
 温妮莎传奇
@@ -14489,6 +14547,7 @@ use_preset_vocabulary: false
 沃陆之邦的勇进
 沃伦
 沃摩延
+沃瑟博尔
 沃塔斯卡
 卧苔石
 沃特林
@@ -15732,6 +15791,7 @@ use_preset_vocabulary: false
 旋流垂光
 旋流涡转
 旋流之瓶景
+璇珑花
 玄鸾画水
 旋律行进的方向
 玄迷灵敏的指法
@@ -15973,6 +16033,7 @@ use_preset_vocabulary: false
 牙纛探海
 芽绿
 芽绿锦簇
+雅各芭
 雅各布
 雅珂达
 雅库普
@@ -15991,12 +16052,14 @@ use_preset_vocabulary: false
 雅塔
 雅瓦娜尼
 亚尔伯里奇
+亚尔杰代伊
 亚格贝乌
 亚霍
 亚蕾琪
 亚历山德拉
 亚琉
 亚洛辛斯基
+亚纳瓦娜
 亚瑟
 亚瑟先生
 亚什特的赞歌
@@ -16018,6 +16081,7 @@ use_preset_vocabulary: false
 烟花试玩计划
 烟花筒
 湮晦的魔眼
+湮晦之域
 烟火打扬
 烟火之邀
 烟景
@@ -16176,6 +16240,7 @@ use_preset_vocabulary: false
 岩主天星
 檐柱
 延贮之法
+岩坠
 岩尊像
 偃草若化
 演唱开始
@@ -16230,6 +16295,7 @@ use_preset_vocabulary: false
 阳华
 阳华领域
 阳介
+阳炬蕊
 洋流
 洋流大王
 阳辔之遗
@@ -16477,6 +16543,7 @@ use_preset_vocabulary: false
 一角风光
 一角幽芳
 壹阶
+伊捷莉
 一经一纬
 依旧让人垂涎欲滴
 一决胜负
@@ -16674,7 +16741,11 @@ use_preset_vocabulary: false
 以证公平
 以罪行惩戒罪人
 异邦草翦
+异邦的澄水
+异邦的蕙草
+异邦的坚岩
 异邦的星火
+异邦的远雷
 异邦惊雷
 异邦人喧哗旅
 异邦人与异邦人
@@ -16761,6 +16832,7 @@ use_preset_vocabulary: false
 因果点破
 殷红终夜
 音火锻淬
+阴炬蕊
 因卡纳克
 因愧疚而生的医术
 音乐不灭
@@ -17755,6 +17827,7 @@ use_preset_vocabulary: false
 月落银
 跃律琴
 钺矛
+月凝屏障
 月女城
 月女的华彩
 月色
@@ -18645,6 +18718,7 @@ use_preset_vocabulary: false
 重熔装置
 众生之谣
 众水的颂诗
+众水之刃
 重塑仪
 众王之都的开端
 仲夏庭园
@@ -18884,6 +18958,7 @@ use_preset_vocabulary: false
 斫峰之刃
 灼火的追忆
 卓霍米菈
+卓佳娜
 斫雷
 卓里克
 斫灭海山
