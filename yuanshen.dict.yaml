@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.4(3) | 2026.01.14 21:28"
+version: "6.4(4) | 2026.01.15 23:58"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -39,6 +39,7 @@ use_preset_vocabulary: false
 阿尔尼姆
 阿尔帕
 阿尔瓦
+阿尔维斯
 阿尔沃
 阿尔希普
 阿法纳西
@@ -87,6 +88,7 @@ use_preset_vocabulary: false
 阿拉米
 阿拉耶什
 阿莱夫
+阿莱娜
 阿兰
 阿雷
 阿蕾妲
@@ -138,6 +140,7 @@ use_preset_vocabulary: false
 阿如村
 阿如的倒影
 阿萨里格
+阿瑟波夫
 阿瑟尔
 阿莎莎
 阿山婆
@@ -299,6 +302,7 @@ use_preset_vocabulary: false
 艾斯特尔
 爱薇艾
 艾威尔森
+艾维雷勒安
 爱维莉
 爱维琳
 艾维娜
@@ -456,6 +460,7 @@ use_preset_vocabulary: false
 奥奇卡纳塔
 奥奇坎
 奥赛尔
+奥什卡里
 奥特
 奥特华
 奥乌兹
@@ -1075,6 +1080,7 @@ use_preset_vocabulary: false
 别宫的无垢穹顶
 别宫的旋流垂光
 别捷丝卡娅
+别蕾娜
 别离的思念之歌
 别再冲了
 缤彩飘曳
@@ -1306,6 +1312,7 @@ use_preset_vocabulary: false
 布拉维
 布拉维的藏书室
 布拉维的锻压工坊
+布莱赫
 布莱卡利
 布兰
 布兰琪
@@ -2672,6 +2679,7 @@ use_preset_vocabulary: false
 德肋庇革劳诺之箭
 德吕阿的夜曲
 德米安
+德米特里
 德米特里耶维奇
 德尼谢尔
 德皮耶里
@@ -3050,6 +3058,7 @@ use_preset_vocabulary: false
 笃行的哲学
 笃行的指引
 渡边
+杜布罗维奇
 渡厄权能
 渡厄厅
 度厄真符
@@ -3432,11 +3441,13 @@ use_preset_vocabulary: false
 非花非雾
 飞花照船
 绯花之壶
+菲拉耶夫
 飞澜鲨鲨
 飞雷
 飞雷御执
 飞雷之巴印
 飞雷之弦振
+菲利波夫
 菲莉吉丝
 菲利斯
 菲林斯
@@ -5173,6 +5184,7 @@ use_preset_vocabulary: false
 胡马延
 狐猫鸟与怪
 胡妮
+湖畔的棱晶
 湖畔的尼尼安涅
 湖畔的维维安涅
 胡塞尼
@@ -7126,6 +7138,7 @@ use_preset_vocabulary: false
 开阳星
 凯安
 凯茨莱茵
+凯雷丝之翼
 凯撒
 凯撒来了也不卖
 凯瑟琳
@@ -7520,6 +7533,7 @@ use_preset_vocabulary: false
 拉特凡
 拉瓦特
 菈乌玛
+拉乌斯万格
 辣椒英雄
 辣肉窝窝头
 辣味时蔬烩肉
@@ -7823,6 +7837,7 @@ use_preset_vocabulary: false
 雷岚
 雷狼
 雷狼之爪
+雷勒
 雷厉
 雷利尔
 雷雳寰宇
@@ -9317,6 +9332,7 @@ use_preset_vocabulary: false
 弥怒
 弥诺
 靡穷
+靡穷深壑
 靡穷之孽
 谜身影盗
 弥生漆器
@@ -9729,6 +9745,7 @@ use_preset_vocabulary: false
 茉莉
 茉莉低语
 末路狂花
+莫洛佐夫
 墨绿羽饰
 沫芒宫
 默默无名者
@@ -9754,6 +9771,7 @@ use_preset_vocabulary: false
 殁者
 貘枕之章
 貘枕座
+末缀之劫
 莫孜甘
 缪格雷
 缪妮
@@ -10179,10 +10197,12 @@ use_preset_vocabulary: false
 帕森
 帕斯里
 帕特里克
+帕托利切夫
 帕维尔
 帕维兹拉万
 帕沃核心
 帕西法尔
+帕伊娃
 帕伊沃
 帕兹
 牌出
@@ -10724,6 +10744,7 @@ use_preset_vocabulary: false
 气鼓鼓
 气候相交之地
 契令的酬偿
+契诺夫
 气泡水
 气泡酸莓汁
 契切林
@@ -11310,6 +11331,7 @@ use_preset_vocabulary: false
 却砂木立灯
 却月的轻舞
 却之
+群狼之怒
 群龙之首
 群鸟的授记
 群鸥曾呜咽
@@ -13272,6 +13294,7 @@ use_preset_vocabulary: false
 苏尔特洛奇的弟子
 苏二娘
 苏法什
+苏霍金
 苏霍维赫
 苏莱卡
 苏里奎
@@ -13579,6 +13602,7 @@ use_preset_vocabulary: false
 特拉扎库伊洛特尔
 特拉佐莉
 特立尼达
+特鲁别茨科伊
 特洛黛
 特马乔
 特纳
@@ -14063,12 +14087,14 @@ use_preset_vocabulary: false
 挖矿
 瓦阿吉
 瓦达娜
+瓦蒂什
 瓦恩斯图格
 瓦尔米
 瓦尔普吉斯
 瓦尔普吉斯的游戏
 瓦尔坦
 瓦格纳
+瓦加劳
 瓦卡尔
 瓦凯
 瓦凯努伊
@@ -14295,6 +14321,7 @@ use_preset_vocabulary: false
 维多利亚
 唯厄月可知晓
 维恩歌莱号
+韦尔赫拉茨基
 维尔芒
 韦尔赛
 维护机关
@@ -14871,6 +14898,7 @@ use_preset_vocabulary: false
 希顿
 西尔弗
 希尔米
+西尔维斯特
 希尔维娅
 西风吹拂之时
 西风大剑
@@ -14956,6 +14984,7 @@ use_preset_vocabulary: false
 希望是个好词
 希望之路
 西薇
+西维
 希乌休
 西西
 希汐岛
@@ -15081,6 +15110,7 @@ use_preset_vocabulary: false
 仙境舞会
 仙麟之章
 仙麟座
+仙灵的王廷
 仙灵与星空之秘
 仙灵之庭
 仙灵之友
@@ -15102,6 +15132,7 @@ use_preset_vocabulary: false
 先阵之月
 纤姿曼舞
 仙祖法蜕
+先祖狼魂
 弦发的苍风
 弦歌知雅意
 闲鹤之章
@@ -15398,6 +15429,7 @@ use_preset_vocabulary: false
 啸风之马
 效能模拟实战环
 肖诺
+肖诺科维奇
 笑容节拍
 肖西韦尔
 咲耶
@@ -16315,6 +16347,7 @@ use_preset_vocabulary: false
 妖精缙绅
 妖狸
 妖力
+妖僧
 妖说歧尾之变
 妖雾重重
 妖邪退散
@@ -16952,6 +16985,7 @@ use_preset_vocabulary: false
 英烈伟迹
 鹰翎
 英灵的归处见证
+英灵的享殿
 鹰翎状态
 樱眠
 莺泣石
@@ -18691,6 +18725,7 @@ use_preset_vocabulary: false
 种识之叶
 种子镜
 仲冬之月
+众噩之蝰
 众花园中的一棵核桃树
 重华叠霜
 重华叠霜领域
@@ -18993,6 +19028,7 @@ use_preset_vocabulary: false
 赀宝浮棚
 兹踞
 兹蹻
+滋蔓之茵
 滋水机关
 兹沃妮
 咨询师
