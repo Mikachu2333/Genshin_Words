@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.4(5) | 2026.01.19 00:56"
+version: "6.4(6) | 2026.02.01 01:22"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -826,6 +826,7 @@ use_preset_vocabulary: false
 报恩之守
 爆发强效
 爆发专精
+报菲
 暴风般狂啸之龙
 暴风之眼
 爆光冲击
@@ -2528,6 +2529,7 @@ use_preset_vocabulary: false
 大御所大人像
 大愿
 大月卡
+大詹
 大詹灯
 大招
 大铸造者
@@ -2788,6 +2790,7 @@ use_preset_vocabulary: false
 地方传奇
 地宫传奇
 帝皇的决断
+地魂
 第几类接触
 第九连队
 帝君
@@ -3934,6 +3937,7 @@ use_preset_vocabulary: false
 符文机关
 符文之齿
 福无双至
+浮霄笼
 拂晓的枢机卿
 拂晓之星
 浮行
@@ -6395,6 +6399,7 @@ use_preset_vocabulary: false
 杰克
 捷勒
 杰里
+节礼商货
 节礼霄灯
 杰洛尼
 节拍撞球
@@ -6888,6 +6893,7 @@ use_preset_vocabulary: false
 举目之处皆为画布
 举行仪式的幽影
 举业的识刻
+聚财兜
 剧场的沁凉水雾
 剧场的琼片丛簇
 剧场的盛意摹刻
@@ -7667,6 +7673,7 @@ use_preset_vocabulary: false
 郎勃罗
 狼的末路
 郎蒂
+琅玕
 琅玕国
 琅玕衍义
 狼末
@@ -8045,6 +8052,7 @@ use_preset_vocabulary: false
 李晓
 李小虎
 礼信
+礼仪玉
 礼予天地四方
 鲤跃天门开
 理之冠
@@ -8669,7 +8677,9 @@ use_preset_vocabulary: false
 卢什涅
 卢施
 卢塔
+卢翁
 卢西恩
+卢香香
 炉心机造
 炉心冷却
 炉灶之魔神
@@ -8991,6 +9001,7 @@ use_preset_vocabulary: false
 满命
 满命满精
 满命座
+满目
 满天星
 满庭芳
 满蓄力
@@ -10403,6 +10414,7 @@ use_preset_vocabulary: false
 平台梯
 平稳护送
 平稳驾驶
+萍溪
 屏息秘传
 平息鸣雷的尊者
 平妖大圣
@@ -11427,6 +11439,7 @@ use_preset_vocabulary: false
 热源
 人创造的奇迹
 人格之象限
+人魂
 人间百态
 人间剧
 人聚人散
@@ -11620,6 +11633,7 @@ use_preset_vocabulary: false
 如烨烁的远星
 如饴的蜜草
 如意斗彩
+如意钱
 如意祝柬
 如影流露的冷刃
 如雨的电浆
@@ -12031,6 +12045,7 @@ use_preset_vocabulary: false
 上契
 上取红霞
 上杉
+上尸神
 上挑攻击
 尚未结束的故事
 尚未致死的疾病
@@ -12556,6 +12571,7 @@ use_preset_vocabulary: false
 石珀
 食谱
 食谱笔札
+石青
 石山之中
 石狮子像
 时时刻刻的即兴料理
@@ -12967,6 +12983,7 @@ use_preset_vocabulary: false
 双重任务
 双重商摊
 霜昼黑星
+爽灵
 谁的节奏天国
 谁来说出真相
 谁人的手记
@@ -13493,6 +13510,7 @@ use_preset_vocabulary: false
 榻下爪眼
 踏雪剑
 踏雪引路人
+胎光
 胎海之针
 苔骨荒原
 台上台下
@@ -13727,6 +13745,7 @@ use_preset_vocabulary: false
 天狐显真
 天狐之凭
 天花板
+天魂
 天火之冠
 天玑星
 天降正义
@@ -13955,6 +13974,7 @@ use_preset_vocabulary: false
 偷懒是健身大忌
 偷懒者
 头盖骨胜负
+投珑
 投珑仪式
 骰落
 投矛的坚杆
@@ -14489,6 +14509,7 @@ use_preset_vocabulary: false
 文火慢炖腌笃鲜
 文火慢烤的鲜香
 文火慢煨
+闻冀
 闻起来像沥青
 文四爷
 文物保护
@@ -16233,6 +16254,7 @@ use_preset_vocabulary: false
 沿途百景会心
 岩王帝君
 岩王帝君座
+岩王顺旅
 岩王爷
 炎威
 炎舞
@@ -16750,12 +16772,17 @@ use_preset_vocabulary: false
 遗怨的回音
 疑云陡生
 仪正
+以璧礼天
 以澄晶实
 以此为牢
+以琮礼地
 以督促为责任
 以独立为先决
 以燔燎铸名
+以圭礼东
 以核实为约束
+以琥礼西
+以璜礼北
 以魂证心
 以火织命
 以及血液
@@ -16773,6 +16800,7 @@ use_preset_vocabulary: false
 以有趣相关为要义
 以战斗平息
 以战养战
+以璋礼南
 以证公平
 以罪行惩戒罪人
 异邦草翦
@@ -17171,6 +17199,7 @@ use_preset_vocabulary: false
 幽光星星庭
 优惠放送
 幽缄
+幽精
 幽静聚会
 幽境危战
 悠久的磐岩
@@ -18699,6 +18728,7 @@ use_preset_vocabulary: false
 忠如山
 柊三十郎
 柊慎介
+中尸神
 忠实的砂时计
 终始不熄的热诚
 中枢的安稳工位
@@ -18815,6 +18845,7 @@ use_preset_vocabulary: false
 朱漆垂香木卷轴书架
 朱漆火印
 朱漆圆桌
+朱砂
 诸圣的礼冠
 诸事不宜
 诸事平安
@@ -19034,6 +19065,7 @@ use_preset_vocabulary: false
 滋水机关
 兹沃妮
 咨询师
+兹踬
 资助之人
 紫电
 紫金渔鸥
