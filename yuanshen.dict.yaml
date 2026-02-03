@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.4(6) | 2026.02.01 01:22"
+version: "6.4(7) | 2026.02.04 01:51"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -975,6 +975,8 @@ use_preset_vocabulary: false
 比夫茏
 比海洋更宽广的是天空
 彼竭我盈故克之
+彼君皎皎
+彼君倦傳
 比勒
 比勒琪斯
 比勒琪丝的哀歌
@@ -1248,6 +1250,7 @@ use_preset_vocabulary: false
 狛荷屋
 帛画真迹
 伯桓子
+镈厥百谷
 博来
 博蒙特工坊
 博尼法兹
@@ -3127,6 +3130,7 @@ use_preset_vocabulary: false
 煅石之火
 煅石之轮
 断霜的弦歌
+断我执
 锻压工坊
 断雨
 断云石
@@ -5191,6 +5195,8 @@ use_preset_vocabulary: false
 湖畔的棱晶
 湖畔的尼尼安涅
 湖畔的维维安涅
+胡然而稷
+胡然而天
 胡塞尼
 胡尚
 湖上之光
@@ -7673,6 +7679,7 @@ use_preset_vocabulary: false
 郎勃罗
 狼的末路
 郎蒂
+琅风
 琅玕
 琅玕国
 琅玕衍义
@@ -7938,6 +7945,7 @@ use_preset_vocabulary: false
 雷自东来
 蕾卡
 蕾欧妮
+耒耜载芟
 蕾瓦妮
 蕾伊安
 泪斑岩砖
@@ -10635,6 +10643,7 @@ use_preset_vocabulary: false
 奇梅
 奇门术息灾平昏寿
 齐米娅
+其苗绵绵
 奇妙闪闪
 奇妙助益
 其名为
@@ -10658,6 +10667,7 @@ use_preset_vocabulary: false
 棋生断处
 奇石含露
 奇石历险记
+其实若若
 其实也是我许久未见的一位故人
 奇石珠宝录
 骑士
@@ -11294,6 +11304,7 @@ use_preset_vocabulary: false
 取人
 取胜者
 取胜者大小通吃
+取实献醴
 取用便捷
 去无踪
 呿吟至微
@@ -12534,6 +12545,7 @@ use_preset_vocabulary: false
 石根文字
 时光飞逝
 识果种雷
+实函斯活
 拾花鸟之一趣
 石化
 石化的骨片
@@ -13403,6 +13415,7 @@ use_preset_vocabulary: false
 燧石之锋
 岁时之晷
 祟祟猫步
+穗蓑之沃
 祟炎
 岁夜欢哗
 邃羽夜巡之契
@@ -14427,6 +14440,7 @@ use_preset_vocabulary: false
 卫兵长矛
 味草之滋
 味噌汤
+为絺是佗
 未吹响的号角
 为此勿将希望弃扬
 卫从
@@ -14465,6 +14479,7 @@ use_preset_vocabulary: false
 为人的条件
 为什么又是噼咔
 为时已晚
+为筮是宜
 未授勋之花
 为书所爱的人
 未熟之玉
@@ -14472,6 +14487,8 @@ use_preset_vocabulary: false
 未完成的喜剧
 为我纺出歌与吟哦
 未熄的剑柄
+为绤是怡
+为飨为酢
 魏小保
 为心魂的献礼
 未言的宴话
@@ -14576,6 +14593,7 @@ use_preset_vocabulary: false
 我于七色之中
 我与总角之交的商战
 我愿是急流
+我愿于飞
 我在听
 我征服
 我自渊底刺向你
@@ -16793,6 +16811,8 @@ use_preset_vocabulary: false
 已殁
 已殁武士的怨念
 旖旎水界
+以祈维祺
+以洽百礼
 以求真为职守
 已如风中残烛
 已逝去的末日
@@ -17338,6 +17358,9 @@ use_preset_vocabulary: false
 有乐御簾切
 有乐斋
 有礼貌礼帽小姐
+有女瑳兮
+有女琚兮
+有女瑱兮
 有朋自远方来
 有圈可居
 有所差池
@@ -17838,6 +17861,9 @@ use_preset_vocabulary: false
 月草的赐慧
 月尘的冒险家
 月尘的寻宝者
+月出恒兮
+月出虹兮
+月出霜兮
 岳川
 月的守望
 跃动节拍
@@ -18424,6 +18450,7 @@ use_preset_vocabulary: false
 震晓云天鼓
 振袖秋风问红叶
 镇宅鼓石
+蒸畀彼君
 蒸发
 蒸发队
 蒸汽
@@ -19062,7 +19089,12 @@ use_preset_vocabulary: false
 兹踞
 兹蹻
 滋蔓之茵
+兹黍兹稌
 滋水机关
+兹粟兹菽
+兹我葛麻
+兹我葛桑
+兹我萧艾
 兹沃妮
 咨询师
 兹踬
