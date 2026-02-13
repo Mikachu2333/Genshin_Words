@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.4(7) | 2026.02.04 01:51"
+version: "6.4(8) | 2026.02.13 23:17"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -209,6 +209,7 @@ use_preset_vocabulary: false
 阿佐
 啊哈
 埃德
+埃德勒
 埃蒂安
 埃蒂娅
 埃尔庇艾
@@ -5412,6 +5413,7 @@ use_preset_vocabulary: false
 幻剧之花
 唤雷的头冠
 唤雷者的头冠
+幻礼
 唤灵师的手记
 唤灵之祷
 幻梦的门扉
@@ -7214,6 +7216,7 @@ use_preset_vocabulary: false
 靠背椅
 科奥劳
 科巴德
+科菲策
 苛捐
 科科庞
 磕磕碰碰之谊
@@ -8768,6 +8771,7 @@ use_preset_vocabulary: false
 罗杰
 螺卷大将
 萝克珊
+罗兰
 罗洛
 罗契耶夫
 罗莎莉亚
@@ -8792,6 +8796,7 @@ use_preset_vocabulary: false
 洛达蒙特
 洛蒂娅
 洛厄法特
+洛恩
 洛尔丹
 骆丰
 洛夫莱斯
@@ -11409,6 +11414,7 @@ use_preset_vocabulary: false
 染血的骑士之杯
 染血的铁假面
 染血的铁之心
+染血骑士
 染血骑士之杯
 染血套
 穰穰瑞雪糕
@@ -12186,6 +12192,7 @@ use_preset_vocabulary: false
 深宵冷雾浓
 身形如鹤
 深炎之底
+深衍
 深渊
 深渊法师
 深渊法师型射击标靶
@@ -13780,6 +13787,7 @@ use_preset_vocabulary: false
 天空之翼
 天蓝宝石
 天狼
+天狼之章
 天朗日清
 天雷圣裁
 天理
@@ -14400,6 +14408,7 @@ use_preset_vocabulary: false
 惟慎
 惟手熟尔
 维斯科
+维斯菈娃
 维斯塔之歌
 维图索夫
 韦驮骏足
@@ -15661,6 +15670,7 @@ use_preset_vocabulary: false
 星月的连珠
 星陨剑
 星章
+星兆
 星之归还
 星状带棱多用瓶
 刑部小判
@@ -16443,6 +16453,7 @@ use_preset_vocabulary: false
 椰奶
 椰炭饼
 椰羊
+耶嘉
 耶里门
 耶然草
 耶沙法特
@@ -18042,6 +18053,7 @@ use_preset_vocabulary: false
 蕴光璇蛸
 蕴光异兽
 蕴光月幻蝶
+蕴光月守宫
 蕴光之茧
 蕴光之叶
 蕴火的幽墟
