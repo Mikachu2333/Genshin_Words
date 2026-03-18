@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.5(0) | 2026.02.25 22:09"
+version: "6.5(1) | 2026.03.18 22:03"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -4198,6 +4198,7 @@ use_preset_vocabulary: false
 歌唱者
 歌尘浪市真君
 歌尘浪市真君洞天
+歌妲酒
 歌黛妮
 歌德
 歌德大酒店
@@ -4234,6 +4235,7 @@ use_preset_vocabulary: false
 格尔恰科娃
 格莱普尼尔
 格莱丝
+格兰菲狄
 格兰维尔
 格雷戈
 格雷戈尔
@@ -4961,6 +4963,7 @@ use_preset_vocabulary: false
 合韵
 赫伯德
 赫布里穆
+赫得蔚格
 赫尔洛克
 赫尔曼
 赫尔穆特
@@ -5629,6 +5632,7 @@ use_preset_vocabulary: false
 灰余晶
 灰羽鸽
 灰与力场的平衡理论
+灰郁香
 灰中之秘
 辉烛溢彩
 辉子
@@ -5836,6 +5840,7 @@ use_preset_vocabulary: false
 惑光幻戏
 嚯嚯
 祸津御建鸣神命
+霍肯
 霍莱
 货郎
 获麟
@@ -7352,6 +7357,7 @@ use_preset_vocabulary: false
 克拉佩
 克莱卡
 克莱门汀线
+克莱纳
 克兰茨
 克劳雅利亚
 氪佬
@@ -15730,6 +15736,7 @@ use_preset_vocabulary: false
 心珠循琅
 信步前林
 信风舞姬
+信号官
 焮火铸魂
 信笺
 信鸟
@@ -16170,6 +16177,7 @@ use_preset_vocabulary: false
 巡陆艇机轴
 巡逻记录
 寻梦祭司
+寻觅者
 寻觅珍奇
 寻人不息
 寻人告示板
