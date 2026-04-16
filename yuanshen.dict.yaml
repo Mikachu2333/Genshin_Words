@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.6(1) | 2026.04.08 16:25"
+version: "6.6(3) | 2026.04.17 01:39"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -43,6 +43,7 @@ use_preset_vocabulary: false
 阿尔维斯
 阿尔沃
 阿尔希普
+阿法尔之鸟
 阿法纳西
 阿凡
 阿飞
@@ -105,6 +106,7 @@ use_preset_vocabulary: false
 阿隆
 阿鲁埃
 阿鲁吉
+阿罗逻
 阿洛妮
 阿绿
 阿玛鲁
@@ -124,6 +126,7 @@ use_preset_vocabulary: false
 阿莫斯
 阿莫斯之弓
 阿姆鲁
+阿穆茜华莉
 阿纳
 阿娜卡
 阿纳托尔
@@ -223,6 +226,7 @@ use_preset_vocabulary: false
 埃科普里尼克
 埃克哈特
 埃兰
+埃雷默利卡
 埃黎尼
 埃里卡特
 埃洛伊
@@ -248,6 +252,7 @@ use_preset_vocabulary: false
 埃泽
 埃兹莉
 皑尘与雪影
+矮灵
 蔼然入梦
 爱贝尔
 艾伯特
@@ -1652,6 +1657,7 @@ use_preset_vocabulary: false
 层叠木匣
 层见叠出的谜象
 层侵
+曾我隅田流左近重衡
 层岩
 层岩巨渊
 层岩巨渊矿产志
@@ -2360,6 +2366,7 @@ use_preset_vocabulary: false
 从入门到决斗之巅
 丛山锻火驰行
 从善如流
+丛沈
 丛生蝶绿
 丛生栌青
 丛生彤丹
@@ -2579,7 +2586,7 @@ use_preset_vocabulary: false
 大型物件
 大型岩史莱姆
 大型运输货盘
-「大雪猪王」
+大雪猪王
 大椰子
 大业物
 大英雄的经验
@@ -2740,6 +2747,7 @@ use_preset_vocabulary: false
 德波小蛋糕改良型
 得策之月
 得偿所愿的寻宝之旅
+德尔斐
 德贵
 德克斯特
 德拉萝诗
@@ -2783,6 +2791,7 @@ use_preset_vocabulary: false
 灯宵斑彩照灵犀
 灯芯绒材
 灯也会有影子
+灯之妖精
 灯纸纤维
 灯中幽精
 灯自何处来
@@ -2886,6 +2895,7 @@ use_preset_vocabulary: false
 帝钱
 地热的流涌
 第三类永动机
+蒂沙库恩
 地上的万国
 第十位缪斯
 蒂索克
@@ -3855,6 +3865,7 @@ use_preset_vocabulary: false
 风息激荡
 风息山
 风洗之月
+风仙
 枫香茶雾一室中
 风向
 风向是会转变的
@@ -4112,6 +4123,7 @@ use_preset_vocabulary: false
 复演
 附有记忆的面具
 馥郁
+复原核心
 负愿前行
 负责人
 附赠的下酒菜
@@ -4903,6 +4915,7 @@ use_preset_vocabulary: false
 海洋的胜利
 海洋黎明号
 海洋生物学者
+海妖
 海渊仙草灵验记
 海渊终曲
 海员的浪漫
@@ -6865,6 +6878,7 @@ use_preset_vocabulary: false
 静度岁晏
 静发
 净光翎
+妌癸
 静海水手
 靓号
 静候恩泽
@@ -7239,6 +7253,7 @@ use_preset_vocabulary: false
 卡隆
 卡伦雅
 卡萝蕾
+卡洛穆特
 卡玛尔
 卡马加
 卡马克
@@ -7262,8 +7277,10 @@ use_preset_vocabulary: false
 卡茜涅尔
 卡萨扎莱宫
 卡萨扎莱宫的无微不至
+卡塞留斯
 卡桑
 卡桑德拉
+卡斯蒂廖
 卡斯帕
 卡苏莱砂锅
 卡苏利亚
@@ -7667,6 +7684,7 @@ use_preset_vocabulary: false
 奎瑟尔的发条工坊
 奎瑟尔发条工坊
 奎泰克
+葵娅乌赫奎扎尔
 奎伊露
 葵之翁篇
 奎兹
@@ -10305,6 +10323,7 @@ use_preset_vocabulary: false
 年轻的行商
 年幼的萃华树
 年长的行商
+念亡碎片
 酿酒师
 酿乐之殿
 酿梅花
@@ -10539,6 +10558,7 @@ use_preset_vocabulary: false
 佩索妲
 佩特莉可
 佩特莉可镇
+佩托戈利
 沛休
 佩伊
 佩尤特莉
@@ -10912,6 +10932,7 @@ use_preset_vocabulary: false
 骑士备考之道
 骑士的剑影
 骑士的素质
+骑士故事埃黎尼
 骑士精神
 骑士染血之时
 骑士团的办公桌
@@ -11017,6 +11038,7 @@ use_preset_vocabulary: false
 气息之间
 气象地狱
 碛原引路人
+器质音律
 恰到好处的视线聚焦
 恰卡纳的悬枝
 恰切
@@ -12174,6 +12196,7 @@ use_preset_vocabulary: false
 沙上楼阁
 沙上楼阁史话
 砂上月踪
+沙上筑塔
 杀生樱
 莎塔
 砂糖
@@ -12233,6 +12256,7 @@ use_preset_vocabulary: false
 珊瑚一心
 珊瑚真珠
 珊瑚枝条
+山辉祡
 山脊守望
 山家烧
 山间独居之屋
@@ -13087,6 +13111,7 @@ use_preset_vocabulary: false
 手制胸针
 受福者的白羽
 兽骨拉面
+兽怪
 售后服务
 售后服务弹
 兽魂
@@ -13190,6 +13215,7 @@ use_preset_vocabulary: false
 树王圣体菇
 庶务长
 树形
+树妖
 树荫下的虹彩
 漱玉
 漱玉工奇斗虫大玄境
@@ -13522,6 +13548,7 @@ use_preset_vocabulary: false
 死河渡断
 死牌
 死生之炉
+死随念棺
 死域
 死域瘤
 死域枝节
@@ -13969,7 +13996,7 @@ use_preset_vocabulary: false
 特巡队贰型制式铳枪
 特巡队员
 特邀时尚顾问
-455特饮
+特饮
 特制的留影机
 特制基底饮品
 特制加热釜
@@ -14630,6 +14657,7 @@ use_preset_vocabulary: false
 哇哇哇哇
 微暗之火
 威遍风土
+薇恩狄娅
 薇尔
 薇尔妲
 薇尔米娜
@@ -15045,6 +15073,7 @@ use_preset_vocabulary: false
 无羁的朱赤之蝶
 无极限超激格斗赛
 无坚不摧
+无间之海
 无尽的渴慕
 无尽的霜舞
 无尽的向往
@@ -15091,6 +15120,7 @@ use_preset_vocabulary: false
 无私的妆饰花
 无所遁藏
 无所依归的豪赌
+无所有廊
 无他
 无题之题
 梧桐一叶落
@@ -15126,7 +15156,9 @@ use_preset_vocabulary: false
 无相之雷
 无相之水
 无相之岩
+无想报真悟天障
 无想的一刀
+无想恶天
 无想刃狭间
 无想之间
 无心的渊镜
@@ -15946,6 +15978,7 @@ use_preset_vocabulary: false
 信盛
 信使
 信徒
+兴邦
 星本无言
 星边夜语
 星缠
@@ -16290,6 +16323,7 @@ use_preset_vocabulary: false
 雪霁梅香
 雪霁银妆素
 雪解甚三红
+雪精
 雪浪与苍林之舞
 雪酪蜜派
 雪幕前事
@@ -16467,6 +16501,7 @@ use_preset_vocabulary: false
 芽绿锦簇
 雅各芭
 雅各布
+雅豪卡阿胡克
 雅珂达
 雅库普
 雅拉德
