@@ -1,6 +1,6 @@
 [package]
 name    = "genshin_pinyin_sort"
-version = "1.1.5"
+version = "1.1.6"
 edition = "2021"
 
 [profile.release]
@@ -9,8 +9,8 @@ lto   = true
 panic = "abort"
 
 [dependencies]
-chrono = "0.4.42"
+chrono = "0.4.44"
 
-version_lib  = { path = "./version_lib" }
-exchange_lib = { path = "./rename_lib", package = "name_exchanger_rs" }
-sort_lib     = { path = "./sort_lib" }
+version_lib       = { path = "./version_lib" }
+name_exchanger_rs = { path = "./exchange_name_lib" ,package = "name_exchanger_rs"}
+sort_lib          = { path = "./sort_lib" }

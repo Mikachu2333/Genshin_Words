@@ -4,7 +4,7 @@ version = 4
 
 [[package]]
 name = "genshin_pinyin_add"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "pinyin",
 ]
@@ -12,4 +12,5 @@ dependencies = [
 [[package]]
 name = "pinyin"
 version = "0.11.0"
-source = "git+https://github.com/mozillazg/rust-pinyin?branch=master#76fc7d30de40c85f4cc7e8e138da677a172a78b4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e225f595052d9c46045755be4b8d7950b6d9f3c33e0c0b74ba58f11bbfa8c64b"

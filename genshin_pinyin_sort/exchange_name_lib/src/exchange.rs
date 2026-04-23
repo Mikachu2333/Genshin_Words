@@ -8,17 +8,22 @@ use crate::types::{GetPathInfo, NameExchange, RenameError, DEBUG_MODE};
 /// Swap names of two files or directories
 ///
 /// ### Parameters
-/// * `path1` - First file or directory path
-/// * `path2` - Second file or directory path
+/// * `path1`        - First file or directory path
+/// * `path2`        - Second file or directory path
+/// * `preserve_ext` - Should preserve file ext or exchange
 ///
 /// ### Return Value
 /// * `Ok(())` - Successfully swapped
 /// * `Err(RenameError)` - Error information
-pub fn exchange_paths(path1: PathBuf, path2: PathBuf) -> Result<(), RenameError> {
+pub fn exchange_paths(
+    path1: PathBuf,
+    path2: PathBuf,
+    preserve_ext: bool,
+) -> Result<(), RenameError> {
     let base_dir = resolve_base_dir()?;
 
-    let (exists1, path1) = resolve_path(&path1, &base_dir);
-    let (exists2, path2) = resolve_path(&path2, &base_dir);
+    let (exists1, path1) = resolve_path(&path1, &base_dir)?;
+    let (exists2, path2) = resolve_path(&path2, &base_dir)?;
     if DEBUG_MODE {
         dbg!(exists1, &path1, exists2, &path2);
     }
@@ -33,7 +38,7 @@ pub fn exchange_paths(path1: PathBuf, path2: PathBuf) -> Result<(), RenameError>
     }
 
     if path1 == path2 {
-        return Err(RenameError::AlreadyExists);
+        return Err(RenameError::SamePath);
     }
 
     let mut exchange_info = NameExchange::new();
@@ -56,6 +61,8 @@ pub fn exchange_paths(path1: PathBuf, path2: PathBuf) -> Result<(), RenameError>
         &exchange_info.f1.packed_info.parent_dir,
         &exchange_info.f2.packed_info.name,
         &exchange_info.f1.packed_info.ext,
+        &exchange_info.f2.packed_info.ext,
+        preserve_ext,
     );
     (
         exchange_info.f2.exchange.pre_path,
@@ -64,17 +71,19 @@ pub fn exchange_paths(path1: PathBuf, path2: PathBuf) -> Result<(), RenameError>
         &exchange_info.f2.packed_info.parent_dir,
         &exchange_info.f1.packed_info.name,
         &exchange_info.f2.packed_info.ext,
+        &exchange_info.f1.packed_info.ext,
+        preserve_ext,
     );
 
-    let new_path_conflict_1 = exchange_info.f1.exchange.new_path.exists();
-    let new_path_conflict_2 = exchange_info.f2.exchange.new_path.exists();
-    let same_parent = GetPathInfo {
-        path1: exchange_info.f1.exchange.new_path.clone(),
-        path2: exchange_info.f2.exchange.new_path.clone(),
-    }
-    .if_same_dir();
+    let is_conflict = |new_path: &PathBuf| {
+        new_path.exists()
+            && *new_path != exchange_info.f1.exchange.original_path
+            && *new_path != exchange_info.f2.exchange.original_path
+    };
 
-    if !same_parent && (new_path_conflict_1 || new_path_conflict_2) {
+    if is_conflict(&exchange_info.f1.exchange.new_path)
+        || is_conflict(&exchange_info.f2.exchange.new_path)
+    {
         return Err(RenameError::AlreadyExists);
     }
 
@@ -110,15 +119,20 @@ pub fn exchange_paths(path1: PathBuf, path2: PathBuf) -> Result<(), RenameError>
 /// * `Ok(PathBuf)` - Base directory path
 /// * `Err(RenameError)` - Resolution failure
 fn resolve_base_dir() -> Result<PathBuf, RenameError> {
+    // Prefer current working directory over executable directory
+    if let Ok(cwd) = env::current_dir() {
+        return Ok(cwd);
+    }
+
     if let Ok(exe) = env::current_exe() {
         if let Some(parent) = exe.parent() {
             return Ok(parent.to_path_buf());
         }
     }
 
-    env::current_dir().map_err(|err| {
-        RenameError::Unknown(format!("Failed to resolve working directory: {}", err))
-    })
+    Err(RenameError::Unknown(
+        "Failed to resolve working directory".to_string(),
+    ))
 }
 
 /// Resolve and normalize path
@@ -128,10 +142,11 @@ fn resolve_base_dir() -> Result<PathBuf, RenameError> {
 /// * `base_dir` - Base directory path
 ///
 /// ### Return Value
-/// Returns tuple `(whether path exists, normalized path)`
-pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
+/// * `Ok((bool, PathBuf))` - Tuple of (whether path exists, normalized path)
+/// * `Err(RenameError)` - Path resolution failure (e.g. invalid UTF-8, missing env var)
+pub fn resolve_path(path: &Path, base_dir: &Path) -> Result<(bool, PathBuf), RenameError> {
     if *path == *"" {
-        return (false, path.to_path_buf());
+        return Ok((false, path.to_path_buf()));
     }
 
     let mut path = path.to_path_buf();
@@ -141,7 +156,15 @@ pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
         use std::path::{Component, Prefix};
 
         path = {
-            let temp = path.to_str().unwrap_or("").replace("/", "\\");
+            let temp = path
+                .to_str()
+                .ok_or_else(|| {
+                    RenameError::InvalidPath(format!(
+                        "Path contains invalid UTF-8: {}",
+                        path.display()
+                    ))
+                })?
+                .replace("/", "\\");
             PathBuf::from(temp)
         };
 
@@ -188,10 +211,18 @@ pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
                         // "~something"
                         path = base_dir.join(path);
                     }
+                } else {
+                    return Err(RenameError::InvalidPath(
+                        "USERPROFILE environment variable is not set, cannot expand '~'"
+                            .to_string(),
+                    ));
                 }
             } else if path.starts_with(".") {
-                let remaining = path.strip_prefix(".\\").ok();
-                path = base_dir.join(remaining.unwrap());
+                if let Ok(remaining) = path.strip_prefix(".\\") {
+                    path = base_dir.join(remaining);
+                } else {
+                    path = base_dir.join(&path);
+                }
             } else {
                 path = base_dir.join(path);
             }
@@ -201,7 +232,15 @@ pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
     #[cfg(not(windows))]
     {
         path = {
-            let temp = path.to_str().unwrap_or("").replace("\\", "/");
+            let temp = path
+                .to_str()
+                .ok_or_else(|| {
+                    RenameError::InvalidPath(format!(
+                        "Path contains invalid UTF-8: {}",
+                        path.display()
+                    ))
+                })?
+                .replace("\\", "/");
             PathBuf::from(temp)
         };
 
@@ -209,31 +248,41 @@ pub fn resolve_path(path: &Path, base_dir: &Path) -> (bool, PathBuf) {
             if path.starts_with("~") {
                 if let Ok(home_dir) = std::env::var("HOME") {
                     let mut new_path = PathBuf::from(home_dir);
-                    if let Some(remaining) = path.strip_prefix("~/") {
-                        new_path.push(remaining);
-                    } else if *path== *"~" {
-                        // Just "~", so it's the home directory
+                    let remaining = path.strip_prefix("~/").ok();
+                    if let Some(rem) = remaining {
+                        new_path.push(rem);
+                        path = new_path;
+                    } else if *path == *"~" {
+                        path = new_path;
+                    } else {
+                        path = base_dir.join(path);
                     }
-                    path = new_path;
+                } else {
+                    return Err(RenameError::InvalidPath(
+                        "HOME environment variable is not set, cannot expand '~'".to_string(),
+                    ));
                 }
             } else if path.starts_with(".") {
-                let remaining = path.strip_prefix("./").ok();
-                path = base_dir.join(remaining.unwrap());
+                if let Ok(remaining) = path.strip_prefix("./") {
+                    path = base_dir.join(remaining);
+                } else {
+                    path = base_dir.join(path);
+                }
             } else {
                 path = base_dir.join(path);
             }
         }
     }
     if DEBUG_MODE {
-        dbg!("Path Final: {}", &path.display());
+        println!("Checked Path: {}", &path.display());
     }
 
     let canonical = path.canonicalize();
     match canonical {
-        Ok(x) => (x.exists(), x),
+        Ok(x) => Ok((x.exists(), x)),
         Err(e) => {
             eprintln!("{}", e);
-            (path.exists(), path)
+            Ok((path.exists(), path))
         }
     }
 }

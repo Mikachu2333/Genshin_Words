@@ -1,6 +1,6 @@
 use std::{env, io::Write, path::PathBuf};
 
-use exchange_lib::{exchange_rs, resolve_path_rs};
+use name_exchanger_rs::{exchange_rs, resolve_path_rs};
 use sort_lib::sort_chinese_text;
 use version_lib::VersionInfo;
 
@@ -18,7 +18,7 @@ fn main() {
 
     let (path, out_path) = calc(arg[1].clone());
 
-    let result = exchange_rs(&path, &out_path);
+    let result = exchange_rs(&path, &out_path, true);
     if result.is_err() {
         eprintln!("Error Info: {}", result.err().unwrap());
     } else {
@@ -31,7 +31,8 @@ fn calc(file_path: String) -> (PathBuf, PathBuf) {
     let binding = std::env::current_exe().unwrap();
     let current_dir = binding.parent().unwrap();
 
-    let (is_exist, checked_path) = resolve_path_rs(PathBuf::from(file_path).as_ref(), current_dir);
+    let (is_exist, checked_path) =
+        resolve_path_rs(PathBuf::from(file_path).as_ref(), current_dir).unwrap_or_default();
     if !is_exist {
         panic!("Not Exist.")
     };

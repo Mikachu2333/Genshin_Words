@@ -1,6 +1,6 @@
 [package]
 name    = "genshin_pinyin_add"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 
 [profile.release]
@@ -9,4 +9,4 @@ lto   = true
 panic = "abort"
 
 [dependencies]
-pinyin = { git = "https://github.com/mozillazg/rust-pinyin", branch = "master" }
+pinyin = "0.11.0"

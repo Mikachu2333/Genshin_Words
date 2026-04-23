@@ -1,8 +1,0 @@
-[package]
-name = "name_exchanger_rs"
-version = "2.1.4"
-edition = "2021"
-
-[lib]
-name = "exchange_lib"
-path = "lib.rs"

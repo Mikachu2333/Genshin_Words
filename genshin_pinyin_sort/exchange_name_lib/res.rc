@@ -1,0 +1,29 @@
+#include <windows.h>
+#include "version.h"
+
+1 VERSIONINFO
+
+FILEVERSION     VERSION_INT
+PRODUCTVERSION  VERSION_INT
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_STATIC_LIB
+
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "FileVersion",        VERSION_STR
+            VALUE "ProductVersion",     VERSION_STR
+            VALUE "CompanyName",        "NONE. MIT LICENSE."
+            VALUE "FileDescription",    "Exchange names of files(dirs)"
+            VALUE "LegalCopyright",     "Mikachu2333 Copyright (C) 2026"
+            VALUE "OriginalFilename",   "exchange.dll"
+            VALUE "ProductName",        "NameExchanger"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04E4
+    END
+END

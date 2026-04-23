@@ -1,4 +1,3 @@
-use core::panic;
 use pinyin::ToPinyinMulti;
 use std::{
     env, fs,
@@ -38,6 +37,9 @@ fn main() {
         temp.set_file_name("yuanshen_fcitx5.txt");
         temp
     };
+
+    println!("Input path: {}", path_in.display());
+    println!("Output path: {}", path_out.display());
 
     let content = delete_useless(&path_in);
 
