@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.6(5) | 2026.04.23 13:21"
+version: "6.6(7) | 2026.05.02 16:44"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -48,6 +48,7 @@ use_preset_vocabulary: false
 阿法尔之鸟
 阿法纳西
 阿凡
+阿梵波谛
 阿飞
 阿芬迪
 阿夫塔
@@ -177,6 +178,7 @@ use_preset_vocabulary: false
 阿特拉
 阿特拉托的佑助
 阿特琪
+阿提
 阿提亚
 阿图科
 阿托
@@ -199,6 +201,7 @@ use_preset_vocabulary: false
 阿幸
 阿袖
 阿旭
+阿亚
 阿亚德瓦
 阿亚尔的后继者
 阿亚尔英雄杯
@@ -7376,6 +7379,7 @@ use_preset_vocabulary: false
 卡马加
 卡马克
 卡门
+卡蒙瓦塞特
 卡缅科
 卡姆拉
 卡姆兰
@@ -12221,6 +12225,7 @@ use_preset_vocabulary: false
 塞勒斯特
 塞琉斯
 塞洛海原
+塞尼杰姆
 塞奇托
 塞钱箱
 塞萨尔
@@ -13717,6 +13722,7 @@ use_preset_vocabulary: false
 朔月诗篇
 斯巴达克
 丝翠维莎
+思胡马
 思惑
 斯嘉莉
 斯卡拉姆齐
@@ -13761,7 +13767,9 @@ use_preset_vocabulary: false
 死域瘤
 死域枝节
 死兆星
+死兆星二号
 死兆星号
+死兆星级
 死之羽
 死之执政
 四百星的芒刃
@@ -17100,6 +17108,7 @@ use_preset_vocabulary: false
 椰炭饼
 椰羊
 耶嘉
+耶佳娜
 耶里门
 耶然草
 耶沙法特
