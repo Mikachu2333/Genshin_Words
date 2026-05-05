@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.6(7) | 2026.05.02 16:44"
+version: "6.6(8) | 2026.05.05 16:45"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -4195,7 +4195,7 @@ use_preset_vocabulary: false
 复苏岩柱
 复苏之风
 覆天
-富翁（自称）
+富翁
 赋闲风纪官
 覆写秘钥
 复醒纪游
@@ -9529,7 +9529,6 @@ use_preset_vocabulary: false
 冒险家协会宣传员
 冒险家之花
 冒险家之友
-冒险家（自称）
 冒险就要朝着远方
 冒险阅历
 帽檐沙影的轮廓
