@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.7(0) | 2026.05.20 01:15"
+version: "6.7(1) | 2026.05.20 14:43"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -37,6 +37,7 @@ use_preset_vocabulary: false
 阿尔贝
 阿尔妲
 阿尔弗雷德
+阿尔肯迪
 阿尔芒
 阿尔明
 阿尔尼姆
@@ -124,6 +125,7 @@ use_preset_vocabulary: false
 阿帽
 阿梅妲
 阿蒙
+阿弥利多
 阿弥利多学院
 阿弥利多之旗
 阿米
@@ -149,6 +151,7 @@ use_preset_vocabulary: false
 阿奇亚库
 阿乔
 阿让托
+阿如
 阿如拌饭
 阿如村
 阿如的倒影
@@ -545,6 +548,7 @@ use_preset_vocabulary: false
 巴窟纳瓦
 巴拉诺夫
 巴拉奇科
+巴拉绍夫
 巴莱卡
 巴兰
 巴朗
@@ -755,6 +759,7 @@ use_preset_vocabulary: false
 百折不摧的决意
 百柱的酣宴
 拜达港
+拜拉祖里
 拜托了我的狐仙宫司
 拜希麦
 拜希麦五世
@@ -972,6 +977,7 @@ use_preset_vocabulary: false
 悖谬
 贝母
 贝妮蒂
+贝努
 被派蒙吃掉
 背弃之塔
 贝阙岛
@@ -1314,6 +1320,7 @@ use_preset_vocabulary: false
 博恩
 博恩察
 伯尔兰
+博尔尼科夫
 狛荷屋
 帛画真迹
 伯桓子
@@ -2518,6 +2525,7 @@ use_preset_vocabulary: false
 达梅婕
 达莫维百货
 达纳
+达妮什瓦
 达尼奥
 达尼拉
 达希
@@ -3635,6 +3643,7 @@ use_preset_vocabulary: false
 菲多赫
 菲尔戈黛特
 菲尔曼
+菲尔纳斯
 菲尔珀
 非法飘荡
 飞飞教官
@@ -3743,6 +3752,7 @@ use_preset_vocabulary: false
 翡玉什锦袋
 翡玉丸
 费奥多罗夫娜
+费奥潘
 费迪南德
 费恩
 费尔比
@@ -7447,6 +7457,7 @@ use_preset_vocabulary: false
 卡缅科
 卡姆拉
 卡姆兰
+卡那菲亚
 卡纳卡
 卡纳鲁亚
 卡内
@@ -7491,6 +7502,7 @@ use_preset_vocabulary: false
 卡乌斯
 卡乌娅
 卡西奥多
+卡西夫
 卡夏
 卡欣妲
 卡伊洛斯的时时刻刻
@@ -9097,6 +9109,7 @@ use_preset_vocabulary: false
 龙与山
 龙之魂附
 龙之密宝
+龙之王
 龙之心
 龙众
 龙祖
@@ -9143,6 +9156,7 @@ use_preset_vocabulary: false
 鲁热
 鲁斯坦
 鲁特琴
+鲁西德
 鲁兹茨基
 陆
 露菲娜
@@ -10374,6 +10388,7 @@ use_preset_vocabulary: false
 睦疏之匣
 木薯粉
 目随羽视
+穆塔西姆
 牧童与魔瓶的故事
 木桶
 穆托莉娜
@@ -10483,6 +10498,7 @@ use_preset_vocabulary: false
 奈莉
 耐热型淡水豚豚
 耐热药剂
+奈沙布里
 难测的云雷
 南风
 南风之狮
@@ -10619,6 +10635,7 @@ use_preset_vocabulary: false
 涅兰
 涅米宁
 涅诺宁
+涅斯捷洛娃
 涅提
 蹑影轻踪
 您好
@@ -10810,6 +10827,7 @@ use_preset_vocabulary: false
 螃蟹
 胖胖果
 胖胖鼠
+胖胖小紫
 抛掷型
 泡泡海马
 泡泡桔
@@ -12484,6 +12502,7 @@ use_preset_vocabulary: false
 刹诃伐罗之旗
 沙褐穹窿菇
 沙狐
+沙基尔
 莎柯薇
 莎拉
 沙拉鲁
@@ -13831,6 +13850,7 @@ use_preset_vocabulary: false
 水主
 水煮黑背鲈
 水族馆的来访者
+睡莲之女
 睡莲之章
 睡莲座
 睡前故事
@@ -14272,6 +14292,7 @@ use_preset_vocabulary: false
 陶典
 桃都
 桃都三怪
+陶菲克
 陶锅
 逃跑的太阳
 桃椰子木
@@ -14379,6 +14400,7 @@ use_preset_vocabulary: false
 藤原俊子
 腾跃攻击
 提八
+提尔梅兹
 提尔扎德
 鹈鹕啦
 鹈匠
@@ -14390,6 +14412,7 @@ use_preset_vocabulary: false
 提莉乌娅
 提米
 提莫尔
+提纳勒
 提纳勒人
 提纳里
 提帕诺
@@ -15116,6 +15139,7 @@ use_preset_vocabulary: false
 维兰德
 维里
 唯力量可守护
+韦列夏金娜
 围炉夜谈
 韦吕
 维摩庄
@@ -16318,6 +16342,7 @@ use_preset_vocabulary: false
 谐振的雷光
 谐奏
 谢贝蕾妲小姐
+谢德娃
 亵渎的新芽
 谢尔比乌斯
 谢尔比乌斯式
@@ -16332,6 +16357,7 @@ use_preset_vocabulary: false
 谢苗
 谢妮
 蟹沙皇
+谢斯芬赫
 谢斯特宁
 卸下重担
 谢谢你们的鱼
@@ -16343,6 +16369,7 @@ use_preset_vocabulary: false
 心朝乂安
 新的世主
 新的希望
+欣迪
 新风套
 心海
 心护座
@@ -19640,6 +19667,7 @@ use_preset_vocabulary: false
 治疗效果
 治疗一切的秘药
 至烈至强的醇香
+至灵
 栉掠
 稚梦归心
 智明无邪
@@ -19783,6 +19811,7 @@ use_preset_vocabulary: false
 重刃讯使
 重熔片剂
 重熔装置
+众神之神
 众生之谣
 众水的颂诗
 众水之刃
