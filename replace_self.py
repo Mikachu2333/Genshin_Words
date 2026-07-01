@@ -26,7 +26,7 @@ def delete_cv(text: str) -> str:
 def delete_none_chinese(text: str) -> str:
     # 如果一行内容不含中文，删除该行
     text = regex.re.sub(
-        r"^[\+A-Za-z0-9_',\"\[\]\{\};:\d\./\\\s-]+$", "", text, flags=re.MULTILINE
+        r"^[\+A-Za-z0-9_',\|\*\"\[\]\{\};:\d\./\\\s-]+$", "", text, flags=re.MULTILINE
     )
     return text
 
@@ -58,14 +58,24 @@ def delete_style(text: str) -> str:
         r"\|\{param.*?[:]{0,1}.*?\}[秒]{0,1}", r"", text, flags=re.MULTILINE
     )
     text = regex.re.sub(r"\{param.*?[:]{0,1}.*?\}", r"", text, flags=re.MULTILINE)
+
+    # 删除#+\s
+    text = regex.re.sub(r"#+\s?", r"", text, flags=re.MULTILINE)
+
+    # 删除星号
+    text = regex.re.sub(r"\*+\s?", r"\n", text, flags=re.MULTILINE)
+
+    # 删除﻿
+    text = regex.re.sub(r"﻿", r"", text, flags=re.MULTILINE)
+
     return text
 
 
 def delete_fight(text: str) -> str:
     # 伤害具体数值
-    text = re.sub(r"^\s+\".*?伤害\|.*", r"", text, flags=re.MULTILINE)
-    text = re.sub(r"^\s+\".*?体力消耗\|.*", r"", text, flags=re.MULTILINE)
-    text = re.sub(r"^\s+\".*?持续时间\|.*", r"", text, flags=re.MULTILINE)
+    text = re.sub(r"^\s+\".*?伤害\|.*$", r"", text, flags=re.MULTILINE)
+    text = re.sub(r"^\s+\".*?体力消耗\|.*$", r"", text, flags=re.MULTILINE)
+    text = re.sub(r"^\s+\".*?持续时间\|.*$", r"", text, flags=re.MULTILINE)
     return text
 
 
@@ -285,9 +295,9 @@ def delete_num(text: str) -> str:
     return text
 
 
-def replace_multilines(text: str, n: int) -> str:
+def replace_multilines(text: str, repeat: int) -> str:
     # 空行替换
-    for _ in range(n):
+    for _ in range(repeat):
         text = regex.re.sub(r"\n\n", r"\n", text, flags=re.MULTILINE)
     return text
 
@@ -319,7 +329,7 @@ def replace_to_newline(text: str) -> str:
     text = replace_pair("《》", text)
     text = replace_pair("()", text)
     text = regex.re.sub(
-        r"[·—\-。：？，；、！…『』「」《》（）]", r"\n", text, flags=re.MULTILINE
+        r"[·—\-。：？，；、！…『』「」《》（）・/]", r"\n", text, flags=re.MULTILINE
     )
 
     return text
@@ -378,8 +388,60 @@ def replace_percent(text: str) -> str:
     text = regex.re.sub(r"^.*点攻击力.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*提升值.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*元素范围伤害.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*恢复\d+点元素能量.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^至多.*?次$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^的位置$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^此外$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^队伍的$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^当前生命值提升或降低时$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^施放元素.*?时$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^持有\d+层时$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^该角色获得$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^普通攻击造成的$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^攻击速度提升$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^造成真实伤害$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^触发上述元素反应.*?时$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^恢复\d+点体力$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^并额外恢复.*?$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r".*?元素微粒$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^进行重击时$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^供奉至满级$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^启动$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^名称$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^称号$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^生日$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^故事$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^处于$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^中时$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^状态$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^元素战技$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^元素能量$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^施放元素战技$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^将获得$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^使其进行的$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^不消耗体力$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^将会提升$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^并为其恢复生命值$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^征讨领域$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^深境螺旋中无效$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(
+        r"^对受到月矩力影响的部分小动物$", r"", text, flags=re.MULTILINE
+    )
+    text = regex.re.sub(r"^下坠期间伤害$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^低空$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^高空坠地冲击伤害$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^重击$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^模式下$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^模式$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^不处于$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^模式下时$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^从空中下坠冲击地面$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^下落攻击$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^攻击下落路径上的敌人$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^并在落地时.*?伤害$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*?点按冲刺.*?$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r".*?施放元素战技$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^的技能等级提高\d+级$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^至多提升至\d+级$", r"", text, flags=re.MULTILINE)
 
     return text

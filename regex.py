@@ -31,6 +31,9 @@ def process_text(text: str):
 
     text = replace_percent(text)
 
+    text = delete_none_chinese(text)
+    text = replace_to_newline(text)
+
     text = replace_multilines(text, 20)
 
     return text
