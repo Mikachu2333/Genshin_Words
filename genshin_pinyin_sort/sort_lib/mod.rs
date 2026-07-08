@@ -8,15 +8,20 @@ pub fn sort_chinese_text(content: &[&str], skip_lines: usize) -> Vec<(String, St
         if line.is_empty() {
             continue;
         }
-        let sentence_py = line
-            .to_pinyin()
-            .map(|f| match f {
-                Some(f) => f.with_tone_num_end(),
-                None => "",
-            })
-            .collect::<Vec<&str>>()
-            .join("");
-        collection.insert(sentence_py, line.to_string());
+        if line.contains("\t") {
+            let temp:Vec<&str> = line.splitn(3, "\t").collect();
+            collection.insert(temp[1].to_string(), line.to_string());
+        } else {
+            let sentence_py = line
+                .to_pinyin()
+                .map(|f| match f {
+                    Some(f) => f.with_tone_num_end(),
+                    None => "",
+                })
+                .collect::<Vec<&str>>()
+                .join("");
+            collection.insert(sentence_py, line.to_string());
+        }
     }
 
     let mut vec_collection = collection.into_iter().collect::<Vec<(String, String)>>();

@@ -1,6 +1,6 @@
 use std::{env, io::Write, path::PathBuf};
 
-use name_exchanger_rs::{exchange_rs, resolve_path_rs};
+use exchange_name_lib::{exchange_rs, resolve_path_rs};
 use sort_lib::sort_chinese_text;
 use version_lib::VersionInfo;
 

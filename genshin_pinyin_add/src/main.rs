@@ -29,7 +29,7 @@ fn main() {
             PathBuf::from(&args[1])
         }
     };
-    if !path_in.is_file() || !path_in.exists() {
+    if !path_in.is_file() {
         panic!("Input path is not a valid file!");
     }
     let path_out = {
@@ -46,14 +46,25 @@ fn main() {
     let mut file_out = fs::File::create(&path_out).unwrap();
 
     for line in content {
-        let checked = line.trim();
-        if checked.is_empty() {
+        let checked_line = line.trim();
+        if checked_line.is_empty() {
+            continue;
+        }
+
+        // 如果该行已包含\t分隔的拼音，直接使用，不自动生成
+        if checked_line.contains("\t") {
+            writeln!(file_out, "{}", checked_line).unwrap();
             continue;
         }
 
         let mut char_pinyins_list: Vec<Vec<&str>> = Vec::new();
-        for multi in checked.to_pinyin_multi().flatten() {
-            let mut pinyins: Vec<&str> = multi.into_iter().map(|p| p.plain()).collect();
+        for multi in checked_line.to_pinyin_multi().flatten() {
+            let mut pinyins: Vec<&str> = Vec::with_capacity(2);
+            for i in 0..2 {
+                if let Some(p) = multi.get_opt(i) {
+                    pinyins.push(p.plain());
+                }
+            }
             pinyins.sort();
             pinyins.dedup();
             char_pinyins_list.push(pinyins);
@@ -80,7 +91,7 @@ fn main() {
         }
 
         for pinyin_str in combinations {
-            writeln!(file_out, "{}\t{}\t0", checked, pinyin_str).unwrap();
+            writeln!(file_out, "{}\t{}\t0", checked_line, pinyin_str).unwrap();
         }
     }
 
@@ -89,12 +100,13 @@ fn main() {
 }
 
 fn delete_useless(p: &Path) -> Vec<String> {
-    let original = fs::read_to_string(p).ok().unwrap();
+    let original = fs::read_to_string(p).unwrap();
     let mut result: Vec<String> = Vec::new();
 
     let mut judge = 0;
     for line in original.lines() {
-        if line.trim() == "---" || line.trim() == "..." {
+        let temp = line.trim();
+        if temp == "---" || temp == "..." {
             judge += 1;
             continue;
         }
@@ -106,6 +118,11 @@ fn delete_useless(p: &Path) -> Vec<String> {
         } else {
             panic!("Error yuanshen.dict.yaml format!");
         }
+    }
+    if judge < 2 {
+        eprintln!(
+            "Warning: no closing YAML separator ('---' or '...') found; no content extracted."
+        );
     }
     result
 }
