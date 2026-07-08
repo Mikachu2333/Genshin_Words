@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.8(0) | 2026.07.01 10:02"
+version: "6.8(3) | 2026.07.08 10:23"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -840,7 +840,6 @@ use_preset_vocabulary: false
 薄馨
 薄雪伴流花
 薄樱初绽时
-薄缘的道与光与胤
 薄缘满光天目
 保本
 保镖
@@ -1322,6 +1321,8 @@ use_preset_vocabulary: false
 啵伊
 拨云见日
 波泽娜
+薄缘的道与光与胤	bo2'yuan2'de'dao4'yu3'guang1'yu3'yin4	1
+薄缘的道与光与胤	bao2'yuan2'de'dao4'yu3'guang1'yu3'yin4	1
 博比克
 博茨斯劳
 博恩
@@ -1518,6 +1519,7 @@ use_preset_vocabulary: false
 裁雨声
 裁雨幽光今何在
 财运亨通一岁中
+彩浮枢
 采歌者
 彩虹的脚下是
 彩绘缤纷大礼盒
@@ -3875,6 +3877,7 @@ use_preset_vocabulary: false
 枫
 风暴捕物帐
 风暴后遗症
+风暴阻滞力场
 风杯
 风本
 封闭之心
@@ -4419,6 +4422,7 @@ use_preset_vocabulary: false
 高耸的木杆
 高耸水塔
 高速滑空
+高速换行站
 高速闪掠
 高速悬浮模式
 高塔
@@ -4772,8 +4776,14 @@ use_preset_vocabulary: false
 古仪鸣砂掣雷
 古月波纹
 古月力
+古月力节点
+古月力喷涌
+古月力屏障
+古月频谱分析仪
 古月遗骸
 古月源珠
+古月源珠发射器
+古月源珠供能基站
 古月之源
 古云有螭
 古宅景墙
@@ -4916,6 +4926,7 @@ use_preset_vocabulary: false
 归于烈火
 归于山中
 归于一途
+归约
 圭璋
 圭璋暝仍不移其晖
 规章问题
@@ -5341,6 +5352,7 @@ use_preset_vocabulary: false
 黑水晶号
 黑檀弓
 黑炭炭菇
+黑体
 黑田
 黑铁剑
 黑铜号角
@@ -7349,6 +7361,8 @@ use_preset_vocabulary: false
 飓风之种
 巨斧鱼
 聚怪
+聚光
+聚光膨胀
 聚会立牌
 聚会与痛饮之时
 聚火祭验所
@@ -7510,6 +7524,7 @@ use_preset_vocabulary: false
 卡科茨
 卡克斯
 卡菈的孩子
+卡菈格警备场
 卡拉穆鲁
 卡兰萨
 卡朗代沙龙
@@ -9227,6 +9242,7 @@ use_preset_vocabulary: false
 卢佩卡
 卢皮卡
 卢皮卡的意义
+卢沙里姆
 卢什涅
 卢施
 卢塔
@@ -9473,6 +9489,8 @@ use_preset_vocabulary: false
 马蒂亚斯
 玛尔塔
 马范
+玛歌
+玛歌洁蒂
 玛格丽特
 马古汉
 玛海菈
@@ -9773,6 +9791,7 @@ use_preset_vocabulary: false
 梅兹特利
 梅兹特利的古老传说
 梅兹特利篇
+美露莘	mei3'lu4'xin1	0
 美德的报酬
 美德分享包
 美好的风景
@@ -9781,7 +9800,6 @@ use_preset_vocabulary: false
 美好相遇
 美和希望
 美丽的与被诅咒的
-美露莘
 美轮美奂
 美梦
 美梦如是
@@ -10480,6 +10498,7 @@ use_preset_vocabulary: false
 木色脑袋
 木色躯干
 慕善
+穆什特希尔
 慕胜
 牧师制服
 幕收
@@ -10497,6 +10516,7 @@ use_preset_vocabulary: false
 木纹雅致的书法桌案
 木樨座
 木箱
+幕形态黑体物质笼
 幕形态黑体物质笼实验室
 牧羊人
 暮夜剧团
@@ -10540,6 +10560,7 @@ use_preset_vocabulary: false
 纳里曼
 娜莉
 娜玛卡
+纳姆
 纳姆兰希特
 纳纳卡
 那那罗
@@ -10670,6 +10691,7 @@ use_preset_vocabulary: false
 泥染的刀镡
 霓裳花
 霓裳画帘
+尼什
 猊兽
 泥蛙
 尼西里塔
@@ -11627,9 +11649,7 @@ use_preset_vocabulary: false
 欠练了
 茜涅特
 茜斯柯
-茜特菈莉	xī'tè'lā'lì
 茜特菈莉赠送的手帕
-茜特菈琳
 茜娅
 倩影游侠
 枪弹与丝线的合围
@@ -12097,6 +12117,7 @@ use_preset_vocabulary: false
 群山的影子
 群山瓦解之日
 群星的涡风
+群游月灵
 群玉阁
 群玉临空
 燃爆木
@@ -12484,6 +12505,7 @@ use_preset_vocabulary: false
 萨义德
 萨约尔
 塞巴尔
+塞卜
 塞妲
 塞德娜
 塞库菈
@@ -13298,6 +13320,7 @@ use_preset_vocabulary: false
 失梦的苗圃
 施密特
 失冕的宝冠
+失能
 诗人
 施芮娅
 失色哀恸
@@ -14286,6 +14309,7 @@ use_preset_vocabulary: false
 索莉马娜
 索林
 索林蒂丝
+索卢格之王
 索洛尼娅
 索洛维
 锁面板
@@ -14338,6 +14362,7 @@ use_preset_vocabulary: false
 塔洛娜
 塔玛拉
 塔马鲁
+塔马提
 塔米娜
 塔莫蕾
 塔穆因
@@ -14414,6 +14439,7 @@ use_preset_vocabulary: false
 探寻灵感
 探员
 探长
+探侦机关
 汤米
 汤雯
 汤义刚
@@ -14584,9 +14610,11 @@ use_preset_vocabulary: false
 提佐科
 体力上限
 体力消耗
+笹百合
 薙草之稻光
 替代冲刺
 薙刀
+笹野
 天臂池
 天步真原
 天才的发现
@@ -14666,6 +14694,7 @@ use_preset_vocabulary: false
 天牛之章
 天牛座
 天暖燕子么搭窝窝
+天攀艏
 天启
 天青
 天青现虹
@@ -14759,7 +14788,6 @@ use_preset_vocabulary: false
 眺远
 跳跃冠军
 跳跃能力
-笹百合
 贴贴小鸟
 铁膀子
 铁壁
@@ -14828,7 +14856,6 @@ use_preset_vocabulary: false
 廷稚
 庭中朝暮
 庭中隐际
-笹野
 通牒金盘
 樋口铁矢
 通路计划
@@ -15223,7 +15250,9 @@ use_preset_vocabulary: false
 望月
 望月的见证
 望月吼哕声
+望月者
 望月者的摹刻
+望月者号
 望月者计划
 妄执如雾
 哇哇哇哇
@@ -15598,7 +15627,9 @@ use_preset_vocabulary: false
 呜呼流影貉缭乱
 污秽的面具
 污秽逆位神像
+乌基恩
 乌吉
+乌吉恩
 乌吉恩圈
 乌吉恩圈宝库
 乌卡曼
@@ -15607,6 +15638,7 @@ use_preset_vocabulary: false
 乌昆博库
 乌兰塔
 乌利亚娜
+乌鲁
 乌鲁班巴
 乌帽子
 乌米
@@ -15895,6 +15927,7 @@ use_preset_vocabulary: false
 物理抗性
 雾里明灯
 物理伤害
+雾灵渚
 物器流转
 雾切
 雾切御腰物
@@ -15919,6 +15952,8 @@ use_preset_vocabulary: false
 物质嬗变
 雾中隐现的孤岛
 物资管理人
+茜特菈莉	xi1'te4'la1'li4	0
+茜特菈琳	xi1'te4'la1'lin2	0
 希奥多
 希巴拉克
 悉般多摩学院
@@ -16177,6 +16212,7 @@ use_preset_vocabulary: false
 先遣队
 先驱
 先驱秘源统辖阵列
+先驱秘源造像
 纤拳石
 仙蕊玲珑
 仙速瓶
@@ -16526,6 +16562,7 @@ use_preset_vocabulary: false
 谐荣的旧梦
 协商人的坚决谈判
 协同攻击
+谐谑
 邪眼
 协演的歌舞剧
 邪眼的性能
@@ -17645,6 +17682,7 @@ use_preset_vocabulary: false
 一把钥匙开一把锁
 一般市民
 一瓣荫凉
+伊比尼伯龙
 伊比尼伯龙之眼
 伊波莱
 一波三折的辗转
@@ -17734,6 +17772,8 @@ use_preset_vocabulary: false
 伊黎耶的野精灵
 伊黎耶林区
 伊黎耶之歌
+伊里拉布提
+伊里穆
 伊莉米娅
 伊利萨
 伊丽莎白迪恩
@@ -17754,6 +17794,7 @@ use_preset_vocabulary: false
 一秒钟快快
 伊莫拉
 伊莫莎
+伊纳古雷
 伊娜姆
 伊妮
 伊涅芙
@@ -18179,6 +18220,7 @@ use_preset_vocabulary: false
 盈满
 盈满之实
 荧妹
+荧鳍鲸
 盈缺流返
 萦绕种
 迎神
@@ -18525,6 +18567,7 @@ use_preset_vocabulary: false
 又斩了无趣的
 又中大奖了
 柚子
+淤结月光藤蔓
 淤泥涌口
 于贝尔
 渔采的
@@ -19018,6 +19061,7 @@ use_preset_vocabulary: false
 岳川
 月荡海
 月荡海宝库
+月荡海的浮石
 月的守望
 跃动节拍
 跃动节拍响应法
@@ -19025,6 +19069,7 @@ use_preset_vocabulary: false
 越祓草轮
 越祓雷草之轮
 月感电
+月光冲锋
 月光的教导
 月光的哲学
 月光的指引
@@ -19037,6 +19082,7 @@ use_preset_vocabulary: false
 越过冰霜与烈焰
 越过沙暴与蜃气楼
 月海的潮汐
+月海失能
 月海亭
 月华圣咏
 月华濯沐之岛
@@ -19074,8 +19120,10 @@ use_preset_vocabulary: false
 月露泼降
 月落银
 跃律琴
+月芒霜鳍鲸
 钺矛
 月锚岩
+月幕实验所
 月凝屏障
 月女城
 月女的华彩
@@ -19095,6 +19143,7 @@ use_preset_vocabulary: false
 月髓
 月童的库藏
 玥文
+月纹充盈
 月卧檐上
 月雾的冒险家
 月雾的寻宝者
@@ -19649,6 +19698,7 @@ use_preset_vocabulary: false
 振翔
 震晓云天鼓
 振袖秋风问红叶
+镇压力场
 镇宅鼓石
 蒸畀彼君
 蒸发
@@ -19891,6 +19941,7 @@ use_preset_vocabulary: false
 治疗头
 治疗效果
 治疗一切的秘药
+质料贮存箱
 至烈至强的醇香
 至灵
 栉掠
@@ -20025,6 +20076,7 @@ use_preset_vocabulary: false
 众聚缤纷
 重开之花
 重立名约之契
+重力仪
 重力异常区域
 重力阵线
 重帘留香
