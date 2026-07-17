@@ -2700,6 +2700,7 @@
 拜达港	bai'da'hong	0
 拜达港	bai'ti'gang	0
 拜达港	bai'ti'hong	0
+稗记	bai'ji	0
 拜拉祖里	bai'la'jie'li	0
 拜拉祖里	bai'la'zu'li	0
 拜托了我的狐仙宫司	bai'tuo'le'wo'de'hu'xian'gong'ci	0
@@ -2899,6 +2900,7 @@
 傍明	bang'ming	0
 傍明	pang'meng	0
 傍明	pang'ming	0
+薄缘的道与光与胤	bao'yuan'de'dao'yu'guang'yu'yin	1
 包巴卜的金摇篮	bao'ba'bo'de'jin'yao'lan	0
 包巴卜的金摇篮	bao'ba'bo'di'jin'yao'lan	0
 包巴卜的金摇篮	bao'ba'bu'de'jin'yao'lan	0
@@ -4586,6 +4588,7 @@
 并流式冷凝机关	bing'liu'te'ling'ning'wei'guan	0
 并提	bing'di	0
 并提	bing'ti	0
+薄缘的道与光与胤	bo'yuan'de'dao'yu'guang'yu'yin	1
 波爱修斯	bei'ai'xiu'shi	0
 波爱修斯	bei'ai'xiu'si	0
 波爱修斯	bo'ai'xiu'shi	0
@@ -4753,8 +4756,6 @@
 波泽娜	bei'ze'nuo	0
 波泽娜	bo'ze'na	0
 波泽娜	bo'ze'nuo	0
-薄缘的道与光与胤	bo2'yuan2'de'dao4'yu3'guang1'yu3'yin4	1
-薄缘的道与光与胤	bao2'yuan2'de'dao4'yu3'guang1'yu3'yin4	1
 博比克	bo'bi'ke	0
 博茨斯劳	bo'ci'shi'lao	0
 博茨斯劳	bo'ci'si'lao	0
@@ -30254,6 +30255,10 @@
 玛尔塔	ma'er'ta	0
 马范	ma'fan	0
 玛歌	ma'ge	0
+玛歌的温室	ma'ge'de'wen'shi	0
+玛歌的温室	ma'ge'de'yun'shi	0
+玛歌的温室	ma'ge'di'wen'shi	0
+玛歌的温室	ma'ge'di'yun'shi	0
 玛歌洁蒂	ma'ge'ji'di	0
 玛歌洁蒂	ma'ge'jie'di	0
 玛格丽特	ma'ge'li'te	0
@@ -31092,6 +31097,7 @@
 茂知之壳	mao'zhi'zhu'qiao	0
 帽子匠	mao'zi'jiang	0
 帽子水母	mao'zi'shui'mu	0
+美露莘	mei'lu'xin	0
 梅妲	mei'da	0
 梅蒂	mei'di	0
 梅尔梅	mei'er'mei	0
@@ -31264,7 +31270,6 @@
 梅兹特利的古老传说	mei'zi'te'li'di'gu'lao'zhuan'shuo	0
 梅兹特利篇	mei'ci'te'li'pian	0
 梅兹特利篇	mei'zi'te'li'pian	0
-美露莘	mei3'lu4'xin1	0
 美德的报酬	mei'de'de'bao'chou	0
 美德的报酬	mei'de'di'bao'chou	0
 美德分享包	mei'de'fen'xiang'bao	0
@@ -35937,6 +35942,8 @@
 漆黑枪兵	qie'hei'qiang'bing	0
 漆黑污泥	qi'hei'wu'ni	0
 漆黑污泥	qie'hei'wu'ni	0
+漆黑要塞	qi'hei'yao'sai	0
+漆黑要塞	qie'hei'yao'sai	0
 漆黑夜鸦	qi'hei'ye'ya	0
 漆黑夜鸦	qie'hei'ye'ya	0
 漆黑陨铁	qi'hei'yun'tie	0
@@ -40423,6 +40430,7 @@
 山阴锦簇	shan'yin'jin'chuo	0
 山阴锦簇	shan'yin'jin'cu	0
 山影生壁花器	shan'ying'sheng'bi'hua'qi	0
+山有林猪粗嗅花	shan'you'lin'zhu'cu'xiu'hua	0
 山与海与天空	shan'yu'hai'yu'tian'kong	0
 山月草露	shan'ru'cao'lou	0
 山月草露	shan'ru'cao'lu	0
@@ -41938,6 +41946,10 @@
 盛典与慧业	cheng'tian'yu'hui'ye	0
 盛典与慧业	sheng'dian'yu'hui'ye	0
 盛典与慧业	sheng'tian'yu'hui'ye	0
+圣殿的一日春秋	ku'dian'de'yi'ri'chun'qiu	0
+圣殿的一日春秋	ku'dian'di'yi'ri'chun'qiu	0
+圣殿的一日春秋	sheng'dian'de'yi'ri'chun'qiu	0
+圣殿的一日春秋	sheng'dian'di'yi'ri'chun'qiu	0
 盛放的曙红	cheng'fang'de'shu'gong	0
 盛放的曙红	cheng'fang'de'shu'hong	0
 盛放的曙红	cheng'fang'di'shu'gong	0
@@ -42565,6 +42577,8 @@
 狮之血	shi'zhi'xue	0
 狮之血	shi'zhu'xie	0
 狮之血	shi'zhu'xue	0
+狮子奋迅	shi'zi'fen'xun	0
+狮子奋迅	shi'zi'kang'xun	0
 狮子和孩子	shi'zi'he'hai'zi	0
 狮子牙	shi'zi'ya	0
 食材风味频谱图	shi'cai'feng'mei'pin'pu'tu	0
@@ -43985,6 +43999,10 @@
 霜影月华	shuang'ying'yue'hua	0
 霜月	shuang'ru	0
 霜月	shuang'yue	0
+霜月藏物箱	shuang'ru'cang'wu'xiang	0
+霜月藏物箱	shuang'ru'zang'wu'xiang	0
+霜月藏物箱	shuang'yue'cang'wu'xiang	0
+霜月藏物箱	shuang'yue'zang'wu'xiang	0
 霜月的残照	shuang'ru'de'can'zhao	0
 霜月的残照	shuang'ru'di'can'zhao	0
 霜月的残照	shuang'yue'de'can'zhao	0
@@ -50501,8 +50519,8 @@
 雾中隐现的孤岛	wu'zhong'yin'xian'de'gu'dao	0
 雾中隐现的孤岛	wu'zhong'yin'xian'di'gu'dao	0
 物资管理人	wu'zi'guan'li'ren	0
-茜特菈莉	xi1'te4'la1'li4	0
-茜特菈琳	xi1'te4'la1'lin2	0
+茜特菈莉	xi'te'la'li	0
+茜特菈琳	xi'te'la'lin	0
 希奥多	xi'ao'duo	0
 希奥多	xi'yu'duo	0
 希巴拉克	xi'ba'la'ke	0
@@ -52626,6 +52644,8 @@
 星晶之舞	xing'jing'zhu'wu	0
 星鹫赤羽	xing'jiu'chi'hu	0
 星鹫赤羽	xing'jiu'chi'yu	0
+星空访客	xing'kong'fang'ke	0
+星空访客	xing'kong'fang'qia	0
 星空之门	xing'kong'zhi'men	0
 星空之门	xing'kong'zhu'men	0
 星流摇床之梦	xing'liu'yao'chuang'zhi'meng	0
@@ -54758,6 +54778,8 @@
 宴奏	yan'zou	0
 赝作的树脂	yan'zuo'de'shu'zhi	0
 赝作的树脂	yan'zuo'di'shu'zhi	0
+赝作古典	yan'zuo'gu'dian	0
+赝作古典	yan'zuo'gu'tian	0
 央陆	yang'liu	0
 央陆	yang'lu	0
 央陆	ying'liu	0
@@ -59954,6 +59976,8 @@
 月光的指引	yue'guang'di'zhi'yin	0
 月光鳍	ru'guang'qi	0
 月光鳍	yue'guang'qi	0
+月光藤蔓	ru'guang'teng'man	0
+月光藤蔓	yue'guang'teng'man	0
 月光下的少女	ru'guang'xia'de'shao'nü	0
 月光下的少女	ru'guang'xia'di'shao'nü	0
 月光下的少女	yue'guang'xia'de'shao'nü	0
@@ -60142,6 +60166,10 @@
 月芒霜鳍鲸	ru'mang'shuang'qi'jing	0
 月芒霜鳍鲸	yue'huang'shuang'qi'jing	0
 月芒霜鳍鲸	yue'mang'shuang'qi'jing	0
+月芒水母	ru'huang'shui'mu	0
+月芒水母	ru'mang'shui'mu	0
+月芒水母	yue'huang'shui'mu	0
+月芒水母	yue'mang'shui'mu	0
 钺矛	yue'mao	0
 月锚岩	ru'mao'yan	0
 月锚岩	yue'mao'yan	0
@@ -60185,6 +60213,8 @@
 月神的赐福	ru'shen'di'ci'fu	0
 月神的赐福	yue'shen'de'ci'fu	0
 月神的赐福	yue'shen'di'ci'fu	0
+月神瞳	ru'shen'tong	0
+月神瞳	yue'shen'tong	0
 月升哲贤颂	ru'sheng'zhe'xian'song	0
 月升哲贤颂	yue'sheng'zhe'xian'song	0
 越石村	huo'dan'cun	0
@@ -65207,6 +65237,10 @@
 最后的仁慈	cuo'hou'di'ren'ci	0
 最后的仁慈	zui'hou'de'ren'ci	0
 最后的仁慈	zui'hou'di'ren'ci	0
+最后的审判	cuo'hou'de'shen'pan	0
+最后的审判	cuo'hou'di'shen'pan	0
+最后的审判	zui'hou'de'shen'pan	0
+最后的审判	zui'hou'di'shen'pan	0
 最后的特诺奇兹托克人	cuo'hou'de'te'nuo'ji'ci'tuo'ke'ren	0
 最后的特诺奇兹托克人	cuo'hou'de'te'nuo'ji'zi'tuo'ke'ren	0
 最后的特诺奇兹托克人	cuo'hou'de'te'nuo'qi'ci'tuo'ke'ren	0

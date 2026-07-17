@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.8(3) | 2026.07.08 10:23"
+version: "6.8(4) | 2026.07.17 11:04"
 sort: origin
 use_preset_vocabulary: false
 ...
@@ -765,6 +765,7 @@ use_preset_vocabulary: false
 百折不摧的决意
 百柱的酣宴
 拜达港
+稗记
 拜拉祖里
 拜托了我的狐仙宫司
 拜希麦
@@ -811,6 +812,7 @@ use_preset_vocabulary: false
 帮派的日常事务
 邦摇
 傍明
+薄缘的道与光与胤	bao'yuan'de'dao'yu'guang'yu'yin	1
 包巴卜的金摇篮
 包工头
 包罗百味
@@ -1290,6 +1292,7 @@ use_preset_vocabulary: false
 并力之月
 并流式冷凝机关
 并提
+薄缘的道与光与胤	bo'yuan'de'dao'yu'guang'yu'yin	1
 波爱修斯
 波波豪
 波波拉诺
@@ -1321,8 +1324,6 @@ use_preset_vocabulary: false
 啵伊
 拨云见日
 波泽娜
-薄缘的道与光与胤	bo2'yuan2'de'dao4'yu3'guang1'yu3'yin4	1
-薄缘的道与光与胤	bao2'yuan2'de'dao4'yu3'guang1'yu3'yin4	1
 博比克
 博茨斯劳
 博恩
@@ -9490,6 +9491,7 @@ use_preset_vocabulary: false
 玛尔塔
 马范
 玛歌
+玛歌的温室
 玛歌洁蒂
 玛格丽特
 马古汉
@@ -9745,6 +9747,7 @@ use_preset_vocabulary: false
 茂知之壳
 帽子匠
 帽子水母
+美露莘	mei'lu'xin	0
 梅妲
 梅蒂
 梅尔梅
@@ -9791,7 +9794,6 @@ use_preset_vocabulary: false
 梅兹特利
 梅兹特利的古老传说
 梅兹特利篇
-美露莘	mei3'lu4'xin1	0
 美德的报酬
 美德分享包
 美好的风景
@@ -11249,6 +11251,7 @@ use_preset_vocabulary: false
 漆黑旗手
 漆黑枪兵
 漆黑污泥
+漆黑要塞
 漆黑夜鸦
 漆黑陨铁
 漆黑陨铁的一角
@@ -12786,6 +12789,7 @@ use_preset_vocabulary: false
 山岩树影
 山阴锦簇
 山影生壁花器
+山有林猪粗嗅花
 山与海与天空
 山月草露
 山泽麟迹
@@ -13216,6 +13220,7 @@ use_preset_vocabulary: false
 圣裁影羽
 圣裁之雷
 盛典与慧业
+圣殿的一日春秋
 盛放的曙红
 盛放之光
 盛放之花
@@ -13344,6 +13349,7 @@ use_preset_vocabulary: false
 诗与面包
 施展居合
 狮之血
+狮子奋迅
 狮子和孩子
 狮子牙
 食材风味频谱图
@@ -13822,6 +13828,7 @@ use_preset_vocabulary: false
 霜役人
 霜影月华
 霜月
+霜月藏物箱
 霜月的残照
 霜月地毯
 霜月灵嗣
@@ -15952,8 +15959,8 @@ use_preset_vocabulary: false
 物质嬗变
 雾中隐现的孤岛
 物资管理人
-茜特菈莉	xi1'te4'la1'li4	0
-茜特菈琳	xi1'te4'la1'lin2	0
+茜特菈莉	xi'te'la'li	0
+茜特菈琳	xi'te'la'lin	0
 希奥多
 希巴拉克
 悉般多摩学院
@@ -16699,6 +16706,7 @@ use_preset_vocabulary: false
 兴尽且去来
 星晶之舞
 星鹫赤羽
+星空访客
 星空之门
 星流摇床之梦
 星螺
@@ -17466,6 +17474,7 @@ use_preset_vocabulary: false
 燕子来时挟清雨
 宴奏
 赝作的树脂
+赝作古典
 央陆
 央陆单手剑原胚
 央陆法器原胚
@@ -19074,6 +19083,7 @@ use_preset_vocabulary: false
 月光的哲学
 月光的指引
 月光鳍
+月光藤蔓
 月光下的少女
 月光中共舞
 月光州
@@ -19121,6 +19131,7 @@ use_preset_vocabulary: false
 月落银
 跃律琴
 月芒霜鳍鲸
+月芒水母
 钺矛
 月锚岩
 月幕实验所
@@ -19135,6 +19146,7 @@ use_preset_vocabulary: false
 月摄千川
 月神
 月神的赐福
+月神瞳
 月升哲贤颂
 越石村
 越石丸
@@ -20520,6 +20532,7 @@ use_preset_vocabulary: false
 最后的歌者
 最后的黄金之秋
 最后的仁慈
+最后的审判
 最后的特诺奇兹托克人
 最后的问题
 罪祸的终末
