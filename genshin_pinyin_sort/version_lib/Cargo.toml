@@ -1,8 +1,16 @@
 [package]
-name = "version_lib"
-version = "0.1.0"
-edition = "2021"
+name         = "version_lib"
+version      = "0.1.0"
+edition      = "2024"
+rust-version = "1.85"
 
 [lib]
 name = "version_lib"
 path = "mod.rs"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all      = "warn"
+pedantic = "warn"

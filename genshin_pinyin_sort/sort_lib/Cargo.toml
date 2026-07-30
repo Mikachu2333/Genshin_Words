@@ -1,11 +1,19 @@
 [package]
-name = "sort_lib"
-version = "0.1.1"
-edition = "2021"
+name         = "sort_lib"
+version      = "0.1.1"
+edition      = "2024"
+rust-version = "1.85"
 
 [lib]
 name = "sort_lib"
 path = "mod.rs"
 
 [dependencies]
-pinyin = "0.11.0"
+pinyin = { version = "0.11.0", default-features = false, features = ["with_tone_num_end"] }
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all      = "warn"
+pedantic = "warn"

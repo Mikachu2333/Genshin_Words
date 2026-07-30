@@ -1,52 +1,85 @@
-pub const DEBUG_MODE: bool = cfg!(debug_assertions);
-
+#[derive(Debug, Clone, PartialEq, Eq, Default)]
 pub struct VersionInfo {
-    pub a: String,
-    pub b: String,
-    pub c: String,
+    major: usize,
+    minor: usize,
+    patch: usize,
 }
+
 impl VersionInfo {
-    #[allow(dead_code)]
-    pub fn default() -> Self {
-        let temp = "0";
-        Self {
-            a: temp.to_string(),
-            b: temp.to_string(),
-            c: temp.to_string(),
-        }
-    }
-    pub fn from_str(original: &str) -> Self {
-        let binding = original
+    /// Parses a three-component version and increments its patch component.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error when the version shape or a numeric component is invalid,
+    /// or when incrementing the patch component would overflow.
+    pub fn parse(original: &str) -> Result<Self, String> {
+        let normalized = original
             .trim()
-            .to_lowercase()
+            .to_ascii_lowercase()
             .replace("version", "")
             .replace("ver", "");
-        let parsed = binding
-            .splitn(4, &['.', '-', ' ', '(', ')', '[', ']', '~', '_'])
-            .collect::<Vec<&str>>();
-
-        if DEBUG_MODE {
-            dbg!("Version {}", &parsed);
+        let parts: Vec<_> = normalized
+            .split(|character: char| {
+                matches!(
+                    character,
+                    '.' | '-' | ' ' | '(' | ')' | '[' | ']' | '~' | '_'
+                )
+            })
+            .filter(|part| !part.is_empty())
+            .collect();
+        if parts.len() != 3 {
+            return Err(format!(
+                "version must contain exactly major, minor, and patch components: {original:?}"
+            ));
         }
 
-        let patch_version = parsed[2].parse::<usize>();
-        let patch_result = if patch_version.is_err() {
-            1_usize
-        } else {
-            patch_version.unwrap() + 1
-        };
-
-        Self {
-            a: parsed[0].to_string(),
-            b: parsed[1].to_string(),
-            c: patch_result.to_string(),
-        }
+        let major = parse_component(parts[0], "major")?;
+        let minor = parse_component(parts[1], "minor")?;
+        let patch = parse_component(parts[2], "patch")?
+            .checked_add(1)
+            .ok_or_else(|| "patch version overflow".to_string())?;
+        Ok(Self {
+            major,
+            minor,
+            patch,
+        })
     }
-    pub fn to_str(self) -> String {
-        let format_symbols = "()".chars().collect::<Vec<char>>();
-        format!(
-            "{}.{}{}{}{}",
-            self.a, self.b, format_symbols[0], self.c, format_symbols[1]
-        )
+
+    #[must_use]
+    pub fn to_str(&self) -> String {
+        format!("{}.{}({})", self.major, self.minor, self.patch)
+    }
+}
+
+fn parse_component(component: &str, name: &str) -> Result<usize, String> {
+    component
+        .parse::<usize>()
+        .map_err(|error| format!("invalid {name} version component {component:?}: {error}"))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn parses_and_increments_supported_version() {
+        let version = VersionInfo::parse("6.8(5)").unwrap();
+        assert_eq!(version.to_str(), "6.8(6)");
+    }
+
+    #[test]
+    fn rejects_missing_or_extra_components() {
+        assert!(VersionInfo::parse("6.8").is_err());
+        assert!(VersionInfo::parse("6.8.5.1").is_err());
+        assert!(VersionInfo::parse("6.x(5)").is_err());
+    }
+
+    #[test]
+    fn rejects_patch_overflow() {
+        let input = format!("1.2({})", usize::MAX);
+        assert_eq!(
+            VersionInfo::parse(&input).unwrap_err(),
+            "patch version overflow"
+        );
     }
 }

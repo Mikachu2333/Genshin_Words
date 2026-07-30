@@ -1,7 +1,7 @@
 ---
 name: yuanshen
-version: "6.8(4) | 2026.07.17 11:04"
-sort: origin
+version: "6.8(5) | 2026.07.30 20:43"
+sort: original
 use_preset_vocabulary: false
 ...
 
@@ -812,7 +812,6 @@ use_preset_vocabulary: false
 帮派的日常事务
 邦摇
 傍明
-薄缘的道与光与胤	bao'yuan'de'dao'yu'guang'yu'yin	1
 包巴卜的金摇篮
 包工头
 包罗百味
@@ -907,6 +906,7 @@ use_preset_vocabulary: false
 爆炎树
 暴躁的部族战士
 爆竹
+薄缘的道与光与胤	bao yuan de dao yu guang yu yin	100
 碑碣的记录
 悲剧的复写
 悲悯的冠冕
@@ -1292,7 +1292,6 @@ use_preset_vocabulary: false
 并力之月
 并流式冷凝机关
 并提
-薄缘的道与光与胤	bo'yuan'de'dao'yu'guang'yu'yin	1
 波爱修斯
 波波豪
 波波拉诺
@@ -1353,6 +1352,7 @@ use_preset_vocabulary: false
 博彦
 伯阳
 卜劳恩
+薄缘的道与光与胤	bo yuan de dao yu guang yu yin	100
 捕盗
 捕风
 捕风的归客
@@ -9747,7 +9747,6 @@ use_preset_vocabulary: false
 茂知之壳
 帽子匠
 帽子水母
-美露莘	mei'lu'xin	0
 梅妲
 梅蒂
 梅尔梅
@@ -9819,6 +9818,7 @@ use_preset_vocabulary: false
 美羽
 寐领围垣
 魅影猫
+美露莘	mei lu xin	100
 门达斯
 门扉前的弈局
 门户清理
@@ -11659,6 +11659,7 @@ use_preset_vocabulary: false
 锖假龙
 枪尖一点
 枪剑双绝
+枪匠们
 枪口灼烧的轻烟
 枪与翼
 强风猛进之述演
@@ -15659,6 +15660,7 @@ use_preset_vocabulary: false
 巫女服
 巫女曚云小传
 巫女众
+乌帕诺之眼
 乌丘
 污染菌毯
 乌萨
@@ -15959,8 +15961,6 @@ use_preset_vocabulary: false
 物质嬗变
 雾中隐现的孤岛
 物资管理人
-茜特菈莉	xi'te'la'li	0
-茜特菈琳	xi'te'la'lin	0
 希奥多
 希巴拉克
 悉般多摩学院
@@ -16813,6 +16813,8 @@ use_preset_vocabulary: false
 凶星恶曜
 凶凶鲨
 雄三
+茜特菈莉	xi te la li	100
+茜特菈琳	xi te la lin	100
 修旧利废
 修库特尔
 修洛维兹
@@ -17247,6 +17249,7 @@ use_preset_vocabulary: false
 亚瑟
 亚瑟先生
 亚什特的赞歌
+亚斯妥曼瑟
 娅特兰
 亚瓦尔
 亚因
@@ -20488,6 +20491,7 @@ use_preset_vocabulary: false
 宗室长剑
 宗室之花
 宗室之翎
+综务小队
 综像勘录仪
 总得喝一杯
 总是雕像机关

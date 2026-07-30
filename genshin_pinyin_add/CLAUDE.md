@@ -32,12 +32,12 @@ The program does one thing:
 
 2. **Generate pinyin combinations** — For each content line, every character is converted to its pinyin readings via the `pinyin` crate's `ToPinyinMulti` trait. Since Chinese characters can have multiple readings (多音字), all combinations are Cartesian-product expanded.
 
-3. **Output fcitx5 format** — Each combination is written as `{word}\t{pinyin}\t0` to `yuanshen_fcitx5.txt`, where pinyin syllables are separated by `'`.
+3. **Output fcitx5 format** — Each combination is written as `{word}\t{pinyin}\t100` to `yuanshen_fcitx5.txt`, where pinyin syllables are separated by `'`. Manually annotated Rime entries use spaces between syllables and are converted to apostrophes only in this output.
 
 ## Key implementation details
 
-- **Single dependency**: `pinyin = "0.11.0"` — the only external crate.
-- **Debug vs release**: In debug mode (`cfg!(debug_assertions)`), the input path is hardcoded to a local debug directory and no CLI argument is required. In release mode, the input file path must be passed as the first argument.
+- **Dependencies**: `pinyin = "0.11.0"` provides readings and `tempfile` supports atomic output replacement.
+- **CLI behavior**: The input file path is always passed as the sole command-line argument.
 - **Multi-character pinyin expansion**: For each character, `to_pinyin_multi()` returns all possible readings; duplicates are removed and sorted. The Cartesian product of per-character readings produces all legal pinyin strings for the word.
 - **Zero-copy pinyin strings**: The code borrows `&str` from the pinyin data throughout; no allocation for individual syllable strings.
 

@@ -1,15 +1,23 @@
 [package]
-name = "genshin_pinyin_sort"
-version = "1.1.7"
-edition = "2021"
+name         = "genshin_pinyin_sort"
+version      = "1.1.8"
+edition      = "2024"
+rust-version = "1.85"
 
 [profile.release]
 strip = true
-lto = true
+lto   = true
 panic = "abort"
 
 [dependencies]
-chrono = "0.4.45"
-name_exchanger_rs = "2.2.1"
+chrono = { version = "0.4.45", default-features = false, features = ["clock"] }
+name_exchanger_rs = "2.3.2"
 version_lib = { path = "./version_lib" }
 sort_lib = { path = "./sort_lib" }
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all      = "warn"
+pedantic = "warn"
