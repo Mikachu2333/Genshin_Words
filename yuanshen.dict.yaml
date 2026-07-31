@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.8(5) | 2026.07.30 20:43"
+version: "6.8(6) | 2026.07.31 22:29"
 sort: original
 use_preset_vocabulary: false
 ...
@@ -115,6 +115,7 @@ use_preset_vocabulary: false
 阿鲁吉
 阿罗哈
 阿罗逻
+阿罗夏
 阿罗夏
 阿洛妮
 阿绿
@@ -274,6 +275,7 @@ use_preset_vocabulary: false
 埃兹莉
 皑尘与雪影
 矮灵
+矮灵
 蔼然入梦
 爱贝尔
 艾伯特
@@ -391,6 +393,7 @@ use_preset_vocabulary: false
 安娜
 安娜冒险记
 安娜丝塔夏
+安娜丝塔夏
 安能平息
 安妮克
 安妮兹卡
@@ -466,6 +469,7 @@ use_preset_vocabulary: false
 奥比奇
 奥伯龙
 奥藏山
+奥黛塔
 奥黛塔
 奥蒂涅
 奥杜力
@@ -617,9 +621,11 @@ use_preset_vocabulary: false
 白鸽
 白鹄骑士
 白果
+白湖冬羽
 白狐玩偶
 白狐之野
 白化法
+白桦雪葬地
 白化之是
 白芨
 白金典藏型
@@ -659,6 +665,7 @@ use_preset_vocabulary: false
 白色的季节
 白色高智能
 白色小帮手
+白沙皇
 白沙皇
 白山的馈赐
 白石
@@ -1253,6 +1260,7 @@ use_preset_vocabulary: false
 冰涡之剑
 冰雾花
 冰雾花花朵
+冰绡鹄影
 冰心破片
 冰星信标
 冰雪故园的终期
@@ -1267,6 +1275,7 @@ use_preset_vocabulary: false
 冰与火的战场
 冰渊之心
 冰原的诸多故事
+冰原上的伟业
 冰元素
 冰元素晶片
 冰元素抗性
@@ -1430,6 +1439,7 @@ use_preset_vocabulary: false
 布面白狐玩偶
 布面狸猫玩偶
 不灭的骑士道
+不灭的衍生造物
 不灭月华
 不明流通渠道
 布纳马
@@ -1520,6 +1530,7 @@ use_preset_vocabulary: false
 裁雨声
 裁雨幽光今何在
 财运亨通一岁中
+彩冰镇
 彩浮枢
 采歌者
 彩虹的脚下是
@@ -1638,6 +1649,7 @@ use_preset_vocabulary: false
 苍银
 沧屿的冒险家
 沧屿的寻宝者
+苍羽一梦
 苍紫雷电的记忆
 藏锋
 藏锋何处
@@ -1729,6 +1741,7 @@ use_preset_vocabulary: false
 层叠木匣
 层见叠出的谜象
 层侵
+曾为灵魂的木舟
 曾我隅田流左近重衡
 层岩
 层岩巨渊
@@ -1917,6 +1930,7 @@ use_preset_vocabulary: false
 尘光七谕
 尘辉兑换
 晨昏破晓之束
+沉寂之地的枪声
 陈娇花
 沉金的岁月
 沉静靛蓝
@@ -2291,6 +2305,7 @@ use_preset_vocabulary: false
 处刑棘刺
 触罪
 穿刺高天的利齿
+穿过象牙之门
 穿涧石
 穿浪斗枪
 穿浪之梭
@@ -2536,6 +2551,7 @@ use_preset_vocabulary: false
 存于云天的至福之解
 存在的证明
 寸尺之楼
+寸心余响
 嵯峨群峰之翼
 错漏
 错落结构
@@ -2557,6 +2573,7 @@ use_preset_vocabulary: false
 达梅婕
 达莫维百货
 达纳
+达妮卡
 达妮卡
 达妮什瓦
 达尼奥
@@ -3029,6 +3046,7 @@ use_preset_vocabulary: false
 帝钱
 蒂茜玛
 地热的流涌
+第三降临者
 第三类永动机
 蒂沙库恩
 地上的万国
@@ -3177,9 +3195,11 @@ use_preset_vocabulary: false
 冬凌草
 冬凌王
 冬契军
+冬契军
 咚锵锵
 东山奈央
 东升
+冬狩夜巡
 东王
 东雅
 董鹮
@@ -3268,6 +3288,7 @@ use_preset_vocabulary: false
 独木难支
 渎神大罪
 渎死之罪
+独舞倒影
 独舞之邀
 毒蝎
 毒蝎尾部
@@ -3800,6 +3821,7 @@ use_preset_vocabulary: false
 翡玉什锦袋
 翡玉丸
 费奥多罗夫娜
+费奥多罗夫娜
 费奥潘
 费迪南德
 费恩
@@ -4045,6 +4067,7 @@ use_preset_vocabulary: false
 风息山
 风洗之月
 风仙
+风仙
 风仙大公
 枫香茶雾一室中
 风向
@@ -4223,6 +4246,7 @@ use_preset_vocabulary: false
 符文机关
 符文之齿
 福无双至
+伏袭霆击
 浮霄笼
 拂晓的枢机卿
 拂晓之星
@@ -4510,6 +4534,7 @@ use_preset_vocabulary: false
 格蕾兹娜
 格里斯潘
 阁楼套
+格鲁波夫
 格鲁波夫堡
 格罗贝尔
 葛罗丽
@@ -4645,6 +4670,7 @@ use_preset_vocabulary: false
 篝火边的欢腾
 篝火大作战
 篝火树
+钩镰炮
 钩锁
 钩索锁点
 狗三儿
@@ -5134,6 +5160,7 @@ use_preset_vocabulary: false
 海薇玛乐园全景纪念图
 海薇玛映影欢乐城
 海纹石
+海屑镇
 海崖鹦
 海亚姆
 海盐羊角面包
@@ -5178,6 +5205,7 @@ use_preset_vocabulary: false
 寒粟之月
 寒天宣命祝词
 寒天之钉
+寒息
 寒夜
 寒意
 寒涌持者
@@ -5208,6 +5236,7 @@ use_preset_vocabulary: false
 豪运奔腾
 豪重琱丽的坐席
 好东西就要分享
+好东西商店
 好感经验
 好伙伴
 好架子
@@ -5767,6 +5796,7 @@ use_preset_vocabulary: false
 欢悦
 欢跃信笺
 鹮穿之喙
+鹮风回雪
 桓摩达
 桓那
 桓那兰那
@@ -5781,6 +5811,7 @@ use_preset_vocabulary: false
 焕光追影弹
 幻煌
 幻煌至形
+幻煌至形
 幻景别宫
 幻境海螺
 幻剧
@@ -5789,6 +5820,7 @@ use_preset_vocabulary: false
 唤雷者的头冠
 幻礼
 唤灵师的手记
+幻灵夜舞
 唤灵之祷
 幻梦的门扉
 幻梦之门
@@ -5865,6 +5897,8 @@ use_preset_vocabulary: false
 黄琮破而不夺其坚
 煌煌千道镇式
 煌煌千道镇武
+皇家能源协会
+皇家女仆长
 皇家捉双
 黄金
 黄金邦国的结末
@@ -5941,6 +5975,7 @@ use_preset_vocabulary: false
 虺雷之姿
 灰鸰衒潮
 灰猫先生
+灰眸
 辉木
 辉木暗纹地板
 辉木白本置物架
@@ -6006,6 +6041,7 @@ use_preset_vocabulary: false
 回响弦音
 回响渊底的安魂曲
 回响长天的诗歌
+回响中的冬梦
 回忆捕手留影机
 回忆终章
 回转的怒风
@@ -6286,10 +6322,12 @@ use_preset_vocabulary: false
 机元突破
 积攒愿力
 机逐封秘
+急板
 极北桦木折角柜台
 即便存在隔阂
 极彩的露珂菈
 极彩巧匠
+极地熊
 集电石
 急冻射线
 急冻树
@@ -6326,6 +6364,7 @@ use_preset_vocabulary: false
 吉丽安娜
 鹡鸰
 集录祈愿
+疾掠弋缇
 笈名海滨
 吉娜
 集念急救
@@ -6354,6 +6393,7 @@ use_preset_vocabulary: false
 极限逃生
 吉祥具书
 即兴表演的欢庆时光
+极星辉域
 极星辉域
 即兴乐队
 即兴烹饪
@@ -6602,6 +6642,7 @@ use_preset_vocabulary: false
 简易工棚
 简易货运拖车
 简易木制围栏
+简易暖源
 简易提灯
 简易武器架
 简易医疗护理床
@@ -6901,6 +6942,7 @@ use_preset_vocabulary: false
 金狸狸奖杯
 金鲤飞跃空谷
 金流监督
+金律铸影
 金礞
 金目乘黄月驹
 金牌飞行执照
@@ -7307,6 +7349,7 @@ use_preset_vocabulary: false
 旧市町墙
 旧世遗音
 救世者的守灵
+救赎之斩
 就算回归沙尘
 旧味难寻
 就像水消失在水中
@@ -7491,6 +7534,7 @@ use_preset_vocabulary: false
 军团的怒角
 君王之殿
 君王之殁
+军械宫
 军械宫
 君子白日闯
 骏麟
@@ -7704,6 +7748,7 @@ use_preset_vocabulary: false
 科隆切广场
 科罗德
 科洛列夫茨基剧团
+科洛列夫茨基剧院
 科洛曼
 科米娜
 科莫奎
@@ -7787,6 +7832,8 @@ use_preset_vocabulary: false
 刻晴
 刻晴激化
 克柔
+克什尼克晶矿
+克什尼克能量
 克什尼克之炬
 刻师傅
 恪守时间候车站牌
@@ -8007,10 +8054,14 @@ use_preset_vocabulary: false
 昆扬
 困倦
 困困门牙骑士
+扩冰
+扩火
+扩雷
 阔亮海浪
 阔面石制炉灶
 廓然梦生
 扩散
+扩水
 拉比娜
 拉蒂米尔
 拉杜什劳
@@ -8668,6 +8719,7 @@ use_preset_vocabulary: false
 利兴
 砺行目标
 砺行修远
+砺行修远
 历玄冥以幽径
 莉雅丝
 利亚姆
@@ -8756,6 +8808,7 @@ use_preset_vocabulary: false
 列表
 猎兵祭刀
 冽冰震波
+列车总站
 猎刀鳐
 烈度
 裂断的剑柄
@@ -9233,6 +9286,7 @@ use_preset_vocabulary: false
 卢锅巴
 炉灰石
 炉火的往迹
+炉火融炼之心
 炉火熄灭之际
 炉火与欢笑之夜
 卢卡
@@ -9347,6 +9401,7 @@ use_preset_vocabulary: false
 罗纳布韦之梦
 罗契耶夫
 罗莎莉亚
+罗莎琳
 罗莎琳
 罗莎娜
 罗叔
@@ -10004,6 +10059,7 @@ use_preset_vocabulary: false
 米契沃
 米沙勒
 米特尔
+米提亚
 米提亚
 米窝窝
 米希尔
@@ -10733,6 +10789,7 @@ use_preset_vocabulary: false
 逆飞套
 逆挂的正义
 逆时之晷
+逆悬的冰河
 逆焰之刃
 匿叶仿生
 匿叶龙
@@ -10763,6 +10820,7 @@ use_preset_vocabulary: false
 啮合齿轮
 涅兰
 涅米宁
+涅墨林塞的金枝
 涅诺宁
 涅斯捷洛娃
 涅提
@@ -10785,6 +10843,7 @@ use_preset_vocabulary: false
 宁静之海
 凝浪之光剑
 宁禄
+凝露镇
 柠檬
 宁宁
 凝取结晶
@@ -10844,6 +10903,7 @@ use_preset_vocabulary: false
 诺奇特
 诺奇特梨
 诺思托伊区
+诺伊
 诺伊
 女仆
 女仆不会受伤
@@ -11648,6 +11708,7 @@ use_preset_vocabulary: false
 浅蔚轻行
 茜尔雅
 嵌合神骨的蛇姬
+嵌合翼骏狮
 茜红流光
 欠练了
 茜涅特
@@ -11661,6 +11722,7 @@ use_preset_vocabulary: false
 枪剑双绝
 枪匠们
 枪口灼烧的轻烟
+枪械整备台
 枪与翼
 强风猛进之述演
 强弓校调工具组
@@ -12120,6 +12182,7 @@ use_preset_vocabulary: false
 群青
 群山的影子
 群山瓦解之日
+群王局戏
 群星的涡风
 群游月灵
 群玉阁
@@ -12157,10 +12220,14 @@ use_preset_vocabulary: false
 燃愿玛瑙断片
 燃愿玛瑙块
 燃愿玛瑙碎屑
+染冰
 染布
 染绘石挑战
+染火
 染境
+染雷
 染料样品
+染水
 染血的黑之羽
 染血的骑士
 染血的骑士道
@@ -12298,6 +12365,7 @@ use_preset_vocabulary: false
 荣井知伊
 熔裂的罅隙
 熔裂突刺
+熔猎异端之刃
 熔流岩池
 融卢
 溶媒
@@ -12328,6 +12396,7 @@ use_preset_vocabulary: false
 荣誉骑士
 荣誉骑士特调屋
 荣誉市民
+柔板
 柔灯港
 柔灯蓝
 柔灯铃
@@ -13609,6 +13678,7 @@ use_preset_vocabulary: false
 守护座钟
 手鞠
 手鞠游戏
+守猎进踞
 首领
 手轮
 守密敕使
@@ -13638,6 +13708,7 @@ use_preset_vocabulary: false
 手制胸针
 受福者的白羽
 兽骨拉面
+兽怪
 兽怪
 售后服务
 售后服务弹
@@ -13744,8 +13815,10 @@ use_preset_vocabulary: false
 树莓水馒头
 树莓叶沫
 树上的小嵴锋龙
+树梢察伺
 树梢信步
 树王圣体菇
+戍望谣歌
 庶务长
 树形
 树妖
@@ -13789,6 +13862,8 @@ use_preset_vocabulary: false
 霜结的誓金枝
 霜劫精油
 霜精
+霜精
+霜精的村落
 霜镌的执凭
 霜铠王
 双雷
@@ -13815,6 +13890,7 @@ use_preset_vocabulary: false
 霜庭雪翎
 双屋的呼唤
 霜袭
+霜雪誓约
 霜雪鸮
 双岩
 霜妖精的报恩
@@ -14059,6 +14135,7 @@ use_preset_vocabulary: false
 斯克弗努格
 斯库拉
 斯莱日涅夫
+司令官
 斯露莎
 斯米尔诺娃
 斯内库的灌木丛
@@ -14089,6 +14166,7 @@ use_preset_vocabulary: false
 丝织之羽
 丝竹遥袅
 死河渡断
+死魂灵的夜曲
 死牌
 死生之炉
 死随念棺
@@ -14935,6 +15013,7 @@ use_preset_vocabulary: false
 荼诃落谷
 荼诃人
 荼诃之座
+图加林
 图莱杜拉
 图莱杜拉的回忆
 图兰大火山
@@ -15074,6 +15153,7 @@ use_preset_vocabulary: false
 瓦雷莎
 瓦蕾
 瓦力
+瓦列里
 瓦列里
 瓦伦丁
 瓦伦斯坦
@@ -15285,10 +15365,12 @@ use_preset_vocabulary: false
 薇娜
 薇内什
 薇涅尔
+薇涅兹卡
 巍然的青岩
 巍然岿然
 薇若妮卡
 威水舞兽队
+薇丝娜
 薇丝娜
 微缩型骰子壶
 薇塔
@@ -15615,6 +15697,7 @@ use_preset_vocabulary: false
 沃特林
 沃特蒙泰涅
 沃雅妮莎
+沃雅妮莎
 乌翅雁
 乌茨勒
 乌达德
@@ -15774,7 +15857,8 @@ use_preset_vocabulary: false
 无伤
 无赦
 无赦天火
-无神恋爱的雪国
+无神怜爱的冻土
+无神怜爱的雪国
 无生忍
 无声指令
 无矢之歌
@@ -15839,6 +15923,7 @@ use_preset_vocabulary: false
 无愈
 无郁稠林
 无郁夷摩
+无园丁的幼苗
 无怨
 无越
 无月之夜
@@ -16005,6 +16090,7 @@ use_preset_vocabulary: false
 西风之鹰的庙宇
 西弗安雅
 西福斯的月光
+汐歌洞窟
 西格
 西格德
 希格雯
@@ -16680,6 +16766,7 @@ use_preset_vocabulary: false
 星边夜语
 星缠
 星超导
+星超导
 星尘
 星辰君
 星尘商店
@@ -16687,6 +16774,7 @@ use_preset_vocabulary: false
 星辰与深渊之旅
 兴澄
 星斗归位
+星锋剑
 星光弹
 星光的赠礼
 星光凝核
@@ -16698,6 +16786,8 @@ use_preset_vocabulary: false
 星虎之掌
 星花篱墙
 星辉
+星辉风旋
+星辉棱晶
 星火
 星火瞬息的击发
 星级大厨
@@ -16708,6 +16798,7 @@ use_preset_vocabulary: false
 星鹫赤羽
 星空访客
 星空之门
+星扩散
 星流摇床之梦
 星螺
 星罗圭璧之晷
@@ -16721,6 +16812,8 @@ use_preset_vocabulary: false
 星示昭明
 星霜的流旋
 星霜的流转
+星烁
+星烁反应
 星天的花雨
 星天水镜
 星雾
@@ -16734,6 +16827,7 @@ use_preset_vocabulary: false
 星岩
 星筵之翼
 星曜
+星耀祝礼
 星耀祝礼
 星移势转
 星异
@@ -16759,6 +16853,7 @@ use_preset_vocabulary: false
 行幡鸣弦
 形骸之笠
 行汲众水的泉源
+行迹
 行律
 行秋
 行商
@@ -16941,6 +17036,7 @@ use_preset_vocabulary: false
 璇玑合璧镇昆仑
 璇玑屏
 旋锯飞叶
+悬黎千钧
 玄理
 悬练凝剑骨
 悬练山
@@ -17026,8 +17122,10 @@ use_preset_vocabulary: false
 雪翅雁
 雪翅雁夫人
 雪翅雁童话集
+雪地犬
 雪纷飞
 雪国的妖精
+雪国列车
 雪鹤之章
 雪鹤座
 雪狐
@@ -17042,7 +17140,9 @@ use_preset_vocabulary: false
 雪奈茨芙娜
 雪奈茨芙娜的蝶安奈拉
 雪奈茨娜娅
+雪奈茨娜娅
 雪奈茨维奇
+雪孃
 雪人鼻子
 雪人部件
 雪人帽子
@@ -17076,6 +17176,7 @@ use_preset_vocabulary: false
 雪中君
 雪猪
 血赤叶红
+血红之证
 血斛
 血梅香
 血气之身
@@ -17116,6 +17217,7 @@ use_preset_vocabulary: false
 循雷的寻宝者
 寻猎魔女
 寻猎模式
+巡猎者木屋
 巡林常途的百千趣事
 巡林官
 巡林官的牵记
@@ -17394,6 +17496,7 @@ use_preset_vocabulary: false
 炎威
 炎舞
 檐下春秋
+炎夏轻霜
 言笑
 炎啸狮子咬
 颜行展舒
@@ -17468,6 +17571,7 @@ use_preset_vocabulary: false
 焰硝
 焰硝矢
 焰硝庭火舞
+焰羽谷
 燕语莺啼
 焰域的黑金
 赝月的异端者
@@ -17632,6 +17736,7 @@ use_preset_vocabulary: false
 夜魂之灵
 夜魂值
 叶间泪
+夜角枭
 叶卡捷琳娜
 夜客致访
 夜馈寻迹
@@ -18009,6 +18114,7 @@ use_preset_vocabulary: false
 异界之星
 弈局
 毅钧
+弋猎印记
 义卖与妙想
 异梦绮彩
 异梦溶媒
@@ -18115,6 +18221,7 @@ use_preset_vocabulary: false
 垠土双手剑原胚
 垠土长柄武器原胚
 银项圈
+银晓之舞
 银杏
 银燕翦月阵
 银钥解封
@@ -18135,6 +18242,7 @@ use_preset_vocabulary: false
 引蝶座
 引舵人
 隐而不宣的界线
+引火之源
 隐静的槿紫
 隐静的枝梢
 隐具魔术箭
@@ -18255,6 +18363,7 @@ use_preset_vocabulary: false
 影向山
 影向山夜行赤狐玩偶
 影鼬
+影域
 影照浮世风流
 影阵玄甲
 影之造物
@@ -19601,6 +19710,10 @@ use_preset_vocabulary: false
 这是个问题
 这是我喜爱的事物中
 这也算四风守护
+臻冰
+臻冰建材
+臻冰通话器
+臻冰造物
 侦查单元
 侦察伙伴
 侦察记录型
@@ -19615,6 +19728,7 @@ use_preset_vocabulary: false
 真果角鲀
 真红炽火铠
 真红炽火之大铠
+真化
 真化
 真火炼宝印
 真剑斗虫大鬼王
@@ -19854,6 +19968,7 @@ use_preset_vocabulary: false
 执律庭
 直面雷光
 直面前路的勇气
+植绒草
 直伤
 执事代
 执望三千里
@@ -19907,12 +20022,14 @@ use_preset_vocabulary: false
 掷弹兵
 掷弹兵中尉
 至冬
+至冬堡
 至冬宫
 至冬国
 至冬皇都评议会
 至冬皇家军官学院
 至冬皇家军事学院
 至冬极寒的记忆
+至冬冒险笔记
 至冬域外的色彩
 智度
 至高的杰作
