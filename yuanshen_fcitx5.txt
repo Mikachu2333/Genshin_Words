@@ -2197,6 +2197,8 @@
 白猫神探	bo'mao'shen'xian	100
 白猫神探	bo'miao'shen'tan	100
 白猫神探	bo'miao'shen'xian	100
+白冕宫	bai'mian'gong	100
+白冕宫	bo'mian'gong	100
 白女皇的升变	bai'nü'huang'de'sheng'bian	100
 白女皇的升变	bai'nü'huang'di'sheng'bian	100
 白女皇的升变	bai'nü'wang'de'sheng'bian	100
@@ -2235,6 +2237,10 @@
 白色小帮手	bai'shai'xiao'bang'shou	100
 白色小帮手	bo'se'xiao'bang'shou	100
 白色小帮手	bo'shai'xiao'bang'shou	100
+白沙皇	bai'sha'huang	100
+白沙皇	bai'sha'wang	100
+白沙皇	bo'sha'huang	100
+白沙皇	bo'sha'wang	100
 白沙皇	bai'sha'huang	100
 白沙皇	bai'sha'wang	100
 白沙皇	bo'sha'huang	100
@@ -18223,6 +18229,7 @@
 湖光顶调	hu'guang'ding'tiao	100
 湖光铃兰	hu'guang'ling'lan	100
 槲寄生	hu'ji'sheng	100
+槲寄生	hu'ji'sheng	100
 胡里乌	hu'li'wu	100
 胡里约	hu'li'yao	100
 胡里约	hu'li'yue	100
@@ -19013,6 +19020,14 @@
 黄琮破而不夺其坚	huang'cong'po'neng'bu'duo'qi'jian	100
 黄琮破而不夺其坚	huang'cong'po'neng'fou'duo'ji'jian	100
 黄琮破而不夺其坚	huang'cong'po'neng'fou'duo'qi'jian	100
+皇都评议会	huang'dou'ping'yi'hui	100
+皇都评议会	huang'dou'ping'yi'kuai	100
+皇都评议会	huang'du'ping'yi'hui	100
+皇都评议会	huang'du'ping'yi'kuai	100
+皇都评议会	wang'dou'ping'yi'hui	100
+皇都评议会	wang'dou'ping'yi'kuai	100
+皇都评议会	wang'du'ping'yi'hui	100
+皇都评议会	wang'du'ping'yi'kuai	100
 煌煌千道镇式	huang'huang'qian'dao'zhen'shi	100
 煌煌千道镇式	huang'huang'qian'dao'zhen'te	100
 煌煌千道镇武	huang'huang'qian'dao'zhen'wu	100
@@ -54698,6 +54713,7 @@
 岩大灵	yan'dai'ling	100
 岩单手剑	yan'chan'shou'jian	100
 岩单手剑	yan'dan'shou'jian	100
+严冬计划	yan'dong'ji'hua	100
 岩队	yan'dui	100
 岩盾	yan'dun	100
 岩盾	yan'shun	100
@@ -54913,6 +54929,8 @@
 岩元素抗性	yan'yuan'su'kang'xing	100
 岩元素伤害	yan'yuan'su'shang'hai	100
 岩元素伤害	yan'yuan'su'shang'he	100
+岩造物	yan'cao'wu	100
+岩造物	yan'zao'wu	100
 岩长枪	yan'chang'qiang	100
 岩长枪	yan'zhang'qiang	100
 岩者	yan'zhe	100
@@ -60268,6 +60286,8 @@
 跃动节拍	yue'dong'jie'pai	100
 跃动节拍响应法	yue'dong'jie'bo'xiang'ying'fa	100
 跃动节拍响应法	yue'dong'jie'pai'xiang'ying'fa	100
+月反应	ru'fan'ying	100
+月反应	yue'fan'ying	100
 跃风	yue'feng	100
 越祓草轮	huo'fei'cao'lun	100
 越祓草轮	huo'fei'zao'lun	100

@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.8(6) | 2026.07.31 22:29"
+version: "6.8(7) | 2026.08.02 12:51"
 sort: original
 use_preset_vocabulary: false
 ...
@@ -657,6 +657,7 @@ use_preset_vocabulary: false
 白马闲游记
 白芒之书
 白猫神探
+白冕宫
 白女皇的升变
 白盘
 白刃流转
@@ -665,6 +666,7 @@ use_preset_vocabulary: false
 白色的季节
 白色高智能
 白色小帮手
+白沙皇
 白沙皇
 白沙皇
 白山的馈赐
@@ -5580,6 +5582,7 @@ use_preset_vocabulary: false
 湖光顶调
 湖光铃兰
 槲寄生
+槲寄生
 胡里乌
 胡里约
 壶灵
@@ -5895,6 +5898,7 @@ use_preset_vocabulary: false
 荒野幽徒
 黄琮
 黄琮破而不夺其坚
+皇都评议会
 煌煌千道镇式
 煌煌千道镇武
 皇家能源协会
@@ -17410,6 +17414,7 @@ use_preset_vocabulary: false
 岩大剑
 岩大灵
 岩单手剑
+严冬计划
 岩队
 岩盾
 岩盾丘丘暴徒
@@ -17514,6 +17519,7 @@ use_preset_vocabulary: false
 岩元素晶片
 岩元素抗性
 岩元素伤害
+岩造物
 岩长枪
 岩者
 岩者六合引之为古
@@ -19186,6 +19192,7 @@ use_preset_vocabulary: false
 月的守望
 跃动节拍
 跃动节拍响应法
+月反应
 跃风
 越祓草轮
 越祓雷草之轮
