@@ -11,7 +11,10 @@
    - 示例：`git diff 2a02dcacb55fcd9e02e3499672947905525bc7fc main --minimal -- "*CHS*" ":!**/BeyondItem.json" ":!**/AgentSkill/**" > new.diff`
 3. 正则筛选，运行 `regex.py` 文件，打开生成的 `./after_del.txt`
 4. 手动断句
-5. 运行 `merge.py`
+5. 运行 `merge.py`，它会依次执行：
+   - 将 `after_del.txt` 追加到 `yuanshen.dict.yaml`
+   - 调用 `genshin_pinyin_sort.exe` 按拼音排序并去除完全相同的重复行
+   - 调用 `genshin_pinyin_add.exe` 生成 Fcitx5 词库 `yuanshen_fcitx5.txt`
 6. 上传 `yuanshen.dict.yaml`、`yuanshen_fcitx5.txt`
 
 ## 致谢
