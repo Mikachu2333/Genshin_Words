@@ -1,4 +1,5 @@
 use pinyin::ToPinyin;
+use std::collections::HashSet;
 
 const MAX_ENTRY_BYTES: usize = 16 * 1024;
 
@@ -20,6 +21,10 @@ pub fn sort_chinese_text(
     }
 
     let mut collection = Vec::with_capacity(content.len().saturating_sub(skip_lines));
+    // Exact duplicate lines are dropped, keeping the first occurrence. The key
+    // is the whole trimmed line, not the pinyin sort key, so homophones and
+    // multiple manual readings of the same word are never collapsed.
+    let mut seen: HashSet<&str> = HashSet::new();
     for (index, line) in content.iter().enumerate().skip(skip_lines) {
         let line_number = index + 1;
         let line = line.trim();
@@ -30,6 +35,9 @@ pub fn sort_chinese_text(
             return Err(format!(
                 "line {line_number}: entry exceeds the {MAX_ENTRY_BYTES}-byte safety limit"
             ));
+        }
+        if !seen.insert(line) {
+            continue;
         }
 
         let sort_key = if line.contains('\t') {
@@ -60,10 +68,9 @@ fn validate_manual_entry(line: &str, line_number: usize) -> Result<String, Strin
             "line {line_number}: manual entry must contain exactly three non-empty tab-separated fields"
         ));
     }
-    if pinyin
-        .split(' ')
-        .any(|syllable| syllable.is_empty() || !syllable.bytes().all(|byte| byte.is_ascii_lowercase()))
-    {
+    if pinyin.split(' ').any(|syllable| {
+        syllable.is_empty() || !syllable.bytes().all(|byte| byte.is_ascii_lowercase())
+    }) {
         return Err(format!(
             "line {line_number}: Rime pinyin must contain lowercase ASCII syllables separated by single spaces"
         ));
@@ -91,6 +98,21 @@ fn pinyin_sort_key(line: &str, line_number: usize) -> Result<String, String> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn duplicate_bare_words_are_deduplicated() {
+        let sorted = sort_chinese_text(&["白沙皇", "白沙皇", "白沙皇"], 0).unwrap();
+        assert_eq!(sorted.len(), 1);
+        assert_eq!(sorted[0].1, "白沙皇");
+    }
+
+    #[test]
+    fn duplicate_identical_manual_entries_are_deduplicated() {
+        let duplicate = "薄缘的道与光与胤\tbao yuan de dao yu guang yu yin\t100";
+        let sorted = sort_chinese_text(&[duplicate, duplicate], 0).unwrap();
+        assert_eq!(sorted.len(), 1);
+        assert_eq!(sorted[0].1, duplicate);
+    }
 
     #[test]
     fn homophones_are_not_overwritten() {

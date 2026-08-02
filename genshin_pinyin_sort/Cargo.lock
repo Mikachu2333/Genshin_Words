@@ -106,7 +106,7 @@ checksum = "e178e4fba8a2726903f6ba98a6d221e76f9c12c650d5dc0e6afdc50677b49650"
 
 [[package]]
 name = "genshin_pinyin_sort"
-version = "1.1.8"
+version = "1.1.9"
 dependencies = [
  "chrono",
  "name_exchanger_rs",
@@ -411,7 +411,7 @@ checksum = "5a5f39404a5da50712a4c1eecf25e90dd62b613502b7e925fd4e4d19b5c96512"
 
 [[package]]
 name = "version_lib"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 name = "vswhom"

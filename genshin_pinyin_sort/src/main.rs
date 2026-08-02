@@ -238,6 +238,13 @@ mod tests {
     }
 
     #[test]
+    fn duplicate_entries_are_removed_from_final_output() {
+        let input = format!("{HEADER}白沙皇\n白沙皇\n白沙皇\n");
+        let output = String::from_utf8(build_sorted_output_from_text(&input).unwrap()).unwrap();
+        assert_eq!(output.matches("白沙皇").count(), 1);
+    }
+
+    #[test]
     fn keeps_multiple_manual_readings() {
         let input = format!(
             "{HEADER}薄缘的道与光与胤\tbao yuan de dao yu guang yu yin\t100\n薄缘的道与光与胤\tbo yuan de dao yu guang yu yin\t100\n"
