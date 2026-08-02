@@ -354,10 +354,6 @@
 阿罗夏	a'luo'xia	100
 阿罗夏	e'luo'jia	100
 阿罗夏	e'luo'xia	100
-阿罗夏	a'luo'jia	100
-阿罗夏	a'luo'xia	100
-阿罗夏	e'luo'jia	100
-阿罗夏	e'luo'xia	100
 阿洛妮	a'luo'ni	100
 阿洛妮	e'luo'ni	100
 阿绿	a'lu	100
@@ -989,7 +985,6 @@
 埃兹莉	zhi'zi'li	100
 皑尘与雪影	ai'chen'yu'xue'ying	100
 矮灵	ai'ling	100
-矮灵	ai'ling	100
 蔼然入梦	ai'ran'ru'meng	100
 爱贝尔	ai'bei'er	100
 艾伯特	ai'bai'te	100
@@ -1297,14 +1292,6 @@
 安娜丝塔夏	an'nuo'si'da'xia	100
 安娜丝塔夏	an'nuo'si'ta'jia	100
 安娜丝塔夏	an'nuo'si'ta'xia	100
-安娜丝塔夏	an'na'si'da'jia	100
-安娜丝塔夏	an'na'si'da'xia	100
-安娜丝塔夏	an'na'si'ta'jia	100
-安娜丝塔夏	an'na'si'ta'xia	100
-安娜丝塔夏	an'nuo'si'da'jia	100
-安娜丝塔夏	an'nuo'si'da'xia	100
-安娜丝塔夏	an'nuo'si'ta'jia	100
-安娜丝塔夏	an'nuo'si'ta'xia	100
 安能平息	an'neng'pian'xi	100
 安能平息	an'neng'ping'xi	100
 安能平息	an'tai'pian'xi	100
@@ -1506,10 +1493,6 @@
 奥藏山	ao'zang'shan	100
 奥藏山	yu'cang'shan	100
 奥藏山	yu'zang'shan	100
-奥黛塔	ao'dai'da	100
-奥黛塔	ao'dai'ta	100
-奥黛塔	yu'dai'da	100
-奥黛塔	yu'dai'ta	100
 奥黛塔	ao'dai'da	100
 奥黛塔	ao'dai'ta	100
 奥黛塔	yu'dai'da	100
@@ -2237,14 +2220,6 @@
 白色小帮手	bai'shai'xiao'bang'shou	100
 白色小帮手	bo'se'xiao'bang'shou	100
 白色小帮手	bo'shai'xiao'bang'shou	100
-白沙皇	bai'sha'huang	100
-白沙皇	bai'sha'wang	100
-白沙皇	bo'sha'huang	100
-白沙皇	bo'sha'wang	100
-白沙皇	bai'sha'huang	100
-白沙皇	bai'sha'wang	100
-白沙皇	bo'sha'huang	100
-白沙皇	bo'sha'wang	100
 白沙皇	bai'sha'huang	100
 白沙皇	bai'sha'wang	100
 白沙皇	bo'sha'huang	100
@@ -9282,10 +9257,6 @@
 达妮卡	da'ni'qia	100
 达妮卡	ti'ni'ka	100
 达妮卡	ti'ni'qia	100
-达妮卡	da'ni'ka	100
-达妮卡	da'ni'qia	100
-达妮卡	ti'ni'ka	100
-达妮卡	ti'ni'qia	100
 达妮什瓦	da'ni'shen'wa	100
 达妮什瓦	da'ni'shi'wa	100
 达妮什瓦	ti'ni'shen'wa	100
@@ -11477,8 +11448,6 @@
 冬凌王	dong'ling'wang	100
 冬契军	dong'qi'jun	100
 冬契军	dong'xie'jun	100
-冬契军	dong'qi'jun	100
-冬契军	dong'xie'jun	100
 咚锵锵	dong'qiang'qiang	100
 东山奈央	dong'shan'nai'yang	100
 东山奈央	dong'shan'nai'ying	100
@@ -13157,10 +13126,6 @@
 费奥多罗夫娜	fei'ao'duo'luo'fu'nuo	100
 费奥多罗夫娜	fei'yu'duo'luo'fu'na	100
 费奥多罗夫娜	fei'yu'duo'luo'fu'nuo	100
-费奥多罗夫娜	fei'ao'duo'luo'fu'na	100
-费奥多罗夫娜	fei'ao'duo'luo'fu'nuo	100
-费奥多罗夫娜	fei'yu'duo'luo'fu'na	100
-费奥多罗夫娜	fei'yu'duo'luo'fu'nuo	100
 费奥潘	fei'ao'pan	100
 费奥潘	fei'yu'pan	100
 费迪南德	fei'di'na'de	100
@@ -13772,7 +13737,6 @@
 风洗之月	feng'xian'zhi'yue	100
 风洗之月	feng'xian'zhu'ru	100
 风洗之月	feng'xian'zhu'yue	100
-风仙	feng'xian	100
 风仙	feng'xian	100
 风仙大公	feng'xian'da'gong	100
 风仙大公	feng'xian'dai'gong	100
@@ -18229,7 +18193,6 @@
 湖光顶调	hu'guang'ding'tiao	100
 湖光铃兰	hu'guang'ling'lan	100
 槲寄生	hu'ji'sheng	100
-槲寄生	hu'ji'sheng	100
 胡里乌	hu'li'wu	100
 胡里约	hu'li'yao	100
 胡里约	hu'li'yue	100
@@ -18813,8 +18776,6 @@
 焕光追影弹	huan'guang'zhui'ying'dan	100
 焕光追影弹	huan'guang'zhui'ying'tan	100
 幻煌	huan'huang	100
-幻煌至形	huan'huang'die'xing	100
-幻煌至形	huan'huang'zhi'xing	100
 幻煌至形	huan'huang'die'xing	100
 幻煌至形	huan'huang'zhi'xing	100
 幻景别宫	huan'jing'bie'gong	100
@@ -20517,7 +20478,6 @@
 吉祥具书	ji'xiang'ju'shu	100
 即兴表演的欢庆时光	ji'xing'biao'yan'de'huan'qing'shi'guang	100
 即兴表演的欢庆时光	ji'xing'biao'yan'di'huan'qing'shi'guang	100
-极星辉域	ji'xing'hui'yu	100
 极星辉域	ji'xing'hui'yu	100
 即兴乐队	ji'xing'le'dui	100
 即兴乐队	ji'xing'yue'dui	100
@@ -24151,7 +24111,6 @@
 君王之殁	jun'wang'zhi'wen	100
 君王之殁	jun'wang'zhu'mo	100
 君王之殁	jun'wang'zhu'wen	100
-军械宫	jun'xie'gong	100
 军械宫	jun'xie'gong	100
 君子白日闯	jun'zi'bai'ri'chuang	100
 君子白日闯	jun'zi'bo'ri'chuang	100
@@ -27795,8 +27754,6 @@
 砺行目标	li'xing'mu'biao	100
 砺行修远	li'hang'xiu'yuan	100
 砺行修远	li'xing'xiu'yuan	100
-砺行修远	li'hang'xiu'yuan	100
-砺行修远	li'xing'xiu'yuan	100
 历玄冥以幽径	li'xuan'mian'si'you'jing	100
 历玄冥以幽径	li'xuan'mian'yi'you'jing	100
 历玄冥以幽径	li'xuan'ming'si'you'jing	100
@@ -29935,8 +29892,6 @@
 罗契耶夫	luo'xie'ye'fu	100
 罗莎莉亚	luo'sha'li'ya	100
 罗莎莉亚	luo'suo'li'ya	100
-罗莎琳	luo'sha'lin	100
-罗莎琳	luo'suo'lin	100
 罗莎琳	luo'sha'lin	100
 罗莎琳	luo'suo'lin	100
 罗莎娜	luo'sha'na	100
@@ -32113,8 +32068,6 @@
 米沙勒	mi'sha'le	100
 米沙勒	mi'sha'lei	100
 米特尔	mi'te'er	100
-米提亚	mi'di'ya	100
-米提亚	mi'ti'ya	100
 米提亚	mi'di'ya	100
 米提亚	mi'ti'ya	100
 米窝窝	mi'wo'wo	100
@@ -34854,7 +34807,6 @@
 诺思托伊区	nuo'sai'tuo'yi'qu	100
 诺思托伊区	nuo'si'tuo'yi'ou	100
 诺思托伊区	nuo'si'tuo'yi'qu	100
-诺伊	nuo'yi	100
 诺伊	nuo'yi	100
 女仆	nü'pu	100
 女仆不会受伤	nü'pu'bu'hui'dao'shang	100
@@ -43628,7 +43580,6 @@
 受福者的白羽	shou'fu'zhe'di'bo'yu	100
 兽骨拉面	shou'gu'la'mian	100
 兽怪	shou'guai	100
-兽怪	shou'guai	100
 售后服务	shou'hou'fu'wu	100
 售后服务	shu'hou'fu'wu	100
 售后服务弹	shou'hou'fu'wu'dan	100
@@ -44113,8 +44064,6 @@
 霜结的誓金枝	shuang'jie'di'shi'jin'zhi	100
 霜劫精油	shuang'jie'jing'you	100
 霜劫精油	shuang'jie'qing'you	100
-霜精	shuang'jing	100
-霜精	shuang'qing	100
 霜精	shuang'jing	100
 霜精	shuang'qing	100
 霜精的村落	shuang'jing'de'cun'la	100
@@ -47577,8 +47526,6 @@
 瓦力	wa'li	100
 瓦列里	wa'li'li	100
 瓦列里	wa'lie'li	100
-瓦列里	wa'li'li	100
-瓦列里	wa'lie'li	100
 瓦伦丁	wa'lun'ding	100
 瓦伦丁	wa'lun'zheng	100
 瓦伦斯坦	wa'lun'shi'tan	100
@@ -48258,8 +48205,6 @@
 薇若妮卡	wei'ruo'ni'ka	100
 薇若妮卡	wei'ruo'ni'qia	100
 威水舞兽队	wei'shui'wu'shou'dui	100
-薇丝娜	wei'si'na	100
-薇丝娜	wei'si'nuo	100
 薇丝娜	wei'si'na	100
 薇丝娜	wei'si'nuo	100
 微缩型骰子壶	wei'su'xing'gu'zi'hu	100
@@ -49327,8 +49272,6 @@
 卧苔石	wo'tai'shi	100
 沃特林	wo'te'lin	100
 沃特蒙泰涅	wo'te'meng'tai'nie	100
-沃雅妮莎	wo'ya'ni'sha	100
-沃雅妮莎	wo'ya'ni'suo	100
 沃雅妮莎	wo'ya'ni'sha	100
 沃雅妮莎	wo'ya'ni'suo	100
 乌翅雁	wu'chi'yan	100
@@ -52898,7 +52841,6 @@
 星边夜语	xing'bian'ye'yu	100
 星缠	xing'chan	100
 星超导	xing'chao'dao	100
-星超导	xing'chao'dao	100
 星尘	xing'chen	100
 星辰君	xing'chen'jun	100
 星尘商店	xing'chen'shang'dian	100
@@ -52994,8 +52936,6 @@
 星筵之翼	xing'yan'zhi'yi	100
 星筵之翼	xing'yan'zhu'yi	100
 星曜	xing'yao	100
-星耀祝礼	xing'yao'zhou'li	100
-星耀祝礼	xing'yao'zhu'li	100
 星耀祝礼	xing'yao'zhou'li	100
 星耀祝礼	xing'yao'zhu'li	100
 星移势转	xing'chi'shi'zhuan	100
@@ -53781,8 +53721,6 @@
 雪奈茨芙娜的蝶安奈拉	xue'nai'ci'fu'nuo'de'tie'an'nai'la	100
 雪奈茨芙娜的蝶安奈拉	xue'nai'ci'fu'nuo'di'die'an'nai'la	100
 雪奈茨芙娜的蝶安奈拉	xue'nai'ci'fu'nuo'di'tie'an'nai'la	100
-雪奈茨娜娅	xue'nai'ci'na'ya	100
-雪奈茨娜娅	xue'nai'ci'nuo'ya	100
 雪奈茨娜娅	xue'nai'ci'na'ya	100
 雪奈茨娜娅	xue'nai'ci'nuo'ya	100
 雪奈茨维奇	xue'nai'ci'wei'ji	100
@@ -62327,7 +62265,6 @@
 真红炽火之大铠	zhen'hong'chi'huo'zhi'dai'kai	100
 真红炽火之大铠	zhen'hong'chi'huo'zhu'da'kai	100
 真红炽火之大铠	zhen'hong'chi'huo'zhu'dai'kai	100
-真化	zhen'hua	100
 真化	zhen'hua	100
 真火炼宝印	zhen'huo'lian'bao'yi	100
 真火炼宝印	zhen'huo'lian'bao'yin	100

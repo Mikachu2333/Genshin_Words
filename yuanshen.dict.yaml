@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.8(7) | 2026.08.02 12:51"
+version: "6.8(7) | 2026.08.02 16:07"
 sort: original
 use_preset_vocabulary: false
 ...
@@ -115,7 +115,6 @@ use_preset_vocabulary: false
 阿鲁吉
 阿罗哈
 阿罗逻
-阿罗夏
 阿罗夏
 阿洛妮
 阿绿
@@ -275,7 +274,6 @@ use_preset_vocabulary: false
 埃兹莉
 皑尘与雪影
 矮灵
-矮灵
 蔼然入梦
 爱贝尔
 艾伯特
@@ -393,7 +391,6 @@ use_preset_vocabulary: false
 安娜
 安娜冒险记
 安娜丝塔夏
-安娜丝塔夏
 安能平息
 安妮克
 安妮兹卡
@@ -469,7 +466,6 @@ use_preset_vocabulary: false
 奥比奇
 奥伯龙
 奥藏山
-奥黛塔
 奥黛塔
 奥蒂涅
 奥杜力
@@ -666,8 +662,6 @@ use_preset_vocabulary: false
 白色的季节
 白色高智能
 白色小帮手
-白沙皇
-白沙皇
 白沙皇
 白山的馈赐
 白石
@@ -2576,7 +2570,6 @@ use_preset_vocabulary: false
 达莫维百货
 达纳
 达妮卡
-达妮卡
 达妮什瓦
 达尼奥
 达尼拉
@@ -3196,7 +3189,6 @@ use_preset_vocabulary: false
 冬极白星
 冬凌草
 冬凌王
-冬契军
 冬契军
 咚锵锵
 东山奈央
@@ -3823,7 +3815,6 @@ use_preset_vocabulary: false
 翡玉什锦袋
 翡玉丸
 费奥多罗夫娜
-费奥多罗夫娜
 费奥潘
 费迪南德
 费恩
@@ -4068,7 +4059,6 @@ use_preset_vocabulary: false
 风息激荡
 风息山
 风洗之月
-风仙
 风仙
 风仙大公
 枫香茶雾一室中
@@ -5582,7 +5572,6 @@ use_preset_vocabulary: false
 湖光顶调
 湖光铃兰
 槲寄生
-槲寄生
 胡里乌
 胡里约
 壶灵
@@ -5813,7 +5802,6 @@ use_preset_vocabulary: false
 幻光奇技实录
 焕光追影弹
 幻煌
-幻煌至形
 幻煌至形
 幻景别宫
 幻境海螺
@@ -6397,7 +6385,6 @@ use_preset_vocabulary: false
 极限逃生
 吉祥具书
 即兴表演的欢庆时光
-极星辉域
 极星辉域
 即兴乐队
 即兴烹饪
@@ -7538,7 +7525,6 @@ use_preset_vocabulary: false
 军团的怒角
 君王之殿
 君王之殁
-军械宫
 军械宫
 君子白日闯
 骏麟
@@ -8723,7 +8709,6 @@ use_preset_vocabulary: false
 利兴
 砺行目标
 砺行修远
-砺行修远
 历玄冥以幽径
 莉雅丝
 利亚姆
@@ -9406,7 +9391,6 @@ use_preset_vocabulary: false
 罗契耶夫
 罗莎莉亚
 罗莎琳
-罗莎琳
 罗莎娜
 罗叔
 罗斯玛丽
@@ -10063,7 +10047,6 @@ use_preset_vocabulary: false
 米契沃
 米沙勒
 米特尔
-米提亚
 米提亚
 米窝窝
 米希尔
@@ -10907,7 +10890,6 @@ use_preset_vocabulary: false
 诺奇特
 诺奇特梨
 诺思托伊区
-诺伊
 诺伊
 女仆
 女仆不会受伤
@@ -13713,7 +13695,6 @@ use_preset_vocabulary: false
 受福者的白羽
 兽骨拉面
 兽怪
-兽怪
 售后服务
 售后服务弹
 兽魂
@@ -13865,7 +13846,6 @@ use_preset_vocabulary: false
 双角的花冠
 霜结的誓金枝
 霜劫精油
-霜精
 霜精
 霜精的村落
 霜镌的执凭
@@ -15158,7 +15138,6 @@ use_preset_vocabulary: false
 瓦蕾
 瓦力
 瓦列里
-瓦列里
 瓦伦丁
 瓦伦斯坦
 瓦曼
@@ -15374,7 +15353,6 @@ use_preset_vocabulary: false
 巍然岿然
 薇若妮卡
 威水舞兽队
-薇丝娜
 薇丝娜
 微缩型骰子壶
 薇塔
@@ -15700,7 +15678,6 @@ use_preset_vocabulary: false
 卧苔石
 沃特林
 沃特蒙泰涅
-沃雅妮莎
 沃雅妮莎
 乌翅雁
 乌茨勒
@@ -16770,7 +16747,6 @@ use_preset_vocabulary: false
 星边夜语
 星缠
 星超导
-星超导
 星尘
 星辰君
 星尘商店
@@ -16831,7 +16807,6 @@ use_preset_vocabulary: false
 星岩
 星筵之翼
 星曜
-星耀祝礼
 星耀祝礼
 星移势转
 星异
@@ -17143,7 +17118,6 @@ use_preset_vocabulary: false
 雪奈茨夫娜
 雪奈茨芙娜
 雪奈茨芙娜的蝶安奈拉
-雪奈茨娜娅
 雪奈茨娜娅
 雪奈茨维奇
 雪孃
@@ -19735,7 +19709,6 @@ use_preset_vocabulary: false
 真果角鲀
 真红炽火铠
 真红炽火之大铠
-真化
 真化
 真火炼宝印
 真剑斗虫大鬼王
