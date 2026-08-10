@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "6.8(10) | 2026.08.10 23:29"
+version: "6.8(11) | 2026.08.10 23:48"
 sort: original
 use_preset_vocabulary: false
 ...
@@ -1297,6 +1297,7 @@ use_preset_vocabulary: false
 冰星信标
 冰雪故园的终期
 冰雪往事
+冰血化符
 冰牙突驰
 冰岩
 冰役人
@@ -1325,6 +1326,7 @@ use_preset_vocabulary: false
 冰之印
 冰之咏者
 冰主
+冰锥
 饼干石路
 摒落天灵
 秉烛狝影
@@ -1544,6 +1546,7 @@ use_preset_vocabulary: false
 猜想时间
 才不是普通的布偶
 才藏
+裁定
 裁断
 裁断的翎羽
 裁断追惩
@@ -1820,13 +1823,13 @@ use_preset_vocabulary: false
 茶会餐车
 茶会餐桌
 茶会茶杯
-茶会的序曲与长长的故事
+茶会的序曲
 茶会的再邀
 茶会地毯
 茶会多重奏
 茶会序曲
 茶会椅子
-茶会用战术突击悬浮机关
+茶会用
 查帕莉
 查丘
 茶扇
@@ -1859,6 +1862,7 @@ use_preset_vocabulary: false
 茶庄石桌
 茶桌
 柴火杖
+豺祭
 柴门二郎
 柴门惠理
 柴门家
@@ -2087,6 +2091,7 @@ use_preset_vocabulary: false
 诚见
 成劫
 成劫无明增长
+惩戒
 惩戒敕谕
 澄金领队型
 澄金抹壑
@@ -2259,6 +2264,7 @@ use_preset_vocabulary: false
 赤璋城垣
 赤璋巡岳府君
 赤璋舆图
+斥逐拳
 斥逐与驱散恶客
 炽灼之月
 赤鬃古林猪
@@ -3106,7 +3112,6 @@ use_preset_vocabulary: false
 蒂尔妲
 蒂尔甘之日
 第二次的满月
-第二次的满月月雾的寻宝者
 地方传奇
 地宫传奇
 帝皇的决断
@@ -3339,6 +3344,7 @@ use_preset_vocabulary: false
 动物调查特别授课
 动物防治专家
 动物园大亨
+洞玄
 动摇晞吹露月容
 洞幽烛远
 都汇进了激流
@@ -3960,6 +3966,7 @@ use_preset_vocabulary: false
 分拣员
 分进之月
 芬里基亚的星芒
+分裂箭
 分流识海
 纷纶
 纷罗于甄选之后
@@ -4131,6 +4138,7 @@ use_preset_vocabulary: false
 风起风息
 风起鹤归
 风起之日
+风起之时
 风起之题
 风枪
 风清之扉
@@ -4418,6 +4426,7 @@ use_preset_vocabulary: false
 复地重天
 富尔蒙
 赋光之人
+复归
 富贵
 富贵登门
 复合结构猎弓
@@ -5756,6 +5765,7 @@ use_preset_vocabulary: false
 湖畔的棱晶
 湖畔的尼尼安涅
 湖畔的维维安涅
+狐凭
 胡然而稷
 胡然而天
 胡塞尼
@@ -6045,7 +6055,6 @@ use_preset_vocabulary: false
 荒泷派
 荒泷派首席顾问
 荒泷生命摇滚
-荒泷生命摇滚虹色大巡回
 荒泷盛世豪鼓
 荒泷盛世豪鼓大祭典
 荒泷一斗
@@ -6563,6 +6572,7 @@ use_preset_vocabulary: false
 集束电光
 集束型冷凝射线
 极速前进
+疾速突进
 疾速游者
 疾霆昨夜问新梢
 吉瓦鲁瓦
@@ -6822,6 +6832,7 @@ use_preset_vocabulary: false
 坚岩之重
 间奏
 简本路灯
+检偿之敕
 翦除
 简单零工
 检地
@@ -6904,9 +6915,6 @@ use_preset_vocabulary: false
 建造特化型机关
 鉴照无影
 鉴真人
-见证古老的宫殿从地中升起
-见证巨大雪精的结局
-见证赝月的复归
 剑冢
 僭主
 建筑设计师的浪漫
@@ -6922,7 +6930,6 @@ use_preset_vocabulary: false
 江湖人称
 将近之梦
 将军蟹
-将灵魂与愿望的质料纯化
 江木
 将帅兜鍪
 将水留给自己
@@ -7542,6 +7549,7 @@ use_preset_vocabulary: false
 鹫津
 救苦度厄
 救苦渡厄真君
+救苦度厄真君
 鹫鸟
 旧日的统律者
 旧日的统律之心
@@ -7611,6 +7619,7 @@ use_preset_vocabulary: false
 剧场消防演练
 巨大的贝壳
 巨大火山
+巨大雪精
 据点大门
 聚分熔炼
 拒风
@@ -11741,7 +11750,6 @@ use_preset_vocabulary: false
 奇石含露
 奇石历险记
 其实若若
-其实也是我许久未见的一位故人
 奇石珠宝录
 骑士
 骑士备考之道
@@ -11832,6 +11840,7 @@ use_preset_vocabulary: false
 启示之花
 绮思晚星
 起死回骸
+起死回骸童子
 启途的伴星
 启途誓使
 启夏石
@@ -12811,7 +12820,6 @@ use_preset_vocabulary: false
 如水从平
 茹斯托
 如同蜜产于蜂
-如我的想象顺我目光凝固
 如我是我非我相
 如汐歌环萦之地
 如汐歌幽诉之地
@@ -12995,6 +13003,7 @@ use_preset_vocabulary: false
 三之定则
 三咫通明
 三重
+三重的须臾
 三重雪关扉
 三重月的锻造主
 三纵面
@@ -13590,6 +13599,7 @@ use_preset_vocabulary: false
 生灵之华
 生论派
 生论派学者
+生灭计数
 生灭去来
 生灭之花
 生命
@@ -13602,7 +13612,6 @@ use_preset_vocabulary: false
 生命之契
 生命值
 生命值上限
-生命总会自然而然变得茂盛起来
 升起光明的独行者
 笙磬同音
 生日快乐
@@ -13932,7 +13941,6 @@ use_preset_vocabulary: false
 士官的徽记
 噬骸能量块
 噬骸状态
-是荒泷生命摇滚虹色大巡回
 市集的分列布陈
 市集的归纳静思
 市集的锦绣染织
@@ -16044,7 +16052,6 @@ use_preset_vocabulary: false
 问事
 问题何在
 问题美露莘
-问题美露莘与答案机器人
 蜗居壳
 涡轮叶
 涡旋之月
@@ -16230,7 +16237,7 @@ use_preset_vocabulary: false
 无果的远征
 无害甜度
 无毁
-无秽的永远与三重的须臾
+无秽的永远
 无秽的月铁
 无羁的朱赤之蝶
 无极限超激格斗赛
@@ -16835,7 +16842,6 @@ use_preset_vocabulary: false
 献与月的酻祭
 献予众生
 献予灼原的五重奏
-现在不是撒娇哭泣的时候
 现在是我的了
 现制名肴
 香柏木
@@ -17101,6 +17107,7 @@ use_preset_vocabulary: false
 谐律异想断章
 谐律院
 协鸣
+偕日共升
 谐荣的旧梦
 协商人的坚决谈判
 协同攻击
@@ -17271,6 +17278,7 @@ use_preset_vocabulary: false
 星稀
 星相的气泡
 星象碎片
+星偕
 星星果
 星星碎片
 星璇
@@ -18051,6 +18059,7 @@ use_preset_vocabulary: false
 焰羽谷
 燕语莺啼
 焰域的黑金
+赝月
 赝月的异端者
 焰之赤武
 焰中不灭花枝
@@ -20105,6 +20114,7 @@ use_preset_vocabulary: false
 栈山航海
 战士
 战士的铁哨
+战术突击悬浮机关
 占星术士
 战靴
 战羊
@@ -20163,6 +20173,7 @@ use_preset_vocabulary: false
 长夜之誓
 长椅
 长椅与奏鸣
+长长的故事
 掌中观微
 掌中天幕
 长瞩无替
@@ -20608,6 +20619,7 @@ use_preset_vocabulary: false
 治疗头
 治疗效果
 治疗一切的秘药
+质料
 质料贮存箱
 至烈至强的醇香
 至灵
@@ -21099,6 +21111,7 @@ use_preset_vocabulary: false
 自律机关能源研究
 自谜域归
 自明演绎
+自然而然变得茂盛起来
 自然哲学百科全书
 自然哲学学院
 恣锐锋镞

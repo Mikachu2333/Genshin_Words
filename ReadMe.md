@@ -8,7 +8,7 @@
    - 示例：`git clone https://github.com/DGP-Studio/Snap.Metadata --depth=5`
    - 添加安全目录 `git config --global --add safe.directory /path/to/Snap.Metadata`
 2. 根据上版本的更新，选择性 diff 增量内容并输出到指定文件
-   - 示例：`git diff 2a02dcacb55fcd9e02e3499672947905525bc7fc main --minimal -- "*CHS*" ":!**/BeyondItem.json" ":!**/AgentSkill/**" > new.diff`
+   - 示例：`git diff 6a4fb98 main --minimal -- "*CHS*" ":!**/BeyondItem.json" ":!**/AgentSkill/**" > new.diff`
 3. 正则筛选，运行 `regex.py` 文件，打开生成的 `./after_del.txt`
 4. 手动断句
 5. 运行 `merge.py`，它会依次执行：
