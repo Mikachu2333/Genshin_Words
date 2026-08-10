@@ -57,7 +57,8 @@ def delete_style(text: str) -> str:
     text = regex.re.sub(
         r"\|\{param.*?[:]{0,1}.*?\}[秒]{0,1}", r"", text, flags=re.MULTILINE
     )
-    text = regex.re.sub(r"\{param.*?[:]{0,1}.*?\}", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(
+        r"\{param.*?[:]{0,1}.*?\}", r"", text, flags=re.MULTILINE)
 
     # 删除#+\s
     text = regex.re.sub(r"#+\s?", r"", text, flags=re.MULTILINE)
@@ -84,7 +85,8 @@ def extract_content(text: str) -> str:
     text = regex.re.sub(
         r"^\s*\".*?\":\s*\"(.*)\"[,\]\}]*$", r"\1", text, flags=re.MULTILINE
     )
-    text = regex.re.sub(r"^\s+\"(.*)\"[,]{0,1}$", r"\1", text, flags=re.MULTILINE)
+    text = regex.re.sub(
+        r"^\s+\"(.*)\"[,]{0,1}$", r"\1", text, flags=re.MULTILINE)
 
     return text
 
@@ -186,6 +188,7 @@ def delete_items(text: str) -> str:
         flags=re.MULTILINE,
     )
     text = regex.re.sub(r"^摆设图纸$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^\s?[\(（]test.*$", r"", text, flags=re.MULTILINE)
     return text
 
 
@@ -239,23 +242,38 @@ def delete_num(text: str) -> str:
         flags=re.MULTILINE,
     )
     text = regex.re.sub(
-        r"·其之.{1,2}$",
+        r"[·・\s]?其?之[\d一二三四五六七八九十]{1,2}$",
         r"",
         text,
         flags=re.MULTILINE,
     )
     text = regex.re.sub(
-        r"·其.{1,2}$",
+        r"[·・\s]?其[\d一二三四五六七八九十]{1,2}$",
+        r"",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(r"\s?(?:序幕|间章)", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(
+        r"[·・\s]?第[\d一二三四五六七八九十]{1,2}(?:首|幕|辑|回合|章|页|回)",
         r"",
         text,
         flags=re.MULTILINE,
     )
     text = regex.re.sub(
-        r"·第[.]{1,2}辑$",
+        r"[·・\s]?[上中下]$",
         r"",
         text,
         flags=re.MULTILINE,
     )
+    text = regex.re.sub(
+        r"[·・\s]?卷.*$",
+        r"",
+        text,
+        flags=re.MULTILINE,
+    )
+    text = regex.re.sub(r"附录页", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"尾声", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(
         r"？？？",
         r"",
@@ -264,18 +282,6 @@ def delete_num(text: str) -> str:
     )
     text = regex.re.sub(
         r"\?\?\?",
-        r"",
-        text,
-        flags=re.MULTILINE,
-    )
-    text = regex.re.sub(
-        r"·[上中下]$",
-        r"",
-        text,
-        flags=re.MULTILINE,
-    )
-    text = regex.re.sub(
-        r"·卷.*$",
         r"",
         text,
         flags=re.MULTILINE,
@@ -329,7 +335,7 @@ def replace_to_newline(text: str) -> str:
     text = replace_pair("《》", text)
     text = replace_pair("()", text)
     text = regex.re.sub(
-        r"[·—\-。：？，；、！…『』「」《》（）・/]", r"\n", text, flags=re.MULTILINE
+        r"[·—\-。：？，；、！…『』「」《》（）・/\s]", r"\n", text, flags=re.MULTILINE
     )
 
     return text
