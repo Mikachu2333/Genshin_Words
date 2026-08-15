@@ -335,7 +335,7 @@ def replace_to_newline(text: str) -> str:
     text = replace_pair("《》", text)
     text = replace_pair("()", text)
     text = regex.re.sub(
-        r"[·—\-。：？，；、！…『』「」《》（）・/\s]", r"\n", text, flags=re.MULTILINE
+        r"[·—\-。：？，；、&！…『』「」《》（）・/\s]", r"\n", text, flags=re.MULTILINE
     )
 
     return text
@@ -357,6 +357,7 @@ def replace_percent(text: str) -> str:
     text = regex.re.sub(r"^施放.*?后的[\d\.]+秒内.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*队伍后台.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*元素抗性.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^.*众人$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*降低[\d\.]+%.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*攻击力提升.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^.*通过这种.*$", r"", text, flags=re.MULTILINE)
@@ -416,6 +417,11 @@ def replace_percent(text: str) -> str:
     text = regex.re.sub(r"^启动$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^名称$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^称号$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^观察", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^调查", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^查看", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^等待.*$", r"", text, flags=re.MULTILINE)
+    text = regex.re.sub(r"^购买.*$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^生日$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^故事$", r"", text, flags=re.MULTILINE)
     text = regex.re.sub(r"^处于$", r"", text, flags=re.MULTILINE)
