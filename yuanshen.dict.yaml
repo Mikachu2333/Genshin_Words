@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "7.0(3) | 2026.08.16 14:30"
+version: "7.0(4) | 2026.08.23 09:32"
 sort: original
 use_preset_vocabulary: false
 ...
@@ -14032,6 +14032,7 @@ use_preset_vocabulary: false
 时律为眷
 时髦墩墩桃
 石门
+石门北
 食梦貘
 食梦者的忧郁
 蚀灭的鳞羽
@@ -17576,9 +17577,7 @@ use_preset_vocabulary: false
 行迹
 行律
 行秋
-行商石门北
-行商者
-行驶在平静水面
+行商
 形式束缚
 行相
 行销贩运之方
@@ -21287,7 +21286,6 @@ use_preset_vocabulary: false
 缀银朱
 坠震之役
 坠镞为林
-准备茶点
 准确调律
 准准爆弹
 捉回四处逃逸的色彩
@@ -21450,8 +21448,6 @@ use_preset_vocabulary: false
 走笔隐红
 走马斩群魔
 走入画中
-走私跟班
-走私商
 奏太
 足青
 祖拜尔剧场

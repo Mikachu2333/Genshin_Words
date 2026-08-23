@@ -3889,8 +3889,6 @@
 北国枪阵	bei'guo'qiang'zhen	100
 北国银行	bei'guo'yin'hang	100
 北国银行	bei'guo'yin'xing	100
-北境蛮族	bei'jing'man'sou	100
-北境蛮族	bei'jing'man'zu	100
 北境秘史	bei'jing'bi'shi	100
 北境秘史	bei'jing'mi'shi	100
 北陆	bei'liu	100
@@ -45541,6 +45539,8 @@
 时髦墩墩桃	shi'mao'dun'dun'tiao	100
 石门	dan'men	100
 石门	shi'men	100
+石门北	dan'men'bei	100
+石门北	shi'men'bei	100
 食梦貘	shi'meng'mo	100
 食梦貘	si'meng'mo	100
 食梦者的忧郁	shi'meng'zhe'de'you'yu	100
@@ -50064,7 +50064,6 @@
 涂鸦手记	chu'ya'shou'ji	100
 涂鸦手记	tu'ya'shou'ji	100
 图伊佳	tu'yi'jia	100
-图纸	tu'zhi	100
 途中的见闻	tu'zhong'de'jian'wen	100
 途中的见闻	tu'zhong'de'xian'wen	100
 途中的见闻	tu'zhong'di'jian'wen	100
@@ -56401,16 +56400,8 @@
 行律	xing'lü	100
 行秋	hang'qiu	100
 行秋	xing'qiu	100
-行商石门北	hang'shang'dan'men'bei	100
-行商石门北	hang'shang'shi'men'bei	100
-行商石门北	xing'shang'dan'men'bei	100
-行商石门北	xing'shang'shi'men'bei	100
-行商者	hang'shang'zhe	100
-行商者	xing'shang'zhe	100
-行驶在平静水面	hang'shi'zai'pian'jing'shui'mian	100
-行驶在平静水面	hang'shi'zai'ping'jing'shui'mian	100
-行驶在平静水面	xing'shi'zai'pian'jing'shui'mian	100
-行驶在平静水面	xing'shi'zai'ping'jing'shui'mian	100
+行商	hang'shang	100
+行商	xing'shang	100
 形式束缚	xing'shi'shu'fu	100
 形式束缚	xing'te'shu'fu	100
 行相	hang'xiang	100
@@ -68806,7 +68797,6 @@
 坠震之役	zhui'zhen'zhi'yi	100
 坠震之役	zhui'zhen'zhu'yi	100
 坠镞为林	zhui'zu'wei'lin	100
-准备茶点	zhun'bei'cha'dian	100
 准确调律	zhun'que'diao'lü	100
 准确调律	zhun'que'tiao'lü	100
 准准爆弹	zhun'zhun'bao'dan	100
@@ -69336,8 +69326,6 @@
 走笔隐红	zou'bi'yin'hong	100
 走马斩群魔	zou'ma'zhan'qun'mo	100
 走入画中	zou'ru'hua'zhong	100
-走私跟班	zou'si'gen'ban	100
-走私商	zou'si'shang	100
 奏太	cou'ta	100
 奏太	cou'tai	100
 奏太	zou'ta	100
