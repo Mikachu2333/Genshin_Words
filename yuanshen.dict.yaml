@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "7.1(0) | 2026.09.23 16:40"
+version: "7.1(2) | 2026.10.18 11:22"
 sort: original
 use_preset_vocabulary: false
 ...
@@ -40,6 +40,7 @@ use_preset_vocabulary: false
 阿咚
 阿多尼斯
 阿多诺
+阿尔巴特
 阿尔邦
 阿尔贝
 阿尔伯
@@ -228,6 +229,7 @@ use_preset_vocabulary: false
 阿斯莫代
 阿斯托洛吉斯
 阿索
+阿索斯
 阿索斯物质
 阿塔希耶
 阿泰菲
@@ -5002,6 +5004,7 @@ use_preset_vocabulary: false
 古华鱼羊鲜
 古华诸贤谱录
 古剑铭文
+古剑通微纪
 古剑通幽玄
 古旧发掘处
 古拉卜
@@ -6174,6 +6177,7 @@ use_preset_vocabulary: false
 黄金与孤影
 黄金之夜的喧嚣
 黄巨贾
+皇令顾问
 黄绿色矿石
 黄麻子
 皇女
@@ -10093,6 +10097,7 @@ use_preset_vocabulary: false
 马列维奇
 玛琳妮娜
 马林诺夫斯基
+玛琳诺奇卡
 马林切
 玛柳莎
 马鲁夫
@@ -10653,6 +10658,7 @@ use_preset_vocabulary: false
 谧林涓露的铁符
 谧林涓露的铜符
 谧林涓露的银符
+密麦梅斯
 蜜莓的嘉赏
 秘谜书屋
 秘密菜单
@@ -13242,6 +13248,7 @@ use_preset_vocabulary: false
 萨德赫
 萨迪古亚
 萨蒂
+萨多夫
 萨尔姆
 萨尔特科夫
 萨尔沃夫
@@ -14565,6 +14572,7 @@ use_preset_vocabulary: false
 戍望谣歌
 庶务长
 树下的九日九夜
+树下研讨会
 树妖
 树荫下的虹彩
 漱玉
@@ -16006,6 +16014,7 @@ use_preset_vocabulary: false
 瓦萨克拉胡巴肯
 瓦萨里回廊
 瓦瑟迪瓦
+瓦沙嘉
 瓦斯卡尔
 瓦图妲
 瓦托娅
@@ -19841,6 +19850,7 @@ use_preset_vocabulary: false
 渔人吐司
 愚人者人愚之
 渔人之利
+愚人之眼
 愚人众
 愚人众特遣队
 愚人众特辖队

@@ -90,6 +90,8 @@
 阿多尼斯	e'duo'ni'si	100
 阿多诺	a'duo'nuo	100
 阿多诺	e'duo'nuo	100
+阿尔巴特	a'er'ba'te	100
+阿尔巴特	e'er'ba'te	100
 阿尔邦	a'er'bang	100
 阿尔邦	e'er'bang	100
 阿尔贝	a'er'bei	100
@@ -790,6 +792,10 @@
 阿斯托洛吉斯	e'si'tuo'luo'ji'si	100
 阿索	a'suo	100
 阿索	e'suo	100
+阿索斯	a'suo'shi	100
+阿索斯	a'suo'si	100
+阿索斯	e'suo'shi	100
+阿索斯	e'suo'si	100
 阿索斯物质	a'suo'shi'wu'zhi	100
 阿索斯物质	a'suo'si'wu'zhi	100
 阿索斯物质	e'suo'shi'wu'zhi	100
@@ -16740,6 +16746,7 @@
 古华鱼羊鲜	gu'hua'yu'yang'xian	100
 古华诸贤谱录	gu'hua'zhu'xian'pu'lu	100
 古剑铭文	gu'jian'ming'wen	100
+古剑通微纪	gu'jian'tong'wei'ji	100
 古剑通幽玄	gu'jian'tong'you'xuan	100
 古旧发掘处	gu'jiu'fa'jue'chu	100
 古旧发掘处	gu'jiu'fa'ku'chu	100
@@ -20325,6 +20332,8 @@
 黄巨贾	huang'ju'jia	100
 黄巨贾	huang'qu'gu	100
 黄巨贾	huang'qu'jia	100
+皇令顾问	huang'ling'gu'wen	100
+皇令顾问	wang'ling'gu'wen	100
 黄绿色矿石	huang'lu'se'kuang'dan	100
 黄绿色矿石	huang'lu'se'kuang'shi	100
 黄绿色矿石	huang'lu'shai'kuang'dan	100
@@ -32604,6 +32613,10 @@
 玛琳妮娜	ma'lin'ni'nuo	100
 马林诺夫斯基	ma'lin'nuo'fu'shi'ji	100
 马林诺夫斯基	ma'lin'nuo'fu'si'ji	100
+玛琳诺奇卡	ma'lin'nuo'ji'ka	100
+玛琳诺奇卡	ma'lin'nuo'ji'qia	100
+玛琳诺奇卡	ma'lin'nuo'qi'ka	100
+玛琳诺奇卡	ma'lin'nuo'qi'qia	100
 马林切	ma'lin'qie	100
 玛柳莎	ma'liu'sha	100
 玛柳莎	ma'liu'suo	100
@@ -34613,6 +34626,8 @@
 谧林涓露的银符	mi'lin'yuan'lou'di'yin'fu	100
 谧林涓露的银符	mi'lin'yuan'lu'de'yin'fu	100
 谧林涓露的银符	mi'lin'yuan'lu'di'yin'fu	100
+密麦梅斯	mi'mai'mei'shi	100
+密麦梅斯	mi'mai'mei'si	100
 蜜莓的嘉赏	mi'mei'de'jia'shang	100
 蜜莓的嘉赏	mi'mei'di'jia'shang	100
 秘谜书屋	bi'mei'shu'wu	100
@@ -42903,6 +42918,7 @@
 萨德赫	sa'de'shi	100
 萨迪古亚	sa'di'gu'ya	100
 萨蒂	sa'di	100
+萨多夫	sa'duo'fu	100
 萨尔姆	sa'er'mu	100
 萨尔特科夫	sa'er'te'ke'fu	100
 萨尔沃夫	sa'er'wo'fu	100
@@ -47144,6 +47160,8 @@
 庶务长	zhu'wu'zhang	100
 树下的九日九夜	shu'xia'de'jiu'ri'jiu'ye	100
 树下的九日九夜	shu'xia'di'jiu'ri'jiu'ye	100
+树下研讨会	shu'xia'yan'tao'hui	100
+树下研讨会	shu'xia'yan'tao'kuai	100
 树妖	shu'jiao	100
 树妖	shu'yao	100
 树荫下的虹彩	shu'yin'xia'de'hong'cai	100
@@ -51076,6 +51094,7 @@
 瓦萨克拉胡巴肯	wa'sa'ke'la'hu'ba'ken	100
 瓦萨里回廊	wa'sa'li'hui'lang	100
 瓦瑟迪瓦	wa'se'di'wa	100
+瓦沙嘉	wa'sha'jia	100
 瓦斯卡尔	wa'shi'ka'er	100
 瓦斯卡尔	wa'shi'qia'er	100
 瓦斯卡尔	wa'si'ka'er	100
@@ -63309,6 +63328,10 @@
 愚人者人愚之	yu'ren'zhe'ren'yu'zhu	100
 渔人之利	yu'ren'zhi'li	100
 渔人之利	yu'ren'zhu'li	100
+愚人之眼	yu'ren'zhi'wen	100
+愚人之眼	yu'ren'zhi'yan	100
+愚人之眼	yu'ren'zhu'wen	100
+愚人之眼	yu'ren'zhu'yan	100
 愚人众	yu'ren'yin	100
 愚人众	yu'ren'zhong	100
 愚人众特遣队	yu'ren'yin'te'qian'dui	100
