@@ -40,8 +40,8 @@
    - `--depth` 必须覆盖到上一个版本，`extract_words.py` 要读两个 commit 的完整 JSON
    - 添加安全目录 `git config --global --add safe.directory /path/to/Snap.Metadata`
 2. 把下面这行的 commit 区间换成本次要对比的两个版本，`extract_words.py` 就按它取数
-   - 示例：`git diff 56e97b214a7e..5e1637c5169f`
-   - 也可以直接写参数：`python extract_words.py 56e97b2 5e1637c`
+   - 示例：`git diff 5e1637c5169f..d9252d4f44c7`
+   - 也可以直接写参数：`python extract_words.py xxx yyy`
    - 两个 commit 的 `Genshin/CHS` 快照会被解包到 `.snapshots/<完整 hash>/`，重复运行只解包一次，
      要强制重解包加 `--rebuild`
 3. 运行 `extract_words.py`：它按 `text_fields.py` 里的字段表逐文件取文本，用旧快照的全部文本做差集，
@@ -50,6 +50,10 @@
      内部 ID 这类字段本来就不该进词典）
    - 用差集而不是 `git diff`：内容没变只是换了顺序、或从别的字段搬过来的旧文本不再被当成新增
    - 每条文本都是完整的字段值，不会再被 diff 的行边界切碎
+   - 差集做两次：先按**整条字段值**取新文本，再把新旧两侧的文本都切成词条行、按行做一次差集。
+     一条长文本改了几个字仍算新增，但它切出来的行（`大地勘探`、`朔雪覆降之国`…）大多在旧版本里
+     早就有了，只做值级差集会让这些旧行反复出现
+   - 最后跳过 `yuanshen.dict.yaml` 里已经收录的词条；`final_npc.txt` 是强制收录，不参与上面两步过滤
    - `.cache/new_texts.jsonl` 保留差集得到的原始文本（一行一条 JSON），调整正则时可以拿它反复试，
      不必重新解包；`--metadata` 可以指向别的 `Snap.Metadata` 克隆
 4. 人工审校 `after_del.txt`：纯汉字过滤已经做完，剩下的只是决定某个词要不要收

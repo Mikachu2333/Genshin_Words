@@ -3,9 +3,12 @@
 流程：
 1. 按 commit id 把两次快照的 `Genshin/CHS` 解包到 `.snapshots/<hash>/`（可复用）
 2. 用 `text_fields.py` 的字段表逐文件取值
-3. 新快照的文本集合减去旧快照的文本集合，只留下真正新增的文本
-4. 与手工维护的 `final_npc.txt` 一起走 `replace_self.py` 的规则并去重
-5. 输出 `after_del.txt`，等待人工审校
+3. 新快照的文本集合减去旧快照的文本集合，只留下整条新增的文本
+4. 把两侧的文本都按 `replace_self.py` 的规则切分成词条行，再按行做一次差集：
+   一条长文本改了几个字仍算新增，但它切出来的行大多在旧版本里早就有了
+5. 去掉 `yuanshen.dict.yaml` 里已经收录的词条
+6. 追加手工维护的 `final_npc.txt`（不参与上面两步过滤），按新文本顺序去重
+7. 输出 `after_del.txt`，等待人工审校
 """
 
 import argparse
@@ -44,6 +47,8 @@ SNAPSHOT_ROOT = Path(".snapshots")
 # 每条原始文本一行 JSON，字段值里的换行不会破坏这个文件，去掉正则后可以直接重放
 RAW_TEXT_PATH = Path(".cache/new_texts.jsonl")
 OUTPUT_PATH = Path("after_del.txt")
+# 已经收录的词条不必再进 after_del.txt
+DICTIONARY_PATH = Path("yuanshen.dict.yaml")
 # 手工维护的词源，每个版本自行更新，与 JSON 新增文本走同一套切分规则
 MANUAL_TEXT_SOURCES: tuple[Path, ...] = (Path("final_npc.txt"),)
 
@@ -93,9 +98,7 @@ def extract_snapshot(rev: str, rebuild: bool = False) -> tuple[str, Path]:
         shutil.rmtree(destination)
     if not content.is_dir():
         destination.mkdir(parents=True, exist_ok=True)
-        archive = git(
-            "archive", "--format=tar", resolved, "--", TEXT_SUBDIR.as_posix()
-        )
+        archive = git("archive", "--format=tar", resolved, "--", TEXT_SUBDIR.as_posix())
         with tarfile.open(fileobj=io.BytesIO(archive)) as tar:
             tar.extractall(destination, filter="data")
     if not content.is_dir():
@@ -168,9 +171,7 @@ def new_text_groups(
     reported: set[str] = set()
     for relative, values in snapshot_entries(new_snapshot):
         fresh = [
-            value
-            for value in values
-            if value not in known and value not in reported
+            value for value in values if value not in known and value not in reported
         ]
         reported.update(fresh)
         if fresh:
@@ -204,6 +205,39 @@ def process_text(text: str) -> str:
     text = delete_none_chinese(text)
     text = replace_to_newline(text)
     return keep_han_entries(collapse_blank_lines(text))
+
+
+def entry_lines(text: str) -> list[str]:
+    """把一段字段文本切成词条行。"""
+    return process_text(text).splitlines()
+
+
+def snapshot_entry_lines(snapshot: Path) -> set[str]:
+    """旧快照能切出来的全部词条行。
+
+    差集只在整条字段值上做是不够的：`大地勘探·朔雪覆降之国·其一` 改成 `…·其二`
+    算新值，可它切出来的 `大地勘探`、`朔雪覆降之国` 在旧版本里早就有了。
+    所以要先按同一套规则把旧值也切成行，再按行做差集。
+    """
+    lines: set[str] = set()
+    for _, values in snapshot_entries(snapshot):
+        for value in values:
+            lines.update(entry_lines(value))
+    return lines
+
+
+def dictionary_entries() -> set[str]:
+    """`yuanshen.dict.yaml` 里已经收录的词条，不必再进 after_del.txt。"""
+    if not DICTIONARY_PATH.exists():
+        print(f"找不到 {DICTIONARY_PATH}，跳过已收录词条过滤")
+        return set()
+    entries: set[str] = set()
+    for line in DICTIONARY_PATH.read_text(encoding="utf-8").splitlines():
+        # 头部是 yaml front matter；词条行可能写成 `词条<TAB>拼音<TAB>权重`
+        if not line or line in {"---", "..."} or ":" in line:
+            continue
+        entries.add(line.split("\t")[0].strip())
+    return entries
 
 
 def report_groups(groups: list[tuple[str, list[str]]]) -> None:
@@ -267,8 +301,43 @@ def main(argv: list[str] | None = None) -> None:
     sources = ", ".join(str(source) for source in MANUAL_TEXT_SOURCES)
     print(f"手工词源 {len(manual_values)} 条（{sources}）")
 
-    entries = process_text("\n".join(values + manual_values)).splitlines()
-    words = list(dict.fromkeys(entries))
+    old_lines = snapshot_entry_lines(old_snapshot)
+    known_entries = dictionary_entries()
+    print(f"旧快照能切出词条行 {len(old_lines)} 条，词典已收录 {len(known_entries)} 条")
+
+    # 按新文本的原始顺序输出；差集用 set，只关心「这条行有没有出现过」
+    words: list[str] = []
+    seen: set[str] = set()
+    stale = indexed = duplicated = 0
+    for value in values:
+        for line in entry_lines(value):
+            if line in old_lines:
+                stale += 1
+            elif line in known_entries:
+                indexed += 1
+            elif line in seen:
+                duplicated += 1
+            else:
+                seen.add(line)
+                words.append(line)
+    print(
+        f"按行过滤：旧版本已有 {stale} 条，词典已收录 {indexed} 条，重复 {duplicated} 条"
+    )
+
+    # 手工词源是强制收录，不参与旧行差集，只跳过词典里已经有的
+    manual_added = manual_skipped = 0
+    for value in manual_values:
+        for line in entry_lines(value):
+            if line in known_entries:
+                manual_skipped += 1
+            elif line in seen:
+                continue
+            else:
+                seen.add(line)
+                words.append(line)
+                manual_added += 1
+    print(f"手工词源补充 {manual_added} 条（已在词典 {manual_skipped} 条）")
+
     OUTPUT_PATH.write_text("\n".join(words) + "\n", encoding="utf-8")
     print(f"去重后词条: {len(words)} 条，已写入 {OUTPUT_PATH}")
     print("请人工审校 after_del.txt 后再运行 merge.py")
