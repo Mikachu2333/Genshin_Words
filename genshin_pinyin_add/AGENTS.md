@@ -34,7 +34,7 @@ cargo build --release      # release 构建（strip、LTO、panic=abort）
 
 | 步骤 | 工具                           | 作用                                                 |
 | ---- | ------------------------------ | ---------------------------------------------------- |
-| 1    | `regex.py` + `after_del.txt`   | 从 `new.diff` 正则筛选增量内容，手动断句             |
+| 1    | `extract_words.py`             | 按 commit 差集解析 Snap.Metadata 的 CHS JSON 文本，连同手工 `final_npc.txt` 一起切词、去重，产出 `after_del.txt`，再由人工审校 |
 | 2    | `merge.py`                     | 追加新词条到 `yuanshen.dict.yaml`，随后调用步骤 3、4 |
 | 3    | `genshin_pinyin_sort`          | 按拼音排序并去除完全相同的重复行                     |
 | 4    | `genshin_pinyin_add`（本程序） | 生成拼音组合并输出 Fcitx5 词库                       |

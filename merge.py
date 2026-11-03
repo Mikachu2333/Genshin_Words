@@ -1,20 +1,27 @@
+"""把审校好的词条追加进 Rime 词典，再跑排序与 Fcitx5 生成。"""
+
 import subprocess
+from pathlib import Path
+
+ENTRIES_PATH = Path("after_del.txt")
+DICTIONARY_PATH = Path("yuanshen.dict.yaml")
+SORT_EXECUTABLE = Path("genshin_pinyin_sort.exe")
+PINYIN_EXECUTABLE = Path("genshin_pinyin_add.exe")
 
 
-def merge(input_file: str):
-    with open(input_file, "r", encoding="utf-8") as f:
-        after_content = f.read()
-
-    # 合并内容并写入 yuanshen.dict.yaml
-    with open("./yuanshen.dict.yaml", "a", encoding="utf-8") as f:
-        f.write("\n")
-        f.write(after_content)
-
-    print("文件合并完成！")
-
-    # 运行 genshin_py_sort.exe
-    subprocess.run(["./genshin_pinyin_sort.exe", './yuanshen.dict.yaml'])
-    subprocess.run(["./genshin_pinyin_add.exe", './yuanshen.dict.yaml'])
+def append_entries() -> None:
+    with DICTIONARY_PATH.open("a", encoding="utf-8") as dictionary:
+        dictionary.write("\n")
+        dictionary.write(ENTRIES_PATH.read_text(encoding="utf-8"))
+    print(f"已把 {ENTRIES_PATH} 追加到 {DICTIONARY_PATH}")
 
 
-merge("./after_del.txt")
+def main() -> None:
+    append_entries()
+    # 排序工具会整行去重，同一个词源重复合并也不会越滚越多
+    subprocess.run([str(SORT_EXECUTABLE), f"./{DICTIONARY_PATH}"], check=True)
+    subprocess.run([str(PINYIN_EXECUTABLE), f"./{DICTIONARY_PATH}"], check=True)
+
+
+if __name__ == "__main__":
+    main()

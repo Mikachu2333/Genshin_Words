@@ -2,3 +2,6 @@ __pycache__/**
 **/target/**
 Snap.Metadata/
 build/**
+scratch/**
+.snapshots/
+.cache/

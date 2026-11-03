@@ -37,15 +37,27 @@
 
 1. 将 [Snap.Metadata](https://github.com/DGP-Studio/Snap.Metadata) 克隆到本地
    - 示例：`git clone https://github.com/DGP-Studio/Snap.Metadata --depth=5`
+   - `--depth` 必须覆盖到上一个版本，`extract_words.py` 要读两个 commit 的完整 JSON
    - 添加安全目录 `git config --global --add safe.directory /path/to/Snap.Metadata`
-2. 根据上版本的更新，选择性 diff 增量内容并输出到指定文件
-   - 示例：`git diff 452e3b4bb5a1 main --minimal -- "*CHS*" ":!**/BeyondItem.json" ":!**/AgentSkill/**" > new.diff`
-3. 正则筛选，运行 `regex.py` 文件，打开生成的 `./after_del.txt`
-4. 手动断句
+2. 把下面这行的 commit 区间换成本次要对比的两个版本，`extract_words.py` 就按它取数
+   - 示例：`git diff 56e97b214a7e..5e1637c5169f`
+   - 也可以直接写参数：`python extract_words.py 56e97b2 5e1637c`
+   - 两个 commit 的 `Genshin/CHS` 快照会被解包到 `.snapshots/<完整 hash>/`，重复运行只解包一次，
+     要强制重解包加 `--rebuild`
+3. 运行 `extract_words.py`：它按 `text_fields.py` 里的字段表逐文件取文本，用旧快照的全部文本做差集，
+   把**真正新增**的文本与手工维护的 `final_npc.txt` 一起走正则管线、去重，输出 `./after_del.txt`
+   - 取哪一层、哪些字段只在 `text_fields.py` 里改；没列出的文件不参与取词（图标名、时间、版本号、
+     内部 ID 这类字段本来就不该进词典）
+   - 用差集而不是 `git diff`：内容没变只是换了顺序、或从别的字段搬过来的旧文本不再被当成新增
+   - 每条文本都是完整的字段值，不会再被 diff 的行边界切碎
+   - `.cache/new_texts.jsonl` 保留差集得到的原始文本（一行一条 JSON），调整正则时可以拿它反复试，
+     不必重新解包；`--metadata` 可以指向别的 `Snap.Metadata` 克隆
+4. 人工审校 `after_del.txt`：纯汉字过滤已经做完，剩下的只是决定某个词要不要收
 5. 运行 `merge.py`，它会依次执行：
    - 将 `after_del.txt` 追加到 `yuanshen.dict.yaml`
    - 调用 `genshin_pinyin_sort.exe` 按拼音排序并去除完全相同的重复行
    - 调用 `genshin_pinyin_add.exe` 生成 Fcitx5 词库 `yuanshen_fcitx5.txt`
+   - 重复跑不会让词典越滚越大，整行去重会把重复合并的旧词条收掉
 6. 上传 `yuanshen.dict.yaml`、`yuanshen_fcitx5.txt`
 
 ## 致谢
