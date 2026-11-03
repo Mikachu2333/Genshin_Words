@@ -48497,18 +48497,6 @@
 谁来说出真相	shei'lai'shuo'chu'zhen'xiang	100
 谁来说出真相	shui'lai'shui'chu'zhen'xiang	100
 谁来说出真相	shui'lai'shuo'chu'zhen'xiang	100
-谁人的残破笔记	shei'ren'de'can'po'bi'ji	100
-谁人的残破笔记	shei'ren'di'can'po'bi'ji	100
-谁人的残破笔记	shui'ren'de'can'po'bi'ji	100
-谁人的残破笔记	shui'ren'di'can'po'bi'ji	100
-谁人的日志	shei'ren'de'ri'zhi	100
-谁人的日志	shei'ren'di'ri'zhi	100
-谁人的日志	shui'ren'de'ri'zhi	100
-谁人的日志	shui'ren'di'ri'zhi	100
-谁人的手记	shei'ren'de'shou'ji	100
-谁人的手记	shei'ren'di'shou'ji	100
-谁人的手记	shui'ren'de'shou'ji	100
-谁人的手记	shui'ren'di'shou'ji	100
 谁所追寻的爱	shei'suo'dui'xin'de'ai	100
 谁所追寻的爱	shei'suo'dui'xin'di'ai	100
 谁所追寻的爱	shei'suo'dui'xun'de'ai	100
@@ -51516,6 +51504,7 @@
 庭中朝暮	ting'zhong'zhao'mu	100
 庭中隐际	ting'zhong'yin'ji	100
 通牒金盘	tong'die'jin'pan	100
+通辅	tong'fu	100
 樋口铁矢	tong'kou'tie'shi	100
 通路计划	tong'lu'ji'hua	100
 通路计划	tong'luo'ji'hua	100
@@ -65047,6 +65036,8 @@
 与旅行伙伴的合影	yu'lü'xing'huo'pan'de'he'ying	100
 与旅行伙伴的合影	yu'lü'xing'huo'pan'di'ge'ying	100
 与旅行伙伴的合影	yu'lü'xing'huo'pan'di'he'ying	100
+羽毛拐	hu'mao'guai	100
+羽毛拐	yu'mao'guai	100
 与谋者	yu'mou'zhe	100
 与谋者以局入局	yu'mou'zhe'si'ju'ru'ju	100
 与谋者以局入局	yu'mou'zhe'yi'ju'ru'ju	100
@@ -71102,6 +71093,7 @@
 驻扎日记	zhu'zha'ri'ji	100
 抓扑人	zhua'pi'ren	100
 抓扑人	zhua'pu'ren	100
+专辅	zhuan'fu	100
 专家的直感觉	zhuan'jia'de'zhi'gan'jiao	100
 专家的直感觉	zhuan'jia'de'zhi'gan'jue	100
 专家的直感觉	zhuan'jia'de'zhi'han'jiao	100
