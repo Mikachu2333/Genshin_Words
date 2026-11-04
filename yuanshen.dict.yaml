@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "7.2(1) | 2026.11.04 01:02"
+version: "7.2(2) | 2026.11.04 09:36"
 sort: original
 use_preset_vocabulary: false
 ...
@@ -40,6 +40,8 @@ use_preset_vocabulary: false
 阿咚
 阿多尼斯
 阿多诺
+阿儿力哥
+阿儿兀思
 阿尔巴特
 阿尔邦
 阿尔贝
@@ -51,6 +53,7 @@ use_preset_vocabulary: false
 阿尔卡季
 阿尔卡米
 阿尔肯迪
+阿尔库季诺
 阿尔马佐娃
 阿尔芒
 阿尔明
@@ -147,6 +150,7 @@ use_preset_vocabulary: false
 阿利娅
 阿莲佐
 阿廖沙
+阿列克雷
 阿列克谢
 阿列克谢准尉
 阿琳娜
@@ -187,6 +191,7 @@ use_preset_vocabulary: false
 阿娜卡
 阿那卡尔西
 阿纳托尔
+阿纳托利
 阿娜耶
 阿奈
 阿内
@@ -335,6 +340,7 @@ use_preset_vocabulary: false
 埃米雷德
 哀慕的恋歌
 埃纳夫
+埃普洛金
 哀乞亦无用
 埃塞尔雷德
 埃桑
@@ -406,10 +412,12 @@ use_preset_vocabulary: false
 爱莱妲
 爱莱莎
 爱乐之花
+爱黎烈哥力
 爱莉厄
 艾利法斯
 艾利法斯光束
 艾利法斯先生
+艾莉娜
 艾莉丝
 艾莉亚
 艾莲娜
@@ -546,6 +554,7 @@ use_preset_vocabulary: false
 安娅薇
 安彦太郎
 安与玛丽安
+俺脱鲁浑
 暗藏的游蛇
 暗藏柔顺
 暗潮回响之所
@@ -598,6 +607,7 @@ use_preset_vocabulary: false
 奥伯龙
 奥布勒诺
 奥布连斯基
+奥布隆斯基
 奥藏山
 奥黛塔
 奥德丽
@@ -661,6 +671,7 @@ use_preset_vocabulary: false
 奥赛尔
 奥瑟莱
 奥什卡里
+奥斯滕维涅德
 奥泰巴
 奥特
 奥特华
@@ -740,6 +751,7 @@ use_preset_vocabulary: false
 八衢彦之地
 八衢彦之试炼
 巴热诺夫
+八色里撒
 巴沙尔
 八十天环游月球
 巴丝玛
@@ -1543,13 +1555,17 @@ use_preset_vocabulary: false
 啵伊
 拨云见日
 波泽娜
+波兹维茨德维奇
 博比克
 博茨斯劳
 伯德里科
+博德瓦尔
+博德瓦洛维奇
 博恩
 博恩察
 伯恩哈德
 伯尔兰
+博尔缅塔尔
 博尔尼科夫
 博戈柳博夫
 博格诺
@@ -1635,6 +1651,7 @@ use_preset_vocabulary: false
 不倦的寻索
 不可久置
 不可久置的烈浆
+不可思议的预言
 不可思议之国的安
 不可以试探
 布拉金
@@ -1806,6 +1823,7 @@ use_preset_vocabulary: false
 采样器
 彩鹞
 彩鹞栉春风
+采邑
 菜菜子
 蔡乐
 蔡书瑾
@@ -2182,6 +2200,7 @@ use_preset_vocabulary: false
 朝着雷霆骤雨
 潮自回声
 朝左跑
+车尔登采夫
 车笠远来
 砗磲
 车軎
@@ -2531,6 +2550,7 @@ use_preset_vocabulary: false
 出魂试炼之所
 出击锅巴
 出击形态
+初级元素绪论
 出来吧神秘矿
 初岚般
 初雷幽谷
@@ -2858,6 +2878,8 @@ use_preset_vocabulary: false
 达丽娜
 达莉亚
 达列尔
+答鲁火剌
+答禄合剌
 达罗夫
 达马山
 达马山记事
@@ -2869,6 +2891,7 @@ use_preset_vocabulary: false
 达尼奥
 达尼拉
 达什科夫
+达沃格莱德编年史
 达希
 达雅
 达伊妲
@@ -2880,6 +2903,7 @@ use_preset_vocabulary: false
 大巴扎
 大伴
 大保底
+大孛烈火迭剌
 大辨圆成之实
 大赤沙海
 大慈树王
@@ -3719,6 +3743,7 @@ use_preset_vocabulary: false
 多重追踪弹头
 夺宝小行动
 踱山葵
+朵木斡亦
 堕天
 堕天的落羽
 惰性元素星
@@ -3800,6 +3825,7 @@ use_preset_vocabulary: false
 儿时的快乐
 尔妲
 尔等葬身之处
+耳每
 二刀之形比翼
 二段蓄力
 二番箙岛廓白浪
@@ -4480,6 +4506,7 @@ use_preset_vocabulary: false
 箙岛廓白浪
 福迪尔
 福尔茨
+伏尔加德拉克
 浮歌
 浮光鸣召
 浮光球
@@ -4826,6 +4853,7 @@ use_preset_vocabulary: false
 歌妲酒
 歌黛妮
 歌德大酒店
+戈杜诺夫
 戈尔代
 戈尔金
 戈尔诺娃
@@ -4903,6 +4931,8 @@ use_preset_vocabulary: false
 格鲁波夫堡
 格鲁波夫的拒马
 格鲁波夫黑列巴
+格鲁莎
+格鲁舍沃伊
 格露瓦莎
 格伦德
 格罗贝尔
@@ -5650,6 +5680,7 @@ use_preset_vocabulary: false
 合成台疑案
 合成系统的产出道具
 何处盛放的蔷薇
+合儿牙思
 荷尔德林
 和风凝香
 河谷的黯道
@@ -5687,6 +5718,7 @@ use_preset_vocabulary: false
 赫尔曼
 赫尔米
 赫尔穆特
+赫尔雅茨克
 赫芙那梵茵斯
 赫格拉克
 鹤观
@@ -6079,6 +6111,7 @@ use_preset_vocabulary: false
 花神诞日的轮回
 花时来信
 椛狩
+花思老也赤弼里保
 花团锦屏
 花咲初退红
 花型机关零件
@@ -6882,6 +6915,7 @@ use_preset_vocabulary: false
 寂秘纸草经
 济明
 季莫菲
+季娜伊达
 技能循环
 季诺维娅
 寄骑武士
@@ -7009,6 +7043,7 @@ use_preset_vocabulary: false
 甲斐田龙马
 贾汉
 贾汉吉尔
+假火水
 甲级宝珏
 贾拉康
 假龙
@@ -7359,6 +7394,7 @@ use_preset_vocabulary: false
 节奏的传染
 杰作的序曲
 解翠行
+解放者
 姐姐的义务
 解闷泡泡糖
 解谜伙伴
@@ -7378,6 +7414,7 @@ use_preset_vocabulary: false
 金杯的丰馈
 金杯座
 金贝乐棚
+金波特
 金箔
 金赤假龙
 金翅鹏王
@@ -8088,6 +8125,7 @@ use_preset_vocabulary: false
 卡莉娜
 卡莉珀丝
 卡列林
+卡列尼娜
 卡列瓦
 卡隆
 卡伦莱
@@ -8100,6 +8138,7 @@ use_preset_vocabulary: false
 卡梅诺夫
 卡蒙瓦塞特
 卡缅科
+卡缅宁科
 卡姆拉
 卡姆兰
 卡纳菲亚
@@ -8236,6 +8275,7 @@ use_preset_vocabulary: false
 康胜
 康思戈
 康思戈的前左手
+康斯坦丁诺夫娜
 康塔莉妮
 康塔罗斯的深杯
 抗打断能力
@@ -8268,6 +8308,7 @@ use_preset_vocabulary: false
 柯凡斯卡娅
 科菲策
 科赫
+科济列夫
 苛捐
 科科庞
 磕磕碰碰之谊
@@ -8317,6 +8358,7 @@ use_preset_vocabulary: false
 柯泰尼科夫
 科特斯
 柯梯米
+科瓦列夫斯基
 科瓦列克
 柯瓦什佳
 科西霍
@@ -8330,6 +8372,7 @@ use_preset_vocabulary: false
 科约帕
 科扎特利
 科兹蒂克
+科兹尼舍夫
 壳之宝石
 壳中歌者的诞生
 可不只是好看而已
@@ -8410,6 +8453,7 @@ use_preset_vocabulary: false
 克什尼克之炬的原型机
 刻师傅
 恪守时间候车站牌
+克斯托马洛夫
 克瓦什宁娜
 克瓦斯尼科夫
 克维库
@@ -9553,6 +9597,7 @@ use_preset_vocabulary: false
 列忒勒
 列王与宗室史
 列为经典
+列文谢夫斯基
 烈香
 猎熊犬
 裂岩固锚
@@ -9916,6 +9961,7 @@ use_preset_vocabulary: false
 柳达希卡
 柳达希卡的信
 柳德米拉
+柳德维格
 柳佳
 柳廖娜
 柳明娜
@@ -10030,6 +10076,7 @@ use_preset_vocabulary: false
 卢皮卡的意义
 卢普欣
 卢契烬
+卢仁
 卢森巴博
 卢沙里姆
 卢什涅
@@ -10379,6 +10426,7 @@ use_preset_vocabulary: false
 马尼菲科
 马尼特
 马涅茨
+玛涅奇卡
 马努阿
 玛诺薛西斯
 马齐尔
@@ -10398,6 +10446,7 @@ use_preset_vocabulary: false
 马斯克
 马斯克礁
 马斯鲁尔
+马斯塔科维奇
 马苏迪
 马索
 马索瑟
@@ -10902,6 +10951,8 @@ use_preset_vocabulary: false
 秘藏展厅
 秘藏之所
 秘藏至今的答案
+密赤思老
+密赤思老王
 秘典
 秘典之盒
 秘法惊喜特派
@@ -11224,6 +11275,7 @@ use_preset_vocabulary: false
 蘑里乌
 魔鳞病
 魔龙出击
+摩那末诃
 魔鸟
 魔女常燃之羽
 魔女的茶会
@@ -11280,6 +11332,7 @@ use_preset_vocabulary: false
 魔鸢厄灵
 魔战士的羽面
 抹金折戟
+抹奴靺鞨
 抹消角度的人
 沫彩花海
 莫从恒蹊
@@ -11323,6 +11376,7 @@ use_preset_vocabulary: false
 莫妮卡
 莫妮欧
 莫诺马赫
+莫诺马赫皇帝
 莫普瓦
 墨染篇
 墨染轻岚间
@@ -11402,6 +11456,9 @@ use_preset_vocabulary: false
 穆纳塔
 穆纳塔人
 穆纳伊
+木乃马禾
+木乃马禾思乃真
+木乃马禾思乃真行
 木奈
 木南料亭
 木南杏奈
@@ -11423,6 +11480,7 @@ use_preset_vocabulary: false
 幕收
 睦疏
 睦疏之匣
+穆斯季斯莱沃
 穆斯季斯莱沃王
 目随羽视
 穆塔西姆
@@ -11520,6 +11578,7 @@ use_preset_vocabulary: false
 纳塔端居
 纳塔队
 纳塔兰提亚
+娜塔莉亚
 纳塔龙众
 纳塔渔师
 纳塔最好的向导
@@ -11649,6 +11708,7 @@ use_preset_vocabulary: false
 泥蛙
 尼西里塔
 尼娅
+尼约默罗德
 尼赞贝
 尼泽尔
 尼扎米
@@ -12010,6 +12070,7 @@ use_preset_vocabulary: false
 沛休
 佩伊
 佩尤特尔
+佩尤特尔订
 佩尤特莉
 喷发的光珥
 砰砰爆发箱
@@ -12225,6 +12286,7 @@ use_preset_vocabulary: false
 普利诺夫
 普利赛拉
 朴练长座
+普列奥布拉仁斯基
 普列奥布拉任斯基
 普列博
 普列妮策
@@ -12237,6 +12299,7 @@ use_preset_vocabulary: false
 普玛莉
 普麦纳
 谱面主题
+普宁
 普普通通球
 普契涅拉
 普热瓦
@@ -12480,6 +12543,7 @@ use_preset_vocabulary: false
 绮灿
 绮灿而神秘的赠礼
 起乘
+乞迭失
 启动画板
 启动木牌
 启动跃迁引擎
@@ -12500,6 +12564,7 @@ use_preset_vocabulary: false
 绮思晚星
 起死回骸
 起死回骸童子
+乞帖石
 启途的伴星
 启途誓使
 启夏石
@@ -12790,6 +12855,7 @@ use_preset_vocabulary: false
 切玛利的遮荫
 切莫贪恋巨熊的权柄
 切莫贪求狡狐的小径
+切纳雷卡
 切妮
 切片辖域
 切片辖域管控模块
@@ -13762,6 +13828,7 @@ use_preset_vocabulary: false
 森林王
 森林王器
 森林之歌
+森奈莫斯
 森珀娅
 森邃之光
 森塔加
@@ -13922,6 +13989,7 @@ use_preset_vocabulary: false
 杉木芯
 杉木置物架
 杉木转角阶梯
+山努亚故事集
 山如悬练
 杉山
 山上
@@ -14419,6 +14487,7 @@ use_preset_vocabulary: false
 盛世豪鼓大祭典
 圣水
 圣丝翠维莎
+圣丝翠维莎歌本
 圣途试炼遗迹
 圣土化
 圣土化熊鹿
@@ -14610,6 +14679,7 @@ use_preset_vocabulary: false
 十醉
 史辩
 矢部
+史蒂文森
 史蒂文斯
 始基矿
 始基矿胚料
@@ -14916,6 +14986,7 @@ use_preset_vocabulary: false
 树体分光折射穹顶
 树王圣体菇
 戍望谣歌
+庶务官
 庶务长
 树下的九日九夜
 树下研讨会
@@ -16097,6 +16168,7 @@ use_preset_vocabulary: false
 铁块紫微一相逢
 铁门儿
 铁明
+铁莫菲
 铁穆窟
 铁穆山
 铁皮机器
@@ -16309,6 +16381,7 @@ use_preset_vocabulary: false
 豚豚球
 豚豚泳装
 托奥
+托波尔科夫
 托尔芬
 托尔戈夫
 托尔诺夫
@@ -16385,6 +16458,7 @@ use_preset_vocabulary: false
 瓦蕾
 瓦力
 瓦列里
+瓦列丽娅
 瓦柳希娜
 瓦伦丁
 瓦伦斯坦
@@ -16405,6 +16479,7 @@ use_preset_vocabulary: false
 瓦托娅
 瓦希德
 瓦西里
+瓦西里耶夫娜
 瓦希莉莎
 瓦谢
 瓦伊妲
@@ -16689,6 +16764,7 @@ use_preset_vocabulary: false
 唯理明畅
 唯理为光
 唯力量可守护
+维列娜
 韦列夏金娜
 维列谢克
 围炉夜谈
@@ -16735,6 +16811,7 @@ use_preset_vocabulary: false
 韦西鸡
 维系永恒的意志
 韦谢洛夫
+维谢斯卡娅
 违心的笑
 韦亚斯
 维亚泽姆斯基
@@ -16874,6 +16951,7 @@ use_preset_vocabulary: false
 温适
 温舒雅谈
 温斯洛
+温思脱里斡札
 温斯泽
 温馨暖光
 文材整理组主任
@@ -16914,9 +16992,11 @@ use_preset_vocabulary: false
 问答效果
 问题美露莘
 问题美露莘与答案机器人
+翁哥力
 蓊郁
 蜗居壳
 涡轮叶
+窝昔里撒
 涡旋之月
 我爱摩拉
 我必偿还
@@ -16971,6 +17051,7 @@ use_preset_vocabulary: false
 我愿于飞
 我自渊底刺向你
 我作为冒险家的一生
+斡底阿奴王
 沃杜奈
 沃恩
 沃尔格斯卡娅
@@ -16981,6 +17062,7 @@ use_preset_vocabulary: false
 沃贡贡之血
 沃灰的冒险家
 沃灰的寻宝者
+斡吉里撒
 沃佳瑙
 沃佳瑙芙娜
 沃克
@@ -17011,6 +17093,7 @@ use_preset_vocabulary: false
 沃雅妮莎
 沃杨维达
 沃伊图
+乌比里采
 乌布
 乌翅雁
 乌茨勒
@@ -17355,6 +17438,8 @@ use_preset_vocabulary: false
 物理攻击
 物理抗性
 雾里明灯
+兀里乞忽温
+兀里乞忽温翁哥力
 物理伤害
 雾灵渚
 物器流转
@@ -17474,6 +17559,7 @@ use_preset_vocabulary: false
 希穆兰卡的赐福
 夕暮已远
 希娜小姐
+昔乃木思
 西尼阿斯
 希涅琪娅
 希诺宁
@@ -18028,6 +18114,7 @@ use_preset_vocabulary: false
 谢贝蕾妲小姐
 谢德娃
 亵渎的新芽
+谢尔巴茨卡娅
 谢尔巴托夫
 谢尔比乌斯
 谢尔比乌斯式
@@ -18094,6 +18181,7 @@ use_preset_vocabulary: false
 心随芳兮意犹绵
 新鲜之味
 心象倒影
+辛辛纳图斯
 新兴艺术家
 辛秀
 新雪来客
@@ -18239,6 +18327,7 @@ use_preset_vocabulary: false
 行商者
 行驶在平静水面
 形式束缚
+刑事诉讼律
 行相
 行销贩运之方
 形与味
@@ -18543,6 +18632,7 @@ use_preset_vocabulary: false
 雪奈茨娜娅
 雪奈茨尼伊
 雪奈茨维奇
+雪泥真
 雪孃
 雪孃大公
 雪孃王公
@@ -18767,6 +18857,8 @@ use_preset_vocabulary: false
 雅乐诗词
 雅蕾希
 雅里
+雅里兹列维奇
+雅莉亚涅
 雅练上邸
 哑铃壶
 雅鲁金
@@ -19169,6 +19261,10 @@ use_preset_vocabulary: false
 野火的豪烈
 野火飘摇
 野浆果之路
+野里思烈兀赤
+也里思烈兀赤
+野里牙捏
+也列捏木列兀
 野林猪
 野林猪与小魔女
 野马泉
@@ -19178,6 +19274,7 @@ use_preset_vocabulary: false
 野蔷薇之章
 野蔷薇座
 野生水蕈兽
+也失别里迭石
 野外观察手记
 野外松木路灯
 野外温泉
@@ -19198,6 +19295,7 @@ use_preset_vocabulary: false
 叶菲
 夜风舒畅
 夜风与晚星同游
+叶夫多基莫夫娜
 叶夫格拉夫
 叶夫卡
 叶弗列莫娃
@@ -19275,6 +19373,7 @@ use_preset_vocabulary: false
 夜枭之章
 夜枭座
 叶欣提
+夜行
 夜行暗火
 夜行灯座
 夜巡的先声
@@ -19389,6 +19488,7 @@ use_preset_vocabulary: false
 伊拉帕
 伊拉兹
 伊莱尔
+伊莱诺
 伊莱帕
 一篮淡香
 一览众山小
@@ -19440,6 +19540,7 @@ use_preset_vocabulary: false
 一起来玩
 一起来玩吧
 伊恰库纳
+一千零一个
 一切代价的回旋
 一切荣光的归处
 一切在于时机
@@ -19450,6 +19551,7 @@ use_preset_vocabulary: false
 伊萨克
 伊萨米
 伊桑
+伊瑟弗维奇
 伊莎朵
 伊莎佳
 伊绍古
@@ -19522,6 +19624,7 @@ use_preset_vocabulary: false
 伊兹梅洛守卫副手
 伊兹娜
 伊兹帕帕
+伊兹沃尔斯基
 一樽烈香
 移灯
 仪典
@@ -20080,6 +20183,7 @@ use_preset_vocabulary: false
 幽林雾道
 幽林月影
 幽林枝
+幽灵新娘
 优律
 幽秘森域
 悠眠花火
@@ -20166,6 +20270,7 @@ use_preset_vocabulary: false
 游空之物的断尾
 游廊转角
 游离者的裂甲
+尤里安
 尤鲁赫
 尤罗奇卡
 尤洛
@@ -21916,6 +22021,7 @@ use_preset_vocabulary: false
 朱漆圆桌
 诸圣的礼冠
 诸事平安
+诸兽王公表传
 朱斯蒂娜
 朱斯蒂诺
 茱塔
@@ -22325,6 +22431,7 @@ use_preset_vocabulary: false
 左道的胜义尊
 佐赫蕾
 佐兰
+佐洛塔廖夫
 佐洛托娃
 左世
 佐藤
