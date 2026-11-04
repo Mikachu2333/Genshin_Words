@@ -4,6 +4,7 @@ workflow:
 
 stages:
   - upload
+  - release
 
 upload:
   stage: upload
@@ -18,3 +19,29 @@ upload:
       - yuanshen.dict.yaml
       - yuanshen_fcitx5.txt
     expire_in: never
+
+release:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/cli:latest
+  needs: []
+  variables:
+    GLAB_ENABLE_CI_AUTOLOGIN: "true"
+  script:
+    - |
+      if [ -n "$CI_COMMIT_TAG_MESSAGE" ]; then
+        printf '%s\n' "$CI_COMMIT_TAG_MESSAGE" > release_notes.md
+      else
+        printf '%s\n' "$CI_COMMIT_TITLE" > release_notes.md
+        if [ -n "$CI_COMMIT_DESCRIPTION" ]; then
+          printf '\n%s\n' "$CI_COMMIT_DESCRIPTION" >> release_notes.md
+        fi
+      fi
+      cat release_notes.md
+    - |
+      cat > assets.json <<EOF
+      [
+        {"name": "yuanshen.dict.yaml", "url": "${CI_PROJECT_URL}/-/raw/${CI_COMMIT_TAG}/yuanshen.dict.yaml?inline=false", "direct_asset_path": "/yuanshen.dict.yaml", "link_type": "package"},
+        {"name": "yuanshen_fcitx5.txt", "url": "${CI_PROJECT_URL}/-/raw/${CI_COMMIT_TAG}/yuanshen_fcitx5.txt?inline=false", "direct_asset_path": "/yuanshen_fcitx5.txt", "link_type": "package"}
+      ]
+      EOF
+    - glab release create "$CI_COMMIT_TAG" --repo "$CI_PROJECT_PATH" --name "$CI_COMMIT_TAG" --ref "$CI_COMMIT_SHA" --notes-file release_notes.md --assets-links="$(cat assets.json)"
