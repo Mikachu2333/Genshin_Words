@@ -1,13 +1,20 @@
 workflow:
   rules:
-    - if: $CI_COMMIT_TAG =~ /^\d+\.\d+\.\d+$/
+    - if: $CI_COMMIT_TAG =~ /^\d+(\.\d+)+$/
 
----
 stages:
-- upload
+  - upload
 
 upload:
+  stage: upload
+  image: alpine:latest
+  script:
+    - test -f yuanshen.dict.yaml
+    - test -f yuanshen_fcitx5.txt
+    - ls -l yuanshen.dict.yaml yuanshen_fcitx5.txt
   artifacts:
+    name: "$CI_COMMIT_TAG"
     paths:
       - yuanshen.dict.yaml
       - yuanshen_fcitx5.txt
+    expire_in: never
