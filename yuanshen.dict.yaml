@@ -1,6 +1,6 @@
 ---
 name: yuanshen
-version: "7.2(3) | 2026.11.05 11:04"
+version: "7.2(4) | 2026.11.07 12:46"
 sort: original
 use_preset_vocabulary: false
 ...
@@ -1498,6 +1498,7 @@ use_preset_vocabulary: false
 冰印
 冰萤
 冰萤术士
+冰映之镜宫
 冰与苍星的圣都
 冰与风的鼓动
 冰与火的战场
@@ -1551,6 +1552,7 @@ use_preset_vocabulary: false
 拨开天的雪幕
 拨开雪翳之幕
 波浪洪涛
+剥离式神识
 波林
 波隆斯基
 波鲁亚
@@ -3349,6 +3351,7 @@ use_preset_vocabulary: false
 第二次的满月
 地方传奇
 地宫传奇
+递光的通路
 帝皇的决断
 地魂
 第几类接触
@@ -5013,6 +5016,7 @@ use_preset_vocabulary: false
 跟我的伙计们打个招呼吧
 根系深埋之处
 根源之轮
+亘古常言者
 亘古仇恨之影
 亘古的苍星
 亘古树海之一瞬
@@ -5847,6 +5851,7 @@ use_preset_vocabulary: false
 嘿哈唔
 嘿哈唔史莱姆三姆组
 黑貉篇
+黑乎乎晶矿
 黑剑
 黑金狼噬
 黑晶号角
@@ -7659,6 +7664,7 @@ use_preset_vocabulary: false
 禁咒绘卷
 近竹
 禁足铁菱角
+晶壁
 鲸波之役
 精彩礼盒
 精草爆
@@ -12386,6 +12392,7 @@ use_preset_vocabulary: false
 普列特涅夫
 普隆尼亚
 普鲁斯坚
+普罗塔卫城
 普洛霍尔
 普吕尼埃
 普玛
@@ -14764,6 +14771,7 @@ use_preset_vocabulary: false
 石鸢
 时运亨通
 识蕴领域
+实在本体
 石者
 石者八荒韫玉而明
 拾者归还
@@ -15454,6 +15462,7 @@ use_preset_vocabulary: false
 斯索佳诺夫
 斯塔杜欧
 斯塔杜欣
+斯塔夫罗金
 斯塔拉诺夫
 斯坦利
 斯特凡
@@ -15586,6 +15595,7 @@ use_preset_vocabulary: false
 苏二娘
 苏法什
 苏古基列特
+苏古亚诺
 苏赫拉布
 苏霍金
 苏霍维赫
@@ -16554,6 +16564,7 @@ use_preset_vocabulary: false
 瓦尔萨格的日轮
 瓦尔塔
 瓦尔坦
+瓦尔瓦拉
 瓦菲格
 瓦格纳
 瓦加劳
@@ -16845,6 +16856,7 @@ use_preset_vocabulary: false
 维恩歌莱之章
 维恩歌莱之帜
 韦尔赫拉茨基
+维尔霍文斯基
 维尔芒
 维尔穆德
 韦尔纳
@@ -18339,6 +18351,7 @@ use_preset_vocabulary: false
 新之丞
 心织刀流
 心之环
+心智存储核心
 心中梦中盘中餐
 心中愿景
 心珠循琅
@@ -18618,6 +18631,7 @@ use_preset_vocabulary: false
 喧哗屋传说
 喧寂于心
 轩景徐至
+喧闹兽众
 宣叙
 翾翾蝶舞
 轩瞩
@@ -20160,6 +20174,7 @@ use_preset_vocabulary: false
 影域保管库
 影域保管库权限卡
 影域的遗留
+影域发生装置
 影域核心
 影域解析等级
 影域解析装置

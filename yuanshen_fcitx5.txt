@@ -5340,6 +5340,14 @@
 冰萤术士	bing'ying'zhu'shi	100
 冰萤术士	ning'ying'shu'shi	100
 冰萤术士	ning'ying'zhu'shi	100
+冰映之镜宫	bing'yang'zhi'jing'gong	100
+冰映之镜宫	bing'yang'zhu'jing'gong	100
+冰映之镜宫	bing'ying'zhi'jing'gong	100
+冰映之镜宫	bing'ying'zhu'jing'gong	100
+冰映之镜宫	ning'yang'zhi'jing'gong	100
+冰映之镜宫	ning'yang'zhu'jing'gong	100
+冰映之镜宫	ning'ying'zhi'jing'gong	100
+冰映之镜宫	ning'ying'zhu'jing'gong	100
 冰与苍星的圣都	bing'yu'cang'xing'de'ku'dou	100
 冰与苍星的圣都	bing'yu'cang'xing'de'ku'du	100
 冰与苍星的圣都	bing'yu'cang'xing'de'sheng'dou	100
@@ -5581,6 +5589,14 @@
 拨开雪翳之幕	bo'kai'xue'yi'zhu'mu	100
 波浪洪涛	bei'lang'hong'tao	100
 波浪洪涛	bo'lang'hong'tao	100
+剥离式神识	bao'chi'shi'shen'shi	100
+剥离式神识	bao'chi'te'shen'shi	100
+剥离式神识	bao'li'shi'shen'shi	100
+剥离式神识	bao'li'te'shen'shi	100
+剥离式神识	bo'chi'shi'shen'shi	100
+剥离式神识	bo'chi'te'shen'shi	100
+剥离式神识	bo'li'shi'shen'shi	100
+剥离式神识	bo'li'te'shen'shi	100
 波林	bei'lin	100
 波林	bo'lin	100
 波隆斯基	bei'long'shi'ji	100
@@ -12039,6 +12055,10 @@
 地宫传奇	di'gong'chuan'qi	100
 地宫传奇	di'gong'zhuan'ji	100
 地宫传奇	di'gong'zhuan'qi	100
+递光的通路	di'guang'de'tong'lu	100
+递光的通路	di'guang'de'tong'luo	100
+递光的通路	di'guang'di'tong'lu	100
+递光的通路	di'guang'di'tong'luo	100
 帝皇的决断	di'huang'de'jue'duan	100
 帝皇的决断	di'huang'di'jue'duan	100
 帝皇的决断	di'wang'de'jue'duan	100
@@ -16800,6 +16820,8 @@
 根系深埋之处	gen'xi'shen'man'zhu'chu	100
 根源之轮	gen'yuan'zhi'lun	100
 根源之轮	gen'yuan'zhu'lun	100
+亘古常言者	gen'gu'chang'yan'zhe	100
+亘古常言者	xuan'gu'chang'yan'zhe	100
 亘古仇恨之影	gen'gu'chou'hen'zhi'ying	100
 亘古仇恨之影	gen'gu'chou'hen'zhu'ying	100
 亘古仇恨之影	gen'gu'qiu'hen'zhi'ying	100
@@ -19167,6 +19189,7 @@
 嘿哈唔史莱姆三姆组	mo'ha'wu'shi'lai'mu'san'mu'zu	100
 黑貉篇	hei'hao'pian	100
 黑貉篇	hei'he'pian	100
+黑乎乎晶矿	hei'hu'hu'jing'kuang	100
 黑剑	hei'jian	100
 黑金狼噬	hei'jin'lang'shi	100
 黑晶号角	hei'jing'hao'jiao	100
@@ -24865,6 +24888,7 @@
 禁足铁菱角	jin'ju'tie'ling'jue	100
 禁足铁菱角	jin'zu'tie'ling'jiao	100
 禁足铁菱角	jin'zu'tie'ling'jue	100
+晶壁	jing'bi	100
 鲸波之役	jing'bei'zhi'yi	100
 鲸波之役	jing'bei'zhu'yi	100
 鲸波之役	jing'bo'zhi'yi	100
@@ -40114,6 +40138,8 @@
 普隆尼亚	pu'long'ni'ya	100
 普鲁斯坚	pu'lu'shi'jian	100
 普鲁斯坚	pu'lu'si'jian	100
+普罗塔卫城	pu'luo'da'wei'cheng	100
+普罗塔卫城	pu'luo'ta'wei'cheng	100
 普洛霍尔	pu'luo'he'er	100
 普洛霍尔	pu'luo'huo'er	100
 普吕尼埃	pu'lü'ni'ai	100
@@ -47665,6 +47691,7 @@
 时运亨通	shi'yun'heng'tong	100
 时运亨通	shi'yun'xiang'tong	100
 识蕴领域	shi'yun'ling'yu	100
+实在本体	shi'zai'ben'ti	100
 石者	dan'zhe	100
 石者	shi'zhe	100
 石者八荒韫玉而明	dan'zhe'ba'huang'yun'yu'er'meng	100
@@ -49612,6 +49639,10 @@
 斯塔杜欣	shi'ta'du'xin	100
 斯塔杜欣	si'da'du'xin	100
 斯塔杜欣	si'ta'du'xin	100
+斯塔夫罗金	shi'da'fu'luo'jin	100
+斯塔夫罗金	shi'ta'fu'luo'jin	100
+斯塔夫罗金	si'da'fu'luo'jin	100
+斯塔夫罗金	si'ta'fu'luo'jin	100
 斯塔拉诺夫	shi'da'la'nuo'fu	100
 斯塔拉诺夫	shi'ta'la'nuo'fu	100
 斯塔拉诺夫	si'da'la'nuo'fu	100
@@ -49979,6 +50010,7 @@
 苏法什	su'fa'shi	100
 苏古基列特	su'gu'ji'li'te	100
 苏古基列特	su'gu'ji'lie'te	100
+苏古亚诺	su'gu'ya'nuo	100
 苏赫拉布	su'he'la'bu	100
 苏赫拉布	su'shi'la'bu	100
 苏霍金	su'he'jin	100
@@ -52701,6 +52733,7 @@
 瓦尔塔	wa'er'da	100
 瓦尔塔	wa'er'ta	100
 瓦尔坦	wa'er'tan	100
+瓦尔瓦拉	wa'er'wa'la	100
 瓦菲格	wa'fei'ge	100
 瓦菲格	wa'fei'luo	100
 瓦格纳	wa'ge'na	100
@@ -53537,6 +53570,10 @@
 维恩歌莱之帜	wei'en'ge'lai'zhu'zhi	100
 韦尔赫拉茨基	wei'er'he'la'ci'ji	100
 韦尔赫拉茨基	wei'er'shi'la'ci'ji	100
+维尔霍文斯基	wei'er'he'wen'shi'ji	100
+维尔霍文斯基	wei'er'he'wen'si'ji	100
+维尔霍文斯基	wei'er'huo'wen'shi'ji	100
+维尔霍文斯基	wei'er'huo'wen'si'ji	100
 维尔芒	wei'er'huang	100
 维尔芒	wei'er'mang	100
 维尔穆德	wei'er'mu'de	100
@@ -58755,6 +58792,8 @@
 心织刀流	xin'zhi'diao'liu	100
 心之环	xin'zhi'huan	100
 心之环	xin'zhu'huan	100
+心智存储核心	xin'zhi'cun'chu'he'xin	100
+心智存储核心	xin'zhi'cun'chu'hu'xin	100
 心中梦中盘中餐	xin'zhong'meng'zhong'pan'zhong'can	100
 心中梦中盘中餐	xin'zhong'meng'zhong'pan'zhong'sun	100
 心中愿景	xin'zhong'yuan'jing	100
@@ -59453,6 +59492,8 @@
 轩景徐至	xuan'jing'xu'zhi	100
 轩景徐至	xuan'ying'xu'die	100
 轩景徐至	xuan'ying'xu'zhi	100
+喧闹兽众	xuan'nao'shou'yin	100
+喧闹兽众	xuan'nao'shou'zhong	100
 宣叙	xuan'xu	100
 翾翾蝶舞	xuan'xuan'die'wu	100
 翾翾蝶舞	xuan'xuan'tie'wu	100
@@ -64040,6 +64081,7 @@
 影域的遗留	ying'yu'de'yi'liu	100
 影域的遗留	ying'yu'di'wei'liu	100
 影域的遗留	ying'yu'di'yi'liu	100
+影域发生装置	ying'yu'fa'sheng'zhuang'zhi	100
 影域核心	ying'yu'he'xin	100
 影域核心	ying'yu'hu'xin	100
 影域解析等级	ying'yu'jie'si'deng'ji	100
