@@ -40,25 +40,56 @@ pub fn sort_chinese_text(
             continue;
         }
 
-        let sort_key = if line.contains('\t') {
-            validate_manual_entry(line, line_number)?
+        let (sort_key, word, reading) = if line.contains('\t') {
+            let (key, word) = validate_manual_entry(line, line_number)?;
+            let reading = line
+                .split(|character| character == '\u{9}')
+                .nth(1)
+                .unwrap_or_default()
+                .to_string();
+            (key, word, reading)
         } else {
-            pinyin_sort_key(line, line_number)?
+            let (key, word) = pinyin_sort_key(line, line_number)?;
+            (key, word, String::new())
         };
-        collection.push((sort_key, line.to_string(), index));
+        collection.push((sort_key, word, reading, line.to_string(), index));
     }
 
-    // The source position provides deterministic, stable ordering for homophones.
-    collection.sort_by(|(key_a, _, index_a), (key_b, _, index_b)| {
+    // First pass: the existing pinyin sort, with source order as the final
+    // tie-breaker. Homophones and different manual readings all survive.
+    collection.sort_by(|(key_a, _, _, _, index_a), (key_b, _, _, _, index_b)| {
         key_a.cmp(key_b).then_with(|| index_a.cmp(index_b))
     });
-    Ok(collection
+
+    // Second pass: group by Chinese word while keeping the pinyin order
+    // established by the first pass, both inside and between groups.
+    let mut groups: Vec<(String, Vec<(String, String, String, String, usize)>)> = Vec::new();
+    for entry in collection {
+        let word = entry.1.clone();
+        if let Some((_, group)) = groups.iter_mut().find(|(group_word, _)| *group_word == word) {
+            group.push(entry);
+        } else {
+            groups.push((word, vec![entry]));
+        }
+    }
+
+    for (_, group) in &mut groups {
+        group.sort_by(|(key_a, _, reading_a, _, index_a), (key_b, _, reading_b, _, index_b)| {
+            reading_a
+                .cmp(reading_b)
+                .then_with(|| key_a.cmp(key_b))
+                .then_with(|| index_a.cmp(index_b))
+        });
+    }
+
+    Ok(groups
         .into_iter()
-        .map(|(key, line, _)| (key, line))
+        .flat_map(|(_, group)| group)
+        .map(|(key, _, _, line, _)| (key, line))
         .collect())
 }
 
-fn validate_manual_entry(line: &str, line_number: usize) -> Result<String, String> {
+fn validate_manual_entry(line: &str, line_number: usize) -> Result<(String, String), String> {
     let mut fields = line.split('\t');
     let word = fields.next().unwrap_or_default();
     let pinyin = fields.next().unwrap_or_default();
@@ -78,11 +109,11 @@ fn validate_manual_entry(line: &str, line_number: usize) -> Result<String, Strin
     weight
         .parse::<u64>()
         .map_err(|_| format!("line {line_number}: weight must be a non-negative integer"))?;
-    Ok(pinyin.replace(' ', ""))
+    Ok((pinyin.replace(' ', ""), word.to_string()))
 }
 
-fn pinyin_sort_key(line: &str, line_number: usize) -> Result<String, String> {
-    let mut result = String::new();
+fn pinyin_sort_key(line: &str, line_number: usize) -> Result<(String, String), String> {
+    let mut key = String::new();
     for (character_index, (character, pinyin)) in line.chars().zip(line.to_pinyin()).enumerate() {
         let pinyin = pinyin.ok_or_else(|| {
             format!(
@@ -90,9 +121,9 @@ fn pinyin_sort_key(line: &str, line_number: usize) -> Result<String, String> {
                 character_index + 1
             )
         })?;
-        result.push_str(pinyin.with_tone_num_end());
+        key.push_str(pinyin.with_tone_num_end());
     }
-    Ok(result)
+    Ok((key, line.to_string()))
 }
 
 #[cfg(test)]
@@ -120,6 +151,19 @@ mod tests {
         assert_eq!(sorted.len(), 2);
         assert_eq!(sorted[0].1, "意义");
         assert_eq!(sorted[1].1, "异议");
+    }
+
+    #[test]
+    fn alternate_manual_readings_stay_with_the_same_word() {
+        let with_ba = "薄缘的道与光与胤\tba yuan de dao yu guang yu yin\t100";
+        let with_bao = "薄缘的道与光与胤\tbao yuan de dao yu guang yu yin\t100";
+        let with_bo = "薄缘的道与光与胤\tbo yuan de dao yu guang yu yin\t100";
+        let other_word = "薄缘\tbao yuan\t100";
+
+        let sorted = sort_chinese_text(&[with_bo, other_word, with_bao, with_ba], 0).unwrap();
+        let lines: Vec<_> = sorted.iter().map(|(_, line)| line.as_str()).collect();
+
+        assert_eq!(lines, vec![other_word, with_ba, with_bao, with_bo]);
     }
 
     #[test]
