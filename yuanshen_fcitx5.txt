@@ -4237,6 +4237,10 @@
 贝洛沃迪港	bei'luo'wo'di'hong	100
 贝洛泽塞	bei'luo'ze'sai	100
 悖谬	bei'miu	100
+贝内什	bei'na'shen	100
+贝内什	bei'na'shi	100
+贝内什	bei'nei'shen	100
+贝内什	bei'nei'shi	100
 贝妮蒂	bei'ni'di	100
 贝妮格娜	bei'ni'ge'na	100
 贝妮格娜	bei'ni'ge'nuo	100
