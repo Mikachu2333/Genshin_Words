@@ -478,7 +478,13 @@ mod tests {
         assert!(output.contains("阿房宫赋\te'pang'gong'fu\t100\n"));
         assert!(output.contains("阿房\ta'fang\t100\n"));
         assert!(output.contains("若陀龙王\tre'tuo'long'wang\t100\n"));
-        assert!(output.contains("若陀龙王\truo'tuo'long'wang\t100\n"));
+        assert_eq!(
+            output
+                .lines()
+                .filter(|line| line.starts_with("若陀龙王\t"))
+                .count(),
+            1
+        );
         assert!(output.contains("若\truo\t100\n"));
         assert!(output.contains("哪\tna\t100\n"));
         assert!(output.contains("长\tchang\t100\n"));
@@ -546,8 +552,8 @@ mod tests {
         let output = convert_text_with_rules(
             "---\n...\n阿房宫赋\ta fang gong fu\t300\n阿房\ta fang\t200\n",
             r#"{
-                "whitelist":{"words":{"阿房宫赋":{"阿":["e"],"房":["pang"]}}},
-                "blacklist":{"only":{"阿":["a"],"房":["fang"]}}
+                "whitelist":{"words":{"阿房宫赋":{"阿": "e","房": "pang"}}},
+                "blacklist":{"characters":{"阿": "e","房": "pang"}}
             }"#,
         )
         .unwrap();
@@ -559,7 +565,7 @@ mod tests {
 
     #[test]
     fn manual_entries_follow_blacklist_and_require_aligned_syllables_for_overrides() {
-        let blacklist = r#"{"blacklist":{"characters":{"着":["zhuo"]}}}"#;
+        let blacklist = r#"{"blacklist":{"characters":{"着": "zhuo"}}}"#;
         let error = convert_text_with_rules("---\n...\n着\tzhuo\t100\n", blacklist).unwrap_err();
         assert!(error.to_string().contains("no permitted reading"));
         assert_eq!(
@@ -676,6 +682,27 @@ mod tests {
         assert_eq!(
             std::fs::read_to_string(output).unwrap(),
             "previous output\n"
+        );
+    }
+
+    #[test]
+    fn scalar_rules_apply_to_generated_and_manual_entries() {
+        let output = convert_text_with_rules(
+            "---\n...\n地\n包扎\n扎\n包扎\tbao zha\t250\n",
+            r#"{
+                "blacklist":{"characters":{"地":"di","扎":"za"}},
+                "whitelist":{"words":{"包扎":{"扎":"za"}}}
+            }"#,
+        )
+        .unwrap();
+        assert_eq!(
+            output.lines().collect::<Vec<_>>(),
+            [
+                "包扎\tbao'za\t100",
+                "包扎\tbao'za\t250",
+                "地\tde\t100",
+                "扎\tzha\t100",
+            ]
         );
     }
 }

@@ -23,27 +23,48 @@ pub(crate) struct Rules {
 #[derive(Debug, Default, Deserialize)]
 #[serde(default, deny_unknown_fields)]
 struct Whitelist {
-    characters: BTreeMap<char, Vec<String>>,
-    words: BTreeMap<String, BTreeMap<char, Vec<String>>>,
+    characters: BTreeMap<char, CharacterReadings>,
+    words: BTreeMap<String, BTreeMap<char, String>>,
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(untagged)]
+enum CharacterReadings {
+    Single(String),
+    Pair([String; 2]),
+}
+
+impl CharacterReadings {
+    fn as_slice(&self) -> &[String] {
+        match self {
+            Self::Single(reading) => std::slice::from_ref(reading),
+            Self::Pair(readings) if readings[0] == readings[1] => &readings[..1],
+            Self::Pair(readings) => readings,
+        }
+    }
+
+    fn validate(&mut self, location: &str) -> io::Result<()> {
+        if let Self::Pair(readings) = self {
+            readings.sort_unstable();
+        }
+        for reading in self.as_slice() {
+            validate_reading(reading, location)?;
+        }
+        Ok(())
+    }
 }
 
 #[derive(Debug, Default, Deserialize)]
 #[serde(default, deny_unknown_fields)]
 struct Blacklist {
-    characters: BTreeMap<char, Vec<String>>,
-    only: BTreeMap<char, Vec<String>>,
+    characters: BTreeMap<char, String>,
 }
 
 impl Blacklist {
     fn allows(&self, character: char, reading: &str) -> bool {
-        !self
-            .characters
+        self.characters
             .get(&character)
-            .is_some_and(|denied| denied.iter().any(|value| value == reading))
-            && self
-                .only
-                .get(&character)
-                .is_none_or(|allowed| allowed.iter().any(|value| value == reading))
+            .is_none_or(|denied| denied != reading)
     }
 }
 
@@ -56,7 +77,7 @@ struct WeightedReading {
 struct WordRule {
     word: String,
     characters: Vec<char>,
-    readings: BTreeMap<char, Vec<String>>,
+    readings: BTreeMap<char, String>,
 }
 
 #[derive(Clone, Copy)]
@@ -67,7 +88,7 @@ struct WordOverride<'a> {
 }
 
 pub(crate) struct ReadingPolicy {
-    character_whitelist: BTreeMap<char, Vec<String>>,
+    character_whitelist: BTreeMap<char, CharacterReadings>,
     word_whitelist: Vec<WordRule>,
     blacklist: Blacklist,
     weights: HashMap<char, Vec<WeightedReading>>,
@@ -184,16 +205,14 @@ impl ReadingPolicy {
         if self.character_whitelist.is_empty()
             && self.word_whitelist.is_empty()
             && self.blacklist.characters.is_empty()
-            && self.blacklist.only.is_empty()
         {
             return Ok(None);
         }
         let overrides = self.whitelist_overrides(word, &characters, line_number)?;
         let affected = overrides.iter().any(Option::is_some)
-            || characters.iter().any(|character| {
-                self.blacklist.characters.contains_key(character)
-                    || self.blacklist.only.contains_key(character)
-            });
+            || characters
+                .iter()
+                .any(|character| self.blacklist.characters.contains_key(character));
         if !affected {
             return Ok(None);
         }
@@ -232,9 +251,10 @@ impl ReadingPolicy {
                     continue;
                 }
                 for (offset, character) in window.iter().enumerate() {
-                    let Some(readings) = rule.readings.get(character) else {
+                    let Some(reading) = rule.readings.get(character) else {
                         continue;
                     };
+                    let readings = std::slice::from_ref(reading);
                     let position = start + offset;
                     if let Some(previous) = overrides[position] {
                         if previous.specificity > rule.characters.len() {
@@ -264,9 +284,11 @@ impl ReadingPolicy {
             .into_iter()
             .zip(characters)
             .map(|(override_reading, character)| {
-                override_reading
-                    .map(|value| value.readings)
-                    .or_else(|| self.character_whitelist.get(character).map(Vec::as_slice))
+                override_reading.map(|value| value.readings).or_else(|| {
+                    self.character_whitelist
+                        .get(character)
+                        .map(CharacterReadings::as_slice)
+                })
             })
             .collect())
     }
@@ -298,8 +320,8 @@ fn common_readings(
                 .filter(|reading| {
                     f64::from(reading.weight) * 100.0 >= f64::from(maximum) * minimum_percent
                 })
-                .filter(|reading| blacklist.allows(character, reading.pinyin))
                 .take(COMMON_READINGS_PER_CHARACTER)
+                .filter(|reading| blacklist.allows(character, reading.pinyin))
                 .map(|reading| reading.pinyin)
                 .collect(),
         );
@@ -366,7 +388,7 @@ fn parse_weights() -> io::Result<HashMap<char, Vec<WeightedReading>>> {
 
 fn validate_rules(rules: &mut Rules) -> io::Result<()> {
     for (character, readings) in &mut rules.whitelist.characters {
-        validate_readings(readings, &format!("whitelist.characters.{character}"), true)?;
+        readings.validate(&format!("whitelist.characters.{character}"))?;
     }
     for (word, mappings) in &mut rules.whitelist.words {
         let count = word.chars().count();
@@ -375,47 +397,25 @@ fn validate_rules(rules: &mut Rules) -> io::Result<()> {
                 "word whitelist {word:?} must contain 1 to {MAX_CHARACTERS_PER_WORD} characters and at least one reading override"
             )));
         }
-        for (character, readings) in mappings {
+        for (character, reading) in mappings {
             if !word.contains(*character) {
                 return Err(invalid_data(format!(
                     "word whitelist {word:?} does not contain {character:?}"
                 )));
             }
-            validate_readings(
-                readings,
-                &format!("whitelist.words.{word}.{character}"),
-                true,
-            )?;
+            validate_reading(reading, &format!("whitelist.words.{word}.{character}"))?;
         }
     }
-    for (character, readings) in &mut rules.blacklist.characters {
-        validate_readings(
-            readings,
-            &format!("blacklist.characters.{character}"),
-            false,
-        )?;
-    }
-    for (character, readings) in &mut rules.blacklist.only {
-        validate_readings(readings, &format!("blacklist.only.{character}"), false)?;
+    for (character, reading) in &rules.blacklist.characters {
+        validate_reading(reading, &format!("blacklist.characters.{character}"))?;
     }
     Ok(())
 }
 
-fn validate_readings(
-    readings: &mut Vec<String>,
-    location: &str,
-    whitelist: bool,
-) -> io::Result<()> {
-    if readings.iter().any(|reading| !valid_reading(reading)) {
+fn validate_reading(reading: &str, location: &str) -> io::Result<()> {
+    if !valid_reading(reading) {
         return Err(invalid_data(format!(
             "{location}: readings must be non-empty lowercase ASCII syllables (use v for ü)"
-        )));
-    }
-    readings.sort_unstable();
-    readings.dedup();
-    if whitelist && (readings.is_empty() || readings.len() > COMMON_READINGS_PER_CHARACTER) {
-        return Err(invalid_data(format!(
-            "{location}: whitelist must specify 1 to {COMMON_READINGS_PER_CHARACTER} distinct readings"
         )));
     }
     Ok(())
@@ -480,7 +480,7 @@ mod tests {
 
     #[test]
     fn word_whitelist_applies_only_to_matched_positions_and_does_not_leak_through_cache() {
-        let mut policy = policy(r#"{"whitelist":{"words":{"若陀":{"若":["re"]}}}}"#);
+        let mut policy = policy(r#"{"whitelist":{"words":{"若陀":{"若": "re"}}}}"#);
         assert_eq!(
             policy.readings_for_word("若陀若", 1).unwrap(),
             vec![vec!["re"], vec!["tuo"], vec!["ruo"]]
@@ -499,8 +499,8 @@ mod tests {
     fn multiple_overrides_in_one_word_take_precedence_over_blacklist() {
         let mut policy = policy(
             r#"{
-            "whitelist":{"words":{"阿房宫赋":{"阿":["e"],"房":["pang"]}}},
-            "blacklist":{"only":{"阿":["a"],"房":["fang"]},"characters":{"阿":["e"],"房":["pang"]}}
+            "whitelist":{"words":{"阿房宫赋":{"阿": "e","房": "pang"}}},
+            "blacklist":{"characters":{"阿": "e","房": "pang"}}
         }"#,
         );
         assert_eq!(
@@ -517,27 +517,27 @@ mod tests {
     }
 
     #[test]
-    fn blacklist_is_applied_before_the_two_reading_cap() {
+    fn blacklist_filters_selected_readings_without_refilling_from_a_third() {
         let rules: Rules =
-            serde_json::from_str(r#"{"blacklist":{"characters":{"着":["zhe"]}}}"#).unwrap();
-        let mut policy = ReadingPolicy::with_threshold(rules, 0.0).unwrap();
-        assert_eq!(
-            policy.readings_for_word("着", 1).unwrap(),
-            vec![vec!["zhao", "zhuo"]]
-        );
-        let rules: Rules =
-            serde_json::from_str(r#"{"blacklist":{"characters":{"着":["zhe","zhuo"]}}}"#).unwrap();
+            serde_json::from_str(r#"{"blacklist":{"characters":{"着": "zhe"}}}"#).unwrap();
         let mut policy = ReadingPolicy::with_threshold(rules, 0.0).unwrap();
         assert_eq!(
             policy.readings_for_word("着", 1).unwrap(),
             vec![vec!["zhao"]]
+        );
+        let rules: Rules =
+            serde_json::from_str(r#"{"blacklist":{"characters":{"着":"zhao"}}}"#).unwrap();
+        let mut policy = ReadingPolicy::with_threshold(rules, 0.0).unwrap();
+        assert_eq!(
+            policy.readings_for_word("着", 1).unwrap(),
+            vec![vec!["zhe"]]
         );
     }
 
     #[test]
     fn character_whitelist_can_override_a_denied_reading() {
         let mut policy = policy(
-            r#"{"whitelist":{"characters":{"着":["zhuo"]}},"blacklist":{"characters":{"着":["zhuo"]}}}"#,
+            r#"{"whitelist":{"characters":{"着": "zhuo"}},"blacklist":{"characters":{"着": "zhuo"}}}"#,
         );
         assert_eq!(
             policy.readings_for_word("着", 1).unwrap(),
@@ -547,10 +547,10 @@ mod tests {
 
     #[test]
     fn rejects_empty_results_instead_of_restoring_blacklisted_readings() {
-        let mut policy = policy(r#"{"blacklist":{"only":{"阿":[]}}}"#);
+        let mut policy = policy(r#"{"blacklist":{"characters":{"甲":"jia"}}}"#);
         assert!(
             policy
-                .readings_for_word("阿", 9)
+                .readings_for_word("甲", 9)
                 .unwrap_err()
                 .to_string()
                 .contains("line 9: blacklist leaves no permitted reading")
@@ -560,14 +560,14 @@ mod tests {
     #[test]
     fn longer_word_whitelist_overrides_shorter_and_character_rules() {
         let mut policy = policy(
-            r#"{"whitelist":{"characters":{"阿":["a"]},"words":{"阿房":{"阿":["a"]},"阿房宫赋":{"阿":["e"]}}}}"#,
+            r#"{"whitelist":{"characters":{"阿": "a"},"words":{"阿房":{"阿": "a"},"阿房宫赋":{"阿": "e"}}}}"#,
         );
         assert_eq!(policy.readings_for_word("阿房宫赋", 1).unwrap()[0], ["e"]);
     }
 
     #[test]
     fn overlapping_matches_are_applied() {
-        let mut policy = policy(r#"{"whitelist":{"words":{"阿阿":{"阿":["e"]}}}}"#);
+        let mut policy = policy(r#"{"whitelist":{"words":{"阿阿":{"阿": "e"}}}}"#);
         assert_eq!(
             policy.readings_for_word("阿阿阿", 1).unwrap(),
             vec![vec!["e"], vec!["e"], vec!["e"]]
@@ -577,7 +577,7 @@ mod tests {
     #[test]
     fn equally_specific_conflicting_rules_return_an_error() {
         let mut policy =
-            policy(r#"{"whitelist":{"words":{"阿房":{"房":["fang"]},"房宫":{"房":["pang"]}}}}"#);
+            policy(r#"{"whitelist":{"words":{"阿房":{"房": "fang"},"房宫":{"房": "pang"}}}}"#);
         assert!(
             policy
                 .readings_for_word("阿房宫", 1)
@@ -592,12 +592,20 @@ mod tests {
         for json in [
             r#"{"whitelist":{"characters":{"阿":["a","e","o"]}}}"#,
             r#"{"whitelist":{"characters":{"阿":[]}}}"#,
-            r#"{"whitelist":{"characters":{"阿":["A"]}}}"#,
-            r#"{"whitelist":{"characters":{"阿":["e pang"]}}}"#,
-            r#"{"whitelist":{"words":{"阿房":{"若":["re"]}}}}"#,
-            r#"{"whitelist":{"words":{"":{"阿":["a"]}}}}"#,
-            r#"{"blacklist":{"character":{"阿":["e"]}}}"#,
-            r#"{"whitelist":{"characters":{"阿房":["a"]}}}"#,
+            r#"{"whitelist":{"characters":{"阿": "A"}}}"#,
+            r#"{"whitelist":{"characters":{"阿": "e pang"}}}"#,
+            r#"{"whitelist":{"words":{"阿房":{"若": "re"}}}}"#,
+            r#"{"whitelist":{"words":{"":{"阿": "a"}}}}"#,
+            r#"{"blacklist":{"character":{"阿": "e"}}}"#,
+            r#"{"whitelist":{"characters":{"阿房": "a"}}}"#,
+            r#"{"blacklist":{"only":{"阿":"a"}}}"#,
+            r#"{"blacklist":{"characters":{"地":["di"]}}}"#,
+            r#"{"blacklist":{"characters":{"地":""}}}"#,
+            r#"{"blacklist":{"characters":{"地":"DI"}}}"#,
+            r#"{"whitelist":{"words":{"包扎":{"扎":["za"]}}}}"#,
+            r#"{"whitelist":{"words":{"若陀":{"若":["re","ruo"]}}}}"#,
+            r#"{"whitelist":{"words":{"包扎":{"扎":""}}}}"#,
+            r#"{"whitelist":{"characters":{"阿":["a"]}}}"#,
         ] {
             assert!(
                 ReadingPolicy::from_json(json).is_err(),
@@ -646,6 +654,49 @@ mod tests {
         assert_eq!(
             common_readings('甲', &weights, &Blacklist::default(), 0.10001).unwrap(),
             ["jia"]
+        );
+    }
+
+    #[test]
+    fn scalar_blacklist_bans_the_specified_reading() {
+        let mut policy = policy(r#"{"blacklist":{"characters":{"地":"di"}}}"#);
+        assert_eq!(policy.readings_for_word("地", 1).unwrap(), vec![vec!["de"]]);
+    }
+
+    #[test]
+    fn scalar_character_whitelist_sets_one_reading_and_pairs_keep_two() {
+        let mut single = policy(r#"{"whitelist":{"characters":{"莘":"xin"}}}"#);
+        assert_eq!(
+            single.readings_for_word("莘", 1).unwrap(),
+            vec![vec!["xin"]]
+        );
+        let mut pair = policy(r#"{"whitelist":{"characters":{"莘":["xin","shen"]}}}"#);
+        assert_eq!(
+            pair.readings_for_word("莘", 1).unwrap(),
+            vec![vec!["shen", "xin"]]
+        );
+        let mut duplicate = policy(r#"{"whitelist":{"characters":{"莘":["xin","xin"]}}}"#);
+        assert_eq!(
+            duplicate.readings_for_word("莘", 1).unwrap(),
+            vec![vec!["xin"]]
+        );
+    }
+
+    #[test]
+    fn scalar_word_whitelist_overrides_blacklist_only_within_the_matched_word() {
+        let mut policy = policy(
+            r#"{
+            "blacklist":{"characters":{"扎":"za"}},
+            "whitelist":{"words":{"包扎":{"扎":"za"}}}
+        }"#,
+        );
+        assert_eq!(
+            policy.readings_for_word("包扎扎", 1).unwrap(),
+            vec![vec!["bao"], vec!["za"], vec!["zha"]]
+        );
+        assert_eq!(
+            policy.readings_for_word("扎", 2).unwrap(),
+            vec![vec!["zha"]]
         );
     }
 }

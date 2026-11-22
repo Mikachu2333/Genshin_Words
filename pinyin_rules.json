@@ -1,10 +1,54 @@
 {
-  "whitelist": {
-    "characters": {},
-    "words": {}
-  },
   "blacklist": {
-    "characters": {},
-    "only": {}
+    "characters": {
+      "伯": "bu",
+      "勒": "lei",
+      "卡": "qia",
+      "地": "de",
+      "奇": "ji",
+      "屏": "bing",
+      "扎": "za",
+      "折": "she",
+      "核": "hu",
+      "的": "di",
+      "石": "dan",
+      "行": "hang",
+      "见": "xian",
+      "谁": "shei",
+      "都": "du",
+      "阿": "e",
+      "陆": "liu"
+    }
+  },
+  "whitelist": {
+    "characters": {
+      "莘": [
+        "xin",
+        "shen"
+      ]
+    },
+    "words": {
+      "包扎": {
+        "扎": "za"
+      },
+      "屏息": {
+        "屏": "bing"
+      },
+      "梦想真说": {
+        "说": "yue"
+      },
+      "皇都": {
+        "都": "du"
+      },
+      "若陀": {
+        "若": "re"
+      },
+      "行会": {
+        "行": "hang"
+      },
+      "银行": {
+        "行": "hang"
+      }
+    }
   }
 }

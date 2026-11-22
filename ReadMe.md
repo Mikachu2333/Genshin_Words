@@ -66,7 +66,7 @@
 
 ## 拼音派生配置
 
-`genshin_pinyin_add` 使用雾凇拼音的字音权重筛选常用读音，每字最多两音，默认阈值为该字最高权重的 0.1%。[pinyin_rules.json](pinyin_rules.json) 可手动配置字级、词级白名单和读音黑名单；默认配置为空。词级白名单支持同时指定多个多音字，并优先于黑名单。
+`genshin_pinyin_add` 使用雾凇拼音的字音权重筛选常用读音，每字最多两音，默认阈值为该字最高权重的 0.1%。[pinyin_rules.json](pinyin_rules.json) 可手动配置字级、词级白名单和读音黑名单。黑名单及词级白名单用字符串指定单读音，词级白名单支持同时指定多个多音字，并优先于黑名单。
 
 配置格式与运行说明见 [genshin_pinyin_add/README.md](genshin_pinyin_add/README.md)，数据来源、近期更新证据和排序性能测量见 [拼音仓库调研](genshin_pinyin_add/PINYIN_RESEARCH.md)。
 
