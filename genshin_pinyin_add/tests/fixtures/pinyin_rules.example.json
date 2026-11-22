@@ -1,0 +1,15 @@
+{
+  "whitelist": {
+    "characters": {
+      "莘": ["xin", "shen"]
+    },
+    "words": {
+      "若陀": {"若": ["re", "ruo"]},
+      "阿房宫赋": {"阿": ["e"], "房": ["pang"]}
+    }
+  },
+  "blacklist": {
+    "characters": {"着": ["zhuo"]},
+    "only": {"阿": ["a"], "房": ["fang"]}
+  }
+}
