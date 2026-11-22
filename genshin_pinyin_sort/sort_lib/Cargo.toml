@@ -10,7 +10,7 @@ path = "mod.rs"
 
 [dependencies]
 pinyin = { version = "0.11.0", default-features = false, features = [
-    "with_tone_num_end",
+    "plain",
 ] }
 
 [lints.rust]

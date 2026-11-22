@@ -11,7 +11,15 @@
 - 手工拼音的音节必须用单个空格分隔，例如：`薄缘的道与光与胤<Tab>bao yuan de dao yu guang yu yin<Tab>100`。
 - 权重必须是非负整数；项目约定新增手工词条通常使用 `100`。
 - 排序时应忽略拼音字段中的音节空格，但输出时必须原样保留整条手工词条。
+- 自动与手工词条统一使用无声调拼音排序键；不得把声调数字混入自动词条的排序键。
 - 不得将 Rime 源词典改成 Fcitx5 使用的单引号分隔格式。
+
+## 共享排序
+
+- `sort_lib::sort_chinese_text` 处理 Rime 源词典，执行整行去重。
+- `sort_lib::sort_fcitx5_lines` 处理 Fcitx5 三字段词条，供 `genshin_pinyin_add` 在派生完成后调用，保留相同输出行。
+- 两个入口共用排序实现：先按无声调拼音建立词组顺序，再按词语分组、组内按拼音排序，同键以输入位置决定顺序。
+- 分组使用 `HashMap` 建立组编号，保持整体 O(n log n)，避免逐条线性查找已有组。
 
 ## 去重规则
 
@@ -34,4 +42,7 @@ $ErrorActionPreference = 'Stop'
 cargo fmt --check
 cargo test
 cargo clippy --all-targets -- -D warnings
+# sort_lib 是独立包，必须另外验证其测试与 lint
+cargo test --manifest-path sort_lib/Cargo.toml
+cargo clippy --manifest-path sort_lib/Cargo.toml --all-targets -- -D warnings
 ```

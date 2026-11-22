@@ -1,7 +1,46 @@
 use pinyin::ToPinyin;
-use std::collections::HashSet;
+use std::collections::{HashMap, HashSet};
 
 const MAX_ENTRY_BYTES: usize = 16 * 1024;
+
+#[derive(Clone, Copy)]
+enum PinyinFormat {
+    Rime,
+    Fcitx5,
+}
+
+impl PinyinFormat {
+    const fn separator(self) -> char {
+        match self {
+            Self::Rime => ' ',
+            Self::Fcitx5 => '\'',
+        }
+    }
+
+    const fn name(self) -> &'static str {
+        match self {
+            Self::Rime => "Rime",
+            Self::Fcitx5 => "Fcitx5",
+        }
+    }
+}
+
+struct SortEntry<'a> {
+    key: String,
+    word: &'a str,
+    reading: &'a str,
+    line: &'a str,
+    source_index: usize,
+    group_index: usize,
+}
+
+/// A validated, borrowed three-field Rime dictionary entry.
+#[derive(Debug)]
+pub struct ManualEntry<'a> {
+    pub word: &'a str,
+    pub pinyin: &'a str,
+    pub weight: &'a str,
+}
 
 /// Sorts dictionary content by pinyin while preserving homophones.
 ///
@@ -13,6 +52,32 @@ pub fn sort_chinese_text(
     content: &[&str],
     skip_lines: usize,
 ) -> Result<Vec<(String, String)>, String> {
+    let mut entries = collect_entries(content, skip_lines, PinyinFormat::Rime, true)?;
+    sort_entries(&mut entries);
+    Ok(entries
+        .into_iter()
+        .map(|entry| (entry.key, entry.line.to_owned()))
+        .collect())
+}
+
+/// Sorts generated Fcitx5 rows using the same word grouping and pinyin order
+/// as [`sort_chinese_text`]. Equal rows and homophones retain their source order.
+///
+/// # Errors
+///
+/// Returns an error for an oversized row or malformed three-field Fcitx5 entry.
+pub fn sort_fcitx5_lines<'a>(content: &[&'a str]) -> Result<Vec<&'a str>, String> {
+    let mut entries = collect_entries(content, 0, PinyinFormat::Fcitx5, false)?;
+    sort_entries(&mut entries);
+    Ok(entries.into_iter().map(|entry| entry.line).collect())
+}
+
+fn collect_entries<'a>(
+    content: &[&'a str],
+    skip_lines: usize,
+    format: PinyinFormat,
+    deduplicate: bool,
+) -> Result<Vec<SortEntry<'a>>, String> {
     if skip_lines > content.len() {
         return Err(format!(
             "cannot skip {skip_lines} lines from an input containing only {} lines",
@@ -20,11 +85,12 @@ pub fn sort_chinese_text(
         ));
     }
 
-    let mut collection = Vec::with_capacity(content.len().saturating_sub(skip_lines));
+    let capacity = content.len().saturating_sub(skip_lines);
+    let mut collection = Vec::with_capacity(capacity);
     // Exact duplicate lines are dropped, keeping the first occurrence. The key
     // is the whole trimmed line, not the pinyin sort key, so homophones and
     // multiple manual readings of the same word are never collapsed.
-    let mut seen: HashSet<&str> = HashSet::new();
+    let mut seen: HashSet<&str> = HashSet::with_capacity(if deduplicate { capacity } else { 0 });
     for (index, line) in content.iter().enumerate().skip(skip_lines) {
         let line_number = index + 1;
         let line = line.trim();
@@ -36,60 +102,71 @@ pub fn sort_chinese_text(
                 "line {line_number}: entry exceeds the {MAX_ENTRY_BYTES}-byte safety limit"
             ));
         }
-        if !seen.insert(line) {
+        if deduplicate && !seen.insert(line) {
             continue;
         }
 
-        let (sort_key, word, reading) = if line.contains('\t') {
-            let (key, word) = validate_manual_entry(line, line_number)?;
-            let reading = line
-                .split(|character| character == '\u{9}')
-                .nth(1)
-                .unwrap_or_default()
-                .to_string();
-            (key, word, reading)
+        let (key, word, reading) = if line.contains('\t') || matches!(format, PinyinFormat::Fcitx5)
+        {
+            let manual = parse_entry(line, line_number, format)?;
+            (
+                manual.pinyin.replace(format.separator(), ""),
+                manual.word,
+                manual.pinyin,
+            )
         } else {
-            let (key, word) = pinyin_sort_key(line, line_number)?;
-            (key, word, String::new())
+            (pinyin_sort_key(line, line_number)?, line, "")
         };
-        collection.push((sort_key, word, reading, line.to_string(), index));
-    }
-
-    // First pass: the existing pinyin sort, with source order as the final
-    // tie-breaker. Homophones and different manual readings all survive.
-    collection.sort_by(|(key_a, _, _, _, index_a), (key_b, _, _, _, index_b)| {
-        key_a.cmp(key_b).then_with(|| index_a.cmp(index_b))
-    });
-
-    // Second pass: group by Chinese word while keeping the pinyin order
-    // established by the first pass, both inside and between groups.
-    let mut groups: Vec<(String, Vec<(String, String, String, String, usize)>)> = Vec::new();
-    for entry in collection {
-        let word = entry.1.clone();
-        if let Some((_, group)) = groups.iter_mut().find(|(group_word, _)| *group_word == word) {
-            group.push(entry);
-        } else {
-            groups.push((word, vec![entry]));
-        }
-    }
-
-    for (_, group) in &mut groups {
-        group.sort_by(|(key_a, _, reading_a, _, index_a), (key_b, _, reading_b, _, index_b)| {
-            reading_a
-                .cmp(reading_b)
-                .then_with(|| key_a.cmp(key_b))
-                .then_with(|| index_a.cmp(index_b))
+        collection.push(SortEntry {
+            key,
+            word,
+            reading,
+            line,
+            source_index: index,
+            group_index: 0,
         });
     }
-
-    Ok(groups
-        .into_iter()
-        .flat_map(|(_, group)| group)
-        .map(|(key, _, _, line, _)| (key, line))
-        .collect())
+    Ok(collection)
 }
 
-fn validate_manual_entry(line: &str, line_number: usize) -> Result<(String, String), String> {
+fn sort_entries(entries: &mut [SortEntry<'_>]) {
+    // A word's earliest pinyin key determines its group's position. Explicit
+    // source indices keep equal keys deterministic even with unstable sorting.
+    entries.sort_unstable_by(|a, b| {
+        a.key
+            .cmp(&b.key)
+            .then_with(|| a.source_index.cmp(&b.source_index))
+    });
+
+    let mut groups = HashMap::with_capacity(entries.len());
+    for entry in entries.iter_mut() {
+        let next_group = groups.len();
+        entry.group_index = *groups.entry(entry.word).or_insert(next_group);
+    }
+
+    entries.sort_unstable_by(|a, b| {
+        a.group_index
+            .cmp(&b.group_index)
+            .then_with(|| a.reading.cmp(b.reading))
+            .then_with(|| a.key.cmp(&b.key))
+            .then_with(|| a.source_index.cmp(&b.source_index))
+    });
+}
+
+/// Validates a manual Rime row while borrowing its original fields.
+///
+/// # Errors
+///
+/// Returns an error for missing/extra fields, invalid pinyin, or an invalid weight.
+pub fn parse_manual_entry(line: &str, line_number: usize) -> Result<ManualEntry<'_>, String> {
+    parse_entry(line, line_number, PinyinFormat::Rime)
+}
+
+fn parse_entry(
+    line: &str,
+    line_number: usize,
+    format: PinyinFormat,
+) -> Result<ManualEntry<'_>, String> {
     let mut fields = line.split('\t');
     let word = fields.next().unwrap_or_default();
     let pinyin = fields.next().unwrap_or_default();
@@ -99,21 +176,31 @@ fn validate_manual_entry(line: &str, line_number: usize) -> Result<(String, Stri
             "line {line_number}: manual entry must contain exactly three non-empty tab-separated fields"
         ));
     }
-    if pinyin.split(' ').any(|syllable| {
+    if pinyin.split(format.separator()).any(|syllable| {
         syllable.is_empty() || !syllable.bytes().all(|byte| byte.is_ascii_lowercase())
     }) {
         return Err(format!(
-            "line {line_number}: Rime pinyin must contain lowercase ASCII syllables separated by single spaces"
+            "line {line_number}: {} pinyin must contain lowercase ASCII syllables separated by single {}",
+            format.name(),
+            if matches!(format, PinyinFormat::Rime) {
+                "spaces"
+            } else {
+                "apostrophes"
+            },
         ));
     }
     weight
         .parse::<u64>()
         .map_err(|_| format!("line {line_number}: weight must be a non-negative integer"))?;
-    Ok((pinyin.replace(' ', ""), word.to_string()))
+    Ok(ManualEntry {
+        word,
+        pinyin,
+        weight,
+    })
 }
 
-fn pinyin_sort_key(line: &str, line_number: usize) -> Result<(String, String), String> {
-    let mut key = String::new();
+fn pinyin_sort_key(line: &str, line_number: usize) -> Result<String, String> {
+    let mut key = String::with_capacity(line.len());
     for (character_index, (character, pinyin)) in line.chars().zip(line.to_pinyin()).enumerate() {
         let pinyin = pinyin.ok_or_else(|| {
             format!(
@@ -121,9 +208,9 @@ fn pinyin_sort_key(line: &str, line_number: usize) -> Result<(String, String), S
                 character_index + 1
             )
         })?;
-        key.push_str(pinyin.with_tone_num_end());
+        key.push_str(pinyin.plain());
     }
-    Ok((key, line.to_string()))
+    Ok(key)
 }
 
 #[cfg(test)]
@@ -155,15 +242,15 @@ mod tests {
 
     #[test]
     fn alternate_manual_readings_stay_with_the_same_word() {
-        let with_ba = "薄缘的道与光与胤\tba yuan de dao yu guang yu yin\t100";
-        let with_bao = "薄缘的道与光与胤\tbao yuan de dao yu guang yu yin\t100";
-        let with_bo = "薄缘的道与光与胤\tbo yuan de dao yu guang yu yin\t100";
+        let shortened = "薄缘的道与光与胤\tba yuan de dao yu guang yu yin\t100";
+        let primary = "薄缘的道与光与胤\tbao yuan de dao yu guang yu yin\t100";
+        let alternate = "薄缘的道与光与胤\tbo yuan de dao yu guang yu yin\t100";
         let other_word = "薄缘\tbao yuan\t100";
 
-        let sorted = sort_chinese_text(&[with_bo, other_word, with_bao, with_ba], 0).unwrap();
+        let sorted = sort_chinese_text(&[alternate, other_word, primary, shortened], 0).unwrap();
         let lines: Vec<_> = sorted.iter().map(|(_, line)| line.as_str()).collect();
 
-        assert_eq!(lines, vec![other_word, with_ba, with_bao, with_bo]);
+        assert_eq!(lines, vec![other_word, shortened, primary, alternate]);
     }
 
     #[test]
@@ -201,5 +288,91 @@ mod tests {
     #[test]
     fn excessive_skip_is_rejected() {
         assert!(sort_chinese_text(&["词条"], 2).is_err());
+    }
+
+    #[test]
+    fn automatic_and_manual_keys_use_the_same_plain_pinyin() {
+        let manual = "安康\tan kang\t100";
+        let sorted = sort_chinese_text(&[manual, "安宁"], 0).unwrap();
+        assert_eq!(sorted[0], ("ankang".to_owned(), manual.to_owned()));
+        assert_eq!(sorted[1], ("anning".to_owned(), "安宁".to_owned()));
+    }
+
+    #[test]
+    fn tone_does_not_disrupt_pinyin_alphabetical_order() {
+        let sorted = sort_chinese_text(&["阿", "啊"], 0).unwrap();
+        assert_eq!(
+            sorted
+                .iter()
+                .map(|entry| entry.0.as_str())
+                .collect::<Vec<_>>(),
+            ["a", "a"]
+        );
+        assert_eq!(
+            sorted
+                .iter()
+                .map(|entry| entry.1.as_str())
+                .collect::<Vec<_>>(),
+            ["阿", "啊"]
+        );
+    }
+
+    #[test]
+    fn rime_and_fcitx5_share_group_order_and_preserve_equal_rows() {
+        let rime = [
+            "薄缘\tbo yuan\t100",
+            "意义\tyi yi\t100",
+            "薄缘\tbao yuan\t100",
+            "异议\tyi yi\t100",
+        ];
+        let fcitx: Vec<_> = rime.iter().map(|line| line.replace(' ', "'")).collect();
+        let references: Vec<_> = fcitx.iter().map(String::as_str).collect();
+        let expected: Vec<_> = sort_chinese_text(&rime, 0)
+            .unwrap()
+            .into_iter()
+            .map(|(_, line)| line.replace(' ', "'"))
+            .collect();
+        assert_eq!(sort_fcitx5_lines(&references).unwrap(), expected);
+
+        let duplicate = "意义\tyi'yi\t100";
+        assert_eq!(
+            sort_fcitx5_lines(&[duplicate, duplicate]).unwrap(),
+            [duplicate, duplicate]
+        );
+    }
+
+    #[test]
+    fn fcitx5_format_is_validated() {
+        assert!(
+            sort_fcitx5_lines(&["派蒙\tpai meng\t100"])
+                .unwrap_err()
+                .contains("apostrophes")
+        );
+        assert!(sort_fcitx5_lines(&["派蒙\tpai''meng\t100"]).is_err());
+        assert!(sort_fcitx5_lines(&["派蒙\tpai'meng\t-1"]).is_err());
+    }
+
+    #[test]
+    fn entries_with_distinct_weights_survive_in_source_order() {
+        let first = "派蒙\tpai meng\t200";
+        let second = "派蒙\tpai meng\t100";
+        let sorted = sort_chinese_text(&[first, second, first], 0).unwrap();
+        assert_eq!(
+            sorted
+                .iter()
+                .map(|entry| entry.1.as_str())
+                .collect::<Vec<_>>(),
+            [first, second]
+        );
+    }
+
+    #[test]
+    fn oversized_entries_are_rejected() {
+        let oversized = "阿".repeat(MAX_ENTRY_BYTES);
+        assert!(
+            sort_chinese_text(&[&oversized], 0)
+                .unwrap_err()
+                .contains("safety limit")
+        );
     }
 }
