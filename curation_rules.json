@@ -1,0 +1,831 @@
+{
+  "max_length": 10,
+  "common_min_frequency": 500,
+  "common_words": [
+    "慈爱",
+    "吹向",
+    "伙计",
+    "招呼",
+    "撒娇",
+    "让人",
+    "所有人"
+  ],
+  "keep": [
+    "阿赫玛尔",
+    "阿赫玛尔之须",
+    "阿赫玛尔之眼"
+  ],
+  "split": {
+    "阿赫玛尔的故事": [
+      "阿赫玛尔",
+      "的",
+      "故事"
+    ],
+    "吹向金发武士的死亡之风": [
+      "吹向",
+      "金发武士",
+      "的",
+      "死亡之风"
+    ],
+    "跟我的伙计们打个招呼吧": [
+      "跟",
+      "我",
+      "的",
+      "伙计",
+      "们",
+      "打",
+      "个",
+      "招呼",
+      "吧"
+    ],
+    "滑铲瞄准根本就是天方夜谭": [
+      "滑铲",
+      "瞄准",
+      "根本",
+      "就是",
+      "天方夜谭"
+    ],
+    "喀万驿三型陆上运输货盘": [
+      "喀万驿",
+      "三型",
+      "陆上运输",
+      "货盘"
+    ],
+    "链接着所有人的神圣光矛": [
+      "链接",
+      "着",
+      "所有人",
+      "的",
+      "神圣光矛"
+    ],
+    "历经百战的嵌合兽怪箭士": [
+      "历经百战",
+      "的",
+      "嵌合兽怪箭士"
+    ],
+    "历经百战的愚人众先遣队": [
+      "历经百战",
+      "的",
+      "愚人众先遣队"
+    ],
+    "历经百战的浊水粉碎幻灵": [
+      "历经百战",
+      "的",
+      "浊水粉碎幻灵"
+    ],
+    "历经百战的浊水喷吐幻灵": [
+      "历经百战",
+      "的",
+      "浊水喷吐幻灵"
+    ],
+    "幕形态黑体物质笼实验室": [
+      "幕形态黑体物质笼",
+      "实验室"
+    ],
+    "那些古怪又让人思索的问题": [
+      "那些",
+      "古怪",
+      "又",
+      "让人",
+      "思索",
+      "的",
+      "问题"
+    ],
+    "柔灯港五型复合起重机关": [
+      "柔灯港",
+      "五型",
+      "复合",
+      "起重机关"
+    ],
+    "问题美露莘与答案机器人": [
+      "问题美露莘",
+      "与",
+      "答案机器人"
+    ],
+    "现在不是撒娇哭泣的时候": [
+      "现在",
+      "不是",
+      "撒娇",
+      "哭泣",
+      "的",
+      "时候"
+    ],
+    "转生成为鬼兜虫然后撞翻世界": [
+      "转生",
+      "成为",
+      "鬼兜虫",
+      "然后",
+      "撞翻",
+      "世界"
+    ]
+  },
+  "corrections": {
+    "乱岚拨枝": {
+      "replacement": "乱岚拨止",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3589501064",
+          "text": "而升空后的10秒内并持续处于空中时，若进行下落攻击，则会施展格外强劲的下落攻击·乱岚拨止。\\n\\n<color=#FFD780FF>点按</color>\\n可以在空中施放。\\n\\n<color=#FFD780FF>长按</col"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3589501064",
+          "text": "风元素伤害</color>。\\n\\n<color=#FFD780FF>下落攻击·乱岚拨止</color>\\n通过元素战技·千早振施放的下落攻击，造成的伤害将转化为<color=#80FFD7FF>风元素伤害</color>，并在"
+        }
+      ]
+    },
+    "冒险家的临时阵地": {
+      "replacement": "冒险家的临时营地",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "595329085",
+          "text": "步骤详实的图纸，记载着「冒险家的临时营地」的放置方法。\\n深入荒野的冒险家临时建立的营地。\\n冒险家们准备宿营时，需要设置围栏，以防走兽袭扰。可附近的木材往往不足以建立起完整的屏护"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "548740336",
+          "text": "将戚定带回了冒险家的临时营地。"
+        }
+      ]
+    },
+    "千兵致戎演兵场": {
+      "replacement": "千军致戎演兵场",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3522083940",
+          "text": "千军致戎演兵场"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2423279021",
+          "text": "步骤详实的图纸，记载着「千军致戎演兵场」的放置方法。\\n参照「九条阵屋」的布局所筑的演兵场，建筑和陈设均采用军中现行的形制。\\n在幕府军与反抗军的交锋过程中，双方不断采用各种方法"
+        }
+      ]
+    },
+    "厄瑞波斯的秘密": {
+      "replacement": "厄瑞玻斯的秘密",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1853313161",
+          "text": "厄瑞玻斯的秘密"
+        }
+      ]
+    },
+    "志村堪兵卫": {
+      "replacement": "志村勘兵卫",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "4025472310",
+          "text": "志村勘兵卫经营的「志村屋」是稻妻城内最受欢迎的食肆之一。\\n不但能提供食物打包服务，还会出售烹饪用的材料。"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2822809021",
+          "text": "志村勘兵卫"
+        }
+      ]
+    },
+    "悠久的磐岩": {
+      "replacement": "悠古的磐岩",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1330908195",
+          "text": "悠古的磐岩"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3490941076",
+          "text": "悠古的磐岩"
+        }
+      ]
+    },
+    "摇曳的炙热火花": {
+      "replacement": "摇曳的炽热火花",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1021716099",
+          "text": "摇曳的炽热火花"
+        }
+      ]
+    },
+    "方向逆心": {
+      "replacement": "力向逆心",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1904106672",
+          "text": "力向逆心"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2119895446",
+          "text": "力向逆心"
+        }
+      ]
+    },
+    "最胜紫金断片": {
+      "replacement": "最胜紫晶断片",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "146485284",
+          "text": "最胜紫晶断片"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2105649429",
+          "text": "选项中选择一项获取:\\n·燃愿玛瑙断片\\n·涤净青金断片\\n·生长碧翡断片\\n·最胜紫晶断片\\n·自在松石断片\\n·哀叙冰玉断片\\n·坚牢黄玉断片"
+        }
+      ]
+    },
+    "最胜紫金碎屑": {
+      "replacement": "最胜紫晶碎屑",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1830354268",
+          "text": "最胜紫晶碎屑"
+        }
+      ]
+    },
+    "正法矩书": {
+      "replacement": "正法炬书",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "4006271015",
+          "text": "正法炬书彩蛋$HIDDEN"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2636901503",
+          "text": "（test）正法炬书壁画管理$HIDDEN"
+        }
+      ]
+    },
+    "正等善见之恨": {
+      "replacement": "正等善见之根",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3200237953",
+          "text": "正等善见之根"
+        }
+      ]
+    },
+    "沉墨书社": {
+      "replacement": "沉墨书舍",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3552067876",
+          "text": "沉墨书舍"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3930936773",
+          "text": "步骤详实的图纸，记载着「沉墨书舍」的放置方法。\\n各式摆设一应俱全的书房，采用了三奉行皆有购置的大型书柜，足以容纳百千卷藏。但在一些稻妻人看来，书房的藏书总量或许并不重要，"
+        }
+      ]
+    },
+    "流涌之树": {
+      "replacement": "流涌之刃",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1281281026",
+          "text": "流涌之刃伤害|{param7:F1P}"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "706295810",
+          "text": "流涌之刃伤害|{param10:F1P}"
+        }
+      ]
+    },
+    "浑浊棱晶": {
+      "replacement": "混浊棱晶",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "707744044",
+          "text": "混浊棱晶"
+        }
+      ]
+    },
+    "深海髓矿": {
+      "replacement": "渊海髓矿",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1602923552",
+          "text": "「渊海髓矿」上的黑雾缠绕，可以使用睦疏之匣来驱散。"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2218831966",
+          "text": "渊海髓矿"
+        }
+      ]
+    },
+    "火漂浮灵": {
+      "replacement": "火飘浮灵",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "966336737",
+          "text": "火飘浮灵"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2444161307",
+          "text": "(test)10   火飘浮灵"
+        }
+      ]
+    },
+    "灵觉髄石": {
+      "replacement": "灵觉髓石",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2954663063",
+          "text": "玛拉妮和我说了，你们能救出我，还多亏了她的发明。「灵觉髓石」坏掉了，我也有不可推脱的责任…后来我鼓起勇气去找她道歉了，并且让她在我收藏的石头里挑几块，她挠着头说：「这，我不挑一个是不是很麻烦啊。拿个"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1487543818",
+          "text": "按照这个逻辑，灵觉髓石就是一艘渔船，可以顺着河水漂流。只有船是不够的，你们还缺一位老练的「渔民」。"
+        }
+      ]
+    },
+    "煌煌千道镇武": {
+      "replacement": "煌煌千道镇式",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3556395063",
+          "text": "<color=#FFD780FF>煌煌千道镇式</color>释放的天狗咒雷·雷砾增加至6道。"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2275338309",
+          "text": "煌煌千道镇式"
+        }
+      ]
+    },
+    "献与月的酻祭": {
+      "replacement": "献与月的酹祭",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2385078276",
+          "text": "献与月的酹祭"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "609423428",
+          "text": "献与月的酹祭"
+        }
+      ]
+    },
+    "玛阿威和幻写灵": {
+      "replacement": "玛阿威与幻写灵",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3028297741",
+          "text": "集齐全套《玛阿威与幻写灵》。"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "4278653012",
+          "text": "玛阿威与幻写灵·卷一"
+        }
+      ]
+    },
+    "祸神之褉泪": {
+      "replacement": "祸神之禊泪",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "552133044",
+          "text": "祸神之禊泪"
+        }
+      ]
+    },
+    "符文之齿": {
+      "replacement": "符纹之齿",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1692924244",
+          "text": "符纹之齿"
+        }
+      ]
+    },
+    "红烩瘦肉": {
+      "replacement": "红烩兽肉",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1515276324",
+          "text": "食谱：红烩兽肉"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "495690877",
+          "text": "步骤详实的食谱，记载着「红烩兽肉」的制作方法。"
+        }
+      ]
+    },
+    "终末嗟叹之时": {
+      "replacement": "终末嗟叹之诗",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3516083311",
+          "text": "终末嗟叹之诗"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "896538780",
+          "text": "终末嗟叹之诗"
+        }
+      ]
+    },
+    "翡玉法珠": {
+      "replacement": "翡玉法球",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1647200303",
+          "text": "翡玉法球"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2963220587",
+          "text": "翡玉法球"
+        }
+      ]
+    },
+    "肈始之乡": {
+      "replacement": "肇始之乡",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1481040251",
+          "text": "肇始之乡"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3130800857",
+          "text": "肇始之乡·清除杂音"
+        }
+      ]
+    },
+    "茶诃落谷": {
+      "replacement": "荼诃落谷",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "707933239",
+          "text": "荼诃落谷"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1038630062",
+          "text": "荼诃落谷"
+        }
+      ]
+    },
+    "草漂浮灵": {
+      "replacement": "草飘浮灵",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2348641497",
+          "text": "草飘浮灵"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3054306004",
+          "text": "高浓度的草元素孕育而生的魔物，能够飘浮在空中。\\n曾经有因论派的研究员对草飘浮灵的生态特征进行过研究，发现与传说中的「兰那罗」非常相似。他在一番考据后得出结论，所谓兰那罗其实就是草飘浮灵。后来这位研究员成为了籍籍无名的童"
+        }
+      ]
+    },
+    "蛇肠之道": {
+      "replacement": "蛇肠之路",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2430948418",
+          "text": "蛇肠之路"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2237318478",
+          "text": "蛇肠之路"
+        }
+      ]
+    },
+    "衍木阵列": {
+      "replacement": "衍术阵列",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2674993152",
+          "text": "衍术阵列"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3952672818",
+          "text": "衍术阵列"
+        }
+      ]
+    },
+    "赌徒的骰蛊": {
+      "replacement": "赌徒的骰盅",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "4085972996",
+          "text": "赌徒的骰盅"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1504640028",
+          "text": "赌徒的骰盅"
+        }
+      ]
+    },
+    "赤炎狮子": {
+      "replacement": "炽炎狮子",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "343338087",
+          "text": "FFD780FF>炎啸狮子咬</color>的暴击率提升10%。\\n此外，在一次炽炎狮子的持续期间，炽鬃拳命中敌人并造成暴击后，将使持续期间内炎啸狮子咬的暴击伤害提升15%，炽炎狮子的持续时间延长0.5秒。该效果每0.2秒至多触"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "343338087",
+          "text": "期间，炽鬃拳命中敌人并造成暴击后，将使持续期间内炎啸狮子咬的暴击伤害提升15%，炽炎狮子的持续时间延长0.5秒。该效果每0.2秒至多触发一次，至多通过这种方式使持续时间延长2秒，暴击伤害提升60%。"
+        }
+      ]
+    },
+    "赤羽团扇": {
+      "replacement": "红羽团扇",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1502297364",
+          "text": "红羽团扇"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3969513852",
+          "text": "红羽团扇"
+        }
+      ]
+    },
+    "酿乐之殿": {
+      "replacement": "酣乐之殿",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1350465842",
+          "text": "酣乐之殿"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3396473254",
+          "text": "酣乐之殿"
+        }
+      ]
+    },
+    "陆叁壹捌": {
+      "replacement": "陆叁零捌",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "659439671",
+          "text": "<color=#FFD780FF>风灵作成·陆叁零捌</color>的可使用次数增加1次。"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "4161226819",
+          "text": "<color=#FFD780FF>风灵作成·陆叁零捌</color>或<color=#FFD780FF>禁·风灵作成·柒伍同构贰型</color>命中敌人时，基于砂糖元素精通的20%，为队伍中"
+        }
+      ]
+    },
+    "雷漂浮灵": {
+      "replacement": "雷飘浮灵",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "1222217161",
+          "text": "雷飘浮灵"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2486460933",
+          "text": "雷飘浮灵"
+        }
+      ]
+    },
+    "青虚孤楼": {
+      "replacement": "青墟孤楼",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2952565586",
+          "text": "青墟孤楼"
+        }
+      ]
+    },
+    "风漂浮灵": {
+      "replacement": "风飘浮灵",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2931120257",
+          "text": "风飘浮灵"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "3264346760",
+          "text": "被拟想而出的「风飘浮灵」，看起来似乎和寻常所见的「风飘浮灵」并无太大差别…"
+        }
+      ]
+    },
+    "鸟鲁班巴": {
+      "replacement": "乌鲁班巴",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "2308877368",
+          "text": "乌鲁班巴"
+        },
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "185513040",
+          "text": "乌鲁班巴"
+        }
+      ]
+    },
+    "鹮风回雪": {
+      "replacement": "翾风回雪",
+      "evidence": [
+        {
+          "repository": "animegamedata2",
+          "revision": "d54f6f0d423d",
+          "textmap_hash": "702023914",
+          "text": "翾风回雪"
+        }
+      ]
+    }
+  },
+  "composable": [
+    "的精锐",
+    "的部下",
+    "调制吧",
+    "丘丘风格",
+    "传统地板",
+    "场地边缘",
+    "增添热闹",
+    "大型灌木",
+    "大型舞台",
+    "室内动物",
+    "小型灌木",
+    "平稳驾驶",
+    "应当如此",
+    "形式束缚",
+    "心意注入",
+    "感动目光",
+    "技能循环",
+    "旅行历程",
+    "旅行商人",
+    "旅行画家",
+    "旅馆老板",
+    "枫丹风格",
+    "森林居民",
+    "正式剧本",
+    "物理攻击",
+    "璃月风格",
+    "生意平稳",
+    "祈愿道具",
+    "稀有货币",
+    "稻妻风格",
+    "系统开放",
+    "纪行武器",
+    "股东事务",
+    "自称教练",
+    "蒙德居民",
+    "蒙德风格",
+    "观赏灌木",
+    "观赏礼仪",
+    "角色成长",
+    "资金筹备",
+    "须弥风格",
+    "额外条款",
+    "新兴艺术家",
+    "水文研究员",
+    "生论派学者",
+    "督治官助理",
+    "自由职业者",
+    "轻策庄居民",
+    "道具工程师",
+    "首席设计师",
+    "高级研究员",
+    "前盗宝团成员",
+    "动物防治专家",
+    "后勤小队成员",
+    "挑战结算道具",
+    "浪船修理工具",
+    "秋沙钱汤老板",
+    "菲谢尔的作者",
+    "蒙德城的骑士",
+    "发条机关工程师",
+    "枫丹科学院研究员",
+    "枫丹科学院高级研究员"
+  ]
+}

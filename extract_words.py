@@ -3,16 +3,15 @@
 流程：
 1. 按 commit id 把两次快照的 `Genshin/CHS` 解包到 `.snapshots/<hash>/`（可复用）
 2. 用 `text_fields.py` 的字段表逐文件取值
-3. 新快照的文本集合减去旧快照的文本集合，只留下整条新增的文本
-4. 把两侧的文本都按 `replace_self.py` 的规则切分成词条行，再按行做一次差集：
+3. 按文本与类别计算差集，保留新增文本和首次作为名称出现的旧文本
+4. 两侧按类别处理：名称和特效保留内容，普通正文走 `replace_self.py`，再做行级差集：
    一条长文本改了几个字仍算新增，但它切出来的行大多在旧版本里早就有了
 5. 去掉 `yuanshen.dict.yaml` 里已经收录的词条
 6. 追加手工维护的 `final_npc.txt`（不参与上面两步过滤），按新文本顺序去重
-7. 输出 `after_del.txt`，等待人工审校
+7. 输出 `after_del.txt` 并刷新分类保护表，等待人工审校
 """
 
 import argparse
-import fnmatch
 import io
 import json
 import os
@@ -20,7 +19,6 @@ import re
 import shutil
 import subprocess
 import tarfile
-from collections.abc import Iterator
 from pathlib import Path
 
 from replace_self import (
@@ -36,7 +34,8 @@ from replace_self import (
     replace_text_line,
     replace_to_newline,
 )
-from text_fields import TEXT_FIELDS
+from curation_sources import build_sources, metadata_records, name_entries, write_sources
+from curate_dictionary import read_dictionary
 
 DEFAULT_METADATA_PATH = Path("F:/LanguageLearning/Snap.Metadata")
 # main() 会按 `SNAP_METADATA_PATH` 或 `--metadata` 覆盖它
@@ -47,6 +46,7 @@ SNAPSHOT_ROOT = Path(".snapshots")
 # 每条原始文本一行 JSON，字段值里的换行不会破坏这个文件，去掉正则后可以直接重放
 RAW_TEXT_PATH = Path(".cache/new_texts.jsonl")
 OUTPUT_PATH = Path("after_del.txt")
+SOURCE_OUTPUT_PATH = Path(__file__).resolve().parent / "data/protected_terms.json"
 # 已经收录的词条不必再进 after_del.txt
 DICTIONARY_PATH = Path("yuanshen.dict.yaml")
 # 手工维护的词源，每个版本自行更新，与 JSON 新增文本走同一套切分规则
@@ -54,14 +54,12 @@ MANUAL_TEXT_SOURCES: tuple[Path, ...] = (Path("final_npc.txt"),)
 
 TEXT_SUBDIR = Path("Genshin") / "CHS"
 COMMIT_RANGE_PATTERN = re.compile(r"git diff ([0-9a-f]{7,40})\.\.([0-9a-f]{7,40})")
-# 字段表达式里只区分「按名字下钻」和「展开一层」，`[]` 展开数组，`*` 展开对象的全部值
-FIELD_PATH_TOKEN = re.compile(r"[^.\[\]]+|\[\]")
 REPORT_FILE_LIMIT = 20
 
 
 def git(*arguments: str) -> bytes:
     return subprocess.run(
-        ["git", "-C", str(SNAP_METADATA_PATH), *arguments],
+        ["git", *arguments], cwd=SNAP_METADATA_PATH,
         capture_output=True,
         check=True,
     ).stdout
@@ -106,77 +104,22 @@ def extract_snapshot(rev: str, rebuild: bool = False) -> tuple[str, Path]:
     return resolved, destination
 
 
-def field_spec_for(relative_path: str) -> tuple[str, ...] | None:
-    """先按文件名精确匹配，再按 glob 匹配；没列出的文件不取词。"""
-    if relative_path in TEXT_FIELDS:
-        return TEXT_FIELDS[relative_path]
-    for pattern, fields in TEXT_FIELDS.items():
-        if any(marker in pattern for marker in "*?[") and fnmatch.fnmatch(
-            relative_path, pattern
-        ):
-            return fields
-    return None
-
-
-def descends(node: object, tokens: list[str]) -> Iterator[object]:
-    if not tokens:
-        yield node
-        return
-    head, rest = tokens[0], tokens[1:]
-    if head == "[]":
-        if isinstance(node, list):
-            for item in node:
-                yield from descends(item, rest)
-    elif head == "*":
-        if isinstance(node, dict):
-            for value in node.values():
-                yield from descends(value, rest)
-    elif isinstance(node, dict) and head in node:
-        yield from descends(node[head], rest)
-
-
-def field_texts(node: object, expression: str) -> Iterator[str]:
-    for value in descends(node, FIELD_PATH_TOKEN.findall(expression)):
-        if isinstance(value, str) and value.strip():
-            yield value
-
-
-def read_texts(path: Path, fields: tuple[str, ...]) -> list[str]:
-    data = json.loads(path.read_text(encoding="utf-8"))
-    values: list[str] = []
-    for expression in fields:
-        values.extend(field_texts(data, expression))
-    return values
-
-
-def snapshot_entries(snapshot: Path) -> Iterator[tuple[str, list[str]]]:
-    """按文件路径顺序产出（相对路径，该文件取到的全部文本）。"""
-    root = snapshot / TEXT_SUBDIR
-    for path in sorted(root.rglob("*.json")):
-        relative = path.relative_to(root).as_posix()
-        fields = field_spec_for(relative)
-        if fields is None:
-            continue
-        yield relative, read_texts(path, fields)
-
-
 def new_text_groups(
     old_snapshot: Path, new_snapshot: Path
-) -> list[tuple[str, list[str]]]:
+) -> list[tuple[str, list[dict[str, str]]]]:
     """新快照里出现、旧快照里没有的文本，按文件分组并保持 JSON 中的顺序。"""
-    known: set[str] = set()
-    for _, values in snapshot_entries(old_snapshot):
-        known.update(values)
-    groups: list[tuple[str, list[str]]] = []
-    reported: set[str] = set()
-    for relative, values in snapshot_entries(new_snapshot):
-        fresh = [
-            value for value in values if value not in known and value not in reported
-        ]
-        reported.update(fresh)
-        if fresh:
-            groups.append((relative, fresh))
-    return groups
+    known = {(text, kind) for text, kind, _ in metadata_records(old_snapshot)}
+    grouped = {}
+    reported = set()
+    for text, kind, source in metadata_records(new_snapshot):
+        key = (text, kind)
+        if key in known or key in reported:
+            continue
+        reported.add(key)
+        grouped.setdefault(source.split(":", 1)[0], []).append(
+            {"text": text, "kind": kind, "source": source}
+        )
+    return list(grouped.items())
 
 
 def manual_text_values() -> list[str]:
@@ -207,8 +150,10 @@ def process_text(text: str) -> str:
     return keep_han_entries(collapse_blank_lines(text))
 
 
-def entry_lines(text: str) -> list[str]:
+def entry_lines(text: str, kind: str = "prose") -> list[str]:
     """把一段字段文本切成词条行。"""
+    if kind in {"name", "protected_description", "furniture"}:
+        return name_entries(text)
     return process_text(text).splitlines()
 
 
@@ -220,9 +165,8 @@ def snapshot_entry_lines(snapshot: Path) -> set[str]:
     所以要先按同一套规则把旧值也切成行，再按行做差集。
     """
     lines: set[str] = set()
-    for _, values in snapshot_entries(snapshot):
-        for value in values:
-            lines.update(entry_lines(value))
+    for text, kind, _ in metadata_records(snapshot):
+        lines.update(entry_lines(text, kind))
     return lines
 
 
@@ -231,16 +175,10 @@ def dictionary_entries() -> set[str]:
     if not DICTIONARY_PATH.exists():
         print(f"找不到 {DICTIONARY_PATH}，跳过已收录词条过滤")
         return set()
-    entries: set[str] = set()
-    for line in DICTIONARY_PATH.read_text(encoding="utf-8").splitlines():
-        # 头部是 yaml front matter；词条行可能写成 `词条<TAB>拼音<TAB>权重`
-        if not line or line in {"---", "..."} or ":" in line:
-            continue
-        entries.add(line.split("\t")[0].strip())
-    return entries
+    return {entry.word for entry in read_dictionary(DICTIONARY_PATH)[1]}
 
 
-def report_groups(groups: list[tuple[str, list[str]]]) -> None:
+def report_groups(groups: list[tuple[str, list[dict[str, str]]]]) -> None:
     total = sum(len(values) for _, values in groups)
     print(f"新增文本 {total} 条，来自 {len(groups)} 个文件")
     for relative, values in groups[:REPORT_FILE_LIMIT]:
@@ -268,7 +206,14 @@ def main(argv: list[str] | None = None) -> None:
         default=Path(os.environ.get("SNAP_METADATA_PATH", DEFAULT_METADATA_PATH)),
         help="Snap.Metadata 克隆的位置，默认取 SNAP_METADATA_PATH 或代码里的路径",
     )
+    parser.add_argument(
+        "--npc-sources", type=Path,
+        default=Path(__file__).resolve().parent.parent / "Genshin_NPC_DATA/term_sources.jsonl",
+        help="NPC 构建程序导出的分类来源表",
+    )
     arguments = parser.parse_args(argv)
+    if not arguments.npc_sources.is_file():
+        parser.error(f"缺少 {arguments.npc_sources}，请先运行 Genshin_NPC_DATA/build.py")
     global SNAP_METADATA_PATH
     SNAP_METADATA_PATH = arguments.metadata
     if not (SNAP_METADATA_PATH / ".git").exists():
@@ -298,6 +243,11 @@ def main(argv: list[str] | None = None) -> None:
     print(f"原始新增文本已写入 {RAW_TEXT_PATH}，调整正则后可直接对照")
 
     manual_values = manual_text_values()
+    npc_names = {
+        record["text"]
+        for line in arguments.npc_sources.read_text(encoding="utf-8").splitlines()
+        if (record := json.loads(line))["kind"] == "name"
+    }
     sources = ", ".join(str(source) for source in MANUAL_TEXT_SOURCES)
     print(f"手工词源 {len(manual_values)} 条（{sources}）")
 
@@ -310,7 +260,7 @@ def main(argv: list[str] | None = None) -> None:
     seen: set[str] = set()
     stale = indexed = duplicated = 0
     for value in values:
-        for line in entry_lines(value):
+        for line in entry_lines(value["text"], value["kind"]):
             if line in old_lines:
                 stale += 1
             elif line in known_entries:
@@ -327,7 +277,7 @@ def main(argv: list[str] | None = None) -> None:
     # 手工词源是强制收录，不参与旧行差集，只跳过词典里已经有的
     manual_added = manual_skipped = 0
     for value in manual_values:
-        for line in entry_lines(value):
+        for line in entry_lines(value, "name" if value in npc_names else "prose"):
             if line in known_entries:
                 manual_skipped += 1
             elif line in seen:
@@ -338,9 +288,13 @@ def main(argv: list[str] | None = None) -> None:
                 manual_added += 1
     print(f"手工词源补充 {manual_added} 条（已在词典 {manual_skipped} 条）")
 
+    protection, _ = build_sources(
+        new_snapshot, arguments.npc_sources, known_entries | set(words), revision=new_hash,
+    )
+    write_sources(SOURCE_OUTPUT_PATH, protection)
     OUTPUT_PATH.write_text("\n".join(words) + "\n", encoding="utf-8")
     print(f"去重后词条: {len(words)} 条，已写入 {OUTPUT_PATH}")
-    print("请人工审校 after_del.txt 后再运行 merge.py")
+    print(f"候选文件：{OUTPUT_PATH}；可用 update_dictionary.py --candidates 继续批量整理")
 
 
 if __name__ == "__main__":
