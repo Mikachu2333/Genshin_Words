@@ -69,6 +69,7 @@ class Curator:
         self.common = set(rules["common_words"])
         self.splits = rules["split"]
         self.corrections = rules["corrections"]
+        self.exclude = rules.get("exclude", {})
         self.keep.update(record["replacement"] for record in self.corrections.values())
         self.composable = set(rules.get("composable", []))
         self.lexicon_total = sum(frequency for frequency, _ in self.lexicon.values()) or 1
@@ -81,6 +82,11 @@ class Curator:
             if (wrong == correct or not HAN_WORD.fullmatch(correct)
                     or not record.get("evidence") or correct in self.corrections):
                 raise ValueError(f"纠错必须有证据且不能形成替换链：{wrong}")
+        for word, record in self.exclude.items():
+            if not record.get("reason") or not record.get("evidence"):
+                raise ValueError(f"排除词条必须注明原因与证据：{word}")
+        if self.exclude.keys() & (self.keep | self.splits.keys() | self.corrections.keys()):
+            raise ValueError("排除词条不能同时要求保留、拆分或纠错")
         if self.keep & self.splits.keys():
             raise ValueError("同一词不能同时要求保留和拆分")
         # 长词拆出的实词在下次运行仍须保留，才能重复运行而不继续侵蚀结果。
@@ -178,13 +184,15 @@ class Curator:
                 score = 2 if (affix.endswith("的") if side == "prefix" else affix.startswith("的")) else int(boundary)
                 candidates[word].append(((score, len(affix), len(words), side == "prefix"), parts))
         selected = {word: max(choices, key=lambda item: item[0])[1] for word, choices in candidates.items()}
+        selected.update({word: parts for word, parts in self.splits.items() if word in self.furniture})
         flattened = {}
 
         def expand(word):
-            if word not in selected:
+            if word not in selected and word not in self.splits:
                 return [word]
             if word not in flattened:
-                flattened[word] = [part for child in selected[word] for part in expand(child)]
+                children = self.splits[word] if word in self.splits else selected[word]
+                flattened[word] = [part for child in children for part in expand(child)]
             return flattened[word]
 
         for word in selected:
@@ -242,6 +250,11 @@ class Curator:
         actions = []
         correction_review = []
         for entry in entries:
+            if entry.word in self.exclude:
+                record = self.exclude[entry.word]
+                actions.append({"word": entry.word, "action": "remove", "parts": [],
+                                "reason": record["reason"], "evidence": record["evidence"]})
+                continue
             if entry.word in self.corrections:
                 correction = self.corrections[entry.word]
                 target = correction["replacement"]

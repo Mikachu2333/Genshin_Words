@@ -93,10 +93,13 @@ python update_dictionary.py --candidates .cache/update/candidates.txt --apply
 | `composable` | 允许尝试组合去重的已核对短语 |
 | `split` | 指定分词边界，分段必须逐字拼回原词且每段最多十字 |
 | `corrections` | 错词、正确词和原始文本证据 |
+| `exclude` | 经核对的提取残片，记录排除原因和原文证据 |
 | `common_min_frequency` | 常用词频门槛 |
 | `furniture_min_family` | 家具系列所需的最少名称数，默认 2 |
 
 手工修订会用于后续版本。纠错采用完整词精确替换，不依据近形或近音自动改字；带手工拼音的错词必须同时指定新拼音列。
+
+家具的人工拆分边界也会用于自动系列拆分：已修正的片段不会在重新导入完整家具名时再次生成。摆设图纸和摆设套装图纸都按家具处理。
 
 ## 整理已有词库
 
@@ -121,6 +124,8 @@ python merge.py --no-append
 历史快照保存在 `.snapshots/<完整提交号>/`；修改文字处理规则后可复用，强制重新解包使用 `--rebuild`。
 
 本次清理的逐词记录见 [整理报告](reports/curation-2026-11-23.md) 和 [JSON 明细](reports/curation-2026-11-23.json)。
+
+后续逐行重审见 [重审报告](reports/reaudit-2026-11-23.md)、[逐行记录](reports/reaudit-2026-11-23.tsv) 和 [变更证据](reports/reaudit-2026-11-23.json)。
 
 ## 拼音配置与验证
 

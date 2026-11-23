@@ -103,7 +103,7 @@ def metadata_records(metadata):
                     # Material 也含摆设图纸，不能通过另一张表把家具重新保护起来。
                     if relative == "Material.json" and kind == "name":
                         index = int(re.match(r"\$\[(\d+)\]", location)[1])
-                        if data[index].get("TypeDescription") == "摆设图纸":
+                        if data[index].get("TypeDescription") in {"摆设图纸", "摆设套装图纸"}:
                             kind = "furniture"
                     yield text, kind, f"Snap.Metadata/{relative}:{location}"
 

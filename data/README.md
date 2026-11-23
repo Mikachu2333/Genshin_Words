@@ -19,3 +19,5 @@ python curate_dictionary.py --refresh-sources
 源项目路径可用 `--metadata`、`--npc-sources` 指定。家具描述中的引号专名依然可以受到保护。
 
 家具名称的重复引用不进入专名表，避免图纸描述把家具重新锁定。家具与成就、技能等受保护字段同名时仍保留整词。批处理入口 `update_dictionary.py` 将保护表写在本批预览目录中，应用后再更新本文件。
+
+`Material.json` 中的“摆设图纸”和“摆设套装图纸”名称均归入家具类。

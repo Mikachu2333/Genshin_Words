@@ -7,7 +7,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from curate_dictionary import Curator, Entry, read_dictionary, write_dictionary
-from curation_sources import build_sources, field_kind, field_values, name_entries, write_sources
+from curation_sources import build_sources, field_kind, field_values, metadata_records, name_entries, write_sources
 from extract_words import entry_lines, new_text_groups
 import merge
 from update_dictionary import prepare_batch
@@ -30,6 +30,24 @@ def clean(engine, *words):
 
 
 class CurationTests(unittest.TestCase):
+    def test_reviewed_fragment_boundary_is_used_when_family_is_reimported(self):
+        engine = curator(furniture=["厚重的图书馆长桌", "宽大的松木长桌", "野外松木长桌"],
+                         split={"厚重的图书馆": ["厚重", "的", "图书馆"]})
+        engine.lexicon.update({word: (1000, "n") for word in ("厚重", "图书馆", "宽大", "松木", "野外", "长桌")})
+        engine = Curator(engine.rules, {"terms": {}, "furniture": engine.furniture}, engine.lexicon)
+        result, actions = clean(engine, "厚重的图书馆长桌")
+        self.assertNotIn("厚重的图书馆", result)
+        self.assertEqual(actions[0]["parts"], ["厚重", "的", "图书馆", "长桌"])
+
+    def test_explicit_exclusion_removes_source_protected_extraction_noise(self):
+        engine = curator(terms=["中蕴含旋律为"])
+        engine.rules["exclude"] = {"中蕴含旋律为": {
+            "reason": "extraction_fragment", "evidence": ["旋曜玉帛介绍中的句子片段"]}}
+        engine = Curator(engine.rules, {"terms": engine.sources}, engine.lexicon)
+        result, actions = clean(engine, "中蕴含旋律为")
+        self.assertEqual(result, set())
+        self.assertEqual(actions[0]["reason"], "extraction_fragment")
+
     def test_ahmar_only_loses_story(self):
         words = ["阿赫玛尔", "阿赫玛尔的故事", "阿赫玛尔之须", "阿赫玛尔之眼"]
         engine = curator(terms=words, split={words[1]: [words[0], "的", "故事"]})
@@ -161,6 +179,20 @@ class CurationTests(unittest.TestCase):
 
 
 class SourceTests(unittest.TestCase):
+    def test_suite_blueprint_names_remain_splittable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            chs = root / "Genshin/CHS"
+            chs.mkdir(parents=True)
+            (chs / "Material.json").write_text(json.dumps([
+                {"Name": "回声之子的热血", "TypeDescription": "摆设套装图纸"},
+                {"Name": "基地的沉静漫射", "TypeDescription": "摆设图纸"},
+                {"Name": "慈爱的教导", "TypeDescription": "天赋培养素材"},
+            ], ensure_ascii=False), encoding="utf-8")
+            with patch("curation_sources.TEXT_FIELDS", {"Material.json": ("[].Name",)}):
+                records = list(metadata_records(root))
+        self.assertEqual([kind for _, kind, _ in records], ["furniture", "furniture", "name"])
+
     def test_name_normalization_keeps_talent_book(self):
         self.assertEqual(name_entries("「慈爱」的教导"), ["慈爱的教导"])
         self.assertEqual(entry_lines("「慈爱」的教导", "name"), ["慈爱的教导"])
