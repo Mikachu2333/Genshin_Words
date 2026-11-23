@@ -164,7 +164,7 @@
 艾拉姆	ai'la'mu	100
 埃兰	ai'lan	100
 爱拉尼	ai'la'ni	100
-埃雷默利卡	ai'lei'mo'li'ka	100
+埃雷莫利卡	ai'lei'mo'li'ka	100
 埃勒曼	ai'le'man	100
 爱乐之花	ai'le'zhi'hua	100
 爱乐之花	ai'yue'zhi'hua	100
@@ -210,7 +210,6 @@
 艾玫嘉	ai'mei'jia	100
 爱梅拉	ai'mei'la	100
 艾梅莉埃	ai'mei'li'ai	100
-艾玫薇	ai'mei'wei	100
 艾米尔	ai'mi'er	100
 埃米雷德	ai'mi'lei'de	100
 艾慕	ai'mu	100
@@ -454,6 +453,7 @@
 暗昧遮目	an'mei'zhe'mu	100
 暗昧遮目的障法	an'mei'zhe'mu'de'zhang'fa	100
 安梦蔷薇	an'meng'qiang'wei	100
+安眠	an'mian	100
 安眠处	an'mian'chu	100
 安眠奢想	an'mian'she'xiang	100
 安眠帷幕	an'mian'wei'mu	100
@@ -482,7 +482,6 @@
 安全形势评估报告	an'quan'xing'shi'ping'gu'bao'gao	100
 安全运输法则	an'quan'yun'shu'fa'ze	100
 安全运输护盾	an'quan'yun'shu'hu'dun	100
-安全展览项目主任	an'quan'zhan'lan'xiang'mu'zhu'ren	100
 安饶之陆	an'rao'zhi'lu	100
 安饶之野	an'rao'zhi'ye	100
 安如磐石	an'ru'pan'shi	100
@@ -495,6 +494,7 @@
 案上田园	an'shang'tian'yuan	100
 黯声回响	an'sheng'hui'xiang	100
 安神秘法	an'shen'mi'fa	100
+安适	an'shi	100
 安宿	an'su	100
 安宿	an'xiu	100
 安特曼	an'te'man	100
@@ -820,7 +820,6 @@
 伯德里科	bo'de'li'ke	100
 白垩	bai'e	100
 白垩层	bai'e'ceng	100
-白垩老师	bai'e'lao'shi	100
 伯恩哈德	bai'en'ha'de	100
 伯恩哈德	bo'en'ha'de	100
 伯尔兰	bai'er'lan	100
@@ -830,7 +829,7 @@
 白垩之章	bai'e'zhi'zhang	100
 白垩之子	bai'e'zhi'zi	100
 白垩之子座	bai'e'zhi'zi'zuo	100
-百发百	bai'fa'bai	100
+百发百中	bai'fa'bai'zhong	100
 摆放巧像	bai'fang'qiao'xiang	100
 百舸为垒	bai'ge'wei'lei	100
 百合华	bai'he'hua	100
@@ -922,8 +921,6 @@
 摆设图纸	bai'she'tu'zhi	100
 百识	bai'shi	100
 白石	bai'shi	100
-白石鸣驻立灯	bai'shi'ming'zhu'li'deng	100
-白石温泉	bai'shi'wen'quan	100
 白石与黄铜的造像	bai'shi'yu'huang'tong'de'zao'xiang	100
 百兽俱驯	bai'shou'ju'xun	100
 百狩之义铠	bai'shou'zhi'yi'kai	100
@@ -1133,8 +1130,6 @@
 薄荷枪	bo'he'qiang	100
 饱和深潜	bao'he'shen'qian	100
 饱和水力攻击	bao'he'shui'li'gong'ji	100
-薄荷树莓饮	bao'he'shu'mei'yin	100
-薄荷树莓饮	bo'he'shu'mei'yin	100
 薄荷新叶	bao'he'xin'ye	100
 薄荷新叶	bo'he'xin'ye	100
 薄红榴璃	bao'hong'liu'li	100
@@ -1300,8 +1295,6 @@
 贝壳彩糖	bei'qiao'cai'tang	100
 贝壳灯罩	bei'ke'deng'zhao	100
 贝壳灯罩	bei'qiao'deng'zhao	100
-贝壳灯罩硬质	bei'ke'deng'zhao'ying'zhi	100
-贝壳灯罩硬质	bei'qiao'deng'zhao'ying'zhi	100
 贝壳碎片	bei'ke'sui'pian	100
 贝壳碎片	bei'qiao'sui'pian	100
 被困居民	bei'kun'ju'min	100
@@ -1349,8 +1342,6 @@
 被染红的月亮	bei'ran'hong'de'yue'liang	100
 贝瑟	bei'se	100
 贝瑟埃尔顿	bei'se'ai'er'dun	100
-贝瑟船长	bei'se'chuan'chang	100
-贝瑟船长	bei'se'chuan'zhang	100
 焙烧	bei'shao	100
 背水的逆转诗	bei'shui'de'ni'zhuan'shi	100
 被水锈蚀的钥匙	bei'shui'xiu'shi'de'yao'chi	100
@@ -1369,7 +1360,6 @@
 备战的兵器工坊	bei'zhan'de'bing'qi'gong'fang	100
 北之泪	bei'zhi'lei	100
 杯中遥吟之歌	bei'zhong'yao'yin'zhi'ge	100
-杯中遥吟之诗	bei'zhong'yao'yin'zhi'shi	100
 杯装之诗	bei'zhuang'zhi'shi	100
 奔奔	ben'ben	100
 奔飙之月	ben'biao'zhi'yue	100
@@ -1453,8 +1443,6 @@
 便携锚点	pian'xie'mao'dian	100
 便携式月矩力充能元件	bian'xie'shi'yue'ju'li'chong'neng'yuan'jian	100
 便携式月矩力充能元件	pian'xie'shi'yue'ju'li'chong'neng'yuan'jian	100
-便携小型供暖	bian'xie'xiao'xing'gong'nuan	100
-便携小型供暖	pian'xie'xiao'xing'gong'nuan	100
 便携型通用烤炉	bian'xie'xing'tong'yong'kao'lu	100
 便携型通用烤炉	pian'xie'xing'tong'yong'kao'lu	100
 便携营养袋	bian'xie'ying'yang'dai	100
@@ -1522,7 +1510,7 @@
 壁绘的面纱	bi'hui'de'mian'sha	100
 彼竭我盈故克之	bi'jie'wo'ying'gu'ke'zhi	100
 彼君皎皎	bi'jun'jiao'jiao	100
-彼君倦傳	bi'jun'juan'chuan	100
+彼君僊僊	bi'jun'xian'xian	100
 碧夸妮	bi'kua'ni	100
 庇兰	bi'lan	100
 毕朗什	bi'lang'shen	100
@@ -1531,8 +1519,9 @@
 碧落之珑	bi'la'zhi'long	100
 碧落之珑	bi'luo'zhi'long	100
 比勒	bi'le	100
+避雷	bi'lei	100
 比冷笑话要冷	bi'leng'xiao'hua'yao'leng	100
-比勒琪斯	bi'le'qi'si	100
+比勒琪丝	bi'le'qi'si	100
 比勒琪丝的哀歌	bi'le'qi'si'de'ai'ge	100
 避凉	bi'liang	100
 比量现行之茎	bi'liang'xian'xing'zhi'jing	100
@@ -1563,7 +1552,7 @@
 冰尘弹	bing'chen'tan	100
 冰尘雪野	bing'chen'xue'ye	100
 冰澈泉瀑	bing'che'quan'pu	100
-冰弛	bing'chi	100
+冰驰	bing'chi	100
 冰铳	bing'chong	100
 冰铳重卫士	bing'chong'chong'wei'shi	100
 冰铳重卫士	bing'chong'zhong'wei'shi	100
@@ -1637,7 +1626,6 @@
 冰凝	bing'ning	100
 冰胖	bing'pang	100
 冰飘浮灵	bing'piao'fu'ling	100
-冰漂浮灵	bing'piao'fu'ling	100
 冰魄虫	bing'po'chong	100
 冰气酒雾领域	bing'qi'jiu'wu'ling'yu	100
 冰淇淋甜心	bing'qi'lin'tian'xin	100
@@ -1671,8 +1659,8 @@
 屏息秘传	bing'xi'mi'chuan	100
 屏息秘传	bing'xi'mi'zhuan	100
 冰星果	bing'xing'guo	100
+冰星破片	bing'xing'po'pian	100
 冰星信标	bing'xing'xin'biao	100
-冰心破片	bing'xin'po'pian	100
 冰雪故园的终期	bing'xue'gu'yuan'de'zhong'qi	100
 冰雪往事	bing'xue'wang'shi	100
 冰岩	bing'yan	100
@@ -1698,6 +1686,7 @@
 冰与风的鼓动	bing'yu'feng'de'gu'dong	100
 冰与火的战场	bing'yu'huo'de'zhan'chang	100
 兵阵石	bing'zhen'shi	100
+兵阵雄姿	bing'zhen'xiong'zi	100
 冰之川与雪之砂	bing'zhi'chuan'yu'xue'zhi'sha	100
 冰之华	bing'zhi'hua	100
 冰之女皇	bing'zhi'nv'huang	100
@@ -1734,6 +1723,7 @@
 碧影蓊郁	bi'ying'weng'yu	100
 笔已升起	bi'yi'sheng'qi	100
 庇佑之冠	bi'you'zhi'guan	100
+碧玉	bi'yu	100
 辟雨留光	bi'yu'liu'guang	100
 辟雨留光	pi'yu'liu'guang	100
 碧玉流转	bi'yu'liu'zhuan	100
@@ -1883,8 +1873,6 @@
 不羁型贝特	bu'ji'xing'bei'te	100
 不惧	bu'ju	100
 不倦的寻索	bu'juan'de'xun'suo	100
-不惧潮湿	bu'ju'chao'shi	100
-不惧潮湿的蒙德公寓	bu'ju'chao'shi'de'meng'de'gong'yu	100
 不惧折损的韧性	bu'ju'zhe'sun'de'ren'xing	100
 不可久置	bu'ke'jiu'zhi	100
 不可久置的烈浆	bu'ke'jiu'zhi'de'lie'jiang	100
@@ -1936,7 +1924,6 @@
 不绵的守望	bu'mian'de'shou'wang	100
 布面狸猫玩偶	bu'mian'li'mao'wan'ou	100
 不灭的骑士道	bu'mie'de'qi'shi'dao	100
-不灭的衍生造物	bu'mie'de'yan'sheng'zao'wu	100
 不灭衍生造物	bu'mie'yan'sheng'zao'wu	100
 不灭已斩	bu'mie'yi'zhan	100
 不灭月华	bu'mie'yue'hua	100
@@ -2022,7 +2009,7 @@
 裁断追惩	cai'duan'zhui'cheng	100
 裁罚遂成	cai'fa'sui'cheng	100
 财富分配方案	cai'fu'fen'pei'fang'an	100
-彩浮枢	cai'fu'shu	100
+彩浮沤	cai'fu'ou	100
 采歌者	cai'ge'zhe	100
 才怪咧	cai'guai'lie	100
 彩虹的脚下是	cai'hong'de'jiao'xia'shi	100
@@ -2082,8 +2069,8 @@
 苍白套	cang'bai'tao	100
 苍白之火	cang'bai'zhi'huo	100
 苍璧	cang'bi	100
-仓璧驱之长昭天理	cang'bi'qu'zhi'chang'zhao'tian'li	100
-仓璧驱之长昭天理	cang'bi'qu'zhi'zhang'zhao'tian'li	100
+苍璧驱之长昭天理	cang'bi'qu'zhi'chang'zhao'tian'li	100
+苍璧驱之长昭天理	cang'bi'qu'zhi'zhang'zhao'tian'li	100
 仓储事务	cang'chu'shi'wu	100
 仓储要诀	cang'chu'yao'jue	100
 苍翠寸泓中	cang'cui'cun'hong'zhong	100
@@ -2122,7 +2109,6 @@
 藏镜仕女	zang'jing'shi'nv	100
 藏金之花	cang'jin'zhi'hua	100
 藏金之花	zang'jin'zhi'hua	100
-仓鹫庇卫	cang'jiu'bi'wei	100
 仓库管理员	cang'ku'guan'li'yuan	100
 苍狼北风	cang'lang'bei'feng	100
 沧浪的冒险家	cang'lang'de'mao'xian'jia	100
@@ -2148,6 +2134,7 @@
 沧流圣骸角鳄	cang'liu'sheng'hai'jiao'e	100
 沧流圣骸角鳄	cang'liu'sheng'hai'jue'e	100
 苍流踏花	cang'liu'ta'hua	100
+苍鹭庇卫	cang'lu'bi'wei	100
 藏芒	cang'mang	100
 藏芒	zang'mang	100
 藏蜜酒的王蜂	cang'mi'jiu'de'wang'feng	100
@@ -2200,7 +2187,6 @@
 藏蕴破障	cang'yun'po'zhang	100
 藏蕴破障	zang'yun'po'zhang	100
 苍羽一梦	cang'yu'yi'meng	100
-苍紫雷电的记忆	cang'zi'lei'dian'de'ji'yi	100
 残毁的横脊	can'hui'de'heng'ji	100
 残毁的剑柄	can'hui'de'jian'bing	100
 残辉岩窟	can'hui'yan'ku	100
@@ -2406,6 +2392,8 @@
 长存者之迹	zhang'cun'zhe'zhi'ji	100
 长灯	chang'deng	100
 长灯	zhang'deng	100
+长凳	chang'deng	100
+长凳	zhang'deng	100
 长耳强袭者	chang'er'qiang'xi'zhe	100
 长耳强袭者	zhang'er'qiang'xi'zhe	100
 常丰	chang'feng	100
@@ -2661,8 +2649,6 @@
 澄澈的清风	deng'che'de'qing'feng	100
 澄澈花水	cheng'che'hua'shui	100
 澄澈花水	deng'che'hua'shui	100
-澄澈花水的青戊	cheng'che'hua'shui'de'qing'wu	100
-澄澈花水的青戊	deng'che'hua'shui'de'qing'wu	100
 澄澈花水与青实	cheng'che'hua'shui'yu'qing'shi	100
 澄澈花水与青实	deng'che'hua'shui'yu'qing'shi	100
 澄澈花水与青戊	cheng'che'hua'shui'yu'qing'wu	100
@@ -2737,13 +2723,9 @@
 称名之刻	cheng'ming'zhi'ke	100
 柽木	cheng'mu	100
 柽木坚铁攻盾	cheng'mu'jian'tie'gong'dun	100
-柽木坚铁圆盾	cheng'mu'jian'tie'yuan'dun	100
-柽木轻便	cheng'mu'qing'bian	100
-柽木轻便	cheng'mu'qing'pian	100
 柽木三重屉柜	cheng'mu'san'chong'ti'gui	100
 柽木三重屉柜	cheng'mu'san'zhong'ti'gui	100
 柽木陶器置物柜	cheng'mu'tao'qi'zhi'wu'gui	100
-柽木硬面	cheng'mu'ying'mian	100
 城内镖师	cheng'nei'biao'shi	100
 澄凝的星光	cheng'ning'de'xing'guang	100
 澄凝的星光	deng'ning'de'xing'guang	100
@@ -2994,7 +2976,6 @@
 赤心铸魂	chi'xin'zhu'hun	100
 炽雪	chi'xue	100
 持续牵引	chi'xu'qian'yin	100
-持续旋转的灵感发条	chi'xu'xuan'zhuan'de'ling'gan'fa'tiao	100
 持续压制的时序	chi'xu'ya'zhi'de'shi'xu	100
 炽岩斗士急流鱼	chi'yan'dou'shi'ji'liu'yu	100
 炽阳刻印	chi'yang'ke'yin	100
@@ -3477,7 +3458,6 @@
 翠光像	cui'guang'xiang	100
 翠冠鸭	cui'guan'ya	100
 萃华木	cui'hua'mu	100
-萃华木经济	cui'hua'mu'jing'ji	100
 萃华木臻品书架	cui'hua'mu'zhen'pin'shu'jia	100
 萃华树	cui'hua'shu	100
 淬金冷玉	cui'jin'leng'yu	100
@@ -3507,7 +3487,6 @@
 翠斯塔	cui'si'ta	100
 摧碎	cui'sui	100
 摧岩之钺	cui'yan'zhi'yue	100
-翠钰岩大侠	cui'yu'yan'da'xia	100
 寸尺之楼	cun'chi'zhi'lou	100
 存积	cun'ji	100
 村山	cun'shan	100
@@ -3534,8 +3513,7 @@
 大辨圆成之实	da'bian'yuan'cheng'zhi'shi	100
 达布亚	da'bu'ya	100
 大赤沙海	da'chi'sha'hai	100
-大厨的夏日盛宴	da'chu'de'xia'ri'cheng'yan	100
-大厨的夏日盛宴	da'chu'de'xia'ri'sheng'yan	100
+大厨	da'chu	100
 大慈树王	da'ci'shu'wang	100
 达达利亚	da'da'li'ya	100
 大盗宝家	da'dao'bao'jia	100
@@ -3566,7 +3544,6 @@
 大枫丹湖	da'feng'dan'hu	100
 大风机关	da'feng'ji'guan	100
 大风纪官	da'feng'ji'guan	100
-大风纪官的公务	da'feng'ji'guan'de'gong'wu	100
 达戈尔	da'ge'er	100
 大海的甜色	da'hai'de'tian'se	100
 大和田	da'he'tian	100
@@ -3804,13 +3781,13 @@
 大日御舆	da'ri'yu'yu	100
 大肉丸	da'rou'wan	100
 大嗓门的幽影	da'sang'men'de'you'ying	100
-大杀生禁咒	da'sha'sheng'jin'zhou	100
 大杀生咒禁	da'sha'sheng'zhou'jin	100
 达什科夫	da'shen'ke'fu	100
 达什科夫	da'shi'ke'fu	100
 大誓	da'shi	100
 大师级的冒险者	da'shi'ji'de'mao'xian'zhe	100
 大史莱姆气球	da'shi'lai'mu'qi'qiu	100
+打手	da'shou	100
 打手丘丘人	da'shou'qiu'qiu'ren	100
 大摔角场	da'shuai'jiao'chang	100
 大摔角场	da'shuai'jue'chang	100
@@ -3857,7 +3834,6 @@
 大走廊的尽头	da'zou'lang'de'jin'tou	100
 达祖玛	da'zu'ma	100
 德安公	de'an'gong	100
-的安适	de'an'shi	100
 德巴内	de'ba'nei	100
 德波大蛋糕	de'bo'da'dan'gao	100
 德波大蛋糕绚丽型	de'bo'da'dan'gao'xuan'li'xing	100
@@ -3871,15 +3847,11 @@
 德长	de'zhang	100
 得偿所愿的寻宝之旅	de'chang'suo'yuan'de'xun'bao'zhi'lv	100
 得偿所愿的寻宝之旅	dei'chang'suo'yuan'de'xun'bao'zhi'lv	100
-的打手	de'da'shou	100
 德尔斐	de'er'fei	100
 德尔菲娜	de'er'fei'na	100
 德尔菲娜	de'er'fei'nuo	100
 德富	de'fu	100
-的攻击	de'gong'ji	100
 德贵	de'gui	100
-的会客厅沙发	de'hui'ke'ting'sha'fa	100
-的技术官	de'ji'shu'guan	100
 德克斯特	de'ke'si'te	100
 德拉夫什	de'la'fu'shen	100
 德拉夫什	de'la'fu'shi	100
@@ -3896,7 +3868,6 @@
 德鲁苏	de'lu'su	100
 德吕阿的夜曲	de'lv'a'de'ye'qu	100
 德吕阿松林	de'lv'a'song'lin	100
-的旅程	de'lv'cheng	100
 德曼海文	de'man'hai'wen	100
 德米安	de'mi'an	100
 德米多夫	de'mi'duo'fu	100
@@ -3933,11 +3904,8 @@
 德尼谢尔	de'ni'xie'er	100
 德帕里	de'pa'li	100
 德皮耶里	de'pi'ye'li	100
-的热血	de're'xie	100
-的热血	de're'xue	100
 德赛	de'sai	100
 德瑟布尔	de'se'bu'er	100
-的实践	de'shi'jian	100
 德斯卡戴	de'si'ka'dai	100
 德斯诺斯	de'si'nuo'si	100
 德斯特雷	de'si'te'lei	100
@@ -3949,9 +3917,6 @@
 德雅科夫	de'ya'ke'fu	100
 德音	de'yin	100
 德佑	de'you	100
-的悠然	de'you'ran	100
-的愿望	de'yuan'wang	100
-的征途	de'zheng'tu	100
 德兹斯拉沃	de'zi'si'la'wo	100
 德兹斯拉沃的移动城堡	de'zi'si'la'wo'de'yi'dong'cheng'bao	100
 德兹斯拉沃的移动城堡	de'zi'si'la'wo'de'yi'dong'cheng'bu	100
@@ -4121,7 +4086,6 @@
 地灵龛之钥	di'ling'kan'zhi'yao	100
 地灵龛之钥	di'ling'kan'zhi'yue	100
 地灵微眠	di'ling'wei'mian	100
-抵力松茶	di'li'song'cha	100
 帝利耶悉	di'li'ye'xi	100
 砥砺之证	di'li'zhi'zheng	100
 迪卢克	di'lu'ke	100
@@ -4205,7 +4169,6 @@
 低温烹饪	di'wen'peng'ren	100
 低温预警	di'wen'yu'jing	100
 第五财务办公室	di'wu'cai'wu'ban'gong'shi	100
-第五财务办公室主任	di'wu'cai'wu'ban'gong'shi'zhu'ren	100
 地下矿区	di'xia'kuang'ou	100
 地下矿区	di'xia'kuang'qu	100
 地效型	di'xiao'xing	100
@@ -4262,7 +4225,6 @@
 洞观	dong'guan	100
 冬国仕女	dong'guo'shi'nv	100
 东花坊时雨	dong'hua'fang'shi'yu	100
-董鹮	dong'huan	100
 洞鉴	dong'jian	100
 冬极白星	dong'ji'bai'xing	100
 动静精明	dong'jing'jing'ming	100
@@ -4282,7 +4244,6 @@
 咚锵锵	dong'qiang'qiang	100
 冬契精锐	dong'qi'jing'rui	100
 冬契军	dong'qi'jun	100
-冬契军司令	dong'qi'jun'si'ling	100
 冬契军特别调遣令	dong'qi'jun'te'bie'diao'qian'ling	100
 冬契军特别调遣令	dong'qi'jun'te'bie'tiao'qian'ling	100
 冬日睡意	dong'ri'shui'yi	100
@@ -4390,7 +4351,8 @@
 渡厄厅	du'e'ting	100
 度厄真符	du'e'zhen'fu	100
 度厄真符	duo'e'zhen'fu	100
-渡厄真君	du'e'zhen'jun	100
+度厄真君	du'e'zhen'jun	100
+度厄真君	duo'e'zhen'jun	100
 独光的赐坠	du'guang'de'ci'zhui	100
 渡过烈火的贤人	du'guo'lie'huo'de'xian'ren	100
 渡过雾霭的河流	du'guo'wu'ai'de'he'liu	100
@@ -4430,7 +4392,7 @@
 渡来介者	du'lai'jie'zhe	100
 渡来禽肉	du'lai'qin'rou	100
 杜兰	du'lan	100
-督兰嘉徳	du'lan'jia'de	100
+督兰嘉德	du'lan'jia'de	100
 杜林	du'lin	100
 独立设计工作室	du'li'she'ji'gong'zuo'shi	100
 杜罗夫	du'luo'fu	100
@@ -4464,8 +4426,6 @@
 多重版型衣柜	duo'zhong'ban'xing'yi'gui	100
 多重餐位	duo'chong'can'wei	100
 多重餐位	duo'zhong'can'wei	100
-多重餐位松木圆桌	duo'chong'can'wei'song'mu'yuan'zhuo	100
-多重餐位松木圆桌	duo'zhong'can'wei'song'mu'yuan'zhuo	100
 多重拱门的蒙德建筑	duo'chong'gong'men'de'meng'de'jian'zhu	100
 多重拱门的蒙德建筑	duo'zhong'gong'men'de'meng'de'jian'zhu	100
 多重速射的秘诀	duo'chong'su'she'de'mi'jue	100
@@ -4543,7 +4503,6 @@
 督治官	du'zhi'guan	100
 杜兹厄	du'zi'e	100
 杜佐洛夫	du'zuo'luo'fu	100
-厄布拉神像	e'bu'la'shen'xiang	100
 厄布拉神柱	e'bu'la'shen'zhu	100
 噩喰	e'can	100
 厄达尔夫	e'da'er'fu	100
@@ -4594,6 +4553,8 @@
 恩托提亚	en'tuo'ti'ya	100
 恩肖	en'xiao	100
 厄切敏	e'qie'min	100
+恶犬管理规范	e'quan'guan'li'gui'fan	100
+恶犬管理规范	wu'quan'guan'li'gui'fan	100
 尔妲	er'da	100
 二刀之形比翼	er'dao'zhi'xing'bi'yi	100
 尔等葬身之处	er'deng'zang'shen'zhi'chu	100
@@ -4601,7 +4562,7 @@
 二番箙岛廓白浪	er'fan'fu'dao'kuo'bai'lang	100
 二号初始能力样机	er'hao'chu'shi'neng'li'yang'ji	100
 二河白道之卷	er'he'bai'dao'zhi'juan	100
-貳阶	er'jie	100
+贰阶	er'jie	100
 二净甸	er'jing'dian	100
 而尽人事	er'jin'ren'shi	100
 二轮烹	er'lun'peng	100
@@ -4784,7 +4745,6 @@
 繁绘隅穹	fan'hui'yu'qiong	100
 法涅斯	fa'nie'si	100
 繁简由心	fan'jian'you'xin	100
-反馈大使	fan'kui'da'shi	100
 燔燎的献礼	fan'liao'de'xian'li	100
 贩龙者	fan'long'zhe	100
 反论稽古	fan'lun'ji'gu	100
@@ -4818,7 +4778,7 @@
 繁想奇境	fan'xiang'qi'jing	100
 繁弦急管	fan'xian'ji'guan	100
 反巡陆艇壕沟	fan'xun'lu'ting'hao'gou	100
-凡蕈同一	fan'xun'tong'yi	100
+梵蕈同一	fan'xun'tong'yi	100
 燔炎的冒险家	fan'yan'de'mao'xian'jia	100
 燔炎的寻宝者	fan'yan'de'xun'bao'zhe	100
 反应工具人	fan'ying'gong'ju'ren	100
@@ -4982,7 +4942,6 @@
 绯樱烤苹果味低糖布丁	fei'ying'kao'ping'guo'wei'di'tang'bu'ding	100
 绯樱树	fei'ying'shu	100
 绯樱天妇罗	fei'ying'tian'fu'luo	100
-绯樱鲜虾贝	fei'ying'xian'xia'bei	100
 绯樱虾仙贝	fei'ying'xia'xian'bei	100
 绯樱绣球	fei'ying'xiu'qiu	100
 绯樱引雷章	fei'ying'yin'lei'zhang	100
@@ -5060,7 +5019,6 @@
 枫丹动物寓言集	feng'dan'dong'wu'yu'yan'ji	100
 枫丹肥肝	feng'dan'fei'gan	100
 枫丹改良版	feng'dan'gai'liang'ban	100
-枫丹工程师	feng'dan'gong'cheng'shi	100
 枫丹科学院	feng'dan'ke'xue'yuan	100
 枫丹科学院纪事	feng'dan'ke'xue'yuan'ji'shi	100
 枫丹科学院事务官	feng'dan'ke'xue'yuan'shi'wu'guan	100
@@ -5163,8 +5121,8 @@
 风拳	feng'quan	100
 风拳前锋军	feng'quan'qian'feng'jun	100
 风拳先锋军	feng'quan'xian'feng'jun	100
-风穰的春雷	feng'rang'de'chun'lei	100
-风穰勾玉	feng'rang'gou'yu	100
+丰穰的春雷	feng'rang'de'chun'lei	100
+丰穰勾玉	feng'rang'gou'yu	100
 丰穰之核	feng'rang'zhi'he	100
 丰饶的祝愿	feng'rao'de'zhu'yuan	100
 丰饶海的神酒	feng'rao'hai'de'shen'jiu	100
@@ -5340,7 +5298,6 @@
 粉碎之月	fen'sui'zhi'yue	100
 粉糖青酿	fen'tang'qing'niang	100
 分汤人	fen'tang'ren	100
-氛围大使	fen'wei'da'shi	100
 氛围桩	fen'wei'zhuang	100
 分行长	fen'xing'chang	100
 分行长	fen'xing'zhang	100
@@ -5494,6 +5451,7 @@
 浮峭	fu'qiao	100
 伏青石	fu'qing'shi	100
 浮燃鸟	fu'ran'niao	100
+富饶	fu'rao	100
 腐肉朽处花争妍	fu'rou'xiu'chu'hua'zheng'yan	100
 弗瑞奥萨	fu'rui'ao'sa	100
 傅三儿	fu'san'er	100
@@ -5644,7 +5602,6 @@
 港务员	gang'wu'yuan	100
 港务主管	gang'wu'zhu'guan	100
 港务总管	gang'wu'zong'guan	100
-港务总监	gang'wu'zong'jian	100
 干慧之题	gan'hui'zhi'ti	100
 甘金岛	gan'jin'dao	100
 干枯的种子	gan'ku'de'zhong'zi	100
@@ -5697,7 +5654,7 @@
 高遏行云	gao'e'xing'yun	100
 高斐	gao'fei	100
 高飞信标	gao'fei'xin'biao	100
-高风的演练	gao'feng'de'yan'lian	100
+高风的演试	gao'feng'de'yan'shi	100
 高高石台	gao'gao'shi'tai	100
 高高塔楼	gao'gao'ta'lou	100
 高阁	gao'ge	100
@@ -5746,7 +5703,6 @@
 高天的协奏	gao'tian'de'xie'zou	100
 高天的渊薮后	gao'tian'de'yuan'sou'hou	100
 高天神权	gao'tian'shen'quan	100
-高天为歌	gao'tian'wei'ge	100
 高天之歌	gao'tian'zhi'ge	100
 高跳蹦床	gao'tiao'beng'chuang	100
 高眺之蛇首	gao'tiao'zhi'she'shou	100
@@ -5754,7 +5710,6 @@
 高筒长靴	gao'tong'zhang'xue	100
 高筒帽兵士	gao'tong'mao'bing'shi	100
 高翔之翎	gao'xiang'zhi'ling	100
-高翔之羽	gao'xiang'zhi'yu	100
 高压环境测试	gao'ya'huan'jing'ce'shi	100
 高压水流溢口	gao'ya'shui'liu'yi'kou	100
 告真的蜜酿	gao'zhen'de'mi'niang	100
@@ -5773,7 +5728,6 @@
 嘎吱嘎吱甜甜杯	ga'zi'ga'zi'tian'tian'bei	100
 格奥尔格	ge'ao'er'ge	100
 格布哈德	ge'bu'ha'de	100
-格布哈特	ge'bu'ha'te	100
 戈布利	ge'bu'li	100
 歌唱的自由	ge'chang'de'zi'you	100
 歌尘浪市真君	ge'chen'lang'shi'zhen'jun	100
@@ -5844,7 +5798,7 @@
 歌利亚	ge'li'ya	100
 格里亚兹诺夫	ge'li'ya'zi'nuo'fu	100
 格里亚兹诺娃	ge'li'ya'zi'nuo'wa	100
-阁楼的乡间住宅	ge'lou'de'xiang'jian'zhu'zhai	100
+阁楼	ge'lou	100
 阁楼套	ge'lou'tao	100
 格露瓦莎	ge'lou'wa'sha	100
 格露瓦莎	ge'lu'wa'sha	100
@@ -5883,8 +5837,7 @@
 亘古树海之一瞬	gen'gu'shu'hai'zhi'yi'shun	100
 更巡	geng'xun	100
 耕一	geng'yi	100
-根系深埋之处	gen'ji'shen'mai'zhi'chu	100
-根系深埋之处	gen'xi'shen'mai'zhi'chu	100
+根隙深埋之处	gen'xi'shen'mai'zhi'chu	100
 根源之轮	gen'yuan'zhi'lun	100
 歌裴莉娅	ge'pei'li'ya	100
 歌裴莉娅的葬送	ge'pei'li'ya'de'zang'song	100
@@ -5906,7 +5859,6 @@
 歌头节拍	ge'tou'jie'pai	100
 格瓦斯	ge'wa'si	100
 格维妲	ge'wei'da	100
-格维如	ge'wei'ru	100
 格乌登提	ge'wu'deng'ti	100
 歌仙之章	ge'xian'zhi'zhang	100
 歌仙座	ge'xian'zuo	100
@@ -5983,6 +5935,7 @@
 共鸣珊瑚珠	gong'ming'shan'hu'zhu	100
 供能模块	gong'neng'mo'kuai	100
 供能模块	gong'neng'mu'kuai	100
+供暖	gong'nuan	100
 弓胚	gong'pei	100
 公平的教导	gong'ping'de'jiao'dao	100
 公平的哲学	gong'ping'de'zhe'xue	100
@@ -5998,8 +5951,6 @@
 宫廷女仆长	gong'ting'nv'pu'chang	100
 宫廷女仆长	gong'ting'nv'pu'zhang	100
 恭听太阳的轰鸣	gong'ting'tai'yang'de'hong'ming	100
-宫廷卫队队长	gong'ting'wei'dui'dui'chang	100
-宫廷卫队队长	gong'ting'wei'dui'dui'zhang	100
 宫廷卫队士兵	gong'ting'wei'dui'shi'bing	100
 贡托雷	gong'tuo'lei	100
 共我奔霄	gong'wo'ben'xiao	100
@@ -6054,7 +6005,6 @@
 关垂	guan'chui	100
 管道转向阀	guan'dao'zhuan'xiang'fa	100
 官邸	guan'di	100
-官邸回廊	guan'di'hui'lang	100
 光潮的幻象	guang'chao'de'huan'xiang	100
 光代	guang'dai	100
 广海的守望	guang'hai'de'shou'wang	100
@@ -6094,13 +6044,11 @@
 贯虹	guan'hong	100
 贯虹之槊	guan'hong'zhi'shuo	100
 关键六人	guan'jian'liu'ren	100
-关键六人会议室	guan'jian'liu'ren'hui'yi'shi	100
 关键通道	guan'jian'tong'dao	100
 冠笄伶优	guan'ji'ling'you	100
 冠军奖牌	guan'jun'jiang'pai	100
 关联条款	guan'lian'tiao'kuan	100
 灌木丛	guan'mu'cong	100
-观赏礼仪座椅	guan'shang'li'yi'zuo'yi	100
 观赏鱼	guan'shang'yu	100
 冠饰鹰	guan'shi'ying	100
 贯星	guan'xing	100
@@ -6137,7 +6085,6 @@
 孤独的海兽	gu'du'de'hai'shou	100
 孤独的坚守	gu'du'de'jian'shou	100
 孤独地融化	gu'du'di'rong'hua	100
-孤独而谨慎的冒险家	gu'du'er'jin'shen'de'mao'xian'jia	100
 咕嘟咕嘟泡茶机	gu'du'gu'du'pao'cha'ji	100
 孤独派报告	gu'du'pai'bao'gao	100
 古恩希尔德	gu'en'xi'er'de	100
@@ -6160,8 +6107,6 @@
 古法秘制椰炭饼	gu'fa'mi'zhi'ye'tan'bing	100
 孤帆幽影	gu'fan'you'ying	100
 古法新造	gu'fa'xin'zao	100
-古法新造御伽木	gu'fa'xin'zao'yu'ga'mu	100
-古法新造御伽木	gu'fa'xin'zao'yu'jia'mu	100
 孤风	gu'feng	100
 固缚风场	gu'fu'feng'chang	100
 孤高的美食家	gu'gao'de'mei'shi'jia	100
@@ -6186,7 +6131,6 @@
 古华剑法	gu'hua'jian'fa	100
 古华剑画雨笼山	gu'hua'jian'hua'yu'long'shan	100
 古华派	gu'hua'pai	100
-古华派弟子	gu'hua'pai'di'zi	100
 古华派非正式弟子	gu'hua'pai'fei'zheng'shi'di'zi	100
 古华派侠义之客	gu'hua'pai'xia'yi'zhi'ke	100
 古华手记	gu'hua'shou'ji	100
@@ -6208,10 +6152,8 @@
 贵重的靛紫	gui'chong'de'dian'zi	100
 贵重的靛紫	gui'zhong'de'dian'zi	100
 轨道抛掷	gui'dao'pao'zhi	100
-轨道线路	gui'dao'xian'lu	100
 轨道组合	gui'dao'zu'he	100
 诡灯陌影	gui'deng'mo'ying	100
-诡灯随影	gui'deng'sui'ying	100
 鬼兜虫	gui'dou'chong	100
 归风	gui'feng	100
 归风的苍色	gui'feng'de'cang'se	100
@@ -6250,7 +6192,6 @@
 诡夜	gui'ye	100
 桂一	gui'yi	100
 瑰银	gui'yin	100
-皈依熔炉	gui'yi'rong'lu	100
 归于黄沙	gui'yu'huang'sha	100
 归于山中	gui'yu'shan'zhong	100
 归于一途	gui'yu'yi'tu	100
@@ -6507,10 +6448,6 @@
 海龙	hai'long	100
 海露港	hai'lou'gang	100
 海露港	hai'lu'gang	100
-海露港上层	hai'lou'gang'shang'ceng	100
-海露港上层	hai'lu'gang'shang'ceng	100
-海露港下层	hai'lou'gang'xia'ceng	100
-海露港下层	hai'lu'gang'xia'ceng	100
 海露花	hai'lou'hua	100
 海露花	hai'lu'hua	100
 海露站	hai'lou'zhan	100
@@ -6810,7 +6747,6 @@
 黑檀弓	hei'tan'gong	100
 黑炭炭菇	hei'tan'tan'gu	100
 黑田	hei'tian	100
-黑铁剑	hei'tie'jian	100
 黑铜号角	hei'tong'hao'jiao	100
 黑铜号角	hei'tong'hao'jue	100
 黑王鸽	hei'wang'ge	100
@@ -6911,7 +6847,7 @@
 恒月	heng'yue	100
 恒月女神	heng'yue'nv'shen	100
 恒月印磐	heng'yue'yin'pan	100
-恒月印磬	heng'yue'yin'qing	100
+横置	heng'zhi	100
 衡准大厅	heng'zhun'da'ting	100
 很会聊天真君	hen'hui'liao'tian'zhen'jun	100
 很妙愈	hen'miao'yu	100
@@ -6937,13 +6873,12 @@
 赫瓦雷纳	he'wa'lei'na	100
 赫瓦特莉	he'wa'te'li	100
 何物遍开幽谷	he'wu'bian'kai'you'gu	100
-赫乌利亚	he'wu'li'ya	100
+赫乌莉亚	he'wu'li'ya	100
 何物徒留名字	he'wu'tu'liu'ming'zi	100
 何物象征	he'wu'xiang'zheng	100
 何物映自身于镜水	he'wu'ying'zi'shen'yu'jing'shui	100
 核心轮縠	he'xin'lun'hu	100
 和旋舞剧	he'xuan'wu'ju	100
-赫蕈窟	he'xun'ku	100
 赫炎的达达乌帕	he'yan'de'da'da'wu'pa	100
 赫耀多方面体	he'yao'duo'fang'mian'ti	100
 何爷	he'ye	100
@@ -6990,6 +6925,7 @@
 轰轰增益	hong'hong'zeng'yi	100
 红花勋章	hong'hua'xun'zhang	100
 红烩兽肉	hong'hui'shou'rou	100
+红火	hong'huo	100
 虹剑势	hong'jian'shi	100
 红角蜥	hong'jiao'xi	100
 红角蜥	hong'jue'xi	100
@@ -7054,8 +6990,8 @@
 厚壁石胆陶制水缸	hou'bi'shi'dan'tao'zhi'shui'gang	100
 候车站台	hou'che'zhan'tai	100
 候车站台	hou'ju'zhan'tai	100
-厚重的图书馆	hou'chong'de'tu'shu'guan	100
-厚重的图书馆	hou'zhong'de'tu'shu'guan	100
+厚重	hou'chong	100
+厚重	hou'zhong	100
 后厨手艺	hou'chu'shou'yi	100
 吼法怖魔	hou'fa'bu'mo	100
 吼吼小狐巡天记	hou'hou'xiao'hu'xun'tian'ji	100
@@ -7288,7 +7224,6 @@
 欢聚一堂	huan'ju'yi'tang	100
 幻剧之花	huan'ju'zhi'hua	100
 唤雷的头冠	huan'lei'de'tou'guan	100
-唤雷者的头冠	huan'lei'zhe'de'tou'guan	100
 欢乐雪怪	huan'le'xue'guai	100
 欢乐雪怪	huan'yue'xue'guai	100
 幻礼	huan'li	100
@@ -7483,6 +7418,7 @@
 慧绝烟林	hui'jue'yan'lin	100
 汇聚如浪潮一般	hui'ju'ru'lang'chao'yi'ban	100
 会客室的温暖防线	hui'ke'shi'de'wen'nuan'fang'xian	100
+会客厅	hui'ke'ting	100
 回廊	hui'lang	100
 灰蓝伞雀	hui'lan'san'que	100
 虺雷之姿	hui'lei'zhi'zi	100
@@ -7511,10 +7447,6 @@
 辉木朴质雕栊墙	hui'mu'pu'zhi'diao'long'qiang	100
 辉木旋台制陶桌	hui'mu'xuan'tai'zhi'tao'zhuo	100
 辉木移动烧烤铺	hui'mu'yi'dong'shao'kao'pu	100
-辉木织物箱台	hui'mu'zhi'wu'xiang'tai	100
-辉木转角	hui'mu'zhuan'jiao	100
-辉木转角	hui'mu'zhuan'jue	100
-辉木自紧酒桶	hui'mu'zi'jin'jiu'tong	100
 回能	hui'neng	100
 绘绮庭	hui'qi'ting	100
 绘绮之枕印	hui'qi'zhi'zhen'yin	100
@@ -7548,8 +7480,6 @@
 回响渊底的安魂曲	hui'xiang'yuan'di'de'an'hun'qu	100
 回响于暴风雪	hui'xiang'yu'bao'feng'xue	100
 回响中的冬梦	hui'xiang'zhong'de'dong'meng	100
-灰血猫	hui'xie'mao	100
-灰血猫	hui'xue'mao	100
 慧心	hui'xin	100
 绘星	hui'xing	100
 回旋近防风涡	hui'xuan'jin'fang'feng'wo	100
@@ -7660,7 +7590,6 @@
 火风	huo'feng	100
 火斧	huo'fu	100
 火付番	huo'fu'fan	100
-火附番	huo'fu'fan	100
 霍夫曼	huo'fu'man	100
 火斧丘丘暴徒	huo'fu'qiu'qiu'bao'tu	100
 霍芙维娜	huo'fu'wei'na	100
@@ -7804,7 +7733,6 @@
 胡维斯卡	hu'wei'si'ka	100
 虎纹猫	hu'wen'mao	100
 狐仙宫司	hu'xian'gong'si	100
-狐仙宫司限定画旗	hu'xian'gong'si'xian'ding'hua'qi	100
 弧线流畅	hu'xian'liu'chang	100
 呼啸社	hu'xiao'she	100
 胡行钟夜	hu'xing'zhong'ye	100
@@ -7846,7 +7774,6 @@
 佳节里的小问题	jia'jie'li'de'xiao'wen'ti	100
 佳节香扆	jia'jie'xiang'yi	100
 嘉久	jia'jiu	100
-家具完备的蒙德卧室	jia'ju'wan'bei'de'meng'de'wo'shi	100
 嘉莱娜	jia'lai'na	100
 嘉莱娜	jia'lai'nuo	100
 加勒弗大汪	jia'le'fu'da'wang	100
@@ -8017,8 +7944,6 @@
 健三郎	jian'san'lang	100
 健身俱乐部	jian'shen'ju'le'bu	100
 健身俱乐部	jian'shen'ju'yue'bu	100
-健身器材	jian'shen'qi'cai	100
-健身学员	jian'shen'xue'yuan	100
 监舍区	jian'she'ou	100
 监舍区	jian'she'qu	100
 涧石	jian'shi	100
@@ -8198,7 +8123,6 @@
 角逐火簇	jiao'zhu'huo'cu	100
 角逐火簇	jue'zhu'huo'cu	100
 焦灼的魔女帽	jiao'zhuo'de'mo'nv'mao	100
-焦灼的魔女帽子	jiao'zhuo'de'mo'nv'mao'zi	100
 骄纵轻狂	jiao'zong'qing'kuang	100
 交奏的昼与夜	jiao'zou'de'zhou'yu'ye	100
 迦毗鸠师	jia'pi'jiu'shi	100
@@ -8246,8 +8170,7 @@
 家主名代	jia'zhu'ming'dai	100
 疾板	ji'ban	100
 基班古	ji'ban'gu	100
-极北桦木折角	ji'bei'hua'mu'zhe'jiao	100
-极北桦木折角	ji'bei'hua'mu'zhe'jue	100
+极北桦木	ji'bei'hua'mu	100
 基本上都是水	ji'ben'shang'dou'shi'shui	100
 基本上无害	ji'ben'shang'wu'hai	100
 即便存在隔阂	ji'bian'cun'zai'ge'he	100
@@ -8561,7 +8484,7 @@
 金翅鹏王座	jin'chi'peng'wang'zuo	100
 金翅雀	jin'chi'que	100
 金琮天行之翼	jin'cong'tian'xing'zhi'yi	100
-紧凑型送风	jin'cou'xing'song'feng	100
+紧凑型	jin'cou'xing	100
 紧凑桌案	jin'cou'zhuo'an	100
 金翠	jin'cui	100
 谨道成术长有摄生	jin'dao'cheng'shu'chang'you'she'sheng	100
@@ -8787,6 +8710,7 @@
 净罪之井	jing'zui'zhi'jing	100
 烬海	jin'hai	100
 菫鹮	jin'huan	100
+锦绘	jin'hui	100
 金忽律	jin'hu'lv	100
 烬火炽燃所	jin'huo'chi'ran'suo	100
 烬火重燃	jin'huo'chong'ran	100
@@ -8846,7 +8770,7 @@
 金鳍座	jin'qi'zuo	100
 今泉	jin'quan	100
 菫染山月虎啮鉴	jin'ran'shan'yue'hu'nie'jian	100
-堇染之国	jin'ran'zhi'guo	100
+菫染之国	jin'ran'zhi'guo	100
 劲韧之月	jin'ren'zhi'yue	100
 今日便要	jin'ri'bian'yao	100
 今日便要	jin'ri'pian'yao	100
@@ -8860,10 +8784,8 @@
 劲锐之月	jin'rui'zhi'yue	100
 禁入射线	jin'ru'she'xian	100
 进入夜雾之门	jin'ru'ye'wu'zhi'men	100
-金色的冬天	jin'se'de'dong'tian	100
+金色	jin'se	100
 金色剧团	jin'se'ju'tuan	100
-金色三重	jin'se'san'chong	100
-金色三重	jin'se'san'zhong	100
 金色弦丝	jin'se'xian'si	100
 金色旋律的断章	jin'se'xuan'lv'de'duan'zhang	100
 菫色之庭	jin'se'zhi'ting	100
@@ -8892,8 +8814,6 @@
 近卫战法	jin'wei'zhan'fa	100
 近卫掷弹兵团	jin'wei'zhi'dan'bing'tuan	100
 近卫掷弹兵团	jin'wei'zhi'tan'bing'tuan	100
-近卫掷弹军团	jin'wei'zhi'dan'jun'tuan	100
-近卫掷弹军团	jin'wei'zhi'tan'jun'tuan	100
 禁问的训诫	jin'wen'de'xun'jie	100
 金纹蝶翅花器	jin'wen'die'chi'hua'qi	100
 金纹嵌画	jin'wen'qian'hua	100
@@ -8902,8 +8822,6 @@
 禁限地灯	jin'xian'di'deng	100
 禁限之堡	jin'xian'zhi'bao	100
 禁限之堡	jin'xian'zhi'bu	100
-禁限之堡的拳力以赴	jin'xian'zhi'bao'de'quan'li'yi'fu	100
-禁限之堡的拳力以赴	jin'xian'zhi'bu'de'quan'li'yi'fu	100
 金匣座	jin'xia'zuo	100
 今昔渡来殿	jin'xi'du'lai'dian	100
 今昔剧画	jin'xi'ju'hua	100
@@ -8974,6 +8892,7 @@
 祭霜者的迷狂	ji'shuang'zhe'de'mi'kuang	100
 机枢灯具	ji'shu'deng'ju	100
 集束电光	ji'shu'dian'guang	100
+技术官	ji'shu'guan	100
 祭水礼冠	ji'shui'li'guan	100
 祭水之人	ji'shui'zhi'ren	100
 祭水之仪	ji'shui'zhi'yi	100
@@ -9016,7 +8935,6 @@
 酒馆	jiu'guan	100
 酒馆镖靶	jiu'guan'biao'ba	100
 酒馆餐架	jiu'guan'can'jia	100
-酒馆老板	jiu'guan'lao'ban	100
 酒馆摇壶	jiu'guan'yao'hu	100
 酒馆招待	jiu'guan'zhao'dai	100
 酒馆诸事	jiu'guan'zhu'shi	100
@@ -9097,8 +9015,7 @@
 究寻千向	jiu'xun'qian'xiang	100
 久彦	jiu'yan	100
 酒业大亨	jiu'ye'da'heng	100
-酒业行会执行会长	jiu'ye'hang'hui'zhi'hang'hui'chang	100
-酒业行会执行会长	jiu'ye'hang'hui'zhi'hang'hui'zhang	100
+酒业行会执行主席	jiu'ye'hang'hui'zhi'xing'zhu'xi	100
 酒业杀手	jiu'ye'sha'shou	100
 旧仪	jiu'yi	100
 鸠羽	jiu'yu	100
@@ -9183,8 +9100,6 @@
 记忆之象限	ji'yi'zhi'xiang'xian	100
 集意专注	ji'yi'zhuan'zhu	100
 纪游	ji'you	100
-纪游等级	ji'you'deng'ji	100
-纪游经验	ji'you'jing'yan	100
 纪游再编	ji'you'zai'bian	100
 几原凯	ji'yuan'kai	100
 机元突破	ji'yuan'tu'po	100
@@ -9225,6 +9140,7 @@
 倦意	juan'yi	100
 倦意之屋	juan'yi'zhi'wu	100
 隽永如电	juan'yong'ru'dian	100
+卷轴	juan'zhou	100
 卷轴已干	juan'zhou'yi'gan	100
 剧本集	ju'ben'ji	100
 聚冰成锋	ju'bing'cheng'feng	100
@@ -9413,7 +9329,7 @@
 卡丁	ka'ding	100
 卡尔波夫	ka'er'bo'fu	100
 卡尔金	ka'er'jin	100
-卡尔那茨基	ka'er'na'ci'ji	100
+卡尔纳茨基	ka'er'na'ci'ji	100
 卡格姆尼	ka'ge'mu'ni	100
 卡赫伊娅	ka'he'yi'ya	100
 卡胡鲁	ka'hu'lu	100
@@ -9424,8 +9340,8 @@
 开场即兴段	kai'chang'ji'xing'duan	100
 凯茨莱茵	kai'ci'lai'yin	100
 开顶杉木货架	kai'ding'shan'mu'huo'jia	100
+开放式	kai'fang'shi	100
 开放式烘炉工坊	kai'fang'shi'hong'lu'gong'fang	100
-开放式松木	kai'fang'shi'song'mu	100
 开封的信笺	kai'feng'de'xin'jian	100
 开火粉碎	kai'huo'fen'sui	100
 凯库巴德	kai'ku'ba'de	100
@@ -9506,7 +9422,6 @@
 卡姆拉	ka'mu'la	100
 卡姆兰	ka'mu'lan	100
 卡纳菲亚	ka'na'fei'ya	100
-卡那菲亚	ka'na'fei'ya	100
 卡纳卡	ka'na'ka	100
 卡纳鲁亚	ka'na'lu'ya	100
 看不见的手	kan'bu'jian'de'shou	100
@@ -9533,7 +9448,6 @@
 慷慨的墨水瓶	kang'kai'de'mo'shui'ping	100
 康拉德	kang'la'de	100
 抗浪结构	kang'lang'jie'gou	100
-抗浪结构双层货盘	kang'lang'jie'gou'shuang'ceng'huo'pan	100
 康明	kang'ming	100
 康纳	kang'na	100
 康妮	kang'ni	100
@@ -9582,9 +9496,9 @@
 卡帕克	ka'pa'ke	100
 卡帕奇莉	ka'pa'qi'li	100
 卡佩	ka'pei	100
-卡皮利托姆	ka'pi'li'tuo'mu	100
 卡琵莉亚	ka'pi'li'ya	100
 卡皮塔诺	ka'pi'ta'nuo	100
+卡皮托利姆	ka'pi'tuo'li'mu	100
 卡皮托林	ka'pi'tuo'lin	100
 卡皮托林山	ka'pi'tuo'lin'shan	100
 卡茜涅尔	ka'qian'nie'er	100
@@ -9924,7 +9838,6 @@
 夸梅	kua'mei	100
 夸米蒂	kua'mi'di	100
 宽安敦实	kuan'an'dun'shi	100
-宽大的松木	kuan'da'de'song'mu	100
 矿车	kuang'che	100
 矿车	kuang'ju	100
 矿点检索	kuang'dian'jian'suo	100
@@ -10054,7 +9967,6 @@
 库涅贡妲	ku'nie'gong'da	100
 昆钧	kun'jun	100
 困困门牙骑士	kun'kun'men'ya'qi'shi	100
-昆纳鸟	kun'na'niao	100
 昆纳斯特	kun'na'si'te	100
 昆纳乌	kun'na'wu	100
 昆图尔	kun'tu'er	100
@@ -10280,6 +10192,7 @@
 朗贝萨	lang'bei'sa	100
 郎勃罗	lang'bo'luo	100
 郎勃罗梭	lang'bo'luo'suo	100
+浪潮	lang'chao	100
 浪潮已至	lang'chao'yi'zhi	100
 朗澈	lang'che	100
 浪船	lang'chuan	100
@@ -10466,7 +10379,6 @@
 落水女子	luo'shui'nv'zi	100
 拉斯蒂涅	la'si'di'nie	100
 拉斯科尔尼科夫	la'si'ke'er'ni'ke'fu	100
-拉斯科尔尼克夫	la'si'ke'er'ni'ke'fu	100
 拉斯塔恩	la'si'ta'en	100
 拉特凡	la'te'fan	100
 拉特金	la'te'jin	100
@@ -10600,7 +10512,6 @@
 雷诺德	lei'nuo'de	100
 蕾欧妮	lei'ou'ni	100
 雷飘浮灵	lei'piao'fu'ling	100
-雷劈寰宇	lei'pi'huan'yu	100
 雷枪	lei'qiang	100
 雷丘丘萨满	lei'qiu'qiu'sa'man	100
 雷萨	lei'sa	100
@@ -10802,14 +10713,14 @@
 两个铳枪手	liang'ge'chong'qiang'shou	100
 两个铳枪手的凯旋	liang'ge'chong'qiang'shou'de'kai'xuan	100
 亮灰猎犬	liang'hui'lie'quan	100
-两界为火	liang'jie'wei'huo	100
+两界之火	liang'jie'zhi'huo	100
 亮晶晶发现术	liang'jing'jing'fa'xian'shu	100
 亮亮贝壳	liang'liang'bei'ke	100
 亮亮贝壳	liang'liang'bei'qiao	100
 良平	liang'ping	100
 晾晒场	liang'shai'chang	100
 粮食用高压单轴膨化炉	liang'shi'yong'gao'ya'dan'zhou'peng'hua'lu	100
-亮堂堂移动	liang'tang'tang'yi'dong	100
+亮堂堂	liang'tang'tang	100
 凉亭	liang'ting	100
 莲光遍照	lian'guang'bian'zhao	100
 莲光幻变	lian'guang'huan'bian	100
@@ -10865,7 +10776,6 @@
 疗域镇静剂	liao'yu'zhen'jing'ji	100
 僚佐的才巧	liao'zuo'de'cai'qiao	100
 立本	li'ben	100
-离别的思念之歌	li'bie'de'si'nian'zhi'ge	100
 利别科	li'bie'ke	100
 离别之贝	li'bie'zhi'bei	100
 莉布瑟	li'bu'se	100
@@ -10945,7 +10855,6 @@
 猎魔之音	lie'mo'zhi'yin	100
 列诺夫	lie'nuo'fu	100
 猎品的斗篷	lie'pin'de'dou'peng	100
-列普奥布拉任斯基	lie'pu'ao'bu'la'ren'si'ji	100
 烈泉道	lie'quan'dao	100
 莉尔	li'er	100
 猎人变成了猎物	lie'ren'bian'cheng'le'lie'wu	100
@@ -10998,7 +10907,6 @@
 列柱沙原	lie'zhu'sha'yuan	100
 列兹伯格	lie'zi'bai'ge	100
 列兹伯格	lie'zi'bo'ge	100
-列兹波格	lie'zi'bo'ge	100
 里法特	li'fa'te	100
 黎翡区	li'fei'ou	100
 黎翡区	li'fei'qu	100
@@ -11192,8 +11100,7 @@
 令人落泪的苦酒	ling'ren'luo'lei'de'ku'jiu	100
 灵刃云开星落	ling'ren'yun'kai'xing'la	100
 灵刃云开星落	ling'ren'yun'kai'xing'luo	100
-灵蛇恶灵	ling'she'e'ling	100
-灵蛇恶灵	ling'she'wu'ling	100
+灵蛇厄灵	ling'she'e'ling	100
 灵圣	ling'sheng	100
 灵生分蘖节	ling'sheng'fen'nie'jie	100
 灵生空根	ling'sheng'kong'gen	100
@@ -11283,8 +11190,6 @@
 淋溶	lin'rong	100
 淋溶层	lin'rong'ceng	100
 临时安置	lin'shi'an'zhi	100
-临时连长	lin'shi'lian'chang	100
-临时连长	lin'shi'lian'zhang	100
 临时之选	lin'shi'zhi'xuan	100
 临时主矿道	lin'shi'zhu'kuang'dao	100
 林薮引路人	lin'sou'yin'lu'ren	100
@@ -11350,7 +11255,6 @@
 历史的涟漪	li'shi'de'lian'yi	100
 理式摹写	li'shi'mo'xie	100
 利是闹春	li'shi'nao'chun	100
-立式燃爆木	li'shi'ran'bao'mu	100
 立式三脚双极塔	li'shi'san'jiao'shuang'ji'ta	100
 粝食寻甘	li'shi'xun'gan	100
 砾石之月	li'shi'zhi'yue	100
@@ -11441,7 +11345,6 @@
 琉璃晶砂	liu'li'jing'sha	100
 琉鳞石	liu'lin'shi	100
 琉璃亭	liu'li'ting	100
-琉璃亭却砂木立灯	liu'li'ting'que'sha'mu'li'deng	100
 琉璃岩间国土纪行	liu'li'yan'jian'guo'tu'ji'xing	100
 琉璃映月	liu'li'ying'yue	100
 流离者的晶泪	liu'li'zhe'de'jing'lei	100
@@ -11464,7 +11367,6 @@
 流沙的冒险家	liu'sha'de'mao'xian'jia	100
 流沙的寻宝者	liu'sha'de'xun'bao'zhe	100
 流沙贵嗣的遗宝	liu'sha'gui'si'de'yi'bao	100
-流沙陆鳗鳗	liu'sha'lu'man'man	100
 流沙鳗鳗	liu'sha'man'man	100
 流沙之葬	liu'sha'zhi'zang	100
 流水叮咛	liu'shui'ding'ning	100
@@ -11902,7 +11804,8 @@
 栌青	lu'qing	100
 鲁热	lu're	100
 卢仁	lu'ren	100
-陆叁号四倍甜版	lu'san'hao'si'bei'tian'ban	100
+陆叁号四倍甜度版	lu'san'hao'si'bei'tian'du'ban	100
+陆叁号四倍甜度版	lu'san'hao'si'bei'tian'duo'ban	100
 陆叁零捌	lu'san'ling'ba	100
 鲁萨诺夫	lu'sa'nuo'fu	100
 卢森巴博	lu'sen'ba'bo	100
@@ -11945,6 +11848,7 @@
 鲁兹茨基	lu'zi'ci'ji	100
 鲁佐娃	lu'zuo'wa	100
 律偿混能	lv'chang'hun'neng	100
+旅程	lv'cheng	100
 履虫	lv'chong	100
 律定	lv'ding	100
 律动魔匠	lv'dong'mo'jiang	100
@@ -11974,7 +11878,6 @@
 绿松石之狩	lv'song'shi'zhi'shou	100
 旅团	lv'tuan	100
 旅团成员	lv'tuan'cheng'yuan	100
-旅团的兵阵雄姿	lv'tuan'de'bing'zhen'xiong'zi	100
 旅团守卫	lv'tuan'shou'wei	100
 旅团佣兵	lv'tuan'yong'bing	100
 旅途的采获	lv'tu'de'cai'huo	100
@@ -12144,7 +12047,6 @@
 芒荒圆舞机关	mang'huang'yuan'wu'ji'guan	100
 芒荒中继桩	mang'huang'zhong'ji'zhuang	100
 芒脊守宫	mang'ji'shou'gong	100
-忙碌的厨房	mang'lu'de'chu'fang	100
 忙碌市集的潮流风物	mang'lu'shi'ji'de'chao'liu'feng'wu	100
 芒索斯山	mang'suo'si'shan	100
 芒索斯山东麓	mang'suo'si'shan'dong'lu	100
@@ -12155,7 +12057,7 @@
 芒性	mang'xing	100
 芒性能量块	mang'xing'neng'liang'kuai	100
 芒焰之翼斩	mang'yan'zhi'yi'zhan	100
-莽夜之鸭	mang'ye'zhi'ya	100
+莽夜之鸮	mang'ye'zhi'xiao	100
 漫画织卷	man'hua'zhi'juan	100
 满辉	man'hui	100
 马涅茨	ma'nie'ci	100
@@ -12283,7 +12185,6 @@
 冒险家协会发展大会	mao'xian'jia'xie'hui'fa'zhan'da'hui	100
 冒险家协会分会长	mao'xian'jia'xie'hui'fen'hui'chang	100
 冒险家协会分会长	mao'xian'jia'xie'hui'fen'hui'zhang	100
-冒险家协会干部	mao'xian'jia'xie'hui'gan'bu	100
 冒险家协会接待员	mao'xian'jia'xie'hui'jie'dai'yuan	100
 冒险家协会情报员	mao'xian'jia'xie'hui'qing'bao'yuan	100
 冒险家协会宣传员	mao'xian'jia'xie'hui'xuan'chuan'yuan	100
@@ -12298,7 +12199,6 @@
 猫型家用互助协调器	mao'xing'jia'yong'hu'zhu'xie'diao'qi	100
 猫型家用互助协调器	mao'xing'jia'yong'hu'zhu'xie'tiao'qi	100
 帽檐沙影的轮廓	mao'yan'sha'ying'de'lun'kuo	100
-贸易监察	mao'yi'jian'cha	100
 猫又	mao'you	100
 猫与卡牌的战场	mao'yu'ka'pai'de'zhan'chang	100
 猫与随机数	mao'yu'sui'ji'shu	100
@@ -12317,8 +12217,6 @@
 帽子水母	mao'zi'shui'mu	100
 玛茜菈	ma'qian'la	100
 玛茜菈	ma'xi'la	100
-玛茜拉	ma'qian'la	100
-玛茜拉	ma'xi'la	100
 玛乔丽	ma'qiao'li	100
 马齐尔	ma'qi'er	100
 马其莫斯	ma'qi'mo'si	100
@@ -12545,22 +12443,18 @@
 梦湖起波	meng'hu'qi'bo	100
 梦见风名物点心	meng'jian'feng'ming'wu'dian'xin	100
 梦见花霞织樱雨	meng'jian'hua'xia'zhi'ying'yu	100
-梦间见月明	meng'jian'jian'yue'ming	100
 梦见木	meng'jian'mu	100
-梦见木诚见塞钱箱	meng'jian'mu'cheng'jian'sai'qian'xiang	100
-梦见木诚见塞钱箱	meng'jian'mu'cheng'jian'se'qian'xiang	100
 梦见木重念	meng'jian'mu'chong'nian	100
 梦见木重念	meng'jian'mu'zhong'nian	100
-梦见木冷暖一桌被炉	meng'jian'mu'leng'nuan'yi'zhuo'bei'lu	100
 梦见木礼待着物架	meng'jian'mu'li'dai'zhao'wu'jia	100
 梦见木礼待着物架	meng'jian'mu'li'dai'zhe'wu'jia	100
 梦见木露隐	meng'jian'mu'lou'yin	100
 梦见木露隐	meng'jian'mu'lu'yin	100
 梦见木入画折屏	meng'jian'mu'ru'hua'zhe'ping	100
 梦见木樱眠	meng'jian'mu'ying'mian	100
-梦见木灾祛御签挂	meng'jian'mu'zai'qu'yu'qian'gua	100
 梦见月	meng'jian'yue	100
 梦见月的舒心小站	meng'jian'yue'de'shu'xin'xiao'zhan	100
+梦间月明	meng'jian'yue'ming	100
 梦见月瑞希	meng'jian'yue'rui'xi	100
 梦境边际	meng'jing'bian'ji	100
 梦境和机器狗	meng'jing'he'ji'qi'gou	100
@@ -12580,7 +12474,6 @@
 萌蘖的竹笋	meng'nie'de'zhu'sun	100
 孟尼力克	meng'ni'li'ke	100
 梦凝成的苦果	meng'ning'cheng'de'ku'guo	100
-猛犬管理规范	meng'quan'guan'li'gui'fan	100
 猛犬注意	meng'quan'zhu'yi	100
 萌生的灵风	meng'sheng'de'ling'feng	100
 梦生羽翼	meng'sheng'yu'yi	100
@@ -12735,6 +12628,7 @@
 秘技薄荷酱烤鱼	mi'ji'bao'he'jiang'kao'yu	100
 秘技薄荷酱烤鱼	mi'ji'bo'he'jiang'kao'yu	100
 谜镜	mi'jing	100
+谧景	mi'jing	100
 谜境悬兵	mi'jing'xuan'bing	100
 迷境之岛	mi'jing'zhi'dao	100
 秘境之门	mi'jing'zhi'men	100
@@ -13142,7 +13036,6 @@
 莫妮卡	mo'ni'ka	100
 莫妮欧	mo'ni'ou	100
 莫诺马赫	mo'nuo'ma'he	100
-莫诺马赫皇帝	mo'nuo'ma'he'huang'di	100
 魔女	mo'nv	100
 魔女常燃之羽	mo'nv'chang'ran'zhi'yu	100
 魔女的茶会	mo'nv'de'cha'hui	100
@@ -13246,7 +13139,7 @@
 貘枕座	mo'zhen'zuo	100
 末缀之劫	mo'zhui'zhi'jie	100
 莫孜甘	mo'zi'gan	100
-木版画餐厅	mu'ban'hua'can'ting	100
+木版画	mu'ban'hua	100
 目别汇分	mu'bie'hui'fen	100
 沐晨	mu'chen	100
 木盾丘丘暴徒	mu'dun'qiu'qiu'bao'tu	100
@@ -13257,8 +13150,6 @@
 慕风蘑菇	mu'feng'mo'gu	100
 幕府	mu'fu	100
 目付堇葵	mu'fu'jin'kui	100
-幕府军官	mu'fu'jun'guan	100
-幕府军士	mu'fu'jun'shi	100
 幕府随从	mu'fu'sui'cong	100
 幕府足轻	mu'fu'zu'qing	100
 幕府足轻头	mu'fu'zu'qing'tou	100
@@ -13348,10 +13239,6 @@
 慕珍	mu'zhen	100
 木制	mu'zhi	100
 木质	mu'zhi	100
-木制长凳	mu'zhi'chang'deng	100
-木制长凳	mu'zhi'zhang'deng	100
-木制露天	mu'zhi'lou'tian	100
-木制露天	mu'zhi'lu'tian	100
 木制围栏	mu'zhi'wei'lan	100
 木桌	mu'zhuo	100
 纳巴提	na'ba'ti	100
@@ -13363,8 +13250,6 @@
 纳博内番茄盅	na'bo'nei'fan'qie'zhong	100
 纳博内区	na'bo'nei'ou	100
 纳博内区	na'bo'nei'qu	100
-纳博市区	na'bo'shi'ou	100
-纳博市区	na'bo'shi'qu	100
 娜布	na'bu	100
 娜布	nuo'bu	100
 娜布玛莉卡塔	na'bu'ma'li'ka'ta	100
@@ -13496,7 +13381,6 @@
 娜塔芭	na'ta'ba	100
 娜塔芭	nuo'ta'ba	100
 纳塔博学者	na'ta'bo'xue'zhe	100
-纳塔部族	na'ta'bu'zu	100
 纳塔端居	na'ta'duan'ju	100
 纳塔队	na'ta'dui	100
 纳塔兰提亚	na'ta'lan'ti'ya	100
@@ -13589,7 +13473,6 @@
 啮冰	nie'bing	100
 涅朵奇卡	nie'duo'qi'ka	100
 涅法海姆	nie'fa'hai'mu	100
-啮骸状态	nie'hai'zhuang'tai	100
 啮合齿轮	nie'he'chi'lun	100
 涅克拉索夫	nie'ke'la'suo'fu	100
 涅兰	nie'lan	100
@@ -13650,6 +13533,7 @@
 凝静的海色	ning'jing'de'hai'se	100
 宁静深夜	ning'jing'shen'ye	100
 宁静深夜的沙风	ning'jing'shen'ye'de'sha'feng	100
+宁静时光	ning'jing'shi'guang	100
 宁静无梦的乐园	ning'jing'wu'meng'de'le'yuan	100
 宁静无梦的乐园	ning'jing'wu'meng'de'yue'yuan	100
 宁静之海	ning'jing'zhi'hai	100
@@ -13827,7 +13711,6 @@
 欧立威	ou'li'wei	100
 欧洛伦	ou'luo'lun	100
 欧蜜涅	ou'mi'nie	100
-欧密涅	ou'mi'nie	100
 欧诺莉	ou'nuo'li	100
 欧欧	ou'ou	100
 欧仁妮	ou'ren'ni	100
@@ -13900,7 +13783,7 @@
 判罚之钉的异动	pan'fa'zhi'ding'de'yi'dong	100
 盘伏树	pan'fu'shu	100
 攀附之月	pan'fu'zhi'yue	100
-磐高危险	pan'gao'wei'xian	100
+攀高危险	pan'gao'wei'xian	100
 胖胖果	pang'pang'guo	100
 胖胖鼠	pang'pang'shu	100
 胖胖小紫	pang'pang'xiao'zi	100
@@ -13980,7 +13863,6 @@
 帕伊沃	pa'yi'wo	100
 帕兹	pa'zi	100
 陪伴型猜拳手	pei'ban'xing'cai'quan'shou	100
-帔氅獾	pei'chang'huan	100
 佩彻娜	pei'che'na	100
 佩彻娜	pei'che'nuo	100
 配队	pei'dui	100
@@ -14043,7 +13925,6 @@
 偏光棱镜	pian'guang'leng'jing	100
 片剂深研	pian'ji'shen'yan	100
 片刻安闲	pian'ke'an'xian	100
-片刻小憩	pian'ke'xiao'qi	100
 片蓝露滴	pian'lan'lou'di	100
 片蓝露滴	pian'lan'lu'di	100
 骗骗花	pian'pian'hua	100
@@ -14058,7 +13939,7 @@
 翩转	pian'zhuan	100
 漂泊的异乡人	piao'bo'de'yi'xiang'ren	100
 漂泊的异乡人	piao'po'de'yi'xiang'ren	100
-漂浮灵	piao'fu'ling	100
+飘浮灵	piao'fu'ling	100
 飘浮秘灵	piao'fu'mi'ling	100
 缥锦	piao'jin	100
 缥锦机关	piao'jin'ji'guan	100
@@ -14099,6 +13980,7 @@
 平藏	ping'cang	100
 平藏	ping'zang	100
 凭此结契	ping'ci'jie'qi	100
+平淡日常	ping'dan'ri'chang	100
 平等对谈	ping'deng'dui'tan	100
 评定所	ping'ding'suo	100
 屏风	ping'feng	100
@@ -14242,8 +14124,8 @@
 普莱希雅	pu'lai'xi'ya	100
 普拉泽娜	pu'la'ze'na	100
 普拉泽娜	pu'la'ze'nuo	100
-普列奥布拉仁斯基	pu'lie'ao'bu'la'ren'si'ji	100
 普列奥布拉任斯基	pu'lie'ao'bu'la'ren'si'ji	100
+普列奥布拉仁斯基	pu'lie'ao'bu'la'ren'si'ji	100
 普列博	pu'lie'bo	100
 普列妮策	pu'lie'ni'ce	100
 普列特涅夫	pu'lie'te'nie'fu	100
@@ -14583,8 +14465,6 @@
 旗本重铠	qi'ben'chong'kai	100
 旗本重铠	qi'ben'zhong'kai	100
 旗本武将	qi'ben'wu'jiang	100
-骑兵队长	qi'bing'dui'chang	100
-骑兵队长	qi'bing'dui'zhang	100
 奇兵诡出	qi'bing'gui'chu	100
 骑兵团	qi'bing'tuan	100
 骑兵小队老兵	qi'bing'xiao'dui'lao'bing	100
@@ -14651,7 +14531,6 @@
 锲纹的横脊	qie'wen'de'heng'ji	100
 切夏斯卡娅	qie'xia'si'ka'ya	100
 惬意之街	qie'yi'zhi'jie	100
-窃月岁光	qie'yue'sui'guang	100
 企鹅与丰渥之国	qi'e'yu'feng'wo'zhi'guo	100
 且住亭御咄	qie'zhu'ting'yu'duo	100
 奇番	qi'fan	100
@@ -14763,6 +14642,8 @@
 情报贩子	qing'bao'fan'zi	100
 情报交易员	qing'bao'jiao'yi'yuan	100
 情报整合册	qing'bao'zheng'he'ce	100
+轻便	qing'bian	100
+轻便	qing'pian	100
 轻便货箱	qing'bian'huo'xiang	100
 轻便货箱	qing'pian'huo'xiang	100
 轻便自由候车凉棚	qing'bian'zi'you'hou'che'liang'peng	100
@@ -14898,9 +14779,7 @@
 清算黑暗的炎之剑	qing'suan'hei'an'de'yan'zhi'jian	100
 轻甜绯樱	qing'tian'fei'ying	100
 清甜果味	qing'tian'guo'wei	100
-清甜果味彩陶盘	qing'tian'guo'wei'cai'tao'pan	100
 晴天合唱	qing'tian'he'chang	100
-青天鳅鳅	qing'tian'qiu'qiu	100
 晴天鳅鳅	qing'tian'qiu'qiu	100
 青霆	qing'ting	100
 青戊	qing'wu	100
@@ -14917,6 +14796,7 @@
 清心花饼	qing'xin'hua'bing	100
 清心花炒蜥蜴	qing'xin'hua'chao'xi'yi	100
 清馨良药的悬釜	qing'xin'liang'yao'de'xuan'fu	100
+清新水雾	qing'xin'shui'wu	100
 青玄乘阳华盖	qing'xuan'cheng'yang'hua'gai	100
 青玄乘阳华盖	qing'xuan'cheng'yang'hua'ge	100
 青玄乘阳华盖	qing'xuan'sheng'yang'hua'gai	100
@@ -14948,7 +14828,6 @@
 清昼	qing'zhou	100
 请转告王城的公民	qing'zhuan'gao'wang'cheng'de'gong'min	100
 清子	qing'zi	100
-秦库马	qin'ku'ma	100
 勤劳的教导	qin'lao'de'jiao'dao	100
 勤劳的哲学	qin'lao'de'zhe'xue	100
 勤劳的指引	qin'lao'de'zhi'yin	100
@@ -14960,8 +14839,6 @@
 琴师的箭羽	qin'shi'de'jian'yu	100
 勤思勉学	qin'si'mian'xue	100
 钦特利	qin'te'li	100
-琴团长	qin'tuan'chang	100
-琴团长	qin'tuan'zhang	100
 钦图图	qin'tu'tu	100
 契诺夫	qi'nuo'fu	100
 齐诺维奇	qi'nuo'wei'qi	100
@@ -15090,7 +14967,6 @@
 丘林	qiu'lin	100
 遒茂之月	qiu'mao'zhi'yue	100
 秋暮之火	qiu'mu'zhi'huo	100
-秋暮之炎	qiu'mu'zhi'yan	100
 秋纽奥	qiu'niu'ao	100
 丘丘	qiu'qiu	100
 丘丘暴徒	qiu'qiu'bao'tu	100
@@ -15108,14 +14984,13 @@
 丘丘聚落	qiu'qiu'ju'luo	100
 丘丘雷兜王	qiu'qiu'lei'dou'wang	100
 丘丘雷图腾	qiu'qiu'lei'tu'teng	100
-丘丘螺旋瞭望塔	qiu'qiu'luo'xuan'liao'wang'ta	100
 丘丘木烤鱼	qiu'qiu'mu'kao'yu	100
 丘丘人	qiu'qiu'ren	100
 丘丘人暴徒	qiu'qiu'ren'bao'tu	100
 丘丘人的一小步	qiu'qiu'ren'de'yi'xiao'bu	100
 丘丘人诗歌选	qiu'qiu'ren'shi'ge'xuan	100
 丘丘人习俗考察	qiu'qiu'ren'xi'su'kao'cha	100
-丘丘人语研究学者	qiu'qiu'ren'yu'yan'jiu'xue'zhe	100
+丘丘人语研究学家	qiu'qiu'ren'yu'yan'jiu'xue'jia	100
 丘丘萨满	qiu'qiu'sa'man	100
 丘丘萨满大大像	qiu'qiu'sa'man'da'da'xiang	100
 丘丘射手	qiu'qiu'she'shou	100
@@ -15214,11 +15089,10 @@
 欺诈师列那	qi'zha'shi'lie'na	100
 奇珍分享包	qi'zhen'fen'xiang'bao	100
 启蜇之祝词	qi'zhe'zhi'zhu'ci	100
-启蛰之祝词	qi'zhe'zhi'zhu'ci	100
 栖枝	qi'zhi	100
 歧之地	qi'zhi'di	100
 岂知晦朔	qi'zhi'hui'shuo	100
-岐之试炼	qi'zhi'shi'lian	100
+歧之试炼	qi'zhi'shi'lian	100
 岂知夜色	qi'zhi'ye'se	100
 器质音律	qi'zhi'yin'lv	100
 棋中法度	qi'zhong'fa'du	100
@@ -15358,7 +15232,6 @@
 让我甘心毁灭	rang'wo'gan'xin'hui'mie	100
 然后时间开始流动	ran'hou'shi'jian'kai'shi'liu'dong	100
 然后天下无敌	ran'hou'tian'xia'wu'di	100
-然后撞翻世界	ran'hou'zhuang'fan'shi'jie	100
 染绘石挑战	ran'hui'shi'tiao'zhan	100
 染火	ran'huo	100
 燃火大胃尊者	ran'huo'da'wei'zun'zhe	100
@@ -15383,15 +15256,12 @@
 燃素蜜虫	ran'su'mi'chong	100
 燃素能量球	ran'su'neng'liang'qiu	100
 燃素颜料	ran'su'yan'liao	100
-燃素鱼类	ran'su'yu'lei	100
 染血的黑之羽	ran'xie'de'hei'zhi'yu	100
 染血的黑之羽	ran'xue'de'hei'zhi'yu	100
 染血的骑士	ran'xie'de'qi'shi	100
 染血的骑士	ran'xue'de'qi'shi	100
 染血的骑士道	ran'xie'de'qi'shi'dao	100
 染血的骑士道	ran'xue'de'qi'shi'dao	100
-染血的骑士之杯	ran'xie'de'qi'shi'zhi'bei	100
-染血的骑士之杯	ran'xue'de'qi'shi'zhi'bei	100
 染血的铁假面	ran'xie'de'tie'jia'mian	100
 染血的铁假面	ran'xue'de'tie'jia'mian	100
 染血的铁之心	ran'xie'de'tie'zhi'xin	100
@@ -15424,7 +15294,6 @@
 热奶酪饼	re'nai'lao'bing	100
 仁蔼骑士	ren'ai'qi'shi	100
 热闹的记录页	re'nao'de'ji'lu'ye	100
-热闹红火的杂货	re'nao'hong'huo'de'za'huo	100
 人创造的奇迹	ren'chuang'zao'de'qi'ji	100
 忍刀终末番	ren'dao'zhong'mo'fan	100
 忍冬之果	ren'dong'zhi'guo	100
@@ -15491,6 +15360,8 @@
 热舞乐台	re'wu'le'tai	100
 热舞乐台	re'wu'yue'tai	100
 热销	re'xiao	100
+热血	re'xie	100
+热血	re'xue	100
 热宴	re'yan	100
 热源	re'yuan	100
 日常茶饭	ri'chang'cha'fan	100
@@ -15887,6 +15758,8 @@
 三餐尽欢	san'can'jin'huan	100
 三乘种子	san'cheng'zhong'zi	100
 三乘种子	san'sheng'zhong'zi	100
+三重	san'chong	100
+三重	san'zhong	100
 三重的须臾	san'chong'de'xu'yu	100
 三重的须臾	san'zhong'de'xu'yu	100
 三重雪关扉	san'chong'xue'guan'fei	100
@@ -15906,7 +15779,6 @@
 伞盖的荫蔽	san'ge'de'yin'bi	100
 桑迪诺	sang'di'nuo	100
 桑顿	sang'dun	100
-桑多妮	sang'duo'ni	100
 桑多涅	sang'duo'nie	100
 桑多涅的便携式茶桌	sang'duo'nie'de'bian'xie'shi'cha'zhuo	100
 桑多涅的便携式茶桌	sang'duo'nie'de'pian'xie'shi'cha'zhuo	100
@@ -16044,6 +15916,7 @@
 沙尔	sha'er	100
 沙尔玛	sha'er'ma	100
 沙尔梅	sha'er'mei	100
+沙发	sha'fa	100
 莎凡娜	sha'fan'na	100
 莎凡娜	sha'fan'nuo	100
 莎菲	sha'fei	100
@@ -16134,13 +16007,12 @@
 珊瑚宫	shan'hu'gong	100
 珊瑚宫的祈祷	shan'hu'gong'de'qi'dao	100
 珊瑚宫记	shan'hu'gong'ji	100
-珊瑚宫军官	shan'hu'gong'jun'guan	100
 珊瑚宫军士	shan'hu'gong'jun'shi	100
 珊瑚宫民间信仰初勘	shan'hu'gong'min'jian'xin'yang'chu'kan	100
 珊瑚宫下士	shan'hu'gong'xia'shi	100
 珊瑚宫心海	shan'hu'gong'xin'hai	100
 珊瑚宫众	shan'hu'gong'zhong	100
-山辉祡	shan'hui'chai	100
+山辉砦	shan'hui'zhai	100
 珊瑚王虫	shan'hu'wang'chong	100
 珊瑚一心	shan'hu'yi'xin	100
 珊瑚真珠	shan'hu'zhen'zhu	100
@@ -16168,20 +16040,16 @@
 杉木	shan'mu	100
 杉木储藏柜	shan'mu'chu'cang'gui	100
 杉木储藏柜	shan'mu'chu'zang'gui	100
-杉木房门	shan'mu'fang'men	100
 杉木货架	shan'mu'huo'jia	100
 杉木货箱	shan'mu'huo'xiang	100
 杉木酒桶	shan'mu'jiu'tong	100
 杉木武器架	shan'mu'wu'qi'jia	100
 杉木芯	shan'mu'xin	100
 杉木置物架	shan'mu'zhi'wu'jia	100
-杉木转角	shan'mu'zhuan'jiao	100
-杉木转角	shan'mu'zhuan'jue	100
 山努亚故事集	shan'nu'ya'gu'shi'ji	100
 山如悬练	shan'ru'xuan'lian	100
 杉山	shan'shan	100
 闪闪	shan'shan	100
-闪闪彩蛋	shan'shan'cai'dan	100
 山上	shan'shang	100
 山上之树	shan'shang'zhi'shu	100
 闪闪礼蛋	shan'shan'li'dan	100
@@ -16489,7 +16357,6 @@
 圣言自明机	sheng'yan'zi'ming'ji	100
 圣夜旅织	sheng'ye'lv'zhi	100
 圣仪	sheng'yi	100
-圣仪仓鹫庇卫	sheng'yi'cang'jiu'bi'wei	100
 圣仪苍鹭庇卫	sheng'yi'cang'lu'bi'wei	100
 生意红火的食肆	sheng'yi'hong'huo'de'shi'si	100
 圣仪灰鸰衒潮	sheng'yi'hui'ling'xuan'chao	100
@@ -16698,7 +16565,6 @@
 神霄折戟录	shen'xiao'zhe'ji'lu	100
 身形如鹤	shen'xing'ru'he	100
 神性之陨	shen'xing'zhi'yun	100
-审讯大厅	shen'xun'da'ting	100
 深衍	shen'yan	100
 深炎之底	shen'yan'zhi'di	100
 神樱	shen'ying	100
@@ -16740,8 +16606,6 @@
 神之心	shen'zhi'xin	100
 神之嗅觉	shen'zhi'xiu'jiao	100
 神之嗅觉	shen'zhi'xiu'jue	100
-神之嗅觉不倒狐狐	shen'zhi'xiu'jiao'bu'dao'hu'hu	100
-神之嗅觉不倒狐狐	shen'zhi'xiu'jue'bu'dao'hu'hu	100
 神之眼	shen'zhi'yan	100
 神之嘴	shen'zhi'zui	100
 神之座	shen'zhi'zuo	100
@@ -16753,7 +16617,6 @@
 舍身陷坑	she'shen'xian'keng	100
 蛇神之首	she'shen'zhi'shou	100
 蛇噬	she'shi	100
-设施完备的书房	she'shi'wan'bei'de'shu'fang	100
 射手丘丘人	she'shou'qiu'qiu'ren	100
 舍万	she'wan	100
 社务顺易	she'wu'shun'yi	100
@@ -16837,6 +16700,7 @@
 时间之执政	shi'jian'zhi'zhi'zheng	100
 视觉聚焦	shi'jiao'ju'jiao	100
 视觉聚焦	shi'jue'ju'jiao	100
+时节	shi'jie	100
 世界任务	shi'jie'ren'wu	100
 世界式	shi'jie'shi	100
 世界树	shi'jie'shu	100
@@ -17041,9 +16905,8 @@
 石镇子	shi'zhen'zi	100
 识者之证	shi'zhe'zhi'zheng	100
 石质	shi'zhi	100
+石制	shi'zhi	100
 矢志不忘	shi'zhi'bu'wang	100
-石制长凳	shi'zhi'chang'deng	100
-石制长凳	shi'zhi'zhang'deng	100
 势至权达	shi'zhi'quan'da	100
 时之沙	shi'zhi'sha	100
 狮之血	shi'zhi'xie	100
@@ -17071,8 +16934,6 @@
 试作兰那罗	shi'zuo'lan'na'luo	100
 试作星镰	shi'zuo'xing'lian	100
 试作斩岩	shi'zuo'zhan'yan	100
-收藏橱柜	shou'cang'chu'gui	100
-收藏橱柜	shou'zang'chu'gui	100
 守城者	shou'cheng'zhe	100
 首充	shou'chong	100
 守村人	shou'cun'ren	100
@@ -17095,7 +16956,6 @@
 守护的增殖生命体	shou'hu'de'zeng'zhi'sheng'ming'ti	100
 守护徽印	shou'hu'hui'yin	100
 兽魂	shou'hun	100
-收获时节的小镇摊位	shou'huo'shi'jie'de'xiao'zhen'tan'wei	100
 守护束带	shou'hu'shu'dai	100
 守护岩柱	shou'hu'yan'zhu	100
 守护之风	shou'hu'zhi'feng	100
@@ -17150,7 +17010,6 @@
 熟是生非	shu'shi'sheng'fei	100
 守誓者的圣所	shou'shi'zhe'de'sheng'suo	100
 守誓之人	shou'shi'zhi'ren	100
-守时准则	shou'shi'zhun'ze	100
 瘦兽灵	shou'shou'ling	100
 守戍的誓命	shou'shu'de'shi'ming	100
 熟思之树	shou'si'zhi'shu	100
@@ -17198,6 +17057,7 @@
 双暴分	shuang'bao'fen	100
 霜迸之月	shuang'beng'zhi'yue	100
 双冰	shuang'bing	100
+双层	shuang'ceng	100
 双层货盘	shuang'ceng'huo'pan	100
 双层烛台吊灯	shuang'ceng'zhu'tai'diao'deng	100
 霜辰	shuang'chen	100
@@ -17289,8 +17149,6 @@
 霜月	shuang'yue	100
 霜月藏物箱	shuang'yue'cang'wu'xiang	100
 霜月藏物箱	shuang'yue'zang'wu'xiang	100
-霜月的残照	shuang'yue'de'can'zhao	100
-霜月灵嗣	shuang'yue'ling'si	100
 霜月女神	shuang'yue'nv'shen	100
 霜月如故	shuang'yue'ru'gu	100
 霜月印磐	shuang'yue'yin'pan	100
@@ -17313,13 +17171,10 @@
 书抵万金	shu'di'wan'jin	100
 曙光车站	shu'guang'che'zhan	100
 曙光车站	shu'guang'ju'zhan	100
-曙光车站商店	shu'guang'che'zhan'shang'dian	100
-曙光车站商店	shu'guang'ju'zhan'shang'dian	100
 曙光重新升起之处	shu'guang'chong'xin'sheng'qi'zhi'chu	100
 曙光重新升起之处	shu'guang'zhong'xin'sheng'qi'zhi'chu	100
 曙光的一缕	shu'guang'de'yi'lv	100
 曙光记	shu'guang'ji	100
-鼠光戏法	shu'guang'xi'fa	100
 曙光预言	shu'guang'yu'yan	100
 书柜	shu'gui	100
 蔬果贩	shu'guo'fan	100
@@ -17362,7 +17217,6 @@
 水光	shui'guang	100
 水光破镜	shui'guang'po'jing	100
 水果商贩	shui'guo'shang'fan	100
-水果摊位	shui'guo'tan'wei	100
 水国寻迹	shui'guo'xun'ji	100
 水火	shui'huo	100
 水火冰驱役者	shui'huo'bing'qu'yi'zhe	100
@@ -17391,8 +17245,7 @@
 睡莲座	shui'lian'zuo	100
 水龙蜥	shui'long'xi	100
 水陆自在	shui'lu'zi'zai	100
-水畔的富饶	shui'pan'de'fu'rao	100
-水畔的宁静时光	shui'pan'de'ning'jing'shi'guang	100
+水畔	shui'pan	100
 水泡阵地	shui'pao'zhen'di	100
 水飘浮灵	shui'piao'fu'ling	100
 水瀑旋涡	shui'pu'xuan'wo	100
@@ -17428,7 +17281,6 @@
 水仙的安	shui'xian'de'an	100
 水仙的时时刻刻	shui'xian'de'shi'shi'ke'ke	100
 水仙的追迹	shui'xian'de'zhui'ji	100
-水乡冻肉	shui'xiang'dong'rou	100
 水乡肉冻	shui'xiang'rou'dong	100
 水仙剑	shui'xian'jian	100
 水仙梦醒	shui'xian'meng'xing	100
@@ -17496,7 +17348,7 @@
 水中幻愿	shui'zhong'huan'yuan	100
 水中耐力	shui'zhong'nai'li	100
 水中王后	shui'zhong'wang'hou	100
-水中之眼	shui'zhong'zhi'yan	100
+水中之影	shui'zhong'zhi'ying	100
 水种子	shui'zhong'zi	100
 水主	shui'zhu	100
 水煮黑背鲈	shui'zhu'hei'bei'lu	100
@@ -17623,7 +17475,6 @@
 四合灯	si'he'deng	100
 死河渡断	si'he'du'duan	100
 死后世界	si'hou'shi'jie	100
-思胡马	si'hu'ma	100
 死魂灵的夜曲	si'hun'ling'de'ye'qu	100
 思惑	si'huo	100
 斯嘉莉	si'jia'li	100
@@ -17631,7 +17482,6 @@
 肆阶	si'jie	100
 斯捷潘	si'jie'pan	100
 斯捷潘尼扬	si'jie'pan'ni'yang	100
-斯捷潘尼杨	si'jie'pan'ni'yang	100
 四境四象回声	si'jing'si'xiang'hui'sheng	100
 斯凯戎	si'kai'rong	100
 斯卡拉姆齐	si'ka'la'mu'qi	100
@@ -17669,7 +17519,7 @@
 丝帕佳娜	si'pa'jia'na	100
 丝帕佳娜	si'pa'jia'nuo	100
 斯佩兰扎	si'pei'lan'zha	100
-司彭西安号	si'peng'xi'an'hao	100
+斯彭西安号	si'peng'xi'an'hao	100
 四平八稳的庄严	si'ping'ba'wen'de'zhuang'yan	100
 斯普赫	si'pu'he	100
 斯奇	si'qi	100
@@ -17685,7 +17535,6 @@
 司颂座	si'song'zuo	100
 死随念棺	si'sui'nian'guan	100
 斯索佳诺夫	si'suo'jia'nuo'fu	100
-斯塔杜欧	si'ta'du'ou	100
 斯塔杜欣	si'ta'du'xin	100
 斯塔夫罗金	si'ta'fu'luo'jin	100
 斯塔拉诺夫	si'ta'la'nuo'fu	100
@@ -17698,7 +17547,7 @@
 斯特维兰娜	si'te'wei'lan'nuo	100
 寺田	si'tian	100
 四天王之一	si'tian'wang'zhi'yi	100
-斯瓦罗格	si'wa'luo'ge	100
+斯瓦罗德	si'wa'luo'de	100
 斯万	si'wan	100
 斯汪	si'wang	100
 死亡之风	si'wang'zhi'feng	100
@@ -17740,6 +17589,7 @@
 松川宗全	song'chuan'zong'quan	100
 送出些许光明	song'chu'xie'xu'guang'ming	100
 送冬的华宴	song'dong'de'hua'yan	100
+送风	song'feng	100
 松风霞立	song'feng'xia'li	100
 颂福纳	song'fu'na	100
 松伽塔	song'ga'ta	100
@@ -17760,7 +17610,6 @@
 松木橱柜	song'mu'chu'gui	100
 松木靠背茶椅	song'mu'kao'bei'cha'yi	100
 松木圆桌	song'mu'yuan'zhuo	100
-松木折屏	song'mu'zhe'ping	100
 松潘特利	song'pan'te'li	100
 松平	song'ping	100
 松珀香	song'po'xiang	100
@@ -17801,7 +17650,6 @@
 苏二娘	su'er'niang	100
 苏尔塔尼	su'er'ta'ni	100
 苏尔特洛奇	su'er'te'luo'qi	100
-苏尔特洛奇的弟子	su'er'te'luo'qi'de'di'zi	100
 苏法什	su'fa'shen	100
 苏法什	su'fa'shi	100
 宿古的赫炎	su'gu'de'he'yan	100
@@ -17913,13 +17761,10 @@
 索莉马娜	suo'li'ma'nuo	100
 索林	suo'lin	100
 索琳蒂丝	suo'lin'di'si	100
-索林蒂丝	suo'lin'di'si	100
 索卢格之王	suo'lu'ge'zhi'wang	100
 索洛尼娅	suo'luo'ni'ya	100
 索洛维	suo'luo'wei	100
 锁面板	suo'mian'ban	100
-索鸟娜	suo'niao'na	100
-索鸟娜	suo'niao'nuo	100
 索妮齐娅	suo'ni'qi'ya	100
 索契科夫	suo'qi'ke'fu	100
 索瑞	suo'rui	100
@@ -18074,6 +17919,7 @@
 塔玛拉	ta'ma'la	100
 塔马鲁	ta'ma'lu	100
 塔马提	ta'ma'ti	100
+他们的愿望	ta'men'de'yuan'wang	100
 他们给了我名字	ta'men'gei'le'wo'ming'zi	100
 他们给了我名字	ta'men'ji'le'wo'ming'zi	100
 他们行过星空	ta'men'xing'guo'xing'kong	100
@@ -18276,7 +18122,6 @@
 特殊调弦	te'shu'tiao'xian	100
 特殊分析变焦镜头	te'shu'fen'xi'bian'jiao'jing'tou	100
 特殊矿镐	te'shu'kuang'gao	100
-特殊料理	te'shu'liao'li	100
 特殊任务营	te'shu'ren'wu'ying	100
 特殊任务营领队	te'shu'ren'wu'ying'ling'dui	100
 特斯拉球还流行吗	te'si'la'qiu'hai'liu'xing'ma	100
@@ -18357,6 +18202,7 @@
 天降正义	tian'xiang'zheng'yi	100
 天阶	tian'jie	100
 天街巡游	tian'jie'xun'you	100
+恬静祷歌	tian'jing'dao'ge	100
 天基武器	tian'ji'wu'qi	100
 天玑星	tian'ji'xing	100
 天空大剑	tian'kong'da'jian	100
@@ -18612,7 +18458,6 @@
 提瓦特	ti'wa'te	100
 提瓦特大炮	ti'wa'te'da'bao	100
 提瓦特大炮	ti'wa'te'da'pao	100
-提瓦特大陆	ti'wa'te'da'lu	100
 提瓦特的园丁	ti'wa'te'de'yuan'ding	100
 提瓦特煎蛋	ti'wa'te'jian'dan	100
 提瓦特焦蛋	ti'wa'te'jiao'dan	100
@@ -18651,7 +18496,8 @@
 铜雀之迹	tong'que'zhi'ji	100
 同人摊摊主	tong'ren'tan'tan'zhu	100
 同人摊位	tong'ren'tan'wei	100
-通赛识	tong'sai'shi	100
+通塞识	tong'sai'shi	100
+通塞识	tong'se'shi	100
 铜锁	tong'suo	100
 通通四百铃	tong'tong'si'bai'ling	100
 通往光明之路	tong'wang'guang'ming'zhi'lu	100
@@ -18694,7 +18540,6 @@
 抟风秘道	tuan'feng'mi'dao	100
 图昂	tu'ang	100
 团结的魔法	tuan'jie'de'mo'fa	100
-团结之魔法	tuan'jie'zhi'mo'fa	100
 湍流疾行冲锋赛	tuan'liu'ji'xing'chong'feng'sai	100
 团雀	tuan'que	100
 团团灰	tuan'tuan'hui	100
@@ -18746,8 +18591,6 @@
 突角龙武士追缉灵光	tu'jiao'long'wu'shi'zhui'ji'ling'guang	100
 突角龙武士追缉灵光	tu'jue'long'wu'shi'zhui'ji'ling'guang	100
 突击步枪	tu'ji'bu'qiang	100
-突击连长	tu'ji'lian'chang	100
-突击连长	tu'ji'lian'zhang	100
 图莱杜拉	tu'lai'du'la	100
 图莱杜拉的回忆	tu'lai'du'la'de'hui'yi	100
 图兰大火山	tu'lan'da'huo'shan	100
@@ -18838,7 +18681,6 @@
 图书馆长桌	tu'shu'guan'zhang'zhuo	100
 图书管理员	tu'shu'guan'li'yuan	100
 图书馆请安静	tu'shu'guan'qing'an'jing	100
-图书馆双层	tu'shu'guan'shuang'ceng	100
 图斯	tu'si	100
 图特	tu'te	100
 图特的真视	tu'te'de'zhen'shi	100
@@ -18953,8 +18795,6 @@
 望涓	wang'juan	100
 往来之需	wang'lai'zhi'xu	100
 望泷村	wang'long'cun	100
-望泷村长老	wang'long'cun'chang'lao	100
-望泷村长老	wang'long'cun'zhang'lao	100
 望楼	wang'lou	100
 往冥府的安魂歌	wang'ming'fu'de'an'hun'ge	100
 王女执剑记	wang'nv'zhi'jian'ji	100
@@ -19078,7 +18918,7 @@
 万文集舍	wan'wen'ji'she	100
 万物同生的共誓	wan'wu'tong'sheng'de'gong'shi	100
 万希	wan'xi	100
-晚霞的姿影	wan'xia'de'zi'ying	100
+晚霞	wan'xia	100
 晚霞翻车鲀	wan'xia'fan'che'tun	100
 晚霞翻车鲀	wan'xia'fan'ju'tun	100
 万象风角灵官	wan'xiang'feng'jiao'ling'guan	100
@@ -19293,8 +19133,6 @@
 伪秘之帷	wei'mi'zhi'wei	100
 微末	wei'mo	100
 维摩庄	wei'mo'zhuang	100
-维摩庄村长	wei'mo'zhuang'cun'chang	100
-维摩庄村长	wei'mo'zhuang'cun'zhang	100
 薇娜	wei'na	100
 薇娜	wei'nuo	100
 维娜	wei'na	100
@@ -19354,8 +19192,6 @@
 维斯科	wei'si'ke	100
 维斯菈娃	wei'si'la'wa	100
 薇斯纳	wei'si'na	100
-薇丝娜	wei'si'na	100
-薇丝娜	wei'si'nuo	100
 维斯塔之歌	wei'si'ta'zhi'ge	100
 微缩型骰子壶	wei'suo'xing'tou'zi'hu	100
 薇塔	wei'ta	100
@@ -19386,7 +19222,7 @@
 危险运输现象	wei'xian'yun'shu'xian'xiang	100
 未现之光	wei'xian'zhi'guang	100
 魏小保	wei'xiao'bao	100
-微小虫子	wei'xiao'chong'zi	100
+微小虫孑	wei'xiao'chong'jie	100
 微笑就可以了	wei'xiao'jiu'ke'yi'le	100
 未熄的剑柄	wei'xi'de'jian'bing	100
 韦谢洛夫	wei'xie'luo'fu	100
@@ -19572,7 +19408,6 @@
 我们称之为高效	wo'men'cheng'zhi'wei'gao'xiao	100
 我们的海	wo'men'de'hai	100
 我们的路	wo'men'de'lu	100
-我们的冒险	wo'men'de'mao'xian	100
 我梦雪鹄未曾有过的梦	wo'meng'xue'hu'wei'ceng'you'guo'de'meng	100
 我梦雪鹄未曾有过的梦	wo'meng'xue'hu'wei'zeng'you'guo'de'meng	100
 我们将共飨新生	wo'men'jiang'gong'xiang'xin'sheng	100
@@ -19739,7 +19574,6 @@
 无间之海	wu'jian'zhi'hai	100
 舞剑之月	wu'jian'zhi'yue	100
 无羁的朱赤之蝶	wu'ji'de'zhu'chi'zhi'die	100
-乌基恩	wu'ji'en	100
 乌吉恩	wu'ji'en	100
 乌吉恩圈	wu'ji'en'juan	100
 乌吉恩圈	wu'ji'en'quan	100
@@ -19854,7 +19688,6 @@
 武器突破素材	wu'qi'tu'po'su'cai	100
 乌丘	wu'qiu	100
 五丘丘怎么了	wu'qiu'qiu'zen'me'le	100
-武器原胚	wu'qi'yuan'pei	100
 武器铸造师	wu'qi'zhu'zao'shi	100
 污染菌毯	wu'ran'jun'tan	100
 勿扰沉眠	wu'rao'chen'mian	100
@@ -19963,8 +19796,6 @@
 无心的渊镜	wu'xin'de'yuan'jing	100
 五星	wu'xing	100
 五型	wu'xing	100
-五型复合起重机关	wu'xing'fu'he'qi'chong'ji'guan	100
-五型复合起重机关	wu'xing'fu'he'qi'zhong'ji'guan	100
 无形空梦	wu'xing'kong'meng	100
 五星圣遗物	wu'xing'sheng'yi'wu	100
 无形学会	wu'xing'xue'hui	100
@@ -20180,11 +20011,7 @@
 飨宴之翼	xiang'yan'zhi'yi	100
 缃叶	xiang'ye	100
 乡野	xiang'ye	100
-乡野的水源	xiang'ye'de'shui'yuan	100
-缃叶剑骨树	xiang'ye'jian'gu'shu	100
-缃叶盘伏树	xiang'ye'pan'fu'shu	100
 缃叶却砂树	xiang'ye'que'sha'shu	100
-缃叶珍枝树	xiang'ye'zhen'zhi'shu	100
 像一个雪球一样	xiang'yi'ge'xue'qiu'yi'yang	100
 响应型辅助机关	xiang'ying'xing'fu'zhu'ji'guan	100
 像因论派学者一样思考	xiang'yin'lun'pai'xue'zhe'yi'yang'si'kao	100
@@ -20282,7 +20109,6 @@
 线香烟火	xian'xiang'yan'huo	100
 现象之谵妄	xian'xiang'zhi'zhan'wang	100
 咸鲜肉香	xian'xian'rou'xiang	100
-咸鲜肉香彩陶盘	xian'xian'rou'xiang'cai'tao'pan	100
 闲暇品读	xian'xia'pin'du	100
 鲜蟹献于鲜蟹王座	xian'xie'xian'yu'xian'xie'wang'zuo	100
 贤医的假面	xian'yi'de'jia'mian	100
@@ -20396,9 +20222,10 @@
 小匿叶龙	xiao'ni'ye'long	100
 肖诺	xiao'nuo	100
 肖诺科维奇	xiao'nuo'ke'wei'qi	100
+小憩	xiao'qi	100
 小轻策	xiao'qing'ce	100
 小憩时光	xiao'qi'shi'guang	100
-翛然旋舞的姿影	xiao'ran'xuan'wu'de'zi'ying	100
+翛然旋舞	xiao'ran'xuan'wu	100
 小桡骨婕可	xiao'rao'gu'jie'ke	100
 小桡骨水兵队	xiao'rao'gu'shui'bing'dui	100
 宵色夜咏	xiao'se'ye'yong	100
@@ -20459,6 +20286,7 @@
 小昭	xiao'zhao	100
 小爪	xiao'zhao	100
 小爪	xiao'zhua	100
+小镇	xiao'zhen	100
 小征	xiao'zheng	100
 篠冢	xiao'zhong	100
 晓妆	xiao'zhuang	100
@@ -20468,6 +20296,8 @@
 枭总管	xiao'zong'guan	100
 遐庆	xia'qing	100
 暇憩焰火	xia'qi'yan'huo	100
+夏日盛宴	xia'ri'cheng'yan	100
+夏日盛宴	xia'ri'sheng'yan	100
 夏日林中	xia'ri'lin'zhong	100
 夏日时光	xia'ri'shi'guang	100
 夏日征程	xia'ri'zheng'cheng	100
@@ -20641,7 +20471,6 @@
 西风剑术女仆	xi'feng'jian'shu'nv'pu	100
 西风剑术宗室	xi'feng'jian'shu'zong'shi	100
 西风教会	xi'feng'jiao'hui	100
-西风教会总管	xi'feng'jiao'hui'zong'guan	100
 西风猎弓	xi'feng'lie'gong	100
 西风秘典	xi'feng'mi'dian	100
 西风枪术	xi'feng'qiang'shu	100
@@ -20815,14 +20644,13 @@
 杏仁鳟鱼	xing'ren'zun'yu	100
 行商石门北	xing'shang'shi'men'bei	100
 行商者	xing'shang'zhe	100
-星沙滩	xing'sha'tan	100
+星砂滩	xing'sha'tan	100
 刑事诉讼律	xing'shi'su'song'lv	100
 星示昭明	xing'shi'zhao'ming	100
 醒狮座	xing'shi'zuo	100
 醒兽锐行	xing'shou'rui'xing	100
 兴叔	xing'shu	100
 星霜的流旋	xing'shuang'de'liu'xuan	100
-星霜的流转	xing'shuang'de'liu'zhuan	100
 星烁	xing'shuo	100
 星烁反应	xing'shuo'fan'ying	100
 星天的花雨	xing'tian'de'hua'yu	100
@@ -20939,8 +20767,6 @@
 新月	xin'yue	100
 新月重临	xin'yue'chong'lin	100
 新月重临	xin'yue'zhong'lin	100
-新月的浪潮	xin'yue'de'lang'chao	100
-新月的谧景	xin'yue'de'mi'jing	100
 新月的祝福	xin'yue'de'zhu'fu	100
 新月神	xin'yue'shen	100
 新月升起之刻	xin'yue'sheng'qi'zhi'ke	100
@@ -21059,8 +20885,8 @@
 休歇	xiu'xie	100
 嗅嗅鼹鼠	xiu'xiu'yan'shu	100
 修永	xiu'yong	100
-袖珍松木	xiu'zhen'song'mu	100
-修筑匠	xiu'zhu'jiang	100
+袖珍	xiu'zhen	100
+修铸匠	xiu'zhu'jiang	100
 希望是个好词	xi'wang'shi'ge'hao'ci	100
 希望之路	xi'wang'zhi'lu	100
 西瓦尼	xi'wa'ni	100
@@ -21153,7 +20979,7 @@
 悬赏证物	xuan'shang'zheng'wu	100
 悬神系流	xuan'shen'ji'liu	100
 悬神系流	xuan'shen'xi'liu	100
-悬挑阁楼的蒙德	xuan'tiao'ge'lou'de'meng'de	100
+悬挑阁楼	xuan'tiao'ge'lou	100
 玄文兽	xuan'wen'shou	100
 漩涡的余威	xuan'wo'de'yu'wei	100
 漩涡之魔神	xuan'wo'zhi'mo'shen	100
@@ -21358,7 +21184,7 @@
 寻宝鸦印	xun'bao'ya'yin	100
 洵波草内	xun'bo'cao'nei	100
 寻捕械	xun'bu'xie	100
-循察五风	xun'cha'wu'feng	100
+徇察五风	xun'cha'wu'feng	100
 寻得龙蛇踪	xun'de'long'she'zong	100
 寻得龙蛇踪	xun'dei'long'she'zong	100
 蓄能容器	xu'neng'rong'qi	100
@@ -21396,7 +21222,6 @@
 循棱印迹	xun'leng'yin'ji	100
 巡礼	xun'li	100
 训练大剑	xun'lian'da'jian	100
-训练大师	xun'lian'da'shi	100
 训练风仙	xun'lian'feng'xian	100
 训练手册	xun'lian'shou'ce	100
 训练有素的考古学家	xun'lian'you'su'de'kao'gu'xue'jia	100
@@ -21637,7 +21462,7 @@
 阳华	yang'hua	100
 阳华领域	yang'hua'ling'yu	100
 阳介	yang'jie	100
-阳炬蕊	yang'ju'rui	100
+阳矩蕊	yang'ju'rui	100
 仰灵威召将役咒	yang'ling'wei'zhao'jiang'yi'zhou	100
 洋流大王	yang'liu'da'wang	100
 央陆	yang'lu	100
@@ -21842,7 +21667,7 @@
 沿着银色之路	yan'zhao'yin'se'zhi'lu	100
 沿着银色之路	yan'zhe'yin'se'zhi'lu	100
 岩者	yan'zhe	100
-岩者六合引之为古	yan'zhe'liu'he'yin'zhi'wei'gu	100
+岩者六合引之为骨	yan'zhe'liu'he'yin'zhi'wei'gu	100
 严正净衣	yan'zheng'jing'yi	100
 焰之赤武	yan'zhi'chi'wu	100
 盐之魔神	yan'zhi'mo'shen	100
@@ -21982,6 +21807,7 @@
 约印	yao'yin	100
 约印	yue'yin	100
 要用原力	yao'yong'yuan'li	100
+窈月岁光	yao'yue'sui'guang	100
 钥之星	yao'zhi'xing	100
 钥之星	yue'zhi'xing	100
 峣柱	yao'zhu	100
@@ -22053,7 +21879,6 @@
 业果木反擒拿	ye'guo'mu'fan'qin'na	100
 业果木静语	ye'guo'mu'jing'yu	100
 业果木散货铺位	ye'guo'mu'san'huo'pu'wei	100
-业果木三纵面广告牌	ye'guo'mu'san'zong'mian'guang'gao'pai	100
 业果木远海液货货架	ye'guo'mu'yuan'hai'ye'huo'huo'jia	100
 夜航员	ye'hang'yuan	100
 夜航员的瞭望塔	ye'hang'yuan'de'liao'wang'ta	100
@@ -22154,8 +21979,6 @@
 液态燃素	ye'tai'ran'su	100
 椰炭饼	ye'tan'bing	100
 野外观察手记	ye'wai'guan'cha'shou'ji	100
-野外松木	ye'wai'song'mu	100
-野外温泉	ye'wai'wen'quan	100
 夜晚显现的明月	ye'wan'xian'xian'de'ming'yue	100
 叶纹	ye'wen	100
 野武士	ye'wu'shi	100
@@ -22210,7 +22033,6 @@
 异邦人与异邦人	yi'bang'ren'yu'yi'bang'ren	100
 异邦铁风	yi'bang'tie'feng	100
 异邦岩锋	yi'bang'yan'feng	100
-一般市民	yi'ban'shi'min	100
 一瓣荫凉	yi'ban'yin'liang	100
 一把钥匙开一把锁	yi'ba'yao'chi'kai'yi'ba'suo	100
 一把钥匙开一把锁	yi'ba'yao'shi'kai'yi'ba'suo	100
@@ -22227,7 +22049,6 @@
 伊波利特	yi'bo'li'te	100
 一波三折的辗转	yi'bo'san'zhe'de'zhan'zhuan	100
 伊部	yi'bu	100
-伊菜尔	yi'cai'er	100
 衣裁三礼	yi'cai'san'li	100
 溢彩心念	yi'cai'xin'nian	100
 伊察霍	yi'cha'huo	100
@@ -22244,6 +22065,7 @@
 异重力凝水体	yi'zhong'li'ning'shui'ti	100
 伊吹	yi'chui	100
 一次成功的狩猎	yi'ci'cheng'gong'de'shou'lie	100
+一次的攻击	yi'ci'de'gong'ji	100
 伊茨昆	yi'ci'kun	100
 以此为牢	yi'ci'wei'lao	100
 以琮礼地	yi'cong'li'di	100
@@ -22497,7 +22319,6 @@
 影打刀镡	ying'da'dao'tan	100
 萤灯	ying'deng	100
 硬顶	ying'ding	100
-硬顶避雷	ying'ding'bi'lei	100
 营地屏障	ying'di'ping'zhang	100
 莺儿	ying'er	100
 应该安全	ying'gai'an'quan	100
@@ -22536,6 +22357,7 @@
 盈满之实	ying'man'zhi'shi	100
 荧妹	ying'mei	100
 樱眠	ying'mian	100
+硬面	ying'mian	100
 硬面彩陶罐	ying'mian'cai'tao'guan	100
 硬面长桌	ying'mian'chang'zhuo	100
 硬面长桌	ying'mian'zhang'zhuo	100
@@ -22619,6 +22441,7 @@
 影照浮世风流	ying'zhao'fu'shi'feng'liu	100
 映照死亡的厅堂	ying'zhao'si'wang'de'ting'tang	100
 影阵玄甲	ying'zhen'xuan'jia	100
+硬质	ying'zhi	100
 鹰之门	ying'zhi'men	100
 硬质台灯	ying'zhi'tai'deng	100
 影之造物	ying'zhi'zao'wu	100
@@ -22647,8 +22470,8 @@
 隐静	yin'jing	100
 饮尽你的血泪	yin'jin'ni'de'xie'lei	100
 饮尽你的血泪	yin'jin'ni'de'xue'lei	100
+阴矩萼	yin'ju'e	100
 隐具魔术箭	yin'ju'mo'shu'jian	100
-阴炬蕊	yin'ju'rui	100
 隐具余数	yin'ju'yu'shu	100
 因卡纳克	yin'ka'na'ke	100
 因愧疚而生的医术	yin'kui'jiu'er'sheng'de'yi'shu	100
@@ -22878,7 +22701,7 @@
 宜享票券	yi'xiang'piao'quan	100
 宜享星章	yi'xiang'xing'zhang	100
 异乡异客	yi'xiang'yi'ke	100
-移宵导天真君	yi'xiao'dao'tian'zhen'jun	100
+移霄导天真君	yi'xiao'dao'tian'zhen'jun	100
 伊西多尔	yi'xi'duo'er	100
 一些醋	yi'xie'cu	100
 依稀可以辨认的布告	yi'xi'ke'yi'bian'ren'de'bu'gao	100
@@ -23176,6 +22999,7 @@
 幼鳍游龙	you'qi'you'long	100
 游棋座	you'qi'zuo	100
 悠犬	you'quan	100
+悠然	you'ran	100
 悠然的花羽会战士	you'ran'de'hua'yu'hui'zhan'shi	100
 悠然时光	you'ran'shi'guang	100
 游刃由鱼	you'ren'you'yu	100
@@ -23242,7 +23066,6 @@
 幽夜华尔兹	you'ye'hua'er'zi	100
 幽夜净土	you'ye'jing'tu	100
 幽夜默示录	you'ye'mo'shi'lu	100
-由叶片管窥枯荣	you'ye'pian'guan'kui'ku'rong	100
 幽夜七重奏	you'ye'qi'chong'zou	100
 幽夜七重奏	you'ye'qi'zhong'zou	100
 有翼冰本真蕈	you'yi'bing'ben'zhen'xun	100
@@ -23274,7 +23097,6 @@
 悠悠假日	you'you'jia'ri	100
 悠悠集市	you'you'ji'shi	100
 悠悠极速大赛	you'you'ji'su'da'sai	100
-悠悠极速大赛主持人	you'you'ji'su'da'sai'zhu'chi'ren	100
 悠游旅情	you'you'lv'qing	100
 悠悠慢庄园	you'you'man'zhuang'yuan	100
 优游且闲逸	you'you'qie'xian'yi	100
@@ -23627,7 +23449,7 @@
 钺矛	yue'mao	100
 月锚岩	yue'mao'yan	100
 月幕实验所	yue'mu'shi'yan'suo	100
-月凝屏障	yue'ning'ping'zhang	100
+月凝壁障	yue'ning'bi'zhang	100
 月女城	yue'nv'cheng	100
 月女的华彩	yue'nv'de'hua'cai	100
 月球旅行记	yue'qiu'lv'xing'ji	100
@@ -23655,9 +23477,8 @@
 月卧檐上	yue'wo'yan'shang	100
 月雾的冒险家	yue'wu'de'mao'xian'jia	100
 月雾的寻宝者	yue'wu'de'xun'bao'zhe	100
-月下的安眠	yue'xia'de'an'mian	100
+月下	yue'xia	100
 月下的豪赌	yue'xia'de'hao'du	100
-月下的恬静祷歌	yue'xia'de'tian'jing'dao'ge	100
 月下的妖精国	yue'xia'de'yao'jing'guo	100
 月下胡德拉	yue'xia'hu'de'la	100
 月下静读	yue'xia'jing'du	100
@@ -23736,18 +23557,12 @@
 御伽木	yu'jia'mu	100
 御伽木但饮	yu'ga'mu'dan'yin	100
 御伽木但饮	yu'jia'mu'dan'yin	100
-御伽木横置	yu'ga'mu'heng'zhi	100
-御伽木横置	yu'jia'mu'heng'zhi	100
 御伽木横置散彩	yu'ga'mu'heng'zhi'san'cai	100
 御伽木横置散彩	yu'jia'mu'heng'zhi'san'cai	100
 御伽木货箱	yu'ga'mu'huo'xiang	100
 御伽木货箱	yu'jia'mu'huo'xiang	100
 御伽木酒桶	yu'ga'mu'jiu'tong	100
 御伽木酒桶	yu'jia'mu'jiu'tong	100
-御伽木鸣驻立灯	yu'ga'mu'ming'zhu'li'deng	100
-御伽木鸣驻立灯	yu'jia'mu'ming'zhu'li'deng	100
-御伽木纵置	yu'ga'mu'zong'zhi	100
-御伽木纵置	yu'jia'mu'zong'zhi	100
 御伽木纵置久香	yu'ga'mu'zong'zhi'jiu'xiang	100
 御伽木纵置久香	yu'jia'mu'zong'zhi'jiu'xiang	100
 谕告的潮音	yu'gao'de'chao'yin	100
@@ -23780,7 +23595,7 @@
 浴火的金羽	yu'huo'de'jin'yu	100
 遇火斩火	yu'huo'zhan'huo	100
 狱火之蝶	yu'huo'zhi'die	100
-渔笺岛	yu'jian'dao	100
+鱼笺岛	yu'jian'dao	100
 玉将	yu'jiang	100
 御剑公子	yu'jian'gong'zi	100
 御建鸣神主尊	yu'jian'ming'shen'zhu'zun	100
@@ -23808,7 +23623,6 @@
 驭浪的海祇民	yu'lang'de'hai'qi'min	100
 于阑珊处	yu'lan'shan'chu	100
 予婪诈者以谴罚	yu'lan'zha'zhe'yi'qian'fa	100
-鱼类发条机关	yu'lei'fa'tiao'ji'guan	100
 鱼类发条机关研究组	yu'lei'fa'tiao'ji'guan'yan'jiu'zu	100
 遇雷切雷	yu'lei'qie'lei	100
 娱乐水球发射炮	yu'le'shui'qiu'fa'she'bao	100
@@ -23904,10 +23718,7 @@
 运势层层高	yun'shi'ceng'ceng'gao	100
 运势签	yun'shi'qian	100
 运势无常	yun'shi'wu'chang	100
-运输货盘	yun'shu'huo'pan	100
 运输局安全员	yun'shu'ju'an'quan'yuan	100
-运输局长	yun'shu'ju'chang	100
-运输局长	yun'shu'ju'zhang	100
 蕴思的霜草	yun'si'de'shuang'cao	100
 云台团团降芦菔	yun'tai'tuan'tuan'jiang'lu'fu	100
 云台团团降芦菔	yun'tai'tuan'tuan'xiang'lu'fu	100
@@ -23978,7 +23789,7 @@
 与睡梦同姓	yu'shui'meng'tong'xing	100
 与死无异	yu'si'wu'yi	100
 预算师的技艺	yu'suan'shi'de'ji'yi	100
-寓所辉木	yu'suo'hui'mu	100
+寓所	yu'suo	100
 与它们永远相伴	yu'ta'men'yong'yuan'xiang'ban	100
 御汤奉行	yu'tang'feng'xing	100
 与甜甜花同行	yu'tian'tian'hua'tong'xing	100
@@ -24062,6 +23873,7 @@
 于最灼热的炉火中诞生	yu'zui'zhuo're'de'lu'huo'zhong'dan'sheng	100
 宇佐	yu'zuo	100
 杂菇荟萃	za'gu'hui'cui	100
+杂货	za'huo	100
 在不可逆的时间里	zai'bu'ke'ni'de'shi'jian'li	100
 在彩绘群山之	zai'cai'hui'qun'shan'zhi	100
 在此清算	zai'ci'qing'suan	100
@@ -24176,10 +23988,9 @@
 扎德拉	zha'de'la	100
 扎蒂斯	zha'di'si	100
 扎尔卡娅	zha'er'ka'ya	100
-扎尔那科维奇	zha'er'na'ke'wei'qi	100
+扎尔纳科维奇	zha'er'na'ke'wei'qi	100
 扎尔诺夫	zha'er'nuo'fu	100
 扎哈尔	zha'ha'er	100
-査霍尔	zha'huo'er	100
 宅邸	zhai'di	100
 债务处理人	zhai'wu'chu'li'ren	100
 摘星崖	zhai'xing'ya	100
@@ -24244,7 +24055,7 @@
 沾露虾仁	zhan'lou'xia'ren	100
 沾露虾仁	zhan'lu'xia'ren	100
 詹妮特	zhan'ni'te	100
-战前的小憩	zhan'qian'de'xiao'qi	100
+战前	zhan'qian	100
 绽蕊烛灯	zhan'rui'zhu'deng	100
 斩三尸	zhan'san'shi	100
 栈山航海	zhan'shan'hang'hai	100
@@ -24380,6 +24191,8 @@
 这也算四风守护	zhe'ye'suan'si'feng'shou'hu	100
 这也算四风守护	zhei'ye'suan'si'feng'shou'hu	100
 折箭觅踪	zhe'jian'mi'zong	100
+折角	zhe'jiao	100
+折角	zhe'jue	100
 折角柜台	zhe'jiao'gui'tai	100
 折角柜台	zhe'jue'gui'tai	100
 折胫谷	zhe'jing'gu	100
@@ -24392,7 +24205,6 @@
 臻冰	zhen'bing	100
 臻冰发掘所	zhen'bing'fa'jue'suo	100
 臻冰发射台	zhen'bing'fa'she'tai	100
-臻冰建材	zhen'bing'jian'cai	100
 臻冰计量	zhen'bing'ji'liang	100
 臻冰矿材	zhen'bing'kuang'cai	100
 臻冰矿镐	zhen'bing'kuang'gao	100
@@ -24419,7 +24231,7 @@
 振顿之月	zhen'dun'zhi'yue	100
 振奋的渐变	zhen'fen'de'jian'bian	100
 镇风岛	zhen'feng'dao	100
-蒸畀彼君	zheng'bi'bi'jun	100
+烝畀彼君	zheng'bi'bi'jun	100
 证城	zheng'cheng	100
 正等善见之根	zheng'deng'shan'jian'zhi'gen	100
 正定笔锋	zheng'ding'bi'feng	100
@@ -24463,13 +24275,13 @@
 征涛	zheng'tao	100
 征讨领域	zheng'tao'ling'yu	100
 征讨之花	zheng'tao'zhi'hua	100
+征途	zheng'tu	100
 珍贵的宝箱	zhen'gui'de'bao'xiang	100
 真果角鲀	zhen'guo'jiao'tun	100
 真果角鲀	zhen'guo'jue'tun	100
 正午的海鸟	zheng'wu'de'hai'niao	100
 证悟木	zheng'wu'mu	100
 证悟木藤叶靠背椅	zheng'wu'mu'teng'ye'kao'bei'yi	100
-证悟木招宴坐榻	zheng'wu'mu'zhao'yan'zuo'ta	100
 正午审判	zheng'wu'shen'pan	100
 正行之月	zheng'xing'zhi'yue	100
 诤言的教导	zheng'yan'de'jiao'dao	100
@@ -24485,9 +24297,6 @@
 正义英雄降临	zheng'yi'ying'xiong'jiang'lin	100
 正义英雄降临	zheng'yi'ying'xiong'xiang'lin	100
 正义之廷	zheng'yi'zhi'ting	100
-正义之廷的繁荣商贸	zheng'yi'zhi'ting'de'fan'rong'shang'mao	100
-正义之廷的平淡日常	zheng'yi'zhi'ting'de'ping'dan'ri'chang	100
-正义之廷的清新水雾	zheng'yi'zhi'ting'de'qing'xin'shui'wu	100
 征战勇者淬炼之界	zheng'zhan'yong'zhe'cui'lian'zhi'jie	100
 镇海	zhen'hai	100
 真红炽火铠	zhen'hong'chi'huo'kai	100
@@ -24528,7 +24337,6 @@
 侦明效果	zhen'ming'xiao'guo	100
 真眸幻戏	zhen'mou'huan'xi	100
 榛木	zhen'mu	100
-榛木碧玉	zhen'mu'bi'yu	100
 真念鸵羽集	zhen'nian'tuo'yu'ji	100
 震怒的苍雷	zhen'nu'de'cang'lei	100
 震怒之日	zhen'nu'zhi'ri	100
@@ -24541,7 +24349,6 @@
 镇山之钉	zhen'shan'zhi'ding	100
 真识波	zhen'shi'bo	100
 真实厨艺	zhen'shi'chu'yi	100
-真实厨艺不倒狸狸	zhen'shi'chu'yi'bu'dao'li'li	100
 真实的含义	zhen'shi'de'han'yi	100
 真实的虚无	zhen'shi'de'xu'wu	100
 镇石断片	zhen'shi'duan'pian	100
@@ -24581,7 +24388,6 @@
 枕玉	zhen'yu	100
 枕鸢	zhen'yuan	100
 枕月	zhen'yue	100
-枕玉老师	zhen'yu'lao'shi	100
 真语秘匣	zhen'yu'mi'xia	100
 枕云岛	zhen'yun'dao	100
 镇宅鼓石	zhen'zhai'gu'shi	100
@@ -24644,7 +24450,6 @@
 至冬国通史补编	zhi'dong'guo'tong'shi'bu'bian	100
 至冬皇都评议会	zhi'dong'huang'du'ping'yi'hui	100
 至冬皇家轨道运输局	zhi'dong'huang'jia'gui'dao'yun'shu'ju	100
-至冬皇家军官学院	zhi'dong'huang'jia'jun'guan'xue'yuan	100
 至冬皇家军事学院	zhi'dong'huang'jia'jun'shi'xue'yuan	100
 至冬皇家能源协会	zhi'dong'huang'jia'neng'yuan'xie'hui	100
 至冬极寒的记忆	zhi'dong'ji'han'de'ji'yi	100
@@ -24685,7 +24490,6 @@
 致教会自由人	zhi'jiao'hui'zi'you'ren	100
 至洁的翎羽	zhi'jie'de'ling'yu	100
 织金红绸	zhi'jin'hong'chou	100
-之锦绘	zhi'jin'hui	100
 织卷	zhi'juan	100
 纸壳与涂鸦	zhi'ke'yu'tu'ya	100
 纸壳与涂鸦	zhi'qiao'yu'tu'ya	100
@@ -24698,7 +24502,7 @@
 治疗头	zhi'liao'tou	100
 治疗一切的秘药	zhi'liao'yi'qie'de'mi'yao	100
 质料贮存箱	zhi'liao'zhu'cun'xiang	100
-至烈至强的醇香	zhi'lie'zhi'qiang'de'chun'xiang	100
+至烈至强	zhi'lie'zhi'qiang	100
 支离轮光	zhi'li'lun'guang	100
 至灵	zhi'ling	100
 祗力松茶	zhi'li'song'cha	100
@@ -24762,7 +24566,6 @@
 织物棚屋	zhi'wu'peng'wu	100
 织物箱台	zhi'wu'xiang'tai	100
 纸星星	zhi'xing'xing	100
-志璇	zhi'xuan	100
 秩序的教导	zhi'xu'de'jiao'dao	100
 秩序的哲学	zhi'xu'de'zhe'xue	100
 秩序的指引	zhi'xu'de'zhi'yin	100
@@ -24825,13 +24628,13 @@
 终北的告诫与述说	zhong'bei'de'gao'jie'yu'shu'shuo	100
 终北的圣歌	zhong'bei'de'sheng'ge	100
 终北的夜行诗	zhong'bei'de'ye'xing'shi	100
-终北的遗胤	zhong'bei'de'yi'yin	100
+终北的遗嗣	zhong'bei'de'yi'si	100
 终北圣言	zhong'bei'sheng'yan	100
 终北遗嗣的哀荣	zhong'bei'yi'si'de'ai'rong	100
 终北遗嗣的祷献	zhong'bei'yi'si'de'dao'xian	100
 终北遗嗣的煌熠	zhong'bei'yi'si'de'huang'yi	100
 终北遗嗣的迷顽	zhong'bei'yi'si'de'mi'wan	100
-终北之地的原野	zhong'bei'zhi'di'de'yuan'ye	100
+终北之地	zhong'bei'zhi'di	100
 终北之国	zhong'bei'zhi'guo	100
 终北之嗣	zhong'bei'zhi'si	100
 忠常	zhong'chang	100
@@ -24860,7 +24663,6 @@
 中空之岛	zhong'kong'zhi'dao	100
 钟离	zhong'li	100
 仲林	zhong'lin	100
-钟离先生	zhong'li'xian'sheng	100
 冢里最好的剑	zhong'li'zui'hao'de'jian	100
 众妙之门	zhong'miao'zhi'men	100
 忠明	zhong'ming	100
@@ -24912,7 +24714,6 @@
 终有落花随	zhong'you'la'hua'sui	100
 终有落花随	zhong'you'luo'hua'sui	100
 中原杂碎	zhong'yuan'za'sui	100
-中蕴含旋律为	zhong'yun'han'xuan'lv'wei	100
 种育石	zhong'yu'shi	100
 终战之月	zhong'zhan'zhi'yue	100
 终战之战	zhong'zhan'zhi'zhan	100
@@ -24949,6 +24750,8 @@
 转圜腾挪	zhuan'huan'teng'nuo	100
 专家的直感觉	zhuan'jia'de'zhi'gan'jiao	100
 专家的直感觉	zhuan'jia'de'zhi'gan'jue	100
+转角	zhuan'jiao	100
+转角	zhuan'jue	100
 转角阶梯	zhuan'jiao'jie'ti	100
 转角阶梯	zhuan'jue'jie'ti	100
 转鹭灯具	zhuan'lu'deng'ju	100
@@ -24958,7 +24761,6 @@
 转盘特调	zhuan'pan'te'diao	100
 转盘特调	zhuan'pan'te'tiao	100
 转生	zhuan'sheng	100
-转生成为鬼兜虫	zhuan'sheng'cheng'wei'gui'dou'chong	100
 转生成为雷电将军	zhuan'sheng'cheng'wei'lei'dian'jiang'jun	100
 转瞬的迅雷	zhuan'shun'de'xun'lei	100
 专武	zhuan'wu	100
@@ -25128,9 +24930,9 @@
 茁壮菌核	zhuo'zhuang'jun'he	100
 灼灼彩菊	zhuo'zhuo'cai'ju	100
 灼灼效果	zhuo'zhuo'xiao'guo	100
+朱漆	zhu'qi	100
 朱漆垂香木	zhu'qi'chui'xiang'mu	100
 朱漆垂香木百宝阁	zhu'qi'chui'xiang'mu'bai'bao'ge	100
-朱漆垂香木卷轴	zhu'qi'chui'xiang'mu'juan'zhou	100
 朱漆火印	zhu'qi'huo'yin	100
 朱漆圆凳	zhu'qi'yuan'deng	100
 朱漆圆桌	zhu'qi'yuan'zhuo	100
@@ -25210,8 +25012,7 @@
 珠玉巧饰	zhu'yu'qiao'shi	100
 逐于微末	zhu'yu'wei'mo	100
 驻扎日记	zhu'zha'ri'ji	100
-竹制露天	zhu'zhi'lou'tian	100
-竹制露天	zhu'zhi'lu'tian	100
+竹制	zhu'zhi	100
 竹制围篱	zhu'zhi'wei'li	100
 竺子	zhu'zi	100
 兹白	zi'bai	100
@@ -25283,6 +25084,7 @@
 兹我萧艾	zi'wo'xiao'ai	100
 自信满满的须弥选手	zi'xin'man'man'de'xu'mi'xuan'shou	100
 兹亚布林	zi'ya'bu'lin	100
+姿影	zi'ying	100
 自由	zi'you	100
 自由的教导	zi'you'de'jiao'dao	100
 自由的凛风	zi'you'de'lin'feng	100
@@ -25310,7 +25112,6 @@
 宗传刀架	zong'zhuan'dao'jia	100
 总得喝一杯	zong'de'he'yi'bei	100
 总得喝一杯	zong'dei'he'yi'bei	100
-综合小队老兵	zong'he'xiao'dui'lao'bing	100
 综亮步道	zong'liang'bu'dao	100
 棕翎鹰	zong'ling'ying	100
 棕鹿	zong'lu	100
@@ -25337,11 +25138,13 @@
 总务司	zong'wu'si	100
 总务土地	zong'wu'tu'di	100
 综务小队	zong'wu'xiao'dui	100
+综务小队老兵	zong'wu'xiao'dui'lao'bing	100
 综像勘录仪	zong'xiang'kan'lu'yi	100
 总有比火更灼热的火	zong'you'bi'huo'geng'zhuo're'de'huo	100
 总有地上的生灵	zong'you'di'shang'de'sheng'ling	100
 总站大厅	zong'zhan'da'ting	100
 纵阵武力统筹	zong'zhen'wu'li'tong'chou	100
+纵置	zong'zhi	100
 总指挥的乘胜追击	zong'zhi'hui'de'cheng'sheng'zhui'ji	100
 总指挥的乘胜追击	zong'zhi'hui'de'sheng'sheng'zhui'ji	100
 走笔隐红	zou'bi'yin'hong	100
@@ -25361,7 +25164,7 @@
 阻断部队	zu'duan'bu'dui	100
 阻断魔物	zu'duan'mo'wu	100
 祖尔宛	zu'er'wan	100
-组合式杉木	zu'he'shi'shan'mu	100
+组合式	zu'he'shi	100
 最棒最温暖的家	zui'bang'zui'wen'nuan'de'jia	100
 最不安神晴又复雨	zui'bu'an'shen'qing'you'fu'yu	100
 最长的一日	zui'chang'de'yi'ri	100
